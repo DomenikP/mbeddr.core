@@ -92,8 +92,15 @@
       <concept id="8409287311039031605" name="com.mbeddr.ext.statemachines.structure.AbstractAction" flags="ng" index="S7qdO">
         <child id="8409287311039042109" name="body" index="S7lxW" />
       </concept>
+      <concept id="1786180596061258962" name="com.mbeddr.ext.statemachines.structure.EventArgRef" flags="ng" index="3498Or">
+        <reference id="1786180596061258963" name="arg" index="3498Oq" />
+      </concept>
+      <concept id="1786180596061248885" name="com.mbeddr.ext.statemachines.structure.EventArg" flags="ng" index="349diW" />
       <concept id="1786180596061233739" name="com.mbeddr.ext.statemachines.structure.Trigger" flags="ng" index="349iI2">
         <reference id="8951398808641876049" name="event" index="1bNv6r" />
+      </concept>
+      <concept id="1786180596061219795" name="com.mbeddr.ext.statemachines.structure.Event" flags="ng" index="349m8q">
+        <child id="1786180596061248896" name="args" index="349dh9" />
       </concept>
       <concept id="1786180596061383227" name="com.mbeddr.ext.statemachines.structure.StatemachineVarRef" flags="ng" index="349IfM">
         <reference id="1786180596061383228" name="var" index="349IfP" />
@@ -103,6 +110,7 @@
       </concept>
       <concept id="1270667558200936379" name="com.mbeddr.ext.statemachines.structure.AbstractTransition" flags="ng" index="1zz5ri">
         <reference id="1270667558201034238" name="targetState" index="1zztin" />
+        <child id="1270667558200943847" name="guard" index="1zz7me" />
       </concept>
       <concept id="4249345261280334498" name="com.mbeddr.ext.statemachines.structure.AbstractState" flags="ng" index="1Koyuy">
         <child id="4249345261280348989" name="contents" index="1KoBSX" />
@@ -136,9 +144,14 @@
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
       <concept id="3976803464656498416" name="com.mbeddr.core.expressions.structure.PostDecrementExpression" flags="ng" index="1FldXu" />
+      <concept id="8860443239512129322" name="com.mbeddr.core.expressions.structure.EqualsExpression" flags="ng" index="3TlM44" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
         <property id="2941277002448691247" name="volatile" index="2caQfQ" />
+      </concept>
+      <concept id="8860443239512128052" name="com.mbeddr.core.expressions.structure.BinaryExpression" flags="ng" index="3TlMgq">
+        <child id="8860443239512128064" name="left" index="3TlMhI" />
+        <child id="8860443239512128065" name="right" index="3TlMhJ" />
       </concept>
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
       <concept id="4375898003726285486" name="com.mbeddr.core.expressions.structure.PostIncrementExpression" flags="ng" index="3TM6Ey" />
@@ -180,6 +193,13 @@
       <ref role="1LFebw" node="fcvYn5mY7h" resolve="initial" />
       <node concept="2cfOFI" id="fcvYn5mYh$" role="1_Iowf">
         <property role="TrG5h" value="timeout" />
+        <node concept="349diW" id="6xhsDCu9myL" role="349dh9">
+          <property role="TrG5h" value="bla" />
+          <node concept="26Vqph" id="6xhsDCufnyf" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
       </node>
       <node concept="2cfOFI" id="fcvYn5mY82" role="1_Iowf">
         <property role="TrG5h" value="pedButtonPressed" />
@@ -206,6 +226,14 @@
           <ref role="1zztin" node="kJtP4FZuY6" resolve="car_green" />
           <node concept="349iI2" id="fcvYn5mYbH" role="2qxFSM">
             <ref role="1bNv6r" node="fcvYn5mYh$" resolve="timeout" />
+          </node>
+          <node concept="3TlM44" id="6xhsDCufnzE" role="1zz7me">
+            <node concept="3TlMh9" id="6xhsDCufn$4" role="3TlMhJ">
+              <property role="2hmy$m" value="0" />
+            </node>
+            <node concept="3498Or" id="6xhsDCufnyA" role="3TlMhI">
+              <ref role="3498Oq" node="6xhsDCu9myL" resolve="bla" />
+            </node>
           </node>
         </node>
       </node>

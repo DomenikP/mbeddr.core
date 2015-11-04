@@ -88,6 +88,7 @@
         <language id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" fqName="jetbrains.mps.lang.textGen" version="0" />
         <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
         <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
+        <language id="558e8d91-d211-4de0-b141-9a8b8f04b79d" fqName="multiLevel.debugger" version="0" />
       </languageVersions>
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_before">
@@ -138,6 +139,8 @@
     <dependency reexport="false">c1c2a88a-323c-4605-a37d-9ab77a2ccbd2(com.mbeddr.mpsutil.suppresswarning)</dependency>
     <dependency reexport="false">2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)</dependency>
     <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
+    <dependency reexport="false">bec9c00b-b5be-48af-9766-38765bcc974d(MUnit)</dependency>
+    <dependency reexport="false">558e8d91-d211-4de0-b141-9a8b8f04b79d(multiLevel.debugger)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</usedLanguage>
@@ -164,12 +167,14 @@
     <usedLanguage>47f075a6-558e-4640-a606-7ce0236c8023(com.mbeddr.mpsutil.interpreter)</usedLanguage>
     <usedLanguage>28f9e497-3b42-4291-aeba-0a1039153ab1(jetbrains.mps.lang.plugin)</usedLanguage>
     <usedLanguage>774bf8a0-62e5-41e1-af63-f4812e60e48b(jetbrains.mps.baseLanguage.checkedDots)</usedLanguage>
+    <usedLanguage>11a0cd79-9f2e-4665-a280-57a3cc526924(DeSpec)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
   <languageVersions>
+    <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" fqName="DeSpec" version="0" />
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" fqName="com.mbeddr.core.base" version="0" />
     <language id="223dd778-c44f-4ef3-9535-7aa7d12244a6" fqName="com.mbeddr.core.debug" version="0" />
     <language id="ebb5e132-d298-4649-b320-b3f4d7f3acff" fqName="com.mbeddr.core.debug.blext" version="0" />
@@ -225,6 +230,7 @@
     <language id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" fqName="jetbrains.mps.lang.textGen" version="0" />
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
+    <language id="558e8d91-d211-4de0-b141-9a8b8f04b79d" fqName="multiLevel.debugger" version="0" />
   </languageVersions>
   <extendedLanguages>
     <extendedLanguage>3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)</extendedLanguage>

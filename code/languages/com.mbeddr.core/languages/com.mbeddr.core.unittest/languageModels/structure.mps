@@ -12,6 +12,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
+    <import index="pjlr" ref="r:0a66b211-d40a-4a81-8cc2-746eb50a3781(multiLevel.debugger.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -66,7 +67,7 @@
     <property role="MwhBj" value="${module}/icons/testcase.png" />
     <property role="34LRSv" value="testcase" />
     <property role="R4oN_" value="a test case" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="pjlr:5bvBw$5wTjH" resolve="SupportsBreakpoints" />
     <node concept="1TJgyj" id="5so5TTr6RXt" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />

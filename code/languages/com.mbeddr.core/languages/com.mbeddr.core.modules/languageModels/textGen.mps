@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="-1" />
+    <use id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -70,7 +71,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -136,6 +137,11 @@
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
       <concept id="1233920501193" name="jetbrains.mps.lang.textGen.structure.IndentBufferOperation" flags="nn" index="1bpajm" />
     </language>
+    <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec">
+      <concept id="4859901255379446667" name="DeSpec.structure.LiftFrameAnnotation" flags="ng" index="xb3RU" />
+      <concept id="4859901255376695173" name="DeSpec.structure.ContributeStackFrameAnnotation" flags="ng" index="xgzBO" />
+      <concept id="4779930313850906447" name="DeSpec.structure.RequiresStackFrameLiftingAnnotation" flags="ng" index="3qotS4" />
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
@@ -160,6 +166,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -296,7 +303,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="2S_w_nntYoQ" role="3cqZAp" />
-        <node concept="3clFbH" id="2S_w_nntYoR" role="3cqZAp" />
         <node concept="3clFbJ" id="4VhroexNL$B" role="3cqZAp">
           <node concept="3clFbS" id="4VhroexNL$C" role="3clFbx">
             <node concept="3clFbJ" id="4qSf1u22OZQ" role="3cqZAp">
@@ -395,11 +401,12 @@
         </node>
         <node concept="lc7rE" id="3CmSUB7FmNA" role="3cqZAp">
           <node concept="l9hG8" id="3CmSUB7FmNB" role="lcghm">
-            <node concept="2OqwBi" id="3CmSUB7FmNC" role="lb14g">
-              <node concept="117lpO" id="3CmSUB7FmND" role="2Oq$k0" />
-              <node concept="2qgKlT" id="19a6$uAAq0C" role="2OqNvi">
+            <node concept="2OqwBi" id="49lIkIo1bS4" role="lb14g">
+              <node concept="117lpO" id="49lIkIo1bD2" role="2Oq$k0" />
+              <node concept="2qgKlT" id="49lIkIo1fAW" role="2OqNvi">
                 <ref role="37wK5l" to="qd6m:19a6$uAAq0e" resolve="mangledName" />
               </node>
+              <node concept="xb3RU" id="4dLPB5ynZl8" role="lGtFl" />
             </node>
           </node>
         </node>
@@ -510,6 +517,8 @@
         <node concept="3clFbH" id="8PQYytV9ab" role="3cqZAp" />
       </node>
     </node>
+    <node concept="3qotS4" id="49lIkIodyQT" role="lGtFl" />
+    <node concept="xgzBO" id="4dLPB5yiTRp" role="lGtFl" />
   </node>
   <node concept="WtQ9Q" id="1x_Jrt9NjsA">
     <property role="3GE5qa" value="functions" />

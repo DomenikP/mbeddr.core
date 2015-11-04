@@ -750,18 +750,6 @@
   <node concept="1M2fIO" id="7moCclreYpX">
     <property role="3GE5qa" value="blockexpr" />
     <ref role="1M2myG" to="k146:4VEDcE28so4" resolve="BlockExpression" />
-    <node concept="nKS2y" id="7moCclreZR9" role="1MLUbF">
-      <node concept="3clFbS" id="7moCclreZRa" role="2VODD2">
-        <node concept="3clFbF" id="7moCclrf0cj" role="3cqZAp">
-          <node concept="2OqwBi" id="7moCclrf0ud" role="3clFbG">
-            <node concept="nLn13" id="7moCclrf0ci" role="2Oq$k0" />
-            <node concept="2qgKlT" id="7moCclrf1uH" role="2OqNvi">
-              <ref role="37wK5l" to="tpcu:hEwIMij" resolve="isInTemplates" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="1M2fIO" id="gaSsNU986_">
     <property role="3GE5qa" value="stack" />

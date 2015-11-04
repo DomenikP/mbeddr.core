@@ -174,6 +174,7 @@
       </concept>
       <concept id="4491876417845628841" name="com.mbeddr.ext.components.structure.RequiredPort" flags="ng" index="2EWHp$" />
       <concept id="4491876417845628840" name="com.mbeddr.ext.components.structure.ProvidedPort" flags="ng" index="2EWHp_" />
+      <concept id="4491876417845683828" name="com.mbeddr.ext.components.structure.OperationParameter" flags="ng" index="2EWNYT" />
       <concept id="4491876417845484930" name="com.mbeddr.ext.components.structure.Port" flags="ng" index="2EX0hf">
         <reference id="4491876417845484932" name="intf" index="2EX0h9" />
       </concept>
@@ -298,9 +299,16 @@
           <ref role="1ZwSu5" node="4DXnq_12JUZ" resolve="helloWorld" />
           <ref role="1ZwxE2" node="3yeYUb92Gnq" resolve="hello" />
         </node>
-        <node concept="19Rifw" id="4DXnq_12JVI" role="2C2TGm">
+        <node concept="19Rifw" id="6aU7c0vq37l" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="19RgSI" id="6aU7c0vq37m" role="1UOdpc">
+          <property role="TrG5h" value="b" />
+          <node concept="26Vqph" id="6aU7c0vq37n" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
         </node>
       </node>
     </node>
@@ -511,6 +519,13 @@
       <property role="TrG5h" value="HelloWorld" />
       <node concept="2EX0iL" id="3yeYUb92Gnq" role="2EX0iN">
         <property role="TrG5h" value="hello" />
+        <node concept="2EWNYT" id="6aU7c0vq36R" role="1UOdpc">
+          <property role="TrG5h" value="b" />
+          <node concept="26Vqph" id="6aU7c0vq36P" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+        </node>
         <node concept="19Rifw" id="7$$5StonVN8" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />

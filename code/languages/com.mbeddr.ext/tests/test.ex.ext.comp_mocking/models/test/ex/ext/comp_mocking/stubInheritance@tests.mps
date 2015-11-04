@@ -17,7 +17,21 @@
   <imports />
   <registry>
     <language id="36a565f1-3fa0-42d6-baac-f87e209c9789" name="com.mbeddr.ext.components.mock">
-      <concept id="6307143892175591011" name="com.mbeddr.ext.components.mock.structure.StubComponent" flags="ng" index="1vSuYn" />
+      <concept id="6329057548771013571" name="com.mbeddr.ext.components.mock.structure.PhaseRefExpression" flags="ng" index="2qlmud">
+        <reference id="6329057548771013572" name="phase" index="2qlmua" />
+      </concept>
+      <concept id="6329057548770953993" name="com.mbeddr.ext.components.mock.structure.PhaseType" flags="ng" index="2qExX7" />
+      <concept id="2319970887606630668" name="com.mbeddr.ext.components.mock.structure.PhaseExpression" flags="ng" index="_e4wR">
+        <reference id="2319970887606630669" name="phase" index="_e4wQ" />
+      </concept>
+      <concept id="2319970887606630628" name="com.mbeddr.ext.components.mock.structure.StubPhase" flags="ng" index="_e4Bv" />
+      <concept id="2319970887606685453" name="com.mbeddr.ext.components.mock.structure.PhaseChangeStatement" flags="ng" index="_enSQ">
+        <reference id="2319970887606686283" name="instance" index="_emdK" />
+        <reference id="2319970887606685457" name="phase" index="_enSE" />
+      </concept>
+      <concept id="6307143892175591011" name="com.mbeddr.ext.components.mock.structure.StubComponent" flags="ng" index="1vSuYn">
+        <child id="2319970887606630660" name="phases" index="_e4wZ" />
+      </concept>
     </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
       <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
@@ -25,6 +39,9 @@
       </concept>
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
         <child id="7254843406768833939" name="expr" index="1_9egR" />
+      </concept>
+      <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf">
+        <child id="4185783222026502647" name="init" index="3XIe9u" />
       </concept>
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
@@ -212,6 +229,8 @@
       <property role="2OOxQR" value="true" />
       <property role="TrG5h" value="S2" />
       <ref role="2EWKI0" node="3U3EZ$DMbPm" resolve="S1" />
+      <node concept="_e4Bv" id="1qBaxu2M_ow" role="_e4wZ" />
+      <node concept="_e4Bv" id="1qBaxu2M_oD" role="_e4wZ" />
       <node concept="EbCE0" id="3U3EZ$DMWU9" role="2RW2fA">
         <property role="TrG5h" value="f2" />
         <node concept="26Vqqz" id="3U3EZ$DMWUa" role="2C2TGm">
@@ -222,6 +241,30 @@
       <node concept="2EWDwb" id="3U3EZ$DMXOR" role="2RW2fA">
         <property role="TrG5h" value="r" />
         <node concept="3XIRFW" id="3U3EZ$DMXOS" role="2EWMhI">
+          <node concept="1_9egQ" id="1qBaxu2LT4M" role="3XIRFZ">
+            <node concept="2qlmud" id="1qBaxu2LT4K" role="1_9egR">
+              <ref role="2qlmua" node="1qBaxu2LSEs" resolve="a" />
+            </node>
+          </node>
+          <node concept="3XIRlf" id="1qBaxu2LSW2" role="3XIRFZ">
+            <property role="TrG5h" value="bla" />
+            <node concept="2qExX7" id="1qBaxu2LSW0" role="2C2TGm">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+            <node concept="2qlmud" id="1qBaxu2LT69" role="3XIe9u">
+              <ref role="2qlmua" node="1qBaxu2LSEs" resolve="a" />
+            </node>
+          </node>
+          <node concept="_enSQ" id="1qBaxu2LT6J" role="3XIRFZ">
+            <ref role="_emdK" node="3U3EZ$DMdry" resolve="s2" />
+            <ref role="_enSE" node="1qBaxu2LSEs" resolve="a" />
+          </node>
+          <node concept="1_9egQ" id="1qBaxu2LSWF" role="3XIRFZ">
+            <node concept="_e4wR" id="1qBaxu2LSWD" role="1_9egR">
+              <ref role="_e4wQ" node="1qBaxu2LSEs" resolve="a" />
+            </node>
+          </node>
           <node concept="1_9egQ" id="3U3EZ$DMXOU" role="3XIRFZ">
             <node concept="3pqW6w" id="3U3EZ$DMXOY" role="1_9egR">
               <node concept="3TlMh9" id="3U3EZ$DMXP1" role="3TlMhJ">

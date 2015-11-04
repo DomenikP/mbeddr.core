@@ -153,6 +153,11 @@
         <reference id="5308710777891565562" name="field" index="EbZID" />
       </concept>
       <concept id="4491876417845649024" name="com.mbeddr.ext.components.structure.InstanceConfiguration" flags="ng" index="2EWCtd" />
+      <concept id="4491876417845649017" name="com.mbeddr.ext.components.structure.InstancePortRef" flags="ng" index="2EWCuO" />
+      <concept id="4491876417845649016" name="com.mbeddr.ext.components.structure.AssemblyConnector" flags="ng" index="2EWCuP">
+        <child id="4491876417845649021" name="target" index="2EWCuK" />
+        <child id="4491876417845649020" name="source" index="2EWCuL" />
+      </concept>
       <concept id="4491876417845649014" name="com.mbeddr.ext.components.structure.ComponentInstance" flags="ng" index="2EWCuV">
         <reference id="4491876417845649015" name="component" index="2EWCuU" />
         <child id="785275130114861567" name="initializers" index="3R_39I" />
@@ -170,6 +175,7 @@
       <concept id="591155063063570513" name="com.mbeddr.ext.components.structure.InitializeConfiguration" flags="ng" index="3t9XKO">
         <reference id="591155063063570514" name="config" index="3t9XKR" />
       </concept>
+      <concept id="8515777736166878876" name="com.mbeddr.ext.components.structure.EmptyComponentContent" flags="ng" index="3Khz0B" />
       <concept id="8473757169836531451" name="com.mbeddr.ext.components.structure.DirectRunnableCallable" flags="ng" index="1KB$IV" />
       <concept id="785275130114861597" name="com.mbeddr.ext.components.structure.InitFieldInitializer" flags="ng" index="3R_36c">
         <reference id="785275130114861598" name="field" index="3R_36f" />
@@ -338,6 +344,8 @@
           <ref role="rcJHT" node="1mLkhC6229w" resolve="adderFun" />
         </node>
       </node>
+      <node concept="3Khz0B" id="6aU7c0vcbBd" role="2RW2fA" />
+      <node concept="3Khz0B" id="6aU7c0vcbPv" role="2RW2fA" />
       <node concept="2EWDwb" id="1mLkhC62obB" role="2RW2fA">
         <property role="TrG5h" value="testAdding" />
         <node concept="3XIRFW" id="1mLkhC62obC" role="2EWMhI">
@@ -422,6 +430,10 @@
             <ref role="pF0ci" node="1mLkhC62obi" resolve="simpleAdder" />
           </node>
         </node>
+      </node>
+      <node concept="2EWCuP" id="6aU7c0v3y7E" role="5JtDH">
+        <node concept="2EWCuO" id="6aU7c0v3y7F" role="2EWCuL" />
+        <node concept="2EWCuO" id="6aU7c0v3y7G" role="2EWCuK" />
       </node>
     </node>
     <node concept="2NXPZ9" id="1mLkhC6229s" role="N3F5h">

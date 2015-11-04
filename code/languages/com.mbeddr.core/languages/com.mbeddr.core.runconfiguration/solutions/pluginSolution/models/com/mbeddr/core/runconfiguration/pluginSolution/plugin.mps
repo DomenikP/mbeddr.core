@@ -393,10 +393,6 @@
       </concept>
       <concept id="6550182048787583936" name="jetbrains.mps.execution.configurations.structure.BeforeTaskParameterReference" flags="nn" index="yYjwu" />
       <concept id="6550182048787562516" name="jetbrains.mps.execution.configurations.structure.BeforeTaskParameter" flags="ng" index="yYmJa" />
-      <concept id="6550182048787537880" name="jetbrains.mps.execution.configurations.structure.BeforeTaskCall" flags="ng" index="yYvg6">
-        <reference id="6550182048787537881" name="beforeTask" index="yYvg7" />
-        <child id="5475888311765521408" name="parameter" index="1ZwhtC" />
-      </concept>
       <concept id="7037083547576022975" name="jetbrains.mps.execution.configurations.structure.BeforeTask" flags="ng" index="2PEKAc">
         <child id="6550182048787568298" name="parameter" index="yYnPO" />
         <child id="2454261876037700497" name="execute" index="1D3o6X" />
@@ -414,7 +410,6 @@
       <concept id="2401501559171392633" name="jetbrains.mps.execution.configurations.structure.AbstractRunConfigurationExecutor" flags="ng" index="3wDJM8">
         <property id="5925077313451868299" name="canRun" index="35f5FB" />
         <property id="1931462339887551644" name="configurationName" index="3gLNDv" />
-        <child id="6550182048787537895" name="beforeTask" index="yYvgT" />
         <child id="7945003362267213473" name="execute" index="35uJNn" />
       </concept>
       <concept id="2401501559171345993" name="jetbrains.mps.execution.configurations.structure.RunConfiguration" flags="ng" index="3wDVqS">
@@ -551,9 +546,6 @@
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
-      <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
-        <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
-      </concept>
       <concept id="3562215692195599741" name="jetbrains.mps.lang.smodel.structure.SLinkImplicitSelect" flags="nn" index="13MTOL">
         <reference id="3562215692195600259" name="link" index="13MTZf" />
       </concept>
@@ -1692,13 +1684,8 @@
             <node concept="3cpWsn" id="VC7RuZUIBf" role="3cpWs9">
               <property role="TrG5h" value="isBreakpointSupport" />
               <node concept="10P_77" id="VC7RuZUIBb" role="1tU5fm" />
-              <node concept="2OqwBi" id="VC7RuZUIBg" role="33vP2m">
-                <node concept="3KmjVe" id="VC7RuZUIBh" role="2Oq$k0" />
-                <node concept="2Zo12i" id="VC7RuZUIBi" role="2OqNvi">
-                  <node concept="chp4Y" id="VC7RuZUIBj" role="2Zo12j">
-                    <ref role="cht4Q" to="2gv2:7DakfXFco7$" resolve="IBreakpointSupport" />
-                  </node>
-                </node>
+              <node concept="3clFbT" id="1xP_TBjsNlM" role="33vP2m">
+                <property role="3clFbU" value="false" />
               </node>
             </node>
           </node>
@@ -2618,15 +2605,6 @@
           <node concept="37vLTw" id="4eMm4N7Z8dj" role="2bO3kM">
             <ref role="3cqZAo" node="5gyVhZ17Jmo" resolve="console" />
           </node>
-        </node>
-      </node>
-    </node>
-    <node concept="yYvg6" id="1OjiRUTK78D" role="yYvgT">
-      <ref role="yYvg7" node="1OjiRUTJPEu" resolve="rebuildMainModel" />
-      <node concept="2OqwBi" id="1OjiRUTK7xc" role="1ZwhtC">
-        <node concept="RBKsg" id="1OjiRUTK7vT" role="2Oq$k0" />
-        <node concept="yHkDZ" id="1OjiRUTK7DZ" role="2OqNvi">
-          <ref role="yHkDY" node="7udlxS$GYnq" resolve="binary" />
         </node>
       </node>
     </node>

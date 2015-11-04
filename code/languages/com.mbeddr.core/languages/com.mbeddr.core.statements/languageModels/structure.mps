@@ -9,6 +9,7 @@
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" />
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
+    <import index="pjlr" ref="r:0a66b211-d40a-4a81-8cc2-746eb50a3781(multiLevel.debugger.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -53,7 +54,7 @@
   <node concept="1TIwiD" id="3CmSUB7FmO3">
     <property role="TrG5h" value="Statement" />
     <property role="R4oN_" value="an empty statement" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="pjlr:5bvBw$5wTjH" resolve="SupportsBreakpoints" />
     <node concept="PrWs8" id="jLLIdCm1p8" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
     </node>
@@ -71,6 +72,12 @@
     </node>
     <node concept="PrWs8" id="6brBMefRP4U" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
+    </node>
+    <node concept="PrWs8" id="5tPMoFSAOcY" role="PzmwI">
+      <ref role="PrY4T" to="pjlr:7DakfXFco7$" resolve="IBreakpointSupport" />
+    </node>
+    <node concept="PrWs8" id="2S0AbPOSum6" role="PzmwI">
+      <ref role="PrY4T" to="pjlr:vymDPxT3Jf" resolve="ISteppable" />
     </node>
   </node>
   <node concept="1TIwiD" id="3CmSUB7FprA">
@@ -137,6 +144,9 @@
     </node>
     <node concept="PrWs8" id="4i3qqBgx2f2" role="PzmwI">
       <ref role="PrY4T" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
+    </node>
+    <node concept="PrWs8" id="2S0AbPOHyFe" role="PzmwI">
+      <ref role="PrY4T" to="pjlr:2R5TvtOlFs8" resolve="ISteppableComposite" />
     </node>
   </node>
   <node concept="1TIwiD" id="1OcdQnyStpU">

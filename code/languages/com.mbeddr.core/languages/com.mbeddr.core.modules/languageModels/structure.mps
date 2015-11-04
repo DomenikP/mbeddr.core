@@ -15,6 +15,7 @@
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="pjlr" ref="r:0a66b211-d40a-4a81-8cc2-746eb50a3781(multiLevel.debugger.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -178,7 +179,7 @@
     <property role="3GE5qa" value="functions" />
     <property role="R4oN_" value="--" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="pjlr:5bvBw$5wTjH" resolve="SupportsBreakpoints" />
     <node concept="1TJgyj" id="1fLWRCluu9D" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="ellipsisKind" />
@@ -262,6 +263,9 @@
     </node>
     <node concept="PrWs8" id="6V6S12clNLY" role="PzmwI">
       <ref role="PrY4T" node="6V6S12clNH$" resolve="IDataFlowAnalyzerEntryPoint" />
+    </node>
+    <node concept="PrWs8" id="4dLPB5yjgff" role="PzmwI">
+      <ref role="PrY4T" to="pjlr:4dLPB5yd2k3" resolve="CanContributeStackFrame" />
     </node>
   </node>
   <node concept="1TIwiD" id="6Q7bJ$$my3n">

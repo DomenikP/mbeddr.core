@@ -164,7 +164,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -974,9 +974,8 @@
             </node>
             <node concept="3zciI5" id="6w4ttwU5guu" role="2OqNvi">
               <node concept="3zeigr" id="6w4ttwU5gvc" role="3zciI4">
-                <node concept="1RbBiR" id="6w4ttwU5gwa" role="3zeigm">
-                  <property role="1O5vxG" value="false" />
-                  <ref role="1OpVBp" to="x27k:5_l8w1EmTvx" resolve="Function" />
+                <node concept="BsUDl" id="3TNN_jD93yL" role="3zeigm">
+                  <ref role="37wK5l" node="2edJ9spxTW" resolve="genFunctionName" />
                 </node>
               </node>
               <node concept="1hMMIo" id="6w4ttwU5gxq" role="3zciI4" />
