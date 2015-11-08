@@ -139,8 +139,6 @@
     </language>
     <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec">
       <concept id="4859901255379446667" name="DeSpec.structure.LiftFrameAnnotation" flags="ng" index="xb3RU" />
-      <concept id="4859901255376695173" name="DeSpec.structure.ContributeStackFrameAnnotation" flags="ng" index="xgzBO" />
-      <concept id="4779930313850906447" name="DeSpec.structure.RequiresStackFrameLiftingAnnotation" flags="ng" index="3qotS4" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
@@ -517,8 +515,6 @@
         <node concept="3clFbH" id="8PQYytV9ab" role="3cqZAp" />
       </node>
     </node>
-    <node concept="3qotS4" id="49lIkIodyQT" role="lGtFl" />
-    <node concept="xgzBO" id="4dLPB5yiTRp" role="lGtFl" />
   </node>
   <node concept="WtQ9Q" id="1x_Jrt9NjsA">
     <property role="3GE5qa" value="functions" />

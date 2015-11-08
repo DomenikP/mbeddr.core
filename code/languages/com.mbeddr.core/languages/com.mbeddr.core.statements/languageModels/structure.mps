@@ -120,6 +120,9 @@
     <node concept="PrWs8" id="4Ixybz5aKel" role="PzmwI">
       <ref role="PrY4T" node="4Ixybz5aK1O" resolve="IValueLike" />
     </node>
+    <node concept="PrWs8" id="1rHBIiJ9Qgb" role="PzmwI">
+      <ref role="PrY4T" to="pjlr:1rHBIiJ9Pyb" resolve="WatchDeclartion" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3CmSUB7Fp_l">
     <property role="TrG5h" value="StatementList" />
