@@ -81,8 +81,13 @@
       </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
+      <concept id="8463282783691618440" name="com.mbeddr.core.expressions.structure.Int32tType" flags="ng" index="26Vqph" />
       <concept id="2212975673976017893" name="com.mbeddr.core.expressions.structure.NumericLiteral" flags="ng" index="2hns93">
         <property id="2212975673976043696" name="value" index="2hmy$m" />
+      </concept>
+      <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
+        <property id="2941277002445651368" name="const" index="2c7vTL" />
+        <property id="2941277002448691247" name="volatile" index="2caQfQ" />
       </concept>
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
@@ -90,6 +95,23 @@
   <node concept="bUwia" id="u0cWm_Y3O8">
     <property role="TrG5h" value="main" />
     <property role="3$yP7D" value="true" />
+    <node concept="3aamgX" id="PjpCzeDRKX" role="3acgRq">
+      <ref role="30HIoZ" to="mj1l:PjpCze$_pJ" resolve="BlaType" />
+      <node concept="gft3U" id="PjpCzeDS8E" role="1lVwrX">
+        <node concept="26Vqph" id="PjpCzeDS8S" role="gfFT$">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="PjpCzeDR9i" role="3acgRq">
+      <ref role="30HIoZ" to="mj1l:PjpCze$BCn" resolve="BlaLiteral" />
+      <node concept="gft3U" id="PjpCzeDRoT" role="1lVwrX">
+        <node concept="3TlMh9" id="PjpCzeDRoU" role="gfFT$">
+          <property role="2hmy$m" value="0" />
+        </node>
+      </node>
+    </node>
     <node concept="3aamgX" id="u0cWm_Y6a4" role="3acgRq">
       <ref role="30HIoZ" to="mj1l:6ydhAa1uf6q" resolve="StaticValueExpression" />
       <node concept="gft3U" id="u0cWm_Y86Z" role="1lVwrX">

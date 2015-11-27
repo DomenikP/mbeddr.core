@@ -3,6 +3,17 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="fe9d76d7-5809-45c9-ae28-a40915b4d6ff" name="jetbrains.mps.lang.checkedName" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="0" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
   </languages>
   <imports>
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
@@ -10,6 +21,7 @@
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
+    <import index="pjlr" ref="r:0a66b211-d40a-4a81-8cc2-746eb50a3781(multiLevel.debugger.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -134,6 +146,9 @@
     </node>
     <node concept="PrWs8" id="3RtPbXOi6a7" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3RtPbXOi5Ir" resolve="ITriggerCommenting" />
+    </node>
+    <node concept="PrWs8" id="PjpCze9pDH" role="PzmwI">
+      <ref role="PrY4T" to="pjlr:PjpCze5iKR" resolve="LiftWatchValueFromText" />
     </node>
   </node>
   <node concept="1TIwiD" id="7FQByU3CrCS">
@@ -1475,6 +1490,18 @@
   <node concept="PlHQZ" id="3JvBMXOT$XY">
     <property role="3GE5qa" value="types" />
     <property role="TrG5h" value="ICanBeConst" />
+  </node>
+  <node concept="1TIwiD" id="PjpCze$_pJ">
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="BlaType" />
+    <property role="34LRSv" value="bla" />
+    <ref role="1TJDcQ" node="7FQByU3CrCS" resolve="PrimitiveType" />
+  </node>
+  <node concept="1TIwiD" id="PjpCze$BCn">
+    <property role="3GE5qa" value="literals" />
+    <property role="TrG5h" value="BlaLiteral" />
+    <property role="34LRSv" value="bla" />
+    <ref role="1TJDcQ" node="7FQByU3CrDq" resolve="Literal" />
   </node>
 </model>
 

@@ -13,6 +13,7 @@
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="pjlr" ref="r:0a66b211-d40a-4a81-8cc2-746eb50a3781(multiLevel.debugger.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -244,6 +245,9 @@
     </node>
     <node concept="PrWs8" id="2tP2Jab8eO9" role="PzmwI">
       <ref role="PrY4T" to="vs0r:2GIWVTRH8Wo" resolve="IControlledNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="1fTJB2Zrs8S" role="PzmwI">
+      <ref role="PrY4T" to="pjlr:1rHBIiJ9Pyb" resolve="WatchDeclartion" />
     </node>
   </node>
   <node concept="1TIwiD" id="56ytRgsLodU">
