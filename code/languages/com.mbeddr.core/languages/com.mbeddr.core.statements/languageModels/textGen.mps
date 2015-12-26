@@ -4,6 +4,10 @@
   <languages>
     <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="-1" />
     <use id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec" version="0" />
+    <use id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="multiLevel.debugger" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -15,6 +19,7 @@
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
+    <import index="k6mm" ref="r:0115dd04-77e7-4bb3-82d3-a1ee26c68cd7(DeSpec.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -151,6 +156,14 @@
         <child id="1236188238861" name="list" index="3izTki" />
       </concept>
     </language>
+    <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen">
+      <concept id="2183551496912458834" name="DeSpec.TextGen.structure.TextGenNode" flags="ng" index="1$sdNm" />
+      <concept id="2183551496906316941" name="DeSpec.TextGen.structure.WatchLifterScopeSpecification" flags="ng" index="1B$xg9">
+        <property id="2183551496906473613" name="collectFromParent" index="1BFSw9" />
+        <child id="2183551496906473808" name="watchLifter" index="1BFSBk" />
+      </concept>
+      <concept id="2183551496906473810" name="DeSpec.TextGen.structure.CollectWatchesFunction" flags="ig" index="1BFSBm" />
+    </language>
     <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec">
       <concept id="1652151343342881066" name="DeSpec.structure.LiftNameFromTextGenAnnotation" flags="ng" index="2TNDve" />
       <concept id="960223883318792076" name="DeSpec.structure.LiftValueFromTextGenAnnotation" flags="ng" index="33gQ$4">
@@ -282,6 +295,21 @@
                   </node>
                   <node concept="1bpajm" id="4jc_TWT4mqV" role="3cqZAp" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1B$xg9" id="1Tdy8hTW16r" role="lGtFl">
+      <property role="1BFSw9" value="true" />
+      <node concept="1BFSBm" id="1Tdy8hTXnBj" role="1BFSBk">
+        <node concept="3clFbS" id="1Tdy8hTXnBk" role="2VODD2">
+          <node concept="3clFbF" id="6b$uClsFZjK" role="3cqZAp">
+            <node concept="2OqwBi" id="6b$uClsFZy1" role="3clFbG">
+              <node concept="1$sdNm" id="6b$uClsFZjJ" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="6b$uClsG0JO" role="2OqNvi">
+                <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" />
               </node>
             </node>
           </node>

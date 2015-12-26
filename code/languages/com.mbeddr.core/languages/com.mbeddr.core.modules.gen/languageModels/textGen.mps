@@ -3,6 +3,11 @@
   <persistence version="9" />
   <languages>
     <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="-1" />
+    <use id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="multiLevel.debugger" version="0" />
+    <use id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -15,8 +20,9 @@
     <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
     <import index="1ukv" ref="r:b37b80ef-b920-4af7-9966-3a77c955c860(com.mbeddr.core.modules.gen.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
+    <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="pry4" ref="r:0a0d7eec-6e5a-412b-8e16-e3ee5ed7fb95(jetbrains.mps.debug.api.programState)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -112,6 +118,27 @@
       <concept id="1233748055915" name="jetbrains.mps.lang.textGen.structure.NodeParameter" flags="nn" index="117lpO" />
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
     </language>
+    <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen">
+      <concept id="2183551496912458834" name="DeSpec.TextGen.structure.TextGenNode" flags="ng" index="1$sdNm" />
+      <concept id="2183551496906316941" name="DeSpec.TextGen.structure.WatchLifterScopeSpecification" flags="ng" index="1B$xg9">
+        <child id="2183551496906473808" name="watchLifter" index="1BFSBk" />
+      </concept>
+      <concept id="2183551496906473810" name="DeSpec.TextGen.structure.CollectWatchesFunction" flags="ig" index="1BFSBm" />
+    </language>
+    <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec">
+      <concept id="2635294119710702094" name="DeSpec.structure.LiftValueFromTextAnnotation" flags="ng" index="SA$w4">
+        <child id="2635294119724849447" name="lifter" index="SsAGH" />
+      </concept>
+      <concept id="4721400539875162400" name="DeSpec.structure.ValueFromTextLifterReference2" flags="ng" index="3$7n7A">
+        <reference id="4721400539875162401" name="valueLifter" index="3$7n7B" />
+      </concept>
+      <concept id="4721400539865263081" name="DeSpec.structure.ExternalValueFromTextLifter2" flags="ng" index="3$x6cJ">
+        <reference id="4721400539865263083" name="concept" index="3$x6cH" />
+        <child id="4721400539865599171" name="value" index="3$wKg5" />
+      </concept>
+      <concept id="4721400539865263485" name="DeSpec.structure.PrimitiveValue" flags="ig" index="3$x6mV" />
+      <concept id="5580707664793340385" name="DeSpec.structure.WVariableParameter" flags="ng" index="3If27G" />
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
@@ -134,6 +161,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -399,6 +427,21 @@
               <ref role="3TsBF5" to="d0vh:3N$tYyGbKra" resolve="fileExtension" />
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1B$xg9" id="5GgOWEu8894" role="lGtFl">
+      <node concept="1BFSBm" id="5GgOWEu88lC" role="1BFSBk">
+        <node concept="3clFbS" id="5GgOWEu88lD" role="2VODD2">
+          <node concept="3clFbF" id="5GgOWEu88zD" role="3cqZAp">
+            <node concept="2OqwBi" id="5GgOWEu88KJ" role="3clFbG">
+              <node concept="1$sdNm" id="5GgOWEu88zC" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="5GgOWEu89WO" role="2OqNvi">
+                <ref role="3TtcxE" to="d0vh:1x_Jrt9Mwpt" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="5GgOWEuqiq3" role="3cqZAp" />
         </node>
       </node>
     </node>
@@ -1387,6 +1430,11 @@
         </node>
       </node>
     </node>
+    <node concept="SA$w4" id="7ZqGTTqKym6" role="lGtFl">
+      <node concept="3$7n7A" id="7ZqGTTqKAqr" role="SsAGH">
+        <ref role="3$7n7B" node="7ZqGTTqKyTm" resolve="CFunctionPointerTypedef_ValueLifter2" />
+      </node>
+    </node>
   </node>
   <node concept="WtQ9Q" id="5BN3yNwgpoc">
     <property role="3GE5qa" value="functionpointer" />
@@ -1639,6 +1687,27 @@
                 </node>
               </node>
               <node concept="l8MVK" id="3BLvzpMQviJ" role="lcghm" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3$x6cJ" id="7ZqGTTqKyTm">
+    <property role="3GE5qa" value="functionpointer" />
+    <ref role="3$x6cH" to="d0vh:1TZvYzh_YZV" resolve="CFunctionPointerTypedef" />
+    <node concept="3$x6mV" id="7ZqGTTqKyTr" role="3$wKg5">
+      <node concept="3clFbS" id="7ZqGTTqKyTt" role="2VODD2">
+        <node concept="3clFbF" id="7ZqGTTqKzgj" role="3cqZAp">
+          <node concept="2OqwBi" id="7ZqGTTqKzzE" role="3clFbG">
+            <node concept="2OqwBi" id="7ZqGTTqKzlV" role="2Oq$k0">
+              <node concept="3If27G" id="7ZqGTTqKzge" role="2Oq$k0" />
+              <node concept="liA8E" id="7ZqGTTqKzwb" role="2OqNvi">
+                <ref role="37wK5l" to="pry4:3SnNvqCaK40" resolve="getValue" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7ZqGTTqKzNL" role="2OqNvi">
+              <ref role="37wK5l" to="pry4:3SnNvqCaJI1" resolve="getValuePresentation" />
             </node>
           </node>
         </node>
