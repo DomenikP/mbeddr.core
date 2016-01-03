@@ -7,7 +7,8 @@
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="multiLevel.debugger" version="0" />
-    <use id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen" version="0" />
+    <use id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.Text" version="0" />
+    <use id="e11c169d-9fe2-4a19-8c43-ddd8ffefd883" name="DeSpec.mbeddr" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -124,6 +125,10 @@
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
+    <language id="e11c169d-9fe2-4a19-8c43-ddd8ffefd883" name="DeSpec.mbeddr">
+      <concept id="1158790772928434911" name="DeSpec.mbeddr.structure.Argument" flags="ng" index="2lsCze" />
+      <concept id="1158790772928435966" name="DeSpec.mbeddr.structure.GlobalVariable" flags="ng" index="2lsCNJ" />
+    </language>
     <language id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen">
       <concept id="1237305208784" name="jetbrains.mps.lang.textGen.structure.NewLineAppendPart" flags="ng" index="l8MVK" />
       <concept id="1237305334312" name="jetbrains.mps.lang.textGen.structure.NodeAppendPart" flags="ng" index="l9hG8">
@@ -148,13 +153,13 @@
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
       <concept id="1233920501193" name="jetbrains.mps.lang.textGen.structure.IndentBufferOperation" flags="nn" index="1bpajm" />
     </language>
-    <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen">
-      <concept id="2183551496912458834" name="DeSpec.TextGen.structure.TextGenNode" flags="ng" index="1$sdNm" />
-      <concept id="2183551496906316941" name="DeSpec.TextGen.structure.WatchLifterScopeSpecification" flags="ng" index="1B$xg9">
+    <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.Text">
+      <concept id="2183551496912458834" name="DeSpec.Text.structure.TextGenNode" flags="ng" index="1$sdNm" />
+      <concept id="2183551496906316941" name="DeSpec.Text.structure.WatchLifterScopeSpecification" flags="ng" index="1B$xg9">
         <property id="2183551496906473613" name="collectFromParent" index="1BFSw9" />
         <child id="2183551496906473808" name="watchLifter" index="1BFSBk" />
       </concept>
-      <concept id="2183551496906473810" name="DeSpec.TextGen.structure.CollectWatchesFunction" flags="ig" index="1BFSBm" />
+      <concept id="2183551496906473810" name="DeSpec.Text.structure.CollectWatchesFunction" flags="ig" index="1BFSBm" />
     </language>
     <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec">
       <concept id="4859901255379446667" name="DeSpec.structure.LiftFrameAnnotation" flags="ng" index="xb3RU" />
@@ -163,8 +168,8 @@
         <property id="1636870493684272922" name="takeValueLifterFromTextGen" index="29UtCg" />
       </concept>
       <concept id="4779930313850906447" name="DeSpec.structure.LiftWatchFromTextAnnotation" flags="ng" index="3qotS4">
-        <property id="1716287733365133285" name="kind" index="2KhVlW" />
         <property id="113139468452623849" name="category" index="12C0pm" />
+        <child id="1158790772916696870" name="kind" index="2kDYOR" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1074,8 +1079,8 @@
       </node>
     </node>
     <node concept="3qotS4" id="1vhuDACMsW9" role="lGtFl">
-      <property role="2KhVlW" value="2" />
       <property role="12C0pm" value="argument" />
+      <node concept="2lsCze" id="10kQx65pCLy" role="2kDYOR" />
     </node>
   </node>
   <node concept="WtQ9Q" id="1OcdQnyTYoT">
@@ -1649,8 +1654,8 @@
       </node>
     </node>
     <node concept="3qotS4" id="1vhuDABBa9A" role="lGtFl">
-      <property role="2KhVlW" value="1" />
       <property role="12C0pm" value="global variable" />
+      <node concept="2lsCNJ" id="10kQx65pBNA" role="2kDYOR" />
     </node>
   </node>
   <node concept="WtQ9Q" id="3ilck8KrDCq">

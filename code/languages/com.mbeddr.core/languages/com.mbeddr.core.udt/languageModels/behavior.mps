@@ -5665,7 +5665,7 @@
           <node concept="3cpWsn" id="26bhLIqHh8Z" role="3cpWs9">
             <property role="TrG5h" value="liftWatch" />
             <node concept="3Tqbb2" id="26bhLIqHh90" role="1tU5fm">
-              <ref role="ehGHo" to="k6mm:1aQJbq2AGCf" resolve="LiftWatchFromGenAnnoation" />
+              <ref role="ehGHo" to="k6mm:1aQJbq2AGCf" resolve="LiftVariableFromModel" />
             </node>
             <node concept="1sne9v" id="26bhLIqHh91" role="33vP2m">
               <node concept="1sne01" id="26bhLIqHh92" role="1sne8H">
@@ -5701,7 +5701,7 @@
                   </node>
                 </node>
                 <node concept="1shVQo" id="26bhLIqHh9d" role="ccFIB">
-                  <ref role="1shVQp" to="k6mm:1aQJbq2AGCf" resolve="LiftWatchFromGenAnnoation" />
+                  <ref role="1shVQp" to="k6mm:1aQJbq2AGCf" resolve="LiftVariableFromModel" />
                 </node>
               </node>
             </node>
@@ -5713,7 +5713,7 @@
               <node concept="13iPFW" id="26bhLIqHh9h" role="2Oq$k0" />
               <node concept="3CFZ6_" id="26bhLIqHh9i" role="2OqNvi">
                 <node concept="3CFYIy" id="26bhLIqHh9j" role="3CFYIz">
-                  <ref role="3CFYIx" to="k6mm:1aQJbq2AGCf" resolve="LiftWatchFromGenAnnoation" />
+                  <ref role="3CFYIx" to="k6mm:1aQJbq2AGCf" resolve="LiftVariableFromModel" />
                 </node>
               </node>
             </node>
@@ -7238,6 +7238,7 @@
   </node>
   <node concept="3$x6cJ" id="3lDSgfh1Ze2">
     <property role="3GE5qa" value="su" />
+    <property role="TrG5h" value="liftStructType" />
     <ref role="3$x6cH" to="clbe:5yYXyc4Z0CS" resolve="StructType" />
     <node concept="3$$k6g" id="3lDSgfh1Ze3" role="3$wKg5">
       <node concept="3$BIB7" id="3lDSgfh1Zea" role="3$BHqD">

@@ -4,7 +4,11 @@
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
-    <use id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec" version="-1" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="f2600f3d-2083-4803-a693-cff3268f4af9" name="DeSpec.Model" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="multiLevel.debugger" version="0" />
+    <use id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -201,9 +205,33 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="f2600f3d-2083-4803-a693-cff3268f4af9" name="DeSpec.Model">
+      <concept id="3906148130290944556" name="DeSpec.Model.structure.ValueTransformer" flags="ng" index="1keisF">
+        <reference id="3906148130291051010" name="fromConcept" index="1ke8s5" />
+        <reference id="3906148130291051147" name="toConcept" index="1ke8uc" />
+        <child id="7778196424307964569" name="valueSpec" index="2rTOVQ" />
+        <child id="5475378721078403195" name="valueHandler" index="2Fo1ek" />
+      </concept>
+    </language>
     <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec">
+      <concept id="7778196424308652563" name="DeSpec.structure.FromComplexValueSpec" flags="ng" index="2rOcTW">
+        <child id="7778196424309434469" name="childValueProvider" index="2rRdKa" />
+      </concept>
+      <concept id="7778196424306632333" name="DeSpec.structure.FromValueSpec" flags="ng" index="2rWLby">
+        <reference id="7778196424306632972" name="valueProvider" index="2rWLPz" />
+      </concept>
+      <concept id="7778196424306630279" name="DeSpec.structure.FromPrimitiveValueSpec" flags="ng" index="2rWMFC" />
+      <concept id="5475378721077314417" name="DeSpec.structure.AttachValueLifterSpec" flags="ng" index="2FtV2u">
+        <reference id="1702759464811246371" name="valueLifter" index="TCPAl" />
+      </concept>
+      <concept id="5475378721077314182" name="DeSpec.structure.DelegateToValueLifterSpec" flags="ig" index="2FtV5D" />
+      <concept id="2635294119724213690" name="DeSpec.structure.AbstractValueLifter" flags="ng" index="Sh1uK">
+        <child id="1702759464825222726" name="liftFrom" index="TtxNK" />
+      </concept>
+      <concept id="1702759464825222715" name="DeSpec.structure.LiftFromModel" flags="ng" index="TtxMd" />
+      <concept id="1702759464825222720" name="DeSpec.structure.LiftFromModelAndText" flags="ng" index="TtxNQ" />
       <concept id="1716287733388071715" name="DeSpec.structure.NodeParameter" flags="ng" index="2Z9qAU" />
-      <concept id="4721400539865263081" name="DeSpec.structure.ExternalValueFromTextLifter2" flags="ng" index="3$x6cJ">
+      <concept id="4721400539865263081" name="DeSpec.structure.ExternalValueLifter" flags="ng" index="3$x6cJ">
         <reference id="4721400539865263083" name="concept" index="3$x6cH" />
         <child id="4721400539865599171" name="value" index="3$wKg5" />
       </concept>
@@ -2881,6 +2909,7 @@
   </node>
   <node concept="3$x6cJ" id="465Mcq_1GKS">
     <property role="3GE5qa" value="su" />
+    <property role="TrG5h" value="liftSUDeclaration" />
     <ref role="3$x6cH" to="clbe:6a5SBPfXGBP" resolve="SUDeclaration" />
     <node concept="3$$k6g" id="465Mcq_b_bm" role="3$wKg5">
       <node concept="3$BIB7" id="465Mcq_b_sf" role="3$BHqD">
@@ -2911,6 +2940,7 @@
   </node>
   <node concept="3$x6cJ" id="3lDSgfh1Ze2">
     <property role="3GE5qa" value="su" />
+    <property role="TrG5h" value="liftStructType" />
     <ref role="3$x6cH" to="clbe:5yYXyc4Z0CS" resolve="StructType" />
     <node concept="3$$k6g" id="3lDSgfh1Ze3" role="3$wKg5">
       <node concept="3$BIB7" id="3lDSgfh1Zea" role="3$BHqD">
@@ -2951,6 +2981,7 @@
   </node>
   <node concept="3$x6cJ" id="1qRlgEuUNNV">
     <property role="3GE5qa" value="enum" />
+    <property role="TrG5h" value="liftEnumDeclaration" />
     <ref role="3$x6cH" to="clbe:7D99css6O0r" resolve="EnumDeclaration" />
     <node concept="3$x6mV" id="1qRlgEuUNO5" role="3$wKg5">
       <node concept="3clFbS" id="1qRlgEuUNO6" role="2VODD2">
@@ -2972,6 +3003,7 @@
   </node>
   <node concept="3$x6cJ" id="6WTQBwZfwtr">
     <property role="3GE5qa" value="su" />
+    <property role="TrG5h" value="liftTypeDefType" />
     <ref role="3$x6cH" to="clbe:5jyom5fO9Cn" resolve="TypeDefType" />
     <node concept="3$$k6g" id="6WTQBwZfwXu" role="3$wKg5">
       <node concept="3$BIB7" id="6WTQBwZfwX$" role="3$BHqD">
@@ -3035,6 +3067,144 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="1keisF" id="3oPrgty8cCs">
+    <property role="TrG5h" value="typDef2EnumDecl" />
+    <ref role="1ke8uc" to="clbe:7D99css6O0r" resolve="EnumDeclaration" />
+    <ref role="1ke8s5" to="clbe:5jyom5fO9Cn" resolve="TypeDefType" />
+    <node concept="2FtV5D" id="3oPrgty8_ov" role="2Fo1ek">
+      <node concept="3clFbS" id="3oPrgty8_ow" role="2VODD2">
+        <node concept="3clFbF" id="4cvnvdqtowK" role="3cqZAp">
+          <node concept="2OqwBi" id="4cvnvdqtusm" role="3clFbG">
+            <node concept="1PxgMI" id="4cvnvdqttOP" role="2Oq$k0">
+              <ref role="1PxNhF" to="clbe:7D99css6O15" resolve="EnumType" />
+              <node concept="2OqwBi" id="4cvnvdqtrzK" role="1PxMeX">
+                <node concept="2OqwBi" id="4cvnvdqtqdQ" role="2Oq$k0">
+                  <node concept="2Z9qAU" id="4cvnvdqtowI" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="4cvnvdqtqRx" role="2OqNvi">
+                    <ref role="3Tt5mk" to="clbe:5jyom5fO9Co" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="4cvnvdqtsOO" role="2OqNvi">
+                  <ref role="3Tt5mk" to="clbe:5jyom5fO9Cm" />
+                </node>
+              </node>
+            </node>
+            <node concept="3TrEf2" id="4cvnvdqtvU2" role="2OqNvi">
+              <ref role="3Tt5mk" to="clbe:7D99css6O16" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2rOcTW" id="6JLH6ZKgkT$" role="2rTOVQ">
+      <ref role="2rWLPz" to="clbe:5yYXyc4Z0CS" resolve="StructType" />
+      <node concept="2rOcTW" id="6JLH6ZKwghq" role="2rRdKa">
+        <ref role="2rWLPz" to="yq40:4VhroexOKM1" resolve="ArrayType" />
+        <node concept="2rWMFC" id="6JLH6ZKyDH1" role="2rRdKa">
+          <ref role="2rWLPz" to="mj1l:7FQByU3CrCU" resolve="BooleanType" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1keisF" id="3oPrgtyIi_X">
+    <property role="TrG5h" value="typeDef2StructDecl" />
+    <ref role="1ke8s5" to="clbe:5jyom5fO9Ch" resolve="TypeDef" />
+    <ref role="1ke8uc" to="clbe:5yYXyc4Z0CJ" resolve="StructDeclaration" />
+    <node concept="2FtV5D" id="3oPrgtyIi_Y" role="2Fo1ek">
+      <node concept="3clFbS" id="3oPrgtyIi_Z" role="2VODD2">
+        <node concept="3clFbF" id="3oPrgtyIiA0" role="3cqZAp">
+          <node concept="2OqwBi" id="3oPrgtyIiA1" role="3clFbG">
+            <node concept="2Z9qAU" id="3oPrgtyIiA2" role="2Oq$k0" />
+            <node concept="3TrEf2" id="3oPrgtyIjaV" role="2OqNvi">
+              <ref role="3Tt5mk" to="clbe:5jyom5fO9Cm" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1keisF" id="3oPrgtyIlLT">
+    <property role="TrG5h" value="typeDefType2StructType" />
+    <ref role="1ke8s5" to="clbe:5jyom5fO9Cn" resolve="TypeDefType" />
+    <ref role="1ke8uc" to="clbe:5yYXyc4Z0CS" resolve="StructType" />
+    <node concept="2FtV5D" id="3oPrgtyIlLU" role="2Fo1ek">
+      <node concept="3clFbS" id="3oPrgtyIlLV" role="2VODD2">
+        <node concept="3clFbF" id="3oPrgtyIlM$" role="3cqZAp">
+          <node concept="2OqwBi" id="3oPrgtyIra9" role="3clFbG">
+            <node concept="1PxgMI" id="3oPrgtyIqmt" role="2Oq$k0">
+              <ref role="1PxNhF" to="clbe:5yYXyc4Z0CS" resolve="StructType" />
+              <node concept="2OqwBi" id="3oPrgtyIogQ" role="1PxMeX">
+                <node concept="2OqwBi" id="3oPrgtyIlRe" role="2Oq$k0">
+                  <node concept="2Z9qAU" id="3oPrgtyIlMz" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="3oPrgtyIme2" role="2OqNvi">
+                    <ref role="3Tt5mk" to="clbe:5jyom5fO9Co" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="3oPrgtyIpgc" role="2OqNvi">
+                  <ref role="3Tt5mk" to="clbe:5jyom5fO9Cm" />
+                </node>
+              </node>
+            </node>
+            <node concept="3TrEf2" id="3oPrgtyIsQK" role="2OqNvi">
+              <ref role="3Tt5mk" to="clbe:5yYXyc4Z0CT" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1keisF" id="78nUKrowW9a">
+    <property role="TrG5h" value="typDef2EnumValue" />
+    <ref role="1ke8uc" to="clbe:7D99css6O0r" resolve="EnumDeclaration" />
+    <ref role="1ke8s5" to="clbe:5jyom5fO9Cn" resolve="TypeDefType" />
+    <node concept="2FtV2u" id="78nUKrowWjd" role="2Fo1ek">
+      <ref role="TCPAl" node="78nUKrowXit" resolve="typeDefType2PrimitiveValue" />
+    </node>
+  </node>
+  <node concept="3$x6cJ" id="78nUKrowXit">
+    <property role="TrG5h" value="typeDefType2PrimitiveValue" />
+    <ref role="3$x6cH" to="clbe:5jyom5fO9Cn" resolve="TypeDefType" />
+    <node concept="3$x6mV" id="78nUKrowXiw" role="3$wKg5">
+      <node concept="3clFbS" id="78nUKrowXiy" role="2VODD2">
+        <node concept="3clFbF" id="78nUKrowXp6" role="3cqZAp">
+          <node concept="2OqwBi" id="78nUKrowXLx" role="3clFbG">
+            <node concept="2OqwBi" id="78nUKrowXuI" role="2Oq$k0">
+              <node concept="3If27G" id="78nUKrowXp5" role="2Oq$k0" />
+              <node concept="liA8E" id="78nUKrowXF_" role="2OqNvi">
+                <ref role="37wK5l" to="pry4:3SnNvqCaK40" resolve="getValue" />
+              </node>
+            </node>
+            <node concept="liA8E" id="78nUKrowY3l" role="2OqNvi">
+              <ref role="37wK5l" to="pry4:3SnNvqCaJI1" resolve="getValuePresentation" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="TtxNQ" id="78nUKrowYeN" role="TtxNK" />
+  </node>
+  <node concept="3$x6cJ" id="4cvnvdqxIIt">
+    <property role="TrG5h" value="enumTypeLifer" />
+    <ref role="3$x6cH" to="clbe:7D99css6O15" resolve="EnumType" />
+    <node concept="3$x6mV" id="4cvnvdqxJiq" role="3$wKg5">
+      <node concept="3clFbS" id="4cvnvdqxJis" role="2VODD2">
+        <node concept="3clFbF" id="4cvnvdqxJnt" role="3cqZAp">
+          <node concept="2OqwBi" id="4cvnvdqxJJS" role="3clFbG">
+            <node concept="2OqwBi" id="4cvnvdqxJt5" role="2Oq$k0">
+              <node concept="3If27G" id="4cvnvdqxJns" role="2Oq$k0" />
+              <node concept="liA8E" id="4cvnvdqxJDW" role="2OqNvi">
+                <ref role="37wK5l" to="pry4:3SnNvqCaK40" resolve="getValue" />
+              </node>
+            </node>
+            <node concept="liA8E" id="4cvnvdqxK2w" role="2OqNvi">
+              <ref role="37wK5l" to="pry4:3SnNvqCaJI1" resolve="getValuePresentation" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="TtxMd" id="4cvnvdqxK8j" role="TtxNK" />
   </node>
 </model>
 
