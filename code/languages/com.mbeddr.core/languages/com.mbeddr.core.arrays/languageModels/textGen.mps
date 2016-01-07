@@ -7,6 +7,7 @@
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="multiLevel.debugger" version="0" />
+    <use id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.Text" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -19,9 +20,9 @@
     <import index="yh8" ref="r:cf8dc0a4-7e7f-4be5-9853-f747cd33208a(DeSpec.behavior)" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" implicit="true" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -111,12 +112,14 @@
       <concept id="1233748055915" name="jetbrains.mps.lang.textGen.structure.NodeParameter" flags="nn" index="117lpO" />
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
     </language>
+    <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.Text">
+      <concept id="2635294119710702094" name="DeSpec.Text.structure.LiftValueFromTextAnnotation" flags="ng" index="SA$w4">
+        <child id="2635294119724849447" name="lifter" index="SsAGH" />
+      </concept>
+    </language>
     <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec">
       <concept id="2635294119724213690" name="DeSpec.structure.AbstractValueLifter" flags="ng" index="Sh1uK">
         <child id="1702759464825222726" name="liftFrom" index="TtxNK" />
-      </concept>
-      <concept id="2635294119710702094" name="DeSpec.structure.LiftValueFromTextAnnotation" flags="ng" index="SA$w4">
-        <child id="2635294119724849447" name="lifter" index="SsAGH" />
       </concept>
       <concept id="1702759464825222720" name="DeSpec.structure.LiftFromModelAndText" flags="ng" index="TtxNQ" />
       <concept id="1716287733388071715" name="DeSpec.structure.NodeParameter" flags="ng" index="2Z9qAU" />
@@ -315,8 +318,8 @@
         </node>
       </node>
     </node>
-    <node concept="SA$w4" id="1qRlgEv3gKz" role="lGtFl">
-      <node concept="3$7n7A" id="2yQSiVx9Fyv" role="SsAGH">
+    <node concept="SA$w4" id="3YdlD7kHe$" role="lGtFl">
+      <node concept="3$7n7A" id="3YdlD7kHh_" role="SsAGH">
         <ref role="3$7n7B" node="4Fv0ty0O$pv" resolve="liftArrayType2" />
       </node>
     </node>
@@ -395,8 +398,8 @@
         <node concept="3clFbH" id="2zhwXA$TGC5" role="3cqZAp" />
       </node>
     </node>
-    <node concept="SA$w4" id="71jx1oMLHLB" role="lGtFl">
-      <node concept="3$7n7A" id="H2cMl3NvPV" role="SsAGH">
+    <node concept="SA$w4" id="3YdlD7kHrd" role="lGtFl">
+      <node concept="3$7n7A" id="3YdlD7kHtp" role="SsAGH">
         <ref role="3$7n7B" node="2ZVW6ZgrnTc" resolve="liftPointerType" />
       </node>
     </node>

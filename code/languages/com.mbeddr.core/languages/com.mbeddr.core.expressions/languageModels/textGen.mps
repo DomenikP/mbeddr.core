@@ -7,6 +7,7 @@
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="multiLevel.debugger" version="0" />
+    <use id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.Text" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -121,12 +122,14 @@
       <concept id="1233748055915" name="jetbrains.mps.lang.textGen.structure.NodeParameter" flags="nn" index="117lpO" />
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
     </language>
+    <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.Text">
+      <concept id="2635294119710702094" name="DeSpec.Text.structure.LiftValueFromTextAnnotation" flags="ng" index="SA$w4">
+        <child id="2635294119724849447" name="lifter" index="SsAGH" />
+      </concept>
+    </language>
     <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec">
       <concept id="2635294119724213690" name="DeSpec.structure.AbstractValueLifter" flags="ng" index="Sh1uK">
         <child id="1702759464825222726" name="liftFrom" index="TtxNK" />
-      </concept>
-      <concept id="2635294119710702094" name="DeSpec.structure.LiftValueFromTextAnnotation" flags="ng" index="SA$w4">
-        <child id="2635294119724849447" name="lifter" index="SsAGH" />
       </concept>
       <concept id="1702759464825221197" name="DeSpec.structure.LiftFromText" flags="ng" index="TtxFV" />
       <concept id="1702759464825222715" name="DeSpec.structure.LiftFromModel" flags="ng" index="TtxMd" />
@@ -225,8 +228,8 @@
         </node>
       </node>
     </node>
-    <node concept="SA$w4" id="1qRlgEv2qHd" role="lGtFl">
-      <node concept="3$7n7A" id="1qRlgEv2B2c" role="SsAGH">
+    <node concept="SA$w4" id="3YdlD7o44v" role="lGtFl">
+      <node concept="3$7n7A" id="3YdlD7o46D" role="SsAGH">
         <ref role="3$7n7B" node="1qRlgEv2qJi" resolve="liftPrimitiveType" />
       </node>
     </node>
@@ -596,8 +599,8 @@
         </node>
       </node>
     </node>
-    <node concept="SA$w4" id="1qRlgEv2UzK" role="lGtFl">
-      <node concept="3$7n7A" id="1qRlgEv2UzX" role="SsAGH">
+    <node concept="SA$w4" id="3YdlD7Tcg2" role="lGtFl">
+      <node concept="3$7n7A" id="3YdlD7Tcg8" role="SsAGH">
         <ref role="3$7n7B" node="1qRlgEv2qJi" resolve="liftPrimitiveType" />
       </node>
     </node>
@@ -1094,8 +1097,8 @@
         </node>
       </node>
     </node>
-    <node concept="SA$w4" id="2iiswCs3jTD" role="lGtFl">
-      <node concept="3$7n7A" id="2SyAeFkF2p_" role="SsAGH">
+    <node concept="SA$w4" id="3YdlD7o4gO" role="lGtFl">
+      <node concept="3$7n7A" id="3YdlD7o4jz" role="SsAGH">
         <ref role="3$7n7B" node="1qRlgEv2qJi" resolve="liftPrimitiveType" />
       </node>
     </node>
@@ -1306,8 +1309,8 @@
         </node>
       </node>
     </node>
-    <node concept="SA$w4" id="lFhny5N74H" role="lGtFl">
-      <node concept="3$7n7A" id="2SyAeFkFqL2" role="SsAGH">
+    <node concept="SA$w4" id="3YdlD7Tali" role="lGtFl">
+      <node concept="3$7n7A" id="3YdlD7Taok" role="SsAGH">
         <ref role="3$7n7B" node="lFhny5rpUG" resolve="liftCharTypeFromText" />
       </node>
     </node>

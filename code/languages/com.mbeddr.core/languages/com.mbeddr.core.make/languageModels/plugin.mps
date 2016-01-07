@@ -15,6 +15,7 @@
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
     <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
+    <use id="59a09bf6-2b13-49ef-80d1-741985a7f0ed" name="Tracing" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -487,6 +488,12 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="59a09bf6-2b13-49ef-80d1-741985a7f0ed" name="Tracing">
+      <concept id="7450251056321812345" name="Tracing.structure.InputNodeOperation" flags="ng" index="2OVGM_" />
+      <concept id="71553305895739378" name="Tracing.structure.IsReducedByTextGenOperation" flags="ng" index="14_qEC" />
+      <concept id="71553305893445776" name="Tracing.structure.GetCopyFromHigherLevelOperation" flags="ng" index="14HDna" />
+      <concept id="71553305890767469" name="Tracing.structure.IsCopyFromHigherLevelOperation" flags="ng" index="14SvsR" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -4186,12 +4193,11 @@
                                                                 </node>
                                                               </node>
                                                               <node concept="1Wc70l" id="6XLqFH6_qw6" role="3clFbw">
-                                                                <node concept="2YIFZM" id="6XLqFH6_qw7" role="3uHU7w">
-                                                                  <ref role="1Pybhc" to="3dui:4dLPB5z5fnx" resolve="TracingHelper" />
-                                                                  <ref role="37wK5l" to="3dui:4dLPB5zyAAP" resolve="nodeIsCopyFromHigherModel" />
-                                                                  <node concept="2GrUjf" id="6XLqFH6_qw8" role="37wK5m">
+                                                                <node concept="2OqwBi" id="3YdlD4qxgP" role="3uHU7w">
+                                                                  <node concept="2GrUjf" id="3YdlD4qwHA" role="2Oq$k0">
                                                                     <ref role="2Gs0qQ" node="1cnyw9YUKdm" resolve="desc" />
                                                                   </node>
+                                                                  <node concept="14SvsR" id="3YdlD4qyf2" role="2OqNvi" />
                                                                 </node>
                                                                 <node concept="3y3z36" id="6XLqFH6_qw9" role="3uHU7B">
                                                                   <node concept="2GrUjf" id="6XLqFH6_rGv" role="3uHU7B">
@@ -4301,21 +4307,21 @@
                                                             </node>
                                                           </node>
                                                           <node concept="1Wc70l" id="2UoM3Fos27j" role="3clFbw">
-                                                            <node concept="2YIFZM" id="2UoM3FooJ8v" role="3uHU7B">
-                                                              <ref role="37wK5l" to="3dui:4dLPB5zyAAP" resolve="nodeIsCopyFromHigherModel" />
-                                                              <ref role="1Pybhc" to="3dui:4dLPB5z5fnx" resolve="TracingHelper" />
-                                                              <node concept="2GrUjf" id="2UoM3FooJ8w" role="37wK5m">
+                                                            <node concept="2OqwBi" id="3YdlD4qH34" role="3uHU7B">
+                                                              <node concept="2GrUjf" id="3YdlD4qGw5" role="2Oq$k0">
                                                                 <ref role="2Gs0qQ" node="1cnyw9YUKdm" resolve="desc" />
                                                               </node>
+                                                              <node concept="14SvsR" id="3YdlD4qI1I" role="2OqNvi" />
                                                             </node>
                                                             <node concept="2OqwBi" id="4K4cYVMHTnq" role="3uHU7w">
                                                               <node concept="2OqwBi" id="4K4cYVMHRGD" role="2Oq$k0">
                                                                 <node concept="2OqwBi" id="4K4cYVMHQ8t" role="2Oq$k0">
-                                                                  <node concept="2YIFZM" id="2UoM3Fos9CU" role="2Oq$k0">
-                                                                    <ref role="37wK5l" to="3dui:1cnyw9YZ2QC" resolve="getCopyFromHigheModel" />
-                                                                    <ref role="1Pybhc" to="3dui:4dLPB5z5fnx" resolve="TracingHelper" />
-                                                                    <node concept="2GrUjf" id="2UoM3Fos8Am" role="37wK5m">
-                                                                      <ref role="2Gs0qQ" node="1cnyw9YUKdm" resolve="desc" />
+                                                                  <node concept="2JrnkZ" id="3YdlD4qOWP" role="2Oq$k0">
+                                                                    <node concept="2OqwBi" id="3YdlD4qJJW" role="2JrQYb">
+                                                                      <node concept="2GrUjf" id="3YdlD4qJcy" role="2Oq$k0">
+                                                                        <ref role="2Gs0qQ" node="1cnyw9YUKdm" resolve="desc" />
+                                                                      </node>
+                                                                      <node concept="14HDna" id="3YdlD4qL1P" role="2OqNvi" />
                                                                     </node>
                                                                   </node>
                                                                   <node concept="liA8E" id="4K4cYVMHRaT" role="2OqNvi">
@@ -4352,21 +4358,19 @@
                                                           <node concept="1Wc70l" id="7qK9duhbkee" role="3clFbw">
                                                             <node concept="3y3z36" id="7qK9duhbtln" role="3uHU7w">
                                                               <node concept="10Nm6u" id="7qK9duhbtNr" role="3uHU7w" />
-                                                              <node concept="2YIFZM" id="7qK9duhbsfw" role="3uHU7B">
-                                                                <ref role="37wK5l" to="3dui:7qK9duhblsj" resolve="inputFromHigherModel" />
-                                                                <ref role="1Pybhc" to="3dui:4dLPB5z5fnx" resolve="TracingHelper" />
-                                                                <node concept="2GrUjf" id="7qK9duhbsM4" role="37wK5m">
+                                                              <node concept="2OqwBi" id="3YdlD4qzrL" role="3uHU7B">
+                                                                <node concept="2GrUjf" id="3YdlD4qySA" role="2Oq$k0">
                                                                   <ref role="2Gs0qQ" node="1cnyw9YUKdm" resolve="desc" />
                                                                 </node>
+                                                                <node concept="2OVGM_" id="3YdlD4q$Ik" role="2OqNvi" />
                                                               </node>
                                                             </node>
                                                             <node concept="3fqX7Q" id="7qK9duhbj_4" role="3uHU7B">
-                                                              <node concept="2YIFZM" id="7qK9duhbiK6" role="3fr31v">
-                                                                <ref role="37wK5l" to="3dui:4dLPB5zyAAP" resolve="nodeIsCopyFromHigherModel" />
-                                                                <ref role="1Pybhc" to="3dui:4dLPB5z5fnx" resolve="TracingHelper" />
-                                                                <node concept="2GrUjf" id="7qK9duhbiK7" role="37wK5m">
+                                                              <node concept="2OqwBi" id="3YdlD4qAtq" role="3fr31v">
+                                                                <node concept="2GrUjf" id="3YdlD4q_U9" role="2Oq$k0">
                                                                   <ref role="2Gs0qQ" node="1cnyw9YUKdm" resolve="desc" />
                                                                 </node>
+                                                                <node concept="14SvsR" id="3YdlD4qByf" role="2OqNvi" />
                                                               </node>
                                                             </node>
                                                           </node>
@@ -4434,12 +4438,11 @@
                                                                   <ref role="1sh8R3" to="k6mm:2UoM3FouV4m" />
                                                                   <node concept="1PxgMI" id="2UoM3FoCHVR" role="1sh8R0">
                                                                     <ref role="1PxNhF" to="pjlr:4dLPB5yd2k3" resolve="CanContributeStackFrame" />
-                                                                    <node concept="2YIFZM" id="2UoM3FoCGSq" role="1PxMeX">
-                                                                      <ref role="1Pybhc" to="3dui:4dLPB5z5fnx" resolve="TracingHelper" />
-                                                                      <ref role="37wK5l" to="3dui:1cnyw9YZ2QC" resolve="getCopyFromHigheModel" />
-                                                                      <node concept="2GrUjf" id="2UoM3FoCGSr" role="37wK5m">
+                                                                    <node concept="2OqwBi" id="3YdlD4qQ8M" role="1PxMeX">
+                                                                      <node concept="2GrUjf" id="3YdlD4qPA8" role="2Oq$k0">
                                                                         <ref role="2Gs0qQ" node="1cnyw9YUKdm" resolve="desc" />
                                                                       </node>
+                                                                      <node concept="14HDna" id="3YdlD4qRdl" role="2OqNvi" />
                                                                     </node>
                                                                   </node>
                                                                 </node>
@@ -4481,21 +4484,19 @@
                                                               </node>
                                                             </node>
                                                           </node>
-                                                          <node concept="2YIFZM" id="2UoM3FoCag3" role="3uHU7w">
-                                                            <ref role="1Pybhc" to="3dui:4dLPB5z5fnx" resolve="TracingHelper" />
-                                                            <ref role="37wK5l" to="3dui:4dLPB5zyAAP" resolve="nodeIsCopyFromHigherModel" />
-                                                            <node concept="2GrUjf" id="2UoM3FoCag4" role="37wK5m">
+                                                          <node concept="2OqwBi" id="3YdlD4qCIL" role="3uHU7w">
+                                                            <node concept="2GrUjf" id="3YdlD4qCbA" role="2Oq$k0">
                                                               <ref role="2Gs0qQ" node="1cnyw9YUKdm" resolve="desc" />
                                                             </node>
+                                                            <node concept="14SvsR" id="3YdlD4qDGG" role="2OqNvi" />
                                                           </node>
                                                         </node>
                                                         <node concept="3fqX7Q" id="2UoM3FoCag5" role="3uHU7w">
-                                                          <node concept="2YIFZM" id="2UoM3FoCag6" role="3fr31v">
-                                                            <ref role="1Pybhc" to="3dui:4dLPB5z5fnx" resolve="TracingHelper" />
-                                                            <ref role="37wK5l" to="3dui:4dLPB5z66lC" resolve="isReducedByTextGen" />
-                                                            <node concept="2GrUjf" id="2UoM3FoCag7" role="37wK5m">
+                                                          <node concept="2OqwBi" id="3YdlD4r56K" role="3fr31v">
+                                                            <node concept="2GrUjf" id="3YdlD4r4$0" role="2Oq$k0">
                                                               <ref role="2Gs0qQ" node="1cnyw9YUKdm" resolve="desc" />
                                                             </node>
+                                                            <node concept="14_qEC" id="3YdlD4r64g" role="2OqNvi" />
                                                           </node>
                                                         </node>
                                                       </node>
@@ -4547,21 +4548,19 @@
                                                               </node>
                                                             </node>
                                                           </node>
-                                                          <node concept="2YIFZM" id="2UoM3FoE2Ol" role="3uHU7w">
-                                                            <ref role="37wK5l" to="3dui:4dLPB5zyAAP" resolve="nodeIsCopyFromHigherModel" />
-                                                            <ref role="1Pybhc" to="3dui:4dLPB5z5fnx" resolve="TracingHelper" />
-                                                            <node concept="2GrUjf" id="2UoM3FoE2Om" role="37wK5m">
+                                                          <node concept="2OqwBi" id="3YdlD4qSp6" role="3uHU7w">
+                                                            <node concept="2GrUjf" id="3YdlD4qRQm" role="2Oq$k0">
                                                               <ref role="2Gs0qQ" node="1cnyw9YUKdm" resolve="desc" />
                                                             </node>
+                                                            <node concept="14SvsR" id="3YdlD4qTmG" role="2OqNvi" />
                                                           </node>
                                                         </node>
                                                         <node concept="3fqX7Q" id="2UoM3FoE2On" role="3uHU7w">
-                                                          <node concept="2YIFZM" id="2UoM3FoE2Oo" role="3fr31v">
-                                                            <ref role="1Pybhc" to="3dui:4dLPB5z5fnx" resolve="TracingHelper" />
-                                                            <ref role="37wK5l" to="3dui:4dLPB5z66lC" resolve="isReducedByTextGen" />
-                                                            <node concept="2GrUjf" id="2UoM3FoE2Op" role="37wK5m">
+                                                          <node concept="2OqwBi" id="3YdlD4r7fK" role="3fr31v">
+                                                            <node concept="2GrUjf" id="3YdlD4r6Hd" role="2Oq$k0">
                                                               <ref role="2Gs0qQ" node="1cnyw9YUKdm" resolve="desc" />
                                                             </node>
+                                                            <node concept="14_qEC" id="3YdlD4r8d3" role="2OqNvi" />
                                                           </node>
                                                         </node>
                                                       </node>
@@ -4595,12 +4594,11 @@
                                                         </node>
                                                       </node>
                                                       <node concept="1Wc70l" id="6Gf$xZjbin7" role="3clFbw">
-                                                        <node concept="2YIFZM" id="6Gf$xZjbjKA" role="3uHU7w">
-                                                          <ref role="37wK5l" to="3dui:4dLPB5zyAAP" resolve="nodeIsCopyFromHigherModel" />
-                                                          <ref role="1Pybhc" to="3dui:4dLPB5z5fnx" resolve="TracingHelper" />
-                                                          <node concept="2GrUjf" id="6Gf$xZjbkt1" role="37wK5m">
+                                                        <node concept="2OqwBi" id="3YdlD4qET3" role="3uHU7w">
+                                                          <node concept="2GrUjf" id="3YdlD4qElY" role="2Oq$k0">
                                                             <ref role="2Gs0qQ" node="1cnyw9YUKdm" resolve="desc" />
                                                           </node>
+                                                          <node concept="14SvsR" id="3YdlD4qFQS" role="2OqNvi" />
                                                         </node>
                                                         <node concept="2OqwBi" id="6Gf$xZjbfTn" role="3uHU7B">
                                                           <node concept="2OqwBi" id="6Gf$xZjbdAH" role="2Oq$k0">
@@ -4859,7 +4857,7 @@
                                                                             <ref role="3cqZAo" node="1fTJB2YJGGa" resolve="valueCopierProvider" />
                                                                           </node>
                                                                           <node concept="liA8E" id="1fTJB2YJGG6" role="2OqNvi">
-                                                                            <ref role="37wK5l" to="3dui:1fTJB2YJ$eA" resolve="contributesFor" />
+                                                                            <ref role="37wK5l" to="3dui:1fTJB2YJ$eA" resolve="contributesForNode" />
                                                                             <node concept="2GrUjf" id="1fTJB2ZPhKN" role="37wK5m">
                                                                               <ref role="2Gs0qQ" node="3p1iWQOyNDL" resolve="desc" />
                                                                             </node>

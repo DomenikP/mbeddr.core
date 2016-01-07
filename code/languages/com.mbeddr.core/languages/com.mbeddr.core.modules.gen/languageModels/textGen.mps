@@ -20,9 +20,9 @@
     <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
     <import index="1ukv" ref="r:b37b80ef-b920-4af7-9966-3a77c955c860(com.mbeddr.core.modules.gen.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
+    <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
+    <import index="pry4" ref="r:0a0d7eec-6e5a-412b-8e16-e3ee5ed7fb95(jetbrains.mps.debug.api.programState)" />
     <import index="e2lb" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="pry4" ref="r:0a0d7eec-6e5a-412b-8e16-e3ee5ed7fb95(jetbrains.mps.debug.api.programState)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -118,10 +118,19 @@
       <concept id="1233748055915" name="jetbrains.mps.lang.textGen.structure.NodeParameter" flags="nn" index="117lpO" />
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
     </language>
-    <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec">
-      <concept id="2635294119710702094" name="DeSpec.structure.LiftValueFromTextAnnotation" flags="ng" index="SA$w4">
+    <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.Text">
+      <concept id="2635294119710702094" name="DeSpec.Text.structure.ValueProviderFromTextGen" flags="ng" index="SA$w4">
         <child id="2635294119724849447" name="lifter" index="SsAGH" />
       </concept>
+    </language>
+    <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec">
+      <concept id="7778196424302042668" name="DeSpec.structure.WatchableParameter" flags="ng" index="24jiD3" />
+      <concept id="7778196424306621047" name="DeSpec.structure.WatchValueOperation" flags="ng" index="2rWWSo" />
+      <concept id="1349045547475303338" name="DeSpec.structure.IValueLifter" flags="ng" index="LFFTH">
+        <child id="1349045547475305159" name="liftFrom" index="LF$s0" />
+      </concept>
+      <concept id="1702759464825222720" name="DeSpec.structure.LiftFromModelAndText" flags="ng" index="TtxNQ" />
+      <concept id="5260770003381287423" name="DeSpec.structure.WatchValuePresentationOperation" flags="ng" index="19$7Id" />
       <concept id="4721400539875162400" name="DeSpec.structure.ValueLifterReference" flags="ng" index="3$7n7A">
         <reference id="4721400539875162401" name="valueLifter" index="3$7n7B" />
       </concept>
@@ -130,7 +139,6 @@
         <child id="4721400539865599171" name="value" index="3$wKg5" />
       </concept>
       <concept id="4721400539865263485" name="DeSpec.structure.PrimitiveValue" flags="ig" index="3$x6mV" />
-      <concept id="5580707664793340385" name="DeSpec.structure.WVariableParameter" flags="ng" index="3If27G" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
@@ -1321,8 +1329,8 @@
         </node>
       </node>
     </node>
-    <node concept="SA$w4" id="7ZqGTTqKym6" role="lGtFl">
-      <node concept="3$7n7A" id="7ZqGTTqKAqr" role="SsAGH">
+    <node concept="SA$w4" id="3YdlD89md9" role="lGtFl">
+      <node concept="3$7n7A" id="3YdlD89mmx" role="SsAGH">
         <ref role="3$7n7B" node="7ZqGTTqKyTm" resolve="liftCFunctionPointerTypedef" />
       </node>
     </node>
@@ -1590,21 +1598,18 @@
     <ref role="3$x6cH" to="d0vh:1TZvYzh_YZV" resolve="CFunctionPointerTypedef" />
     <node concept="3$x6mV" id="7ZqGTTqKyTr" role="3$wKg5">
       <node concept="3clFbS" id="7ZqGTTqKyTt" role="2VODD2">
-        <node concept="3clFbF" id="7ZqGTTqKzgj" role="3cqZAp">
-          <node concept="2OqwBi" id="7ZqGTTqKzzE" role="3clFbG">
-            <node concept="2OqwBi" id="7ZqGTTqKzlV" role="2Oq$k0">
-              <node concept="3If27G" id="7ZqGTTqKzge" role="2Oq$k0" />
-              <node concept="liA8E" id="7ZqGTTqKzwb" role="2OqNvi">
-                <ref role="37wK5l" to="pry4:3SnNvqCaK40" resolve="getValue" />
-              </node>
+        <node concept="3clFbF" id="3YdlD8RZty" role="3cqZAp">
+          <node concept="2OqwBi" id="3YdlD8RZVB" role="3clFbG">
+            <node concept="2OqwBi" id="3YdlD8RZwO" role="2Oq$k0">
+              <node concept="24jiD3" id="3YdlD8RZtw" role="2Oq$k0" />
+              <node concept="2rWWSo" id="3YdlD8RZDR" role="2OqNvi" />
             </node>
-            <node concept="liA8E" id="7ZqGTTqKzNL" role="2OqNvi">
-              <ref role="37wK5l" to="pry4:3SnNvqCaJI1" resolve="getValuePresentation" />
-            </node>
+            <node concept="19$7Id" id="3YdlD8S05Z" role="2OqNvi" />
           </node>
         </node>
       </node>
     </node>
+    <node concept="TtxNQ" id="3YdlD8RZ6M" role="LF$s0" />
   </node>
   <node concept="WtQ9Q" id="3EISKF12PHi">
     <property role="3GE5qa" value="module" />

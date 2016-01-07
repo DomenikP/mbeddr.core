@@ -43,7 +43,6 @@
         <reference id="1702759464811246371" name="valueLifter" index="TCPAl" />
       </concept>
       <concept id="1702759464834101403" name="DeSpec.structure.PrimitiveValueSpec" flags="ng" index="SZTCH" />
-      <concept id="1702759464834101671" name="DeSpec.structure.ComplexValueSpec" flags="ng" index="SZTGh" />
     </language>
   </registry>
   <node concept="2FtsKq" id="4JWsYZwGGtS">
@@ -52,7 +51,7 @@
     <node concept="2FtV2u" id="1uxqFoIjcNW" role="2Fo1ek">
       <ref role="TCPAl" to="dylp:lFhny5CgPO" resolve="liftCharTypeFromModel" />
     </node>
-    <node concept="SZTGh" id="2yQSiVuDPi5" role="3bAxH5" />
+    <node concept="SZTCH" id="3YdlD7Tck5" role="3bAxH5" />
   </node>
   <node concept="2FtsKq" id="4lU62Xvdp2q">
     <ref role="2Ftrf$" to="mj1l:7FQByU3CrCS" resolve="PrimitiveType" />

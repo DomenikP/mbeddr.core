@@ -7,6 +7,9 @@
     <use id="ebb5e132-d298-4649-b320-b3f4d7f3acff" name="com.mbeddr.core.debug.blext" version="-1" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec" version="-1" />
+    <use id="59a09bf6-2b13-49ef-80d1-741985a7f0ed" name="Tracing" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -294,7 +297,7 @@
     </language>
     <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec">
       <concept id="1716287733388071715" name="DeSpec.structure.NodeParameter" flags="ng" index="2Z9qAU" />
-      <concept id="4721400539865263081" name="DeSpec.structure.ExternalValueFromTextLifter2" flags="ng" index="3$x6cJ">
+      <concept id="4721400539865263081" name="DeSpec.structure.ExternalValueLifter" flags="ng" index="3$x6cJ">
         <reference id="4721400539865263083" name="concept" index="3$x6cH" />
         <child id="4721400539865599171" name="value" index="3$wKg5" />
       </concept>
@@ -303,7 +306,7 @@
         <child id="8552376200661087380" name="childLifter" index="3Bm913" />
       </concept>
       <concept id="4721400539866931063" name="DeSpec.structure.ChildrenToResolve" flags="ig" index="3$BHuL" />
-      <concept id="4721400539866931457" name="DeSpec.structure.ValueToResolve" flags="ig" index="3$BIB7" />
+      <concept id="4721400539866931457" name="DeSpec.structure.ParentValueResolver" flags="ig" index="3$BIB7" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
@@ -391,6 +394,9 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="59a09bf6-2b13-49ef-80d1-741985a7f0ed" name="Tracing">
+      <concept id="71553305893445776" name="Tracing.structure.getCopyFromHigherLevelOperation" flags="ng" index="14HDna" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -5685,10 +5691,9 @@
                       <ref role="1sh8R3" to="k6mm:26bhLIpoJtK" />
                       <node concept="1PxgMI" id="26bhLIqHh98" role="1sh8R0">
                         <ref role="1PxNhF" to="pjlr:1rHBIiJ9Pyb" resolve="WatchDeclartion" />
-                        <node concept="2YIFZM" id="26bhLIqHh99" role="1PxMeX">
-                          <ref role="1Pybhc" to="3dui:4dLPB5z5fnx" resolve="TracingHelper" />
-                          <ref role="37wK5l" to="3dui:1cnyw9YZ2QC" resolve="getCopyFromHigheModel" />
-                          <node concept="13iPFW" id="26bhLIqHh9a" role="37wK5m" />
+                        <node concept="2OqwBi" id="3YdlD4pCLf" role="1PxMeX">
+                          <node concept="13iPFW" id="3YdlD4pCEb" role="2Oq$k0" />
+                          <node concept="14HDna" id="3YdlD4pGwU" role="2OqNvi" />
                         </node>
                       </node>
                     </node>

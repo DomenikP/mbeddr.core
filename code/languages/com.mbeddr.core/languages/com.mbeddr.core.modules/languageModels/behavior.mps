@@ -8,6 +8,7 @@
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
+    <use id="59a09bf6-2b13-49ef-80d1-741985a7f0ed" name="Tracing" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -512,6 +513,9 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="59a09bf6-2b13-49ef-80d1-741985a7f0ed" name="Tracing">
+      <concept id="71553305893445776" name="Tracing.structure.getCopyFromHigherLevelOperation" flags="ng" index="14HDna" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
@@ -8541,7 +8545,7 @@
           <node concept="3cpWsn" id="26bhLIqHh8Z" role="3cpWs9">
             <property role="TrG5h" value="liftWatch" />
             <node concept="3Tqbb2" id="26bhLIqHh90" role="1tU5fm">
-              <ref role="ehGHo" to="k6mm:1aQJbq2AGCf" resolve="LiftWatchFromGenAnnoation" />
+              <ref role="ehGHo" to="k6mm:1aQJbq2AGCf" resolve="LiftVariableFromModel" />
             </node>
             <node concept="1sne9v" id="26bhLIqHh91" role="33vP2m">
               <node concept="1sne01" id="26bhLIqHh92" role="1sne8H">
@@ -8561,10 +8565,9 @@
                       <ref role="1sh8R3" to="k6mm:26bhLIpoJtK" />
                       <node concept="1PxgMI" id="26bhLIqHh98" role="1sh8R0">
                         <ref role="1PxNhF" to="pjlr:1rHBIiJ9Pyb" resolve="WatchDeclartion" />
-                        <node concept="2YIFZM" id="26bhLIqHh99" role="1PxMeX">
-                          <ref role="37wK5l" to="3dui:1cnyw9YZ2QC" resolve="getCopyFromHigheModel" />
-                          <ref role="1Pybhc" to="3dui:4dLPB5z5fnx" resolve="TracingHelper" />
-                          <node concept="13iPFW" id="26bhLIqHh9a" role="37wK5m" />
+                        <node concept="2OqwBi" id="3YdlD4pIop" role="1PxMeX">
+                          <node concept="13iPFW" id="3YdlD4pId3" role="2Oq$k0" />
+                          <node concept="14HDna" id="3YdlD4pNip" role="2OqNvi" />
                         </node>
                       </node>
                     </node>
@@ -8577,7 +8580,7 @@
                   </node>
                 </node>
                 <node concept="1shVQo" id="26bhLIqHh9d" role="ccFIB">
-                  <ref role="1shVQp" to="k6mm:1aQJbq2AGCf" resolve="LiftWatchFromGenAnnoation" />
+                  <ref role="1shVQp" to="k6mm:1aQJbq2AGCf" resolve="LiftVariableFromModel" />
                 </node>
               </node>
             </node>
@@ -8589,7 +8592,7 @@
               <node concept="13iPFW" id="26bhLIqHh9h" role="2Oq$k0" />
               <node concept="3CFZ6_" id="26bhLIqHh9i" role="2OqNvi">
                 <node concept="3CFYIy" id="26bhLIqHh9j" role="3CFYIz">
-                  <ref role="3CFYIx" to="k6mm:1aQJbq2AGCf" resolve="LiftWatchFromGenAnnoation" />
+                  <ref role="3CFYIx" to="k6mm:1aQJbq2AGCf" resolve="LiftVariableFromModel" />
                 </node>
               </node>
             </node>
@@ -8732,7 +8735,7 @@
           <node concept="3cpWsn" id="26bhLIqH2vH" role="3cpWs9">
             <property role="TrG5h" value="liftWatch" />
             <node concept="3Tqbb2" id="26bhLIqH2tP" role="1tU5fm">
-              <ref role="ehGHo" to="k6mm:1aQJbq2AGCf" resolve="LiftWatchFromGenAnnoation" />
+              <ref role="ehGHo" to="k6mm:1aQJbq2AGCf" resolve="LiftVariableFromModel" />
             </node>
             <node concept="1sne9v" id="26bhLIqH2vV" role="33vP2m">
               <node concept="1sne01" id="26bhLIqH2vW" role="1sne8H">
@@ -8752,10 +8755,9 @@
                       <ref role="1sh8R3" to="k6mm:26bhLIpoJtK" />
                       <node concept="1PxgMI" id="26bhLIqH2w2" role="1sh8R0">
                         <ref role="1PxNhF" to="pjlr:1rHBIiJ9Pyb" resolve="WatchDeclartion" />
-                        <node concept="2YIFZM" id="26bhLIqH2w3" role="1PxMeX">
-                          <ref role="37wK5l" to="3dui:1cnyw9YZ2QC" resolve="getCopyFromHigheModel" />
-                          <ref role="1Pybhc" to="3dui:4dLPB5z5fnx" resolve="TracingHelper" />
-                          <node concept="13iPFW" id="26bhLIqH2w4" role="37wK5m" />
+                        <node concept="2OqwBi" id="3YdlD4q1WY" role="1PxMeX">
+                          <node concept="13iPFW" id="3YdlD4q1WZ" role="2Oq$k0" />
+                          <node concept="14HDna" id="3YdlD4q1X0" role="2OqNvi" />
                         </node>
                       </node>
                     </node>
@@ -8768,7 +8770,7 @@
                   </node>
                 </node>
                 <node concept="1shVQo" id="26bhLIqH2w7" role="ccFIB">
-                  <ref role="1shVQp" to="k6mm:1aQJbq2AGCf" resolve="LiftWatchFromGenAnnoation" />
+                  <ref role="1shVQp" to="k6mm:1aQJbq2AGCf" resolve="LiftVariableFromModel" />
                 </node>
               </node>
             </node>
@@ -8780,7 +8782,7 @@
               <node concept="13iPFW" id="26bhLIqGY2V" role="2Oq$k0" />
               <node concept="3CFZ6_" id="26bhLIqGY2W" role="2OqNvi">
                 <node concept="3CFYIy" id="26bhLIqGY2X" role="3CFYIz">
-                  <ref role="3CFYIx" to="k6mm:1aQJbq2AGCf" resolve="LiftWatchFromGenAnnoation" />
+                  <ref role="3CFYIx" to="k6mm:1aQJbq2AGCf" resolve="LiftVariableFromModel" />
                 </node>
               </node>
             </node>
