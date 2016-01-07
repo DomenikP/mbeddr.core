@@ -70,9 +70,6 @@
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
-      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
-        <child id="1068580123156" name="expression" index="3clFbG" />
-      </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
@@ -149,14 +146,6 @@
       <concept id="1233748055915" name="jetbrains.mps.lang.textGen.structure.NodeParameter" flags="nn" index="117lpO" />
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
       <concept id="1233920501193" name="jetbrains.mps.lang.textGen.structure.IndentBufferOperation" flags="nn" index="1bpajm" />
-    </language>
-    <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.Text">
-      <concept id="2183551496912458834" name="DeSpec.Text.structure.TextGenNode" flags="ng" index="1$sdNm" />
-      <concept id="2183551496906316941" name="DeSpec.Text.structure.WatchLifterScopeSpecification" flags="ng" index="1B$xg9">
-        <property id="2183551496906473613" name="collectFromParent" index="1BFSw9" />
-        <child id="2183551496906473808" name="watchLifter" index="1BFSBk" />
-      </concept>
-      <concept id="2183551496906473810" name="DeSpec.Text.structure.CollectWatchesFunction" flags="ig" index="1BFSBm" />
     </language>
     <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec">
       <concept id="4859901255379446667" name="DeSpec.structure.LiftFrameAnnotation" flags="ng" index="xb3RU" />
@@ -544,21 +533,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="8PQYytV9ab" role="3cqZAp" />
-      </node>
-    </node>
-    <node concept="1B$xg9" id="5GgOWEu81X7" role="lGtFl">
-      <property role="1BFSw9" value="true" />
-      <node concept="1BFSBm" id="5GgOWEu82zv" role="1BFSBk">
-        <node concept="3clFbS" id="5GgOWEu82zw" role="2VODD2">
-          <node concept="3clFbF" id="5GgOWEu839E" role="3cqZAp">
-            <node concept="2OqwBi" id="5GgOWEu83B5" role="3clFbG">
-              <node concept="1$sdNm" id="5GgOWEu839C" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="5GgOWEu86uZ" role="2OqNvi">
-                <ref role="3TtcxE" to="x27k:4WTYg$PUiX5" />
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
     </node>
   </node>

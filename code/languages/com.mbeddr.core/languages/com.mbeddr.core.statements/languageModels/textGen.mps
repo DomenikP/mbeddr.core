@@ -160,14 +160,6 @@
         <child id="1236188238861" name="list" index="3izTki" />
       </concept>
     </language>
-    <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.Text">
-      <concept id="2183551496912458834" name="DeSpec.Text.structure.TextGenNode" flags="ng" index="1$sdNm" />
-      <concept id="2183551496906316941" name="DeSpec.Text.structure.WatchLifterScopeSpecification" flags="ng" index="1B$xg9">
-        <property id="2183551496906473613" name="collectFromParent" index="1BFSw9" />
-        <child id="2183551496906473808" name="watchLifter" index="1BFSBk" />
-      </concept>
-      <concept id="2183551496906473810" name="DeSpec.Text.structure.CollectWatchesFunction" flags="ig" index="1BFSBm" />
-    </language>
     <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec">
       <concept id="1652151343342881066" name="DeSpec.structure.LiftNameFromTextGenAnnotation" flags="ng" index="2TNDve" />
       <concept id="960223883318792076" name="DeSpec.structure.LiftValueFromTextGenAnnotation" flags="ng" index="33gQ$4">
@@ -300,21 +292,6 @@
                   </node>
                   <node concept="1bpajm" id="4jc_TWT4mqV" role="3cqZAp" />
                 </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1B$xg9" id="1Tdy8hTW16r" role="lGtFl">
-      <property role="1BFSw9" value="true" />
-      <node concept="1BFSBm" id="1Tdy8hTXnBj" role="1BFSBk">
-        <node concept="3clFbS" id="1Tdy8hTXnBk" role="2VODD2">
-          <node concept="3clFbF" id="6b$uClsFZjK" role="3cqZAp">
-            <node concept="2OqwBi" id="6b$uClsFZy1" role="3clFbG">
-              <node concept="1$sdNm" id="6b$uClsFZjJ" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="6b$uClsG0JO" role="2OqNvi">
-                <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" />
               </node>
             </node>
           </node>
