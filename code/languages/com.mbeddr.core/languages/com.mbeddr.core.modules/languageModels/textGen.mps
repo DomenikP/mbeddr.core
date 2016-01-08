@@ -148,6 +148,7 @@
       <concept id="1233920501193" name="jetbrains.mps.lang.textGen.structure.IndentBufferOperation" flags="nn" index="1bpajm" />
     </language>
     <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.Text">
+      <concept id="915776213451033839" name="DeSpec.Text.structure.StackFrameFromTextGen" flags="ng" index="Odj5M" />
       <concept id="960223883318792076" name="DeSpec.Text.structure.ValueFromTextGen" flags="ng" index="33gQ$4">
         <property id="1636870493684272922" name="takeValueLifterFromTextGen" index="29UtCg" />
       </concept>
@@ -156,9 +157,6 @@
         <property id="113139468452623849" name="category" index="12C0pm" />
         <child id="1158790772916696870" name="kind" index="2kDYOR" />
       </concept>
-    </language>
-    <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec">
-      <concept id="4859901255379446667" name="DeSpec.structure.LiftFrameAnnotation" flags="ng" index="xb3RU" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
@@ -370,7 +368,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="18IM2C55UJK" role="3cqZAp" />
         <node concept="lc7rE" id="3CmSUB7FmNv" role="3cqZAp">
           <node concept="l9hG8" id="3CmSUB7FmNw" role="lcghm">
             <node concept="2OqwBi" id="3CmSUB7FmNx" role="lb14g">
@@ -419,14 +416,14 @@
             <property role="lacIc" value=" " />
           </node>
         </node>
-        <node concept="lc7rE" id="3CmSUB7FmNA" role="3cqZAp">
-          <node concept="l9hG8" id="3CmSUB7FmNB" role="lcghm">
-            <node concept="2OqwBi" id="49lIkIo1bS4" role="lb14g">
-              <node concept="117lpO" id="49lIkIo1bD2" role="2Oq$k0" />
-              <node concept="2qgKlT" id="49lIkIo1fAW" role="2OqNvi">
+        <node concept="lc7rE" id="MPvpOSwEeK" role="3cqZAp">
+          <node concept="l9hG8" id="MPvpOSwEeL" role="lcghm">
+            <node concept="2OqwBi" id="MPvpOSwFd_" role="lb14g">
+              <node concept="117lpO" id="MPvpOSwEXA" role="2Oq$k0" />
+              <node concept="2qgKlT" id="MPvpOSwJhb" role="2OqNvi">
                 <ref role="37wK5l" to="qd6m:19a6$uAAq0e" resolve="mangledName" />
               </node>
-              <node concept="xb3RU" id="4dLPB5ynZl8" role="lGtFl" />
+              <node concept="154Fhn" id="MPvpOSwJpx" role="lGtFl" />
             </node>
           </node>
         </node>
@@ -537,6 +534,7 @@
         <node concept="3clFbH" id="8PQYytV9ab" role="3cqZAp" />
       </node>
     </node>
+    <node concept="Odj5M" id="MPvpOSwwbo" role="lGtFl" />
   </node>
   <node concept="WtQ9Q" id="1x_Jrt9NjsA">
     <property role="3GE5qa" value="functions" />
