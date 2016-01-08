@@ -517,7 +517,6 @@
         <property id="4859901255385702257" name="overwritePC" index="xN8$0" />
         <property id="1069485541163298519" name="modelName" index="3zCZQT" />
       </concept>
-      <concept id="5744371220381659397" name="DeSpec.structure.FrameNameInGenAnnotation" flags="ng" index="3JqQCP" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
@@ -1129,13 +1128,12 @@
           <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
           <node concept="3zFVjK" id="4VEDcE28$HS" role="3zH0cK">
             <node concept="3clFbS" id="4VEDcE28$HT" role="2VODD2">
-              <node concept="3clFbF" id="5r59uMnt6k4" role="3cqZAp">
-                <node concept="2OqwBi" id="5r59uMnt6rT" role="3clFbG">
-                  <node concept="30H73N" id="5r59uMnt6k2" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="5r59uMnt7qA" role="2OqNvi">
+              <node concept="3clFbF" id="MPvpOWLT$k" role="3cqZAp">
+                <node concept="2OqwBi" id="MPvpOWLTHq" role="3clFbG">
+                  <node concept="30H73N" id="MPvpOWLT$i" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="MPvpOWLUHr" role="2OqNvi">
                     <ref role="37wK5l" to="yi43:2edJ9spxTW" resolve="genFunctionName" />
                   </node>
-                  <node concept="3JqQCP" id="5r59uMntNSc" role="lGtFl" />
                 </node>
               </node>
             </node>

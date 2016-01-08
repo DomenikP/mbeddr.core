@@ -7,7 +7,7 @@
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="multiLevel.debugger" version="0" />
-    <use id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.Text" version="0" />
+    <use id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -22,6 +22,8 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="tdvr" ref="r:584f710e-f1e3-453b-bb3f-bc2f387d9f9d(DeSpec.Text.structure)" />
+    <import index="ekkt" ref="r:edea95f4-0dba-497d-b87f-82bde96f3299(DeSpec.Text.behavior)" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -112,8 +114,8 @@
       <concept id="1233748055915" name="jetbrains.mps.lang.textGen.structure.NodeParameter" flags="nn" index="117lpO" />
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
     </language>
-    <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.Text">
-      <concept id="2635294119710702094" name="DeSpec.Text.structure.LiftValueFromTextAnnotation" flags="ng" index="SA$w4">
+    <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen">
+      <concept id="2635294119710702094" name="DeSpec.TextGen.structure.ValueProviderFromTextGen" flags="ng" index="SA$w4">
         <child id="2635294119724849447" name="lifter" index="SsAGH" />
       </concept>
     </language>
@@ -545,12 +547,12 @@
                       </node>
                       <node concept="3CFZ6_" id="7qK9duioLdf" role="2OqNvi">
                         <node concept="3CFYIy" id="7qK9duioLdg" role="3CFYIz">
-                          <ref role="3CFYIx" to="k6mm:2iiswCsOs8f" resolve="LiftValueFromText" />
+                          <ref role="3CFYIx" to="tdvr:2iiswCsOs8f" resolve="LiftValueFromText" />
                         </node>
                       </node>
                     </node>
                     <node concept="2qgKlT" id="7qK9duioLdh" role="2OqNvi">
-                      <ref role="37wK5l" to="yh8:4kLkufCfXqX" resolve="liftValueFromText" />
+                      <ref role="37wK5l" to="ekkt:4kLkufCfXqX" resolve="liftValueFromText" />
                       <node concept="3$JH7q" id="7qK9duioLdi" role="37wK5m" />
                       <node concept="2Z9qAU" id="7qK9duioLdj" role="37wK5m" />
                     </node>
