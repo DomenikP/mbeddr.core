@@ -61,6 +61,8 @@
     <import index="kqhl" ref="f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project.structure.modules(MPS.Core/jetbrains.mps.project.structure.modules@java_stub)" />
     <import index="t3eg" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" />
     <import index="tdvr" ref="r:584f710e-f1e3-453b-bb3f-bc2f387d9f9d(DeSpec.Text.structure)" />
+    <import index="gx1i" ref="r:41b5cdb5-83c2-45ad-a115-8461e12c2f3f(DeSpec.Generator.structure)" />
+    <import index="2cz0" ref="r:0f113ca1-2114-4026-bc9c-67c6eacebb6d(DeSpec.Model.structure)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -331,21 +333,6 @@
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
       <concept id="17217465924316850" name="com.mbeddr.mpsutil.blutil.structure.FilterOperation" flags="ng" index="2Gpcm3">
         <reference id="17217465924316851" name="concept" index="2Gpcm2" />
-      </concept>
-      <concept id="4481811096721038000" name="com.mbeddr.mpsutil.blutil.structure.RefStep" flags="ng" index="1sh8R2">
-        <reference id="4481811096721038001" name="refLink" index="1sh8R3" />
-        <child id="4481811096721038002" name="target" index="1sh8R0" />
-      </concept>
-      <concept id="4481811096720976618" name="com.mbeddr.mpsutil.blutil.structure.ConceptRef" flags="ng" index="1shVQo">
-        <reference id="4481811096720976619" name="concept" index="1shVQp" />
-      </concept>
-      <concept id="4481811096720537459" name="com.mbeddr.mpsutil.blutil.structure.ChildStep" flags="ng" index="1sne01">
-        <reference id="4481811096720607067" name="childLink" index="1snh0D" />
-        <child id="6308171743671982944" name="value" index="ccFIB" />
-        <child id="4481811096720537463" name="children" index="1sne05" />
-      </concept>
-      <concept id="4481811096720536877" name="com.mbeddr.mpsutil.blutil.structure.BuilderExpression" flags="ng" index="1sne9v">
-        <child id="4481811096720536927" name="root" index="1sne8H" />
       </concept>
     </language>
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
@@ -4406,50 +4393,39 @@
                                                               </node>
                                                               <node concept="3CFZ6_" id="2UoM3FoCBG8" role="2OqNvi">
                                                                 <node concept="3CFYIy" id="2UoM3FoCBG9" role="3CFYIz">
-                                                                  <ref role="3CFYIx" to="k6mm:6Poal3c$GsN" resolve="LiftFrameFromGenAnnotation" />
+                                                                  <ref role="3CFYIx" to="2cz0:6Poal3c$GsN" resolve="LiftFrame2FrameFromGen" />
                                                                 </node>
                                                               </node>
                                                             </node>
                                                           </node>
                                                         </node>
-                                                        <node concept="3clFbF" id="2UoM3FoCile" role="3cqZAp">
-                                                          <node concept="37vLTI" id="2UoM3FoCFOK" role="3clFbG">
-                                                            <node concept="2OqwBi" id="2UoM3FoCjrQ" role="37vLTJ">
-                                                              <node concept="3TrEf2" id="2UoM3FoCUJK" role="2OqNvi">
-                                                                <ref role="3Tt5mk" to="k6mm:2UoM3FouUFi" />
-                                                              </node>
-                                                              <node concept="2OqwBi" id="2UoM3FoCCJV" role="2Oq$k0">
-                                                                <node concept="1PxgMI" id="2UoM3FoCCJW" role="2Oq$k0">
+                                                        <node concept="3clFbF" id="MPvpOYjl0$" role="3cqZAp">
+                                                          <node concept="37vLTI" id="MPvpOYjnHz" role="3clFbG">
+                                                            <node concept="2OqwBi" id="MPvpOYjlHr" role="37vLTJ">
+                                                              <node concept="2OqwBi" id="MPvpOYjl0A" role="2Oq$k0">
+                                                                <node concept="1PxgMI" id="MPvpOYjl0B" role="2Oq$k0">
                                                                   <ref role="1PxNhF" to="pjlr:4dLPB5yd2k3" resolve="CanContributeStackFrame" />
-                                                                  <node concept="2GrUjf" id="2UoM3FoCCJX" role="1PxMeX">
+                                                                  <node concept="2GrUjf" id="MPvpOYjl0C" role="1PxMeX">
                                                                     <ref role="2Gs0qQ" node="1cnyw9YUKdm" resolve="desc" />
                                                                   </node>
                                                                 </node>
-                                                                <node concept="3CFZ6_" id="2UoM3FoCCJY" role="2OqNvi">
-                                                                  <node concept="3CFYIy" id="2UoM3FoCCJZ" role="3CFYIz">
-                                                                    <ref role="3CFYIx" to="k6mm:6Poal3c$GsN" resolve="LiftFrameFromGenAnnotation" />
+                                                                <node concept="3CFZ6_" id="MPvpOYjl0D" role="2OqNvi">
+                                                                  <node concept="3CFYIy" id="MPvpOYjl0E" role="3CFYIz">
+                                                                    <ref role="3CFYIx" to="2cz0:6Poal3c$GsN" resolve="LiftFrame2FrameFromGen" />
                                                                   </node>
                                                                 </node>
                                                               </node>
+                                                              <node concept="3TrEf2" id="MPvpOYjmMB" role="2OqNvi">
+                                                                <ref role="3Tt5mk" to="2cz0:MPvpOYbcnO" />
+                                                              </node>
                                                             </node>
-                                                            <node concept="1sne9v" id="2UoM3FoCN1i" role="37vLTx">
-                                                              <node concept="1sne01" id="2UoM3FoCN1j" role="1sne8H">
-                                                                <ref role="1snh0D" to="tpck:4uZwTti3__2" />
-                                                                <node concept="1sh8R2" id="2UoM3FoCS8t" role="1sne05">
-                                                                  <ref role="1sh8R3" to="k6mm:2UoM3FouV4m" />
-                                                                  <node concept="1PxgMI" id="2UoM3FoCHVR" role="1sh8R0">
-                                                                    <ref role="1PxNhF" to="pjlr:4dLPB5yd2k3" resolve="CanContributeStackFrame" />
-                                                                    <node concept="2OqwBi" id="3YdlD4qQ8M" role="1PxMeX">
-                                                                      <node concept="2GrUjf" id="3YdlD4qPA8" role="2Oq$k0">
-                                                                        <ref role="2Gs0qQ" node="1cnyw9YUKdm" resolve="desc" />
-                                                                      </node>
-                                                                      <node concept="14HDna" id="3YdlD4qRdl" role="2OqNvi" />
-                                                                    </node>
-                                                                  </node>
+                                                            <node concept="1PxgMI" id="MPvpOYjoh5" role="37vLTx">
+                                                              <ref role="1PxNhF" to="pjlr:4dLPB5yd2k3" resolve="CanContributeStackFrame" />
+                                                              <node concept="2OqwBi" id="MPvpOYjoh6" role="1PxMeX">
+                                                                <node concept="2GrUjf" id="MPvpOYjoh7" role="2Oq$k0">
+                                                                  <ref role="2Gs0qQ" node="1cnyw9YUKdm" resolve="desc" />
                                                                 </node>
-                                                                <node concept="1shVQo" id="2UoM3FoCO3A" role="ccFIB">
-                                                                  <ref role="1shVQp" to="k6mm:2UoM3FouUE4" resolve="CanContributeStackFrameRef" />
-                                                                </node>
+                                                                <node concept="14HDna" id="MPvpOYjoh8" role="2OqNvi" />
                                                               </node>
                                                             </node>
                                                           </node>
@@ -4468,7 +4444,7 @@
                                                                 </node>
                                                                 <node concept="3CFZ6_" id="2UoM3FoCzex" role="2OqNvi">
                                                                   <node concept="3CFYIy" id="2UoM3FoC$iH" role="3CFYIz">
-                                                                    <ref role="3CFYIx" to="k6mm:6Poal3c$GsN" resolve="LiftFrameFromGenAnnotation" />
+                                                                    <ref role="3CFYIx" to="2cz0:6Poal3c$GsN" resolve="LiftFrame2FrameFromGen" />
                                                                   </node>
                                                                 </node>
                                                               </node>
@@ -5316,6 +5292,18 @@
                                     <node concept="TSZUe" id="4lU62XvPZtB" role="2OqNvi">
                                       <node concept="3rNLEe" id="4lU62XvPZtC" role="25WWJ7">
                                         <property role="3rM5sR" value="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3clFbF" id="6rm18p3nSA" role="3cqZAp">
+                                  <node concept="2OqwBi" id="6rm18p3nSB" role="3clFbG">
+                                    <node concept="37vLTw" id="6rm18p3nSC" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="4lU62XvN4kU" resolve="languageImports" />
+                                    </node>
+                                    <node concept="TSZUe" id="6rm18p3nSD" role="2OqNvi">
+                                      <node concept="3rNLEe" id="6rm18p3nSE" role="25WWJ7">
+                                        <property role="3rM5sR" value="b25694ab-2b70-4644-a06e-4d199f64d0c5" />
                                       </node>
                                     </node>
                                   </node>
