@@ -4162,7 +4162,7 @@
                                                                       <ref role="2Gs0qQ" node="6XLqFH6_nUU" resolve="textGenAnnotation" />
                                                                     </node>
                                                                     <node concept="2qgKlT" id="6XLqFH6_qw0" role="2OqNvi">
-                                                                      <ref role="37wK5l" to="yh8:2UoM3Foi3vF" resolve="attachGenAnnotation" />
+                                                                      <ref role="37wK5l" to="yh8:2UoM3Foi3vF" resolve="attachModelLifter" />
                                                                       <node concept="2OqwBi" id="6XLqFH6_qw1" role="37wK5m">
                                                                         <node concept="2OqwBi" id="6XLqFH6_qw2" role="2Oq$k0">
                                                                           <node concept="37vLTw" id="6XLqFH6_qw3" role="2Oq$k0">
@@ -4242,14 +4242,12 @@
                                                               </node>
                                                             </node>
                                                           </node>
-                                                          <node concept="3fqX7Q" id="2UoM3FooWvQ" role="3clFbw">
-                                                            <node concept="2OqwBi" id="2UoM3FooTpY" role="3fr31v">
-                                                              <node concept="2GrUjf" id="2UoM3Foqu$N" role="2Oq$k0">
-                                                                <ref role="2Gs0qQ" node="2UoM3FoqlqF" resolve="genAnnotation" />
-                                                              </node>
-                                                              <node concept="2qgKlT" id="2UoM3FooV0q" role="2OqNvi">
-                                                                <ref role="37wK5l" to="yh8:2UoM3FonvDc" resolve="isValid" />
-                                                              </node>
+                                                          <node concept="2OqwBi" id="2UoM3FooTpY" role="3clFbw">
+                                                            <node concept="2GrUjf" id="2UoM3Foqu$N" role="2Oq$k0">
+                                                              <ref role="2Gs0qQ" node="2UoM3FoqlqF" resolve="genAnnotation" />
+                                                            </node>
+                                                            <node concept="2qgKlT" id="3KVJl1eaQk6" role="2OqNvi">
+                                                              <ref role="37wK5l" to="yh8:3KVJl1eamBC" resolve="deleteNode" />
                                                             </node>
                                                           </node>
                                                         </node>
@@ -4393,7 +4391,7 @@
                                                               </node>
                                                               <node concept="3CFZ6_" id="2UoM3FoCBG8" role="2OqNvi">
                                                                 <node concept="3CFYIy" id="2UoM3FoCBG9" role="3CFYIz">
-                                                                  <ref role="3CFYIx" to="2cz0:6Poal3c$GsN" resolve="LiftFrame2FrameFromGen" />
+                                                                  <ref role="3CFYIx" to="2cz0:6Poal3c$GsN" resolve="LiftFrame2FrameFromModel" />
                                                                 </node>
                                                               </node>
                                                             </node>
@@ -4411,7 +4409,7 @@
                                                                 </node>
                                                                 <node concept="3CFZ6_" id="MPvpOYjl0D" role="2OqNvi">
                                                                   <node concept="3CFYIy" id="MPvpOYjl0E" role="3CFYIz">
-                                                                    <ref role="3CFYIx" to="2cz0:6Poal3c$GsN" resolve="LiftFrame2FrameFromGen" />
+                                                                    <ref role="3CFYIx" to="2cz0:6Poal3c$GsN" resolve="LiftFrame2FrameFromModel" />
                                                                   </node>
                                                                 </node>
                                                               </node>
@@ -4444,7 +4442,7 @@
                                                                 </node>
                                                                 <node concept="3CFZ6_" id="2UoM3FoCzex" role="2OqNvi">
                                                                   <node concept="3CFYIy" id="2UoM3FoC$iH" role="3CFYIz">
-                                                                    <ref role="3CFYIx" to="2cz0:6Poal3c$GsN" resolve="LiftFrame2FrameFromGen" />
+                                                                    <ref role="3CFYIx" to="2cz0:6Poal3c$GsN" resolve="LiftFrame2FrameFromModel" />
                                                                   </node>
                                                                 </node>
                                                               </node>

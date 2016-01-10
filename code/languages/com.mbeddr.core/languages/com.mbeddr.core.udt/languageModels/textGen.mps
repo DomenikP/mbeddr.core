@@ -8,7 +8,7 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="multiLevel.debugger" version="0" />
     <use id="e11c169d-9fe2-4a19-8c43-ddd8ffefd883" name="DeSpec.mbeddr" version="0" />
-    <use id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.Text" version="0" />
+    <use id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -139,14 +139,14 @@
         <child id="1236188238861" name="list" index="3izTki" />
       </concept>
     </language>
-    <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.Text">
-      <concept id="2635294119710702094" name="DeSpec.Text.structure.ValueProviderFromTextGen" flags="ng" index="SA$w4">
+    <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen">
+      <concept id="2635294119710702094" name="DeSpec.TextGen.structure.ValueProviderFromTextGen" flags="ng" index="SA$w4">
         <child id="2635294119724849447" name="lifter" index="SsAGH" />
       </concept>
-      <concept id="960223883318792076" name="DeSpec.Text.structure.ValueFromTextGen" flags="ng" index="33gQ$4" />
-      <concept id="71553305920962829" name="DeSpec.Text.structure.NameInTextGen" flags="ng" index="154Fhn" />
-      <concept id="71553305935893605" name="DeSpec.Text.structure.ValueFromTextLifterDelegateFunction" flags="ig" index="16bA4Z" />
-      <concept id="4779930313850906447" name="DeSpec.Text.structure.WatchFromTextGen" flags="ng" index="3qotS4">
+      <concept id="960223883318792076" name="DeSpec.TextGen.structure.ValueFromTextGen" flags="ng" index="33gQ$4" />
+      <concept id="71553305920962829" name="DeSpec.TextGen.structure.NameInTextGen" flags="ng" index="154Fhn" />
+      <concept id="71553305935893605" name="DeSpec.TextGen.structure.ValueFromTextLifterDelegateFunction" flags="ig" index="16bA4Z" />
+      <concept id="4779930313850906447" name="DeSpec.TextGen.structure.WatchFromTextGen" flags="ng" index="3qotS4">
         <property id="113139468452623849" name="category" index="12C0pm" />
         <child id="1158790772916696870" name="kind" index="2kDYOR" />
       </concept>
