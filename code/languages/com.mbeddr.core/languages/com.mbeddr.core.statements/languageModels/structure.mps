@@ -54,7 +54,7 @@
   <node concept="1TIwiD" id="3CmSUB7FmO3">
     <property role="TrG5h" value="Statement" />
     <property role="R4oN_" value="an empty statement" />
-    <ref role="1TJDcQ" to="pjlr:5bvBw$5wTjH" resolve="SupportsBreakpoints" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="jLLIdCm1p8" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
     </node>
@@ -78,6 +78,9 @@
     </node>
     <node concept="PrWs8" id="2S0AbPOSum6" role="PzmwI">
       <ref role="PrY4T" to="pjlr:vymDPxT3Jf" resolve="ISteppable" />
+    </node>
+    <node concept="PrWs8" id="2Up4L46iHPp" role="PzmwI">
+      <ref role="PrY4T" to="pjlr:2Up4L46iz2A" resolve="ISupportsBreakpoints" />
     </node>
   </node>
   <node concept="1TIwiD" id="3CmSUB7FprA">
