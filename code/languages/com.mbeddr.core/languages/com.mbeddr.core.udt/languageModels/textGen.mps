@@ -145,7 +145,7 @@
       </concept>
       <concept id="960223883318792076" name="DeSpec.TextGen.structure.ValueFromTextGen" flags="ng" index="33gQ$4" />
       <concept id="71553305920962829" name="DeSpec.TextGen.structure.NameInTextGen" flags="ng" index="154Fhn" />
-      <concept id="71553305935893605" name="DeSpec.TextGen.structure.ValueFromTextLifterDelegateFunction" flags="ig" index="16bA4Z" />
+      <concept id="71553305935893605" name="DeSpec.TextGen.structure.ValueFromTextGenDelegateFunction" flags="ig" index="16bA4Z" />
       <concept id="4779930313850906447" name="DeSpec.TextGen.structure.WatchFromTextGen" flags="ng" index="3qotS4">
         <property id="113139468452623849" name="category" index="12C0pm" />
         <child id="1158790772916696870" name="kind" index="2kDYOR" />
@@ -155,8 +155,6 @@
       <concept id="390482176650141561" name="DeSpec.structure.LiftConstantListExpression" flags="ng" index="23chC1">
         <child id="390482176650145019" name="constantList" index="23ciA3" />
       </concept>
-      <concept id="7778196424302042668" name="DeSpec.structure.WatchableParameter" flags="ng" index="24jiD3" />
-      <concept id="7778196424306621047" name="DeSpec.structure.WatchValueOperation" flags="ng" index="2rWWSo" />
       <concept id="2635294119724213458" name="DeSpec.structure.DelegateToNodeWithValueLifter" flags="ng" index="Sh1ro">
         <child id="2635294119727100518" name="function" index="T$01G" />
       </concept>
@@ -165,7 +163,6 @@
       </concept>
       <concept id="1702759464825222720" name="DeSpec.structure.LiftFromModelAndText" flags="ng" index="TtxNQ" />
       <concept id="1716287733388071715" name="DeSpec.structure.NodeParameter" flags="ng" index="2Z9qAU" />
-      <concept id="5260770003381287423" name="DeSpec.structure.WatchValuePresentationOperation" flags="ng" index="19$7Id" />
       <concept id="4721400539875162400" name="DeSpec.structure.ValueLifterReference" flags="ng" index="3$7n7A">
         <reference id="4721400539875162401" name="valueLifter" index="3$7n7B" />
       </concept>
@@ -1241,25 +1238,6 @@
       </node>
     </node>
     <node concept="TtxNQ" id="4Fv0ty16eBL" role="TtxNK" />
-  </node>
-  <node concept="3$x6cJ" id="4Fv0ty12vTi">
-    <property role="3GE5qa" value="enum" />
-    <property role="TrG5h" value="liftEnumDeclaration2" />
-    <ref role="3$x6cH" to="clbe:7D99css6O0r" resolve="EnumDeclaration" />
-    <node concept="TtxNQ" id="4Fv0ty12vU8" role="TtxNK" />
-    <node concept="3$x6mV" id="3YdlD7fk_Y" role="3$wKg5">
-      <node concept="3clFbS" id="3YdlD7fkA8" role="2VODD2">
-        <node concept="3clFbF" id="3YdlD7fkRv" role="3cqZAp">
-          <node concept="2OqwBi" id="3YdlD7flcy" role="3clFbG">
-            <node concept="2OqwBi" id="3YdlD7fkUL" role="2Oq$k0">
-              <node concept="24jiD3" id="3YdlD7fkRt" role="2Oq$k0" />
-              <node concept="2rWWSo" id="3YdlD7fl3O" role="2OqNvi" />
-            </node>
-            <node concept="19$7Id" id="3YdlD7fllV" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="WtQ9Q" id="3YdlD6ja5r">
     <property role="3GE5qa" value="su.struct" />
