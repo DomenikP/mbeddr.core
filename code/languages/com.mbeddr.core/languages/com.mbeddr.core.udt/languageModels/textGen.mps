@@ -9,6 +9,7 @@
     <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="multiLevel.debugger" version="0" />
     <use id="e11c169d-9fe2-4a19-8c43-ddd8ffefd883" name="DeSpec.mbeddr" version="0" />
     <use id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen" version="0" />
+    <use id="b25694ab-2b70-4644-a06e-4d199f64d0c5" name="DeSpec.Text" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -140,6 +141,9 @@
       </concept>
     </language>
     <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen">
+      <concept id="2635294119724213458" name="DeSpec.TextGen.structure.DelegateToNodeWithValueLifter" flags="ng" index="Sh1ro">
+        <child id="2635294119727100518" name="function" index="T$01G" />
+      </concept>
       <concept id="2635294119710702094" name="DeSpec.TextGen.structure.ValueProviderFromTextGen" flags="ng" index="SA$w4">
         <child id="2635294119724849447" name="lifter" index="SsAGH" />
       </concept>
@@ -150,13 +154,11 @@
         <property id="113139468452623849" name="category" index="12C0pm" />
         <child id="1158790772916696870" name="kind" index="2kDYOR" />
       </concept>
+      <concept id="3324387609297873091" name="DeSpec.TextGen.structure.LiftConstantFromTextGen" flags="ng" index="3XMB0D" />
     </language>
     <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec">
       <concept id="390482176650141561" name="DeSpec.structure.LiftConstantListExpression" flags="ng" index="23chC1">
         <child id="390482176650145019" name="constantList" index="23ciA3" />
-      </concept>
-      <concept id="2635294119724213458" name="DeSpec.structure.DelegateToNodeWithValueLifter" flags="ng" index="Sh1ro">
-        <child id="2635294119727100518" name="function" index="T$01G" />
       </concept>
       <concept id="2635294119724213690" name="DeSpec.structure.AbstractValueLifter" flags="ng" index="Sh1uK">
         <child id="1702759464825222726" name="liftFrom" index="TtxNK" />
@@ -177,7 +179,6 @@
       </concept>
       <concept id="4721400539866931063" name="DeSpec.structure.ChildrenToResolve" flags="ig" index="3$BHuL" />
       <concept id="4721400539866931457" name="DeSpec.structure.ParentValueResolver" flags="ig" index="3$BIB7" />
-      <concept id="3324387609297873091" name="DeSpec.structure.LiftConstantFromTextAnnotation" flags="ng" index="3XMB0D" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
@@ -293,9 +294,9 @@
       </node>
     </node>
     <node concept="SA$w4" id="3YdlD6ZUva" role="lGtFl">
-      <node concept="Sh1ro" id="3YdlD6ZUz_" role="SsAGH">
-        <node concept="16bA4Z" id="3YdlD6ZUzA" role="T$01G">
-          <node concept="3clFbS" id="3YdlD6ZUzB" role="2VODD2">
+      <node concept="Sh1ro" id="6QCE2J1GtZJ" role="SsAGH">
+        <node concept="16bA4Z" id="6QCE2J1GtZN" role="T$01G">
+          <node concept="3clFbS" id="6QCE2J1GtZR" role="2VODD2">
             <node concept="3clFbF" id="3YtEbp5dnfn" role="3cqZAp">
               <node concept="2OqwBi" id="3YtEbp5dnlw" role="3clFbG">
                 <node concept="2Z9qAU" id="3YtEbp5dnfm" role="2Oq$k0" />
@@ -568,9 +569,9 @@
       </node>
     </node>
     <node concept="SA$w4" id="3YdlD71V8A" role="lGtFl">
-      <node concept="Sh1ro" id="3YdlD71Vdx" role="SsAGH">
-        <node concept="16bA4Z" id="3YdlD71Vdy" role="T$01G">
-          <node concept="3clFbS" id="3YdlD71Vdz" role="2VODD2">
+      <node concept="Sh1ro" id="6QCE2J1GtzS" role="SsAGH">
+        <node concept="16bA4Z" id="6QCE2J1GtzW" role="T$01G">
+          <node concept="3clFbS" id="6QCE2J1Gt$0" role="2VODD2">
             <node concept="3clFbF" id="1qRlgEuO6P3" role="3cqZAp">
               <node concept="2OqwBi" id="1qRlgEuO6Ug" role="3clFbG">
                 <node concept="2Z9qAU" id="1qRlgEuO6P2" role="2Oq$k0" />
@@ -659,9 +660,9 @@
       </node>
     </node>
     <node concept="SA$w4" id="3YdlD70ywz" role="lGtFl">
-      <node concept="Sh1ro" id="3YdlD70y$S" role="SsAGH">
-        <node concept="16bA4Z" id="3YdlD70y$T" role="T$01G">
-          <node concept="3clFbS" id="3YdlD70y$U" role="2VODD2">
+      <node concept="Sh1ro" id="6QCE2J1Gvfi" role="SsAGH">
+        <node concept="16bA4Z" id="6QCE2J1Gvfm" role="T$01G">
+          <node concept="3clFbS" id="6QCE2J1Gvfq" role="2VODD2">
             <node concept="3clFbF" id="465Mcq$ZV0X" role="3cqZAp">
               <node concept="2OqwBi" id="465Mcq$ZV6V" role="3clFbG">
                 <node concept="2Z9qAU" id="3YdlD75Eg7" role="2Oq$k0" />
@@ -1599,9 +1600,9 @@
       </node>
     </node>
     <node concept="SA$w4" id="3YdlD95FIE" role="lGtFl">
-      <node concept="Sh1ro" id="3YdlD95G4Y" role="SsAGH">
-        <node concept="16bA4Z" id="3YdlD95G4Z" role="T$01G">
-          <node concept="3clFbS" id="3YdlD95G50" role="2VODD2">
+      <node concept="Sh1ro" id="6QCE2J1Gvkw" role="SsAGH">
+        <node concept="16bA4Z" id="6QCE2J1Gvk$" role="T$01G">
+          <node concept="3clFbS" id="6QCE2J1GvkC" role="2VODD2">
             <node concept="3clFbF" id="3YdlD95G5I" role="3cqZAp">
               <node concept="2OqwBi" id="3YdlD95Gad" role="3clFbG">
                 <node concept="2Z9qAU" id="3YdlD95G5H" role="2Oq$k0" />
@@ -1814,9 +1815,9 @@
       </node>
     </node>
     <node concept="SA$w4" id="3YdlD95HMW" role="lGtFl">
-      <node concept="Sh1ro" id="3YdlD95I02" role="SsAGH">
-        <node concept="16bA4Z" id="3YdlD95I03" role="T$01G">
-          <node concept="3clFbS" id="3YdlD95I04" role="2VODD2">
+      <node concept="Sh1ro" id="6QCE2J1Gv3e" role="SsAGH">
+        <node concept="16bA4Z" id="6QCE2J1Gv3i" role="T$01G">
+          <node concept="3clFbS" id="6QCE2J1Gv3m" role="2VODD2">
             <node concept="3clFbF" id="3YdlD95I0M" role="3cqZAp">
               <node concept="2OqwBi" id="3YdlD95I6W" role="3clFbG">
                 <node concept="2Z9qAU" id="3YdlD95I0L" role="2Oq$k0" />
