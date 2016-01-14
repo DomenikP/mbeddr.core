@@ -50,7 +50,8 @@
     <import index="3dui" ref="r:8f1039d4-1829-4754-95ac-8a801334ecda(DeSpec.runtime.plugin)" />
     <import index="lyxe" ref="r:1e4195e3-e1e5-4a37-8e8b-eab96753b17f(jetbrains.mps.lang.traceable.operations.structure)" />
     <import index="ierg" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.textgen.trace(MPS.Core/jetbrains.mps.textgen.trace@java_stub)" />
-    <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" implicit="true" />
+    <import index="2cz0" ref="r:0f113ca1-2114-4026-bc9c-67c6eacebb6d(DeSpec.Model.structure)" />
+    <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -448,12 +449,13 @@
       </concept>
     </language>
     <language id="f2600f3d-2083-4803-a693-cff3268f4af9" name="DeSpec.Model">
+      <concept id="3909489298402427250" name="" flags="ng" index="22dCEZ" />
       <concept id="3906148130290742821" name="DeSpec.Model.structure.GeneratedDelegatedValueLifterFromModel" flags="ng" index="1kf5Gy">
         <reference id="3906148130290949809" name="delegatetoNodeSpec" index="1kejeQ" />
       </concept>
     </language>
     <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec">
-      <concept id="3909489298402427250" name="DeSpec.structure.LiftValueFromModel" flags="ng" index="22dCEZ">
+      <concept id="3909489298402427250" name="DeSpec.structure.LiftValueFromModel" flags="ng" index="22dCF0">
         <reference id="3909489298402427423" name="copier" index="22dCBi" />
         <reference id="3909489298402427425" name="valueLifter" index="22dCBG" />
       </concept>
@@ -946,7 +948,7 @@
                     </node>
                   </node>
                   <node concept="1kf5Gy" id="Bg$PwDpVAu" role="lGtFl">
-                    <ref role="1kejeQ" to="1ukv:3oPrgtyIlLT" resolve="typeDefType2StructType" />
+                    <ref role="1kejeQ" to="1ukv:3Tngk4BJN0I" resolve="typeDefType2StructType2" />
                   </node>
                 </node>
               </node>
@@ -5495,7 +5497,7 @@
                                     </node>
                                     <node concept="3CFZ6_" id="3qmEyCk4gP0" role="2OqNvi">
                                       <node concept="3CFYIy" id="3qmEyCk4jqe" role="3CFYIz">
-                                        <ref role="3CFYIx" to="k6mm:3p1iWQOtW5M" resolve="LiftValueFromModel" />
+                                        <ref role="3CFYIx" to="2cz0:3p1iWQOtW5M" resolve="LiftValueFromModel" />
                                       </node>
                                     </node>
                                   </node>
@@ -5559,12 +5561,12 @@
                                       </node>
                                       <node concept="3CFZ6_" id="3qmEyCk4maZ" role="2OqNvi">
                                         <node concept="3CFYIy" id="3qmEyCk4mb0" role="3CFYIz">
-                                          <ref role="3CFYIx" to="k6mm:3p1iWQOtW5M" resolve="LiftValueFromModel" />
+                                          <ref role="3CFYIx" to="2cz0:3p1iWQOtW5M" resolve="LiftValueFromModel" />
                                         </node>
                                       </node>
                                     </node>
                                     <node concept="3TrEf2" id="3qmEyCk4mXK" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="k6mm:3p1iWQOtW8x" />
+                                      <ref role="3Tt5mk" to="2cz0:3p1iWQOtW8x" />
                                     </node>
                                   </node>
                                   <node concept="37vLTw" id="3qmEyCk759t" role="37vLTx">
