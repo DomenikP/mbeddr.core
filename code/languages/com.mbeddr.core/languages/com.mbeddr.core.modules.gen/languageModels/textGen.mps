@@ -7,7 +7,8 @@
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="multiLevel.debugger" version="0" />
-    <use id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.Text" version="0" />
+    <use id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen" version="0" />
+    <use id="b25694ab-2b70-4644-a06e-4d199f64d0c5" name="DeSpec.Text" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -118,27 +119,22 @@
       <concept id="1233748055915" name="jetbrains.mps.lang.textGen.structure.NodeParameter" flags="nn" index="117lpO" />
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
     </language>
-    <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.Text">
-      <concept id="2635294119710702094" name="DeSpec.Text.structure.ValueProviderFromTextGen" flags="ng" index="SA$w4">
-        <child id="2635294119724849447" name="lifter" index="SsAGH" />
+    <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen">
+      <concept id="7901750452157038064" name="" flags="ng" index="2DcDnr" />
+      <concept id="2635294119710702094" name="DeSpec.TextGen.structure.ValueProviderFromTextGen" flags="ng" index="SA$w4">
+        <child id="6400245134476181865" name="valueLifter" index="1FczLz" />
+      </concept>
+      <concept id="4721400539875162400" name="DeSpec.TextGen.structure.ValueLifterReference" flags="ng" index="3$7n7A">
+        <reference id="6400245134476108722" name="valueFromTextLifter" index="1F3dUS" />
       </concept>
     </language>
     <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec">
-      <concept id="7778196424302042668" name="DeSpec.structure.WatchableParameter" flags="ng" index="24jiD3" />
-      <concept id="7778196424306621047" name="DeSpec.structure.WatchValueOperation" flags="ng" index="2rWWSo" />
-      <concept id="1349045547475303338" name="DeSpec.structure.IValueLifter" flags="ng" index="LFFTH">
-        <child id="1349045547475305159" name="liftFrom" index="LF$s0" />
+      <concept id="7901750452157980955" name="DeSpec.structure.IValueLifterRoot" flags="ng" index="2D00$K">
+        <reference id="6400245134554606255" name="concept" index="1wnDu_" />
+        <child id="6400245134554606261" name="valueLifterFunction" index="1wnDuZ" />
       </concept>
-      <concept id="1702759464825222720" name="DeSpec.structure.LiftFromModelAndText" flags="ng" index="TtxNQ" />
-      <concept id="5260770003381287423" name="DeSpec.structure.WatchValuePresentationOperation" flags="ng" index="19$7Id" />
-      <concept id="4721400539875162400" name="DeSpec.structure.ValueLifterReference" flags="ng" index="3$7n7A">
-        <reference id="4721400539875162401" name="valueLifter" index="3$7n7B" />
-      </concept>
-      <concept id="4721400539865263081" name="DeSpec.structure.ExternalValueLifter" flags="ng" index="3$x6cJ">
-        <reference id="4721400539865263083" name="concept" index="3$x6cH" />
-        <child id="4721400539865599171" name="value" index="3$wKg5" />
-      </concept>
-      <concept id="4721400539865263485" name="DeSpec.structure.PrimitiveValue" flags="ig" index="3$x6mV" />
+      <concept id="7901750452160634178" name="DeSpec.structure.WatchParameter" flags="ng" index="2DurlD" />
+      <concept id="7901750452160649799" name="DeSpec.structure.PrimitiveValueFunction" flags="ig" index="2Duv9G" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
@@ -1329,9 +1325,9 @@
         </node>
       </node>
     </node>
-    <node concept="SA$w4" id="3YdlD89md9" role="lGtFl">
-      <node concept="3$7n7A" id="3YdlD89mmx" role="SsAGH">
-        <ref role="3$7n7B" node="7ZqGTTqKyTm" resolve="liftCFunctionPointerTypedef" />
+    <node concept="SA$w4" id="5zifgCOvpEl" role="lGtFl">
+      <node concept="3$7n7A" id="5zifgCOvpNJ" role="1FczLz">
+        <ref role="1F3dUS" node="5zifgCOl7XZ" resolve="liftCFunctionPointerTypedefValue" />
       </node>
     </node>
   </node>
@@ -1592,25 +1588,6 @@
       </node>
     </node>
   </node>
-  <node concept="3$x6cJ" id="7ZqGTTqKyTm">
-    <property role="3GE5qa" value="functionpointer" />
-    <property role="TrG5h" value="liftCFunctionPointerTypedef" />
-    <ref role="3$x6cH" to="d0vh:1TZvYzh_YZV" resolve="CFunctionPointerTypedef" />
-    <node concept="3$x6mV" id="7ZqGTTqKyTr" role="3$wKg5">
-      <node concept="3clFbS" id="7ZqGTTqKyTt" role="2VODD2">
-        <node concept="3clFbF" id="3YdlD8RZty" role="3cqZAp">
-          <node concept="2OqwBi" id="3YdlD8RZVB" role="3clFbG">
-            <node concept="2OqwBi" id="3YdlD8RZwO" role="2Oq$k0">
-              <node concept="24jiD3" id="3YdlD8RZtw" role="2Oq$k0" />
-              <node concept="2rWWSo" id="3YdlD8RZDR" role="2OqNvi" />
-            </node>
-            <node concept="19$7Id" id="3YdlD8S05Z" role="2OqNvi" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="TtxNQ" id="3YdlD8RZ6M" role="LF$s0" />
-  </node>
   <node concept="WtQ9Q" id="3EISKF12PHi">
     <property role="3GE5qa" value="module" />
     <ref role="WuzLi" to="d0vh:1x_Jrt9Mwpr" resolve="GenModuleC" />
@@ -1690,6 +1667,28 @@
             <node concept="117lpO" id="3EISKF12PWE" role="2Oq$k0" />
             <node concept="3TrcHB" id="3EISKF12PWF" role="2OqNvi">
               <ref role="3TsBF5" to="d0vh:3N$tYyGbKra" resolve="fileExtension" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2DcDnr" id="5zifgCOl7XZ">
+    <property role="3GE5qa" value="functionpointer" />
+    <property role="TrG5h" value="liftCFunctionPointerTypedefValue" />
+    <ref role="1wnDu_" to="d0vh:1TZvYzh_YZV" resolve="CFunctionPointerTypedef" />
+    <node concept="2Duv9G" id="5zifgCOl7Yb" role="1wnDuZ">
+      <node concept="3clFbS" id="5zifgCOl7Yd" role="2VODD2">
+        <node concept="3clFbF" id="5zifgCOl83T" role="3cqZAp">
+          <node concept="2OqwBi" id="5zifgCOl8nB" role="3clFbG">
+            <node concept="2OqwBi" id="5zifgCOl871" role="2Oq$k0">
+              <node concept="2DurlD" id="5zifgCOl83S" role="2Oq$k0" />
+              <node concept="liA8E" id="5zifgCOl8k8" role="2OqNvi">
+                <ref role="37wK5l" to="pry4:3SnNvqCaK40" resolve="getValue" />
+              </node>
+            </node>
+            <node concept="liA8E" id="5zifgCOl8Er" role="2OqNvi">
+              <ref role="37wK5l" to="pry4:3SnNvqCaJI1" resolve="getValuePresentation" />
             </node>
           </node>
         </node>
