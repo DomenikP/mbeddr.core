@@ -9,6 +9,7 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="multiLevel.debugger" version="0" />
     <use id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec" version="0" />
+    <use id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" name="DeSpec.Generator" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -27,11 +28,17 @@
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
     <import index="pry4" ref="r:0a0d7eec-6e5a-412b-8e16-e3ee5ed7fb95(jetbrains.mps.debug.api.programState)" />
     <import index="k6mm" ref="r:0115dd04-77e7-4bb3-82d3-a1ee26c68cd7(DeSpec.structure)" />
+    <import index="c41m" ref="r:e59b8b52-a612-49b8-a0a3-6610af7b7d80(multiLevel.debugger.behavior)" />
+    <import index="pjlr" ref="r:0a66b211-d40a-4a81-8cc2-746eb50a3781(multiLevel.debugger.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="c41m" ref="r:e59b8b52-a612-49b8-a0a3-6610af7b7d80(multiLevel.debugger.behavior)" implicit="true" />
-    <import index="pjlr" ref="r:0a66b211-d40a-4a81-8cc2-746eb50a3781(multiLevel.debugger.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" name="DeSpec.Generator">
+      <concept id="3906148130290944556" name="DeSpec.Generator.structure.ValueTransformer" flags="ng" index="1keisF">
+        <reference id="3906148130291051147" name="toConcept" index="1ke8uc" />
+        <child id="7778196424307964569" name="treeSpec" index="2rTOVQ" />
+      </concept>
+    </language>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
       <concept id="6496299201655527393" name="jetbrains.mps.lang.behavior.structure.LocalBehaviorMethodCall" flags="nn" index="BsUDl" />
       <concept id="1225194240794" name="jetbrains.mps.lang.behavior.structure.ConceptBehavior" flags="ng" index="13h7C7">
@@ -202,13 +209,6 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
-      </concept>
-    </language>
-    <language id="f2600f3d-2083-4803-a693-cff3268f4af9" name="DeSpec.Model">
-      <concept id="3906148130290944556" name="DeSpec.Model.structure.ValueTransformer" flags="ng" index="1keisF">
-        <reference id="3906148130291051010" name="fromConcept" index="1ke8s5" />
-        <reference id="3906148130291051147" name="toConcept" index="1ke8uc" />
-        <child id="7778196424307964569" name="treeSpec" index="2rTOVQ" />
       </concept>
     </language>
     <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec">
@@ -2891,18 +2891,8 @@
   </node>
   <node concept="1keisF" id="3oPrgty8cCs">
     <property role="TrG5h" value="typDef2EnumDecl" />
-    <ref role="1ke8uc" to="clbe:7D99css6O0r" resolve="EnumDeclaration" />
-    <ref role="1ke8s5" to="clbe:5jyom5fO9Cn" resolve="TypeDefType" />
     <ref role="1wnDu_" to="clbe:5jyom5fO9Cn" resolve="TypeDefType" />
-    <node concept="2rOcTW" id="6JLH6ZKgkT$" role="2rTOVQ">
-      <ref role="2rWLPz" to="clbe:5yYXyc4Z0CS" resolve="StructType" />
-      <node concept="2rOcTW" id="6JLH6ZKwghq" role="2rRdKa">
-        <ref role="2rWLPz" to="yq40:4VhroexOKM1" resolve="ArrayType" />
-        <node concept="2rWMFC" id="6JLH6ZKyDH1" role="2rRdKa">
-          <ref role="2rWLPz" to="mj1l:7FQByU3CrCU" resolve="BooleanType" />
-        </node>
-      </node>
-    </node>
+    <ref role="1ke8uc" to="clbe:7D99css6O0r" resolve="EnumDeclaration" />
     <node concept="3Jb6iT" id="1FDMTVRi_wm" role="1wnDuZ">
       <node concept="3clFbS" id="1FDMTVRi_wn" role="2VODD2">
         <node concept="3clFbF" id="1FDMTVRi_CB" role="3cqZAp">
@@ -2928,12 +2918,20 @@
         </node>
       </node>
     </node>
+    <node concept="2rOcTW" id="6JLH6ZKgkT$" role="2rTOVQ">
+      <ref role="2rWLPz" to="clbe:5yYXyc4Z0CS" resolve="StructType" />
+      <node concept="2rOcTW" id="6JLH6ZKwghq" role="2rRdKa">
+        <ref role="2rWLPz" to="yq40:4VhroexOKM1" resolve="ArrayType" />
+        <node concept="2rWMFC" id="6JLH6ZKyDH1" role="2rRdKa">
+          <ref role="2rWLPz" to="mj1l:7FQByU3CrCU" resolve="BooleanType" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1keisF" id="3oPrgtyIi_X">
     <property role="TrG5h" value="typeDef2StructDecl" />
-    <ref role="1ke8s5" to="clbe:5jyom5fO9Ch" resolve="TypeDef" />
-    <ref role="1ke8uc" to="clbe:5yYXyc4Z0CJ" resolve="StructDeclaration" />
     <ref role="1wnDu_" to="clbe:5jyom5fO9Ch" resolve="TypeDef" />
+    <ref role="1ke8uc" to="clbe:5yYXyc4Z0CJ" resolve="StructDeclaration" />
     <node concept="3Jb6iT" id="1FDMTVRiB79" role="1wnDuZ">
       <node concept="3clFbS" id="1FDMTVRiB7a" role="2VODD2">
         <node concept="3clFbF" id="1FDMTVRiBay" role="3cqZAp">
