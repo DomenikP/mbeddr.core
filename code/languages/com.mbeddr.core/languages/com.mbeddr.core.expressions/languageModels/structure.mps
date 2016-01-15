@@ -148,9 +148,6 @@
     <node concept="PrWs8" id="3RtPbXOi6a7" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3RtPbXOi5Ir" resolve="ITriggerCommenting" />
     </node>
-    <node concept="PrWs8" id="PjpCze9pDH" role="PzmwI">
-      <ref role="PrY4T" to="pjlr:PjpCze5iKR" resolve="LiftWatchValueFromText" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7FQByU3CrCS">
     <property role="TrG5h" value="PrimitiveType" />
