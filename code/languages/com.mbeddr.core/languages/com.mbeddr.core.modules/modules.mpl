@@ -144,6 +144,7 @@
     <dependency reexport="false">f3eac385-54e3-4a21-896a-eb362971f50b(DeSpec.runtime)</dependency>
     <dependency reexport="false">11a0cd79-9f2e-4665-a280-57a3cc526924(DeSpec)</dependency>
     <dependency reexport="false">f2600f3d-2083-4803-a693-cff3268f4af9(DeSpec.Model)</dependency>
+    <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</usedLanguage>
@@ -176,15 +177,23 @@
     <usedLanguage>e11c169d-9fe2-4a19-8c43-ddd8ffefd883(DeSpec.mbeddr)</usedLanguage>
     <usedLanguage>ce1120c1-075f-4f11-a8fc-36ddbe2de15f(DeSpec.Text)</usedLanguage>
     <usedLanguage>59a09bf6-2b13-49ef-80d1-741985a7f0ed(Tracing)</usedLanguage>
+    <usedLanguage>d09a16fb-1d68-4a92-a5a4-20b4b2f86a62(com.mbeddr.mpsutil.jung)</usedLanguage>
+    <usedLanguage>92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</usedLanguage>
+    <usedLanguage>b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)</usedLanguage>
+    <usedLanguage>479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</usedLanguage>
+    <usedLanguage>f2600f3d-2083-4803-a693-cff3268f4af9(DeSpec.Model)</usedLanguage>
+    <usedLanguage>d063e9e6-a068-4a98-b5b4-a42dc5a1cf00(DeSpec.Generator)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
   <languageVersions>
-    <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" fqName="DeSpec" version="0" />
+    <language id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" fqName="DeSpec.Generator" version="0" />
+    <language id="f2600f3d-2083-4803-a693-cff3268f4af9" fqName="DeSpec.Model" version="0" />
     <language id="b25694ab-2b70-4644-a06e-4d199f64d0c5" fqName="DeSpec.Text" version="0" />
     <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" fqName="DeSpec.TextGen" version="0" />
+    <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" fqName="DeSpec.base" version="0" />
     <language id="e11c169d-9fe2-4a19-8c43-ddd8ffefd883" fqName="DeSpec.mbeddr" version="0" />
     <language id="59a09bf6-2b13-49ef-80d1-741985a7f0ed" fqName="Tracing" version="0" />
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" fqName="com.mbeddr.core.base" version="0" />

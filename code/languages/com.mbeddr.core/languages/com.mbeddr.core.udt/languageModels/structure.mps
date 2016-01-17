@@ -247,7 +247,7 @@
       <ref role="PrY4T" to="vs0r:2GIWVTRH8Wo" resolve="IControlledNamedConcept" />
     </node>
     <node concept="PrWs8" id="1fTJB2Zrs8S" role="PzmwI">
-      <ref role="PrY4T" to="pjlr:1rHBIiJ9Pyb" resolve="WatchDeclartion" />
+      <ref role="PrY4T" to="pjlr:1rHBIiJ9Pyb" resolve="WatchProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="56ytRgsLodU">
@@ -532,6 +532,9 @@
     </node>
     <node concept="PrWs8" id="1dVUzz9f3Wj" role="PzmwI">
       <ref role="PrY4T" to="x27k:3o2OLGv6VBP" resolve="ITypeDeclaration" />
+    </node>
+    <node concept="PrWs8" id="6P1S2fVpZFo" role="PzmwI">
+      <ref role="PrY4T" to="pjlr:6P1S2fVlatx" resolve="ValueProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="2H3Yrqdbnnx">

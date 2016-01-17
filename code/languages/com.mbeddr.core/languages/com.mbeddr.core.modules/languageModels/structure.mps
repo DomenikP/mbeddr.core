@@ -116,7 +116,7 @@
       <ref role="PrY4T" to="vs0r:1DVNPtFPJFZ" resolve="IOutlineRoot" />
     </node>
     <node concept="PrWs8" id="1vhuDACnVTt" role="PzmwI">
-      <ref role="PrY4T" to="pjlr:PjpCzdQT6j" resolve="WatchDeclarationScope" />
+      <ref role="PrY4T" to="pjlr:PjpCzdQT6j" resolve="WatchProviderScope" />
     </node>
   </node>
   <node concept="1TIwiD" id="5_l8w1EmTde">
@@ -274,7 +274,7 @@
       <ref role="PrY4T" to="pjlr:4dLPB5yd2k3" resolve="CanContributeStackFrame" />
     </node>
     <node concept="PrWs8" id="PjpCzdSg_7" role="PzmwI">
-      <ref role="PrY4T" to="pjlr:PjpCzdQT6j" resolve="WatchDeclarationScope" />
+      <ref role="PrY4T" to="pjlr:PjpCzdQT6j" resolve="WatchProviderScope" />
     </node>
   </node>
   <node concept="1TIwiD" id="6Q7bJ$$my3n">
@@ -293,7 +293,7 @@
       <ref role="PrY4T" to="c4fa:52l0VUuN5O_" resolve="ICanBeStoredInRegister" />
     </node>
     <node concept="PrWs8" id="1vhuDACMrPi" role="PzmwI">
-      <ref role="PrY4T" to="pjlr:1rHBIiJ9Pyb" resolve="WatchDeclartion" />
+      <ref role="PrY4T" to="pjlr:1rHBIiJ9Pyb" resolve="WatchProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="7LOsK3rQkU_">
@@ -447,7 +447,7 @@
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
     <node concept="PrWs8" id="1vhuDABxgP3" role="PzmwI">
-      <ref role="PrY4T" to="pjlr:1rHBIiJ9Pyb" resolve="WatchDeclartion" />
+      <ref role="PrY4T" to="pjlr:1rHBIiJ9Pyb" resolve="WatchProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="3ilck8KpYYm">
@@ -722,7 +722,7 @@
       <ref role="PrY4T" to="mj1l:1LDGRqyYkTP" resolve="IVariableDeclaration" />
     </node>
     <node concept="PrWs8" id="PjpCzdS_J5" role="PrDN$">
-      <ref role="PrY4T" to="pjlr:1rHBIiJ9Pyb" resolve="WatchDeclartion" />
+      <ref role="PrY4T" to="pjlr:1rHBIiJ9Pyb" resolve="WatchProvider" />
     </node>
   </node>
   <node concept="PlHQZ" id="3hgxKzbiKKM">
@@ -1264,6 +1264,9 @@
     <property role="TrG5h" value="ITypeDeclaration" />
     <node concept="PrWs8" id="3o2OLGv6VGb" role="PrDN$">
       <ref role="PrY4T" node="5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
+    <node concept="PrWs8" id="1taDvhFITjS" role="PrDN$">
+      <ref role="PrY4T" to="pjlr:6P1S2fVlatx" resolve="ValueProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="7x9scHw5pU_">

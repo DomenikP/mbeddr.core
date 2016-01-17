@@ -8,7 +8,7 @@
     <use id="f2600f3d-2083-4803-a693-cff3268f4af9" name="DeSpec.Model" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="multiLevel.debugger" version="0" />
-    <use id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec" version="0" />
+    <use id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec.base" version="0" />
     <use id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" name="DeSpec.Generator" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -211,20 +211,20 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
-    <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec">
-      <concept id="7778196424308652563" name="DeSpec.structure.FromComplexValueSpec" flags="ng" index="2rOcTW">
+    <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec.base">
+      <concept id="7778196424308652563" name="DeSpec.base.structure.FromComplexValueSpec" flags="ng" index="2rOcTW">
         <child id="7778196424309434469" name="childValueProvider" index="2rRdKa" />
       </concept>
-      <concept id="7778196424306632333" name="DeSpec.structure.FromValueSpec" flags="ng" index="2rWLby">
+      <concept id="7778196424306632333" name="DeSpec.base.structure.FromValueSpec" flags="ng" index="2rWLby">
         <reference id="7778196424306632972" name="valueProvider" index="2rWLPz" />
       </concept>
-      <concept id="7778196424306630279" name="DeSpec.structure.FromPrimitiveValueSpec" flags="ng" index="2rWMFC" />
-      <concept id="7901750452157980955" name="DeSpec.structure.IValueLifterRoot" flags="ng" index="2D00$K">
+      <concept id="7778196424306630279" name="DeSpec.base.structure.FromPrimitiveValueSpec" flags="ng" index="2rWMFC" />
+      <concept id="7901750452157980955" name="DeSpec.base.structure.IValueLifterRoot" flags="ng" index="2D00$K">
         <reference id="6400245134554606255" name="concept" index="1wnDu_" />
         <child id="6400245134554606261" name="valueLifterFunction" index="1wnDuZ" />
       </concept>
-      <concept id="7901750452160627013" name="DeSpec.structure.CurrentNodeParameter" flags="ng" index="2Duq_I" />
-      <concept id="1939304998148353831" name="DeSpec.structure.DelegateToNodeWithValueLifter" flags="ig" index="3Jb6iT" />
+      <concept id="7901750452160627013" name="DeSpec.base.structure.CurrentNodeParameter" flags="ng" index="2Duq_I" />
+      <concept id="1939304998148353831" name="DeSpec.base.structure.DelegateToNodeWithValueLifter" flags="ig" index="3Jb6iT" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1204834851141" name="jetbrains.mps.lang.smodel.structure.PoundExpression" flags="ng" index="25Kdxt">
@@ -482,42 +482,6 @@
         </node>
       </node>
       <node concept="10P_77" id="2n$6b5$5Zof" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="1vhuDAC7Hmy" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="collectWatchDeclarations" />
-      <ref role="13i0hy" to="c41m:PjpCzdQTk3" resolve="collectWatchDeclarations" />
-      <node concept="3Tm1VV" id="1vhuDAC7Hmz" role="1B3o_S" />
-      <node concept="3clFbS" id="1vhuDAC7Hmu" role="3clF47">
-        <node concept="3clFbF" id="PjpCzdSvY4" role="3cqZAp">
-          <node concept="2OqwBi" id="PjpCzdSwqr" role="3clFbG">
-            <node concept="37vLTw" id="PjpCzdSvY2" role="2Oq$k0">
-              <ref role="3cqZAo" node="1vhuDAC7Hm$" resolve="resultList" />
-            </node>
-            <node concept="X8dFx" id="PjpCzdSzOl" role="2OqNvi">
-              <node concept="2OqwBi" id="PjpCzdRRkU" role="25WWJ7">
-                <node concept="2OqwBi" id="PjpCzdROe1" role="2Oq$k0">
-                  <node concept="13iPFW" id="PjpCzdRO3u" role="2Oq$k0" />
-                  <node concept="3Tsc0h" id="1vhuDACobdn" role="2OqNvi">
-                    <ref role="3TtcxE" to="d0vh:1x_Jrt9Mwpt" />
-                  </node>
-                </node>
-                <node concept="2Gpcm3" id="PjpCzdSgmJ" role="2OqNvi">
-                  <ref role="2Gpcm2" to="pjlr:1rHBIiJ9Pyb" resolve="WatchDeclartion" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="1vhuDAC7Hm$" role="3clF46">
-        <property role="TrG5h" value="resultList" />
-        <node concept="2I9FWS" id="1vhuDAC7Hm_" role="1tU5fm">
-          <ref role="2I9WkF" to="pjlr:1rHBIiJ9Pyb" resolve="WatchDeclartion" />
-        </node>
-      </node>
-      <node concept="3cqZAl" id="1vhuDAC7HmA" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="1oIA7EcBtRm">

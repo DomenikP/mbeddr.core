@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="-1" />
-    <use id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec" version="0" />
+    <use id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec.base" version="0" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="multiLevel.debugger" version="0" />
@@ -159,22 +159,22 @@
       </concept>
       <concept id="3324387609297873091" name="DeSpec.TextGen.structure.LiftConstantFromTextGen" flags="ng" index="3XMB0D" />
     </language>
-    <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec">
-      <concept id="390482176650141561" name="DeSpec.structure.LiftConstantListExpression" flags="ng" index="23chC1">
+    <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec.base">
+      <concept id="390482176650141561" name="DeSpec.base.structure.LiftConstantListExpression" flags="ng" index="23chC1">
         <child id="390482176650145019" name="constantList" index="23ciA3" />
       </concept>
-      <concept id="7901750452157980955" name="DeSpec.structure.IValueLifterRoot" flags="ng" index="2D00$K">
+      <concept id="7901750452157980955" name="DeSpec.base.structure.IValueLifterRoot" flags="ng" index="2D00$K">
         <reference id="6400245134554606255" name="concept" index="1wnDu_" />
         <child id="6400245134554606261" name="valueLifterFunction" index="1wnDuZ" />
       </concept>
-      <concept id="7901750452160627013" name="DeSpec.structure.CurrentNodeParameter" flags="ng" index="2Duq_I" />
-      <concept id="7901750452160649799" name="DeSpec.structure.PrimitiveValueFunction" flags="ig" index="2Duv9G" />
-      <concept id="6400245134467658400" name="DeSpec.structure.LiftOverChildrenChildValues" flags="ig" index="1FzWYE" />
-      <concept id="6400245134465907207" name="DeSpec.structure.ComplexValueFunction" flags="ng" index="1F$gsd">
+      <concept id="7901750452160627013" name="DeSpec.base.structure.CurrentNodeParameter" flags="ng" index="2Duq_I" />
+      <concept id="7901750452160649799" name="DeSpec.base.structure.PrimitiveValueFunction" flags="ig" index="2Duv9G" />
+      <concept id="6400245134467658400" name="DeSpec.base.structure.LiftOverChildrenChildValues" flags="ig" index="1FzWYE" />
+      <concept id="6400245134465907207" name="DeSpec.base.structure.ComplexValueFunction" flags="ng" index="1F$gsd">
         <child id="6400245134467656301" name="childValues" index="1FzXtB" />
         <child id="6400245134465915961" name="rootValue" index="1F$m4N" />
       </concept>
-      <concept id="6400245134465915240" name="DeSpec.structure.RootValueFunction" flags="ig" index="1F$mhy" />
+      <concept id="6400245134465915240" name="DeSpec.base.structure.RootValueFunction" flags="ig" index="1F$mhy" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
@@ -2060,7 +2060,7 @@
               </node>
               <node concept="v3k3i" id="5zifgCOoh40" role="2OqNvi">
                 <node concept="chp4Y" id="5zifgCOohoa" role="v3oSu">
-                  <ref role="cht4Q" to="pjlr:1rHBIiJ9Pyb" resolve="WatchDeclartion" />
+                  <ref role="cht4Q" to="pjlr:1rHBIiJ9Pyb" resolve="WatchProvider" />
                 </node>
               </node>
             </node>
