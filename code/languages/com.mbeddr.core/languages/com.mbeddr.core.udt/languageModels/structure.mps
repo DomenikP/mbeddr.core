@@ -306,6 +306,9 @@
     <node concept="PrWs8" id="59HbAIOYF6w" role="PzmwI">
       <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
     </node>
+    <node concept="PrWs8" id="7yWdW8OUnNd" role="PzmwI">
+      <ref role="PrY4T" to="pjlr:6P1S2fVlatx" resolve="ValueProvider" />
+    </node>
     <node concept="1TJgyj" id="6a5SBPfXXIi" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="members" />

@@ -18,15 +18,14 @@
   <registry>
     <language id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" name="DeSpec.Generator">
       <concept id="7872820068767882943" name="DeSpec.Generator.structure.ValueProviderSpec" flags="ng" index="2me3Us">
+        <child id="4369017833403020933" name="valueSpecification" index="1PXawn" />
         <child id="1678336280335602580" name="valueCopyFunc" index="1WhRpw" />
-        <child id="1678336280335602579" name="valueStructure" index="1WhRpB" />
       </concept>
     </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -43,9 +42,6 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
-        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
-      </concept>
     </language>
     <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec.base">
       <concept id="7872820068764272051" name="DeSpec.base.structure.WatchScopeProviderSpec" flags="ng" index="2m0Mmg">
@@ -57,10 +53,20 @@
         <reference id="3304628195161099586" name="applicableConcept" index="2qziyn" />
       </concept>
       <concept id="3304628195161109397" name="DeSpec.base.structure.BooleanFunction" flags="ig" index="2qzhp0" />
+      <concept id="7778196424306621047" name="DeSpec.base.structure.WatchValueOperation" flags="ng" index="2rWWSo" />
       <concept id="7901750452160627013" name="DeSpec.base.structure.CurrentNodeParameter" flags="ng" index="2Duq_I" />
       <concept id="7901750452160634178" name="DeSpec.base.structure.WatchParameter" flags="ng" index="2DurlD" />
       <concept id="7901750452160649799" name="DeSpec.base.structure.PrimitiveValueFunction" flags="ig" index="2Duv9G" />
-      <concept id="1702759464834101403" name="DeSpec.base.structure.PrimitiveValueSpec" flags="ng" index="SZTCH" />
+      <concept id="5260770003381287423" name="DeSpec.base.structure.WatchValuePresentationOperation" flags="ng" index="19$7Id" />
+      <concept id="4369017833403014967" name="DeSpec.base.structure.ReferenceSemantics" flags="ng" index="1PX86_" />
+      <concept id="4369017833403014429" name="DeSpec.base.structure.IValueSpecification" flags="ng" index="1PX8ef">
+        <child id="4369017833403014786" name="semantics" index="1PX80g" />
+      </concept>
+      <concept id="4369017833403013719" name="DeSpec.base.structure.IWatchSpecification" flags="ng" index="1PX8j5">
+        <child id="4369017833403225127" name="value" index="1PYkEP" />
+      </concept>
+      <concept id="4369017833403013891" name="DeSpec.base.structure.ThisWatchSpecification" flags="ng" index="1PX8mh" />
+      <concept id="4369017833403016750" name="DeSpec.base.structure.PrimitiveValueSpecification" flags="ng" index="1PXbyW" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -121,40 +127,18 @@
           <node concept="2OqwBi" id="1taDvhFBqwl" role="3clFbG">
             <node concept="2OqwBi" id="1taDvhFBqwm" role="2Oq$k0">
               <node concept="2DurlD" id="1taDvhFBqwn" role="2Oq$k0" />
-              <node concept="liA8E" id="1taDvhFBqwo" role="2OqNvi">
-                <ref role="37wK5l" to="pry4:3SnNvqCaK40" resolve="getValue" />
-              </node>
+              <node concept="2rWWSo" id="7yWdW8ONBnU" role="2OqNvi" />
             </node>
-            <node concept="liA8E" id="1taDvhFBqwp" role="2OqNvi">
-              <ref role="37wK5l" to="pry4:3SnNvqCaJI1" resolve="getValuePresentation" />
-            </node>
+            <node concept="19$7Id" id="7yWdW8ONBDB" role="2OqNvi" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="SZTCH" id="1taDvhFBqwq" role="1WhRpB" />
-  </node>
-  <node concept="2me3Us" id="1taDvhFBqwr">
-    <property role="TrG5h" value="EnumType_ValueProviderSpec" />
-    <ref role="2qziyn" to="clbe:7D99css6O15" resolve="EnumType" />
-    <node concept="2Duv9G" id="1taDvhFBqw_" role="1WhRpw">
-      <node concept="3clFbS" id="1taDvhFBqwA" role="2VODD2">
-        <node concept="3clFbF" id="1taDvhFBqwB" role="3cqZAp">
-          <node concept="2OqwBi" id="1taDvhFBqwC" role="3clFbG">
-            <node concept="2OqwBi" id="1taDvhFBqwD" role="2Oq$k0">
-              <node concept="2DurlD" id="1taDvhFBqwE" role="2Oq$k0" />
-              <node concept="liA8E" id="1taDvhFBqwF" role="2OqNvi">
-                <ref role="37wK5l" to="pry4:3SnNvqCaK40" resolve="getValue" />
-              </node>
-            </node>
-            <node concept="liA8E" id="1taDvhFBqwG" role="2OqNvi">
-              <ref role="37wK5l" to="pry4:3SnNvqCaJI1" resolve="getValuePresentation" />
-            </node>
-          </node>
-        </node>
+    <node concept="1PX8mh" id="36$DQmcH3yW" role="1PXawn">
+      <node concept="1PXbyW" id="36$DQmcH4n4" role="1PYkEP">
+        <node concept="1PX86_" id="36$DQmcH8po" role="1PX80g" />
       </node>
     </node>
-    <node concept="SZTCH" id="1taDvhFBqwH" role="1WhRpB" />
   </node>
 </model>
 
