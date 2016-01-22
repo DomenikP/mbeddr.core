@@ -27,9 +27,11 @@
     <import index="tdvr" ref="r:584f710e-f1e3-453b-bb3f-bc2f387d9f9d(DeSpec.Text.structure)" />
     <import index="ekkt" ref="r:edea95f4-0dba-497d-b87f-82bde96f3299(DeSpec.Text.behavior)" />
     <import index="pjlr" ref="r:0a66b211-d40a-4a81-8cc2-746eb50a3781(multiLevel.debugger.structure)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -56,8 +58,12 @@
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -98,6 +104,7 @@
       </concept>
     </language>
     <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec.base">
+      <concept id="3304628195161099688" name="DeSpec.base.structure.NameFunction" flags="ig" index="2qzixX" />
       <concept id="7778196424306621047" name="DeSpec.base.structure.WatchValueOperation" flags="ng" index="2rWWSo" />
       <concept id="7901750452157980955" name="DeSpec.base.structure.IValueLifterRoot" flags="ng" index="2D00$K">
         <reference id="6400245134554606255" name="concept" index="1wnDu_" />
@@ -121,6 +128,8 @@
       <concept id="2933779798677129903" name="DeSpec.base.structure.WatchValueSubvaluesOperation" flags="ng" index="3PUeI1" />
       <concept id="4369017833403014967" name="DeSpec.base.structure.ReferenceSemantics" flags="ng" index="1PX86_">
         <property id="4369017833408672994" name="nullRepresentation" index="1P2ADK" />
+        <child id="5503890955236971482" name="nullPresentation" index="3T0MLN" />
+        <child id="5503890955236952675" name="isReferenceSet" index="3T0Zna" />
       </concept>
       <concept id="4369017833403014429" name="DeSpec.base.structure.IValueSpecification" flags="ng" index="1PX8ef">
         <child id="4369017833403014786" name="semantics" index="1PX80g" />
@@ -130,11 +139,12 @@
         <child id="4369017833403225127" name="value" index="1PYkEP" />
       </concept>
       <concept id="4369017833403014067" name="DeSpec.base.structure.WatchSpecification" flags="ng" index="1PX8kx" />
-      <concept id="4369017833403013891" name="DeSpec.base.structure.ThisWatchSpecification" flags="ng" index="1PX8mh" />
+      <concept id="4369017833403013891" name="DeSpec.base.structure.ContextWatchSpecification" flags="ng" index="1PX8mh" />
       <concept id="4369017833403019954" name="DeSpec.base.structure.AbsentValueSpecification" flags="ng" index="1PXaKw" />
       <concept id="4369017833403018280" name="DeSpec.base.structure.ComplexValueSpecification" flags="ng" index="1PXbaU">
         <child id="4369017833403018311" name="childWatches" index="1PXbbl" />
       </concept>
+      <concept id="5503890955236826442" name="DeSpec.base.structure.NullReferencePresentationFunction" flags="ig" index="3T0ubz" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
@@ -594,6 +604,38 @@
       <node concept="1PXbaU" id="UFIAu4ABs$" role="1PYkEP">
         <node concept="1PX86_" id="UFIAu4ABsD" role="1PX80g">
           <property role="1P2ADK" value="0x0" />
+          <node concept="3T0ubz" id="4LxJUAPuaGY" role="3T0Zna">
+            <node concept="3clFbS" id="4LxJUAPuaGZ" role="2VODD2">
+              <node concept="3clFbF" id="4LxJUAPuaP4" role="3cqZAp">
+                <node concept="3fqX7Q" id="4LxJUAP$OGA" role="3clFbG">
+                  <node concept="2OqwBi" id="4LxJUAP$Kys" role="3fr31v">
+                    <node concept="2OqwBi" id="4LxJUAPub8K" role="2Oq$k0">
+                      <node concept="2OqwBi" id="4LxJUAPuaUi" role="2Oq$k0">
+                        <node concept="2DurlD" id="4LxJUAPuaP3" role="2Oq$k0" />
+                        <node concept="2rWWSo" id="4LxJUAPub2V" role="2OqNvi" />
+                      </node>
+                      <node concept="19$7Id" id="4LxJUAPubiX" role="2OqNvi" />
+                    </node>
+                    <node concept="liA8E" id="4LxJUAP$Os5" role="2OqNvi">
+                      <ref role="37wK5l" to="e2lb:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                      <node concept="Xl_RD" id="4LxJUAP$OxQ" role="37wK5m">
+                        <property role="Xl_RC" value="0x0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2qzixX" id="4LxJUAPubMR" role="3T0MLN">
+            <node concept="3clFbS" id="4LxJUAPubMS" role="2VODD2">
+              <node concept="3clFbF" id="4LxJUAPubZf" role="3cqZAp">
+                <node concept="Xl_RD" id="4LxJUAPubZe" role="3clFbG">
+                  <property role="Xl_RC" value="0x0" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="1PX8kx" id="UFIAu4ABsI" role="1PXbbl">
           <property role="TrG5h" value="target" />

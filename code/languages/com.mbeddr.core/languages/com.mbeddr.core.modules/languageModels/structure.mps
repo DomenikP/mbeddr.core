@@ -494,6 +494,9 @@
     <node concept="PrWs8" id="6mfXVgRte6O" role="PzmwI">
       <ref role="PrY4T" to="mj1l:6mfXVgRsmwb" resolve="IVoidTypeContainer" />
     </node>
+    <node concept="PrWs8" id="65U9q1oPOij" role="PzmwI">
+      <ref role="PrY4T" to="pjlr:6P1S2fVlatx" resolve="ValueProvider" />
+    </node>
     <node concept="1TJgyj" id="7qHzltJ03is" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="returnType" />

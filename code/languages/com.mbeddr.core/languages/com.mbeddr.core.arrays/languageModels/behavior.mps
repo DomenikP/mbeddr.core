@@ -246,7 +246,6 @@
     <language id="f2600f3d-2083-4803-a693-cff3268f4af9" name="DeSpec.Model">
       <concept id="3906148130290944556" name="DeSpec.Model.structure.ValueTransformer" flags="ng" index="1keisG">
         <reference id="3906148130291051147" name="toConcept" index="1ke8uc" />
-        <child id="7778196424307964569" name="treeSpec" index="2rTOVQ" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -284,14 +283,6 @@
       </concept>
     </language>
     <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec.base">
-      <concept id="7778196424308652563" name="DeSpec.base.structure.FromComplexValueSpec" flags="ng" index="2rOcTW">
-        <child id="7778196424309434469" name="childValueProvider" index="2rRdKa" />
-      </concept>
-      <concept id="7778196424306632333" name="DeSpec.base.structure.FromValueSpec" flags="ng" index="2rWLby">
-        <property id="2933779798680128003" name="cardinality" index="3PfiGH" />
-        <reference id="7778196424306632972" name="valueProvider" index="2rWLPz" />
-      </concept>
-      <concept id="7778196424306630279" name="DeSpec.base.structure.FromPrimitiveValueSpec" flags="ng" index="2rWMFC" />
       <concept id="7901750452157980955" name="DeSpec.base.structure.IValueLifterRoot" flags="ng" index="2D00$K">
         <reference id="6400245134554606255" name="concept" index="1wnDu_" />
         <child id="6400245134554606261" name="valueLifterFunction" index="1wnDuZ" />
@@ -4856,13 +4847,6 @@
     <property role="TrG5h" value="liftCharPointer2StringType" />
     <ref role="1wnDu_" to="yq40:fwMInzpHoK" resolve="PointerType" />
     <ref role="1ke8uc" to="yq40:5jmmCdxFBG4" resolve="StringType" />
-    <node concept="2rOcTW" id="2EVeRXbbotH" role="2rTOVQ">
-      <ref role="2rWLPz" to="yq40:fwMInzpHoK" resolve="PointerType" />
-      <node concept="2rWMFC" id="2EVeRXbbotI" role="2rRdKa">
-        <property role="3PfiGH" value="1" />
-        <ref role="2rWLPz" to="mj1l:1spqZOskJPs" resolve="CharType" />
-      </node>
-    </node>
     <node concept="2Duv9G" id="1FDMTVRb9Zw" role="1wnDuZ">
       <node concept="3clFbS" id="1FDMTVRb9Zx" role="2VODD2">
         <node concept="3SKdUt" id="4dSJ8O4Y9mi" role="3cqZAp">

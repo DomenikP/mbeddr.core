@@ -91,7 +91,7 @@
       <ref role="PrY4T" to="356a:4pl5GY7LKm$" resolve="UnitConcept" />
     </node>
     <node concept="PrWs8" id="1vhuDACoads" role="PzmwI">
-      <ref role="PrY4T" to="pjlr:PjpCzdQT6j" resolve="WatchDeclarationScope" />
+      <ref role="PrY4T" to="pjlr:PjpCzdQT6j" resolve="WatchProviderScope" />
     </node>
     <node concept="1TJgyj" id="1oIA7EcBs5L" role="1TKVEi">
       <property role="20lmBu" value="reference" />
