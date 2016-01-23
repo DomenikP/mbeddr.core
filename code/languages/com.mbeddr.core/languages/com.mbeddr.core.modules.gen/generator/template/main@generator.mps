@@ -933,7 +933,7 @@
                     </node>
                   </node>
                   <node concept="1kf5Gy" id="Bg$PwDpVAu" role="lGtFl">
-                    <ref role="1kejeQ" to="1ukv:3Tngk4BJN0I" resolve="typeDefType2StructType2" />
+                    <ref role="1kejeQ" to="1ukv:3Tngk4BJN0I" resolve="typeDefType2StructType" />
                   </node>
                 </node>
               </node>

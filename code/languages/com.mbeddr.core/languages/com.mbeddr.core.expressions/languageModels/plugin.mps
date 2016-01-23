@@ -64,7 +64,9 @@
         <child id="4369017833403225127" name="value" index="1PYkEP" />
       </concept>
       <concept id="4369017833403013891" name="DeSpec.base.structure.ContextWatchSpecification" flags="ng" index="1PX8mh" />
-      <concept id="4369017833403016750" name="DeSpec.base.structure.PrimitiveValueSpecification" flags="ng" index="1PXbyW" />
+      <concept id="4369017833403016750" name="DeSpec.base.structure.PrimitiveValueSpecification" flags="ng" index="1PXbyW">
+        <child id="9201156180022690541" name="valueFunction" index="2Y_p0A" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -90,7 +92,21 @@
       </node>
     </node>
     <node concept="1PX8mh" id="3MxRD99II24" role="1PXawn">
-      <node concept="1PXbyW" id="UFIAu3OT2n" role="1PYkEP" />
+      <node concept="1PXbyW" id="UFIAu3OT2n" role="1PYkEP">
+        <node concept="2Duv9G" id="7YL4GJ1b0mf" role="2Y_p0A">
+          <node concept="3clFbS" id="7YL4GJ1b0mg" role="2VODD2">
+            <node concept="3clFbF" id="7YL4GJ1b0pO" role="3cqZAp">
+              <node concept="2OqwBi" id="7YL4GJ1b0pQ" role="3clFbG">
+                <node concept="2OqwBi" id="7YL4GJ1b0pR" role="2Oq$k0">
+                  <node concept="2DurlD" id="7YL4GJ1b0pS" role="2Oq$k0" />
+                  <node concept="2rWWSo" id="7YL4GJ1b0pT" role="2OqNvi" />
+                </node>
+                <node concept="19$7Id" id="7YL4GJ1b0pU" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2me3Us" id="1taDvhFBnEY">
@@ -110,7 +126,21 @@
       </node>
     </node>
     <node concept="1PX8mh" id="3MxRD99TaWO" role="1PXawn">
-      <node concept="1PXbyW" id="3MxRD99TaWT" role="1PYkEP" />
+      <node concept="1PXbyW" id="3MxRD99TaWT" role="1PYkEP">
+        <node concept="2Duv9G" id="7YL4GJ1b0yd" role="2Y_p0A">
+          <node concept="3clFbS" id="7YL4GJ1b0ye" role="2VODD2">
+            <node concept="3clFbF" id="7YL4GJ1b0_r" role="3cqZAp">
+              <node concept="2OqwBi" id="7YL4GJ1b0_t" role="3clFbG">
+                <node concept="2OqwBi" id="7YL4GJ1b0_u" role="2Oq$k0">
+                  <node concept="2DurlD" id="7YL4GJ1b0_v" role="2Oq$k0" />
+                  <node concept="2rWWSo" id="7YL4GJ1b0_w" role="2OqNvi" />
+                </node>
+                <node concept="19$7Id" id="7YL4GJ1b0_x" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

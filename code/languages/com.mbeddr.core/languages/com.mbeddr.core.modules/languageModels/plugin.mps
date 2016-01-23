@@ -84,7 +84,9 @@
         <child id="4369017833403225127" name="value" index="1PYkEP" />
       </concept>
       <concept id="4369017833403013891" name="DeSpec.base.structure.ContextWatchSpecification" flags="ng" index="1PX8mh" />
-      <concept id="4369017833403016750" name="DeSpec.base.structure.PrimitiveValueSpecification" flags="ng" index="1PXbyW" />
+      <concept id="4369017833403016750" name="DeSpec.base.structure.PrimitiveValueSpecification" flags="ng" index="1PXbyW">
+        <child id="9201156180022690541" name="valueFunction" index="2Y_p0A" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -200,6 +202,19 @@
                 <node concept="Xl_RD" id="65U9q1oPOGI" role="3clFbG">
                   <property role="Xl_RC" value="null" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Duv9G" id="7YL4GJ1b3TQ" role="2Y_p0A">
+          <node concept="3clFbS" id="7YL4GJ1b3TR" role="2VODD2">
+            <node concept="3clFbF" id="7yWdW8OX7Np" role="3cqZAp">
+              <node concept="2OqwBi" id="7yWdW8OX7Nr" role="3clFbG">
+                <node concept="2OqwBi" id="7yWdW8OX7Ns" role="2Oq$k0">
+                  <node concept="2DurlD" id="7yWdW8OX7Nt" role="2Oq$k0" />
+                  <node concept="2rWWSo" id="7yWdW8OX7Nu" role="2OqNvi" />
+                </node>
+                <node concept="19$7Id" id="7yWdW8OX7Nv" role="2OqNvi" />
               </node>
             </node>
           </node>
