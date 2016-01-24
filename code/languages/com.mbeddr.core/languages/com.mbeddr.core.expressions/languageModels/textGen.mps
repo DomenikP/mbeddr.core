@@ -134,7 +134,6 @@
         <child id="1057143491307021360" name="debuggerBackend" index="2dkLTn" />
         <child id="9201156180046953180" name="targetValueStructure" index="2X9Uwn" />
         <child id="9201156180047235277" name="sourceValueStructure" index="2XaxC6" />
-        <child id="4369017833403020933" name="expectedValueStructure" index="1PXawn" />
       </concept>
       <concept id="2635294119710702094" name="DeSpec.TextGen.structure.ValueProviderFromTextGen" flags="ng" index="SA$w4">
         <child id="6400245134476181865" name="valueLifter" index="1FczLz" />
@@ -163,7 +162,6 @@
       <concept id="4369017833403013719" name="DeSpec.base.structure.IWatchSpecification" flags="ng" index="1PX8j5">
         <child id="4369017833403225127" name="value" index="1PYkEP" />
       </concept>
-      <concept id="4369017833403013891" name="DeSpec.base.structure.ContextWatchSpecification" flags="ng" index="1PX8mh" />
       <concept id="4369017833403016750" name="DeSpec.base.structure.PrimitiveValueSpecification" flags="ng" index="1PXbyW">
         <child id="9201156180022690541" name="valueFunction" index="2Y_p0A" />
       </concept>
@@ -1201,23 +1199,6 @@
       </node>
     </node>
     <node concept="2dkRnt" id="UFIAu4AAyP" role="2dkLTn" />
-    <node concept="1PX8mh" id="UFIAu4AAyU" role="1PXawn">
-      <node concept="1PXbyW" id="UFIAu4AAyZ" role="1PYkEP">
-        <node concept="2Duv9G" id="7YL4GJ1b3HJ" role="2Y_p0A">
-          <node concept="3clFbS" id="7YL4GJ1b3HK" role="2VODD2">
-            <node concept="3clFbF" id="7YL4GJ1b3KZ" role="3cqZAp">
-              <node concept="2OqwBi" id="7YL4GJ1b3L0" role="3clFbG">
-                <node concept="2OqwBi" id="7YL4GJ1b3L1" role="2Oq$k0">
-                  <node concept="2DurlD" id="7YL4GJ1b3L2" role="2Oq$k0" />
-                  <node concept="2rWWSo" id="7YL4GJ1b3L3" role="2OqNvi" />
-                </node>
-                <node concept="19$7Id" id="7YL4GJ1b3L4" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2XbbQH" id="7YL4GJ3dEm$" role="2XaxC6">
       <node concept="1PXbyW" id="7YL4GJ3dEsn" role="1PYkEP" />
     </node>

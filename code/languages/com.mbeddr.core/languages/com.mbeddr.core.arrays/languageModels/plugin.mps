@@ -82,7 +82,7 @@
       <concept id="9201156180069949556" name="DeSpec.base.structure.AttachToSingleNodeFunction" flags="ig" index="2WhbaZ" />
       <concept id="1616885506408138172" name="DeSpec.base.structure.MultipleWatchesSpecification" flags="ng" index="XBL5L">
         <child id="1616885506408138191" name="watchName" index="XBL42" />
-        <child id="1616885506408138193" name="resolveWatchValue" index="XBL4s" />
+        <child id="1616885506408138193" name="resolveWatches" index="XBL4s" />
         <child id="1616885506408138192" name="attachToNodes" index="XBL4t" />
       </concept>
       <concept id="9201156180021183581" name="DeSpec.base.structure.ResolverAbsentValueProviderFunction" flags="ig" index="2YJ9qm" />

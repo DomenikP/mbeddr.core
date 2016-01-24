@@ -147,7 +147,6 @@
         <child id="1057143491307021360" name="debuggerBackend" index="2dkLTn" />
         <child id="9201156180046953180" name="targetValueStructure" index="2X9Uwn" />
         <child id="9201156180047235277" name="sourceValueStructure" index="2XaxC6" />
-        <child id="4369017833403020933" name="expectedValueStructure" index="1PXawn" />
       </concept>
       <concept id="2635294119724213458" name="DeSpec.TextGen.structure.DelegateToNodeWithValueLifter" flags="ig" index="Sh1ro" />
       <concept id="2635294119710702094" name="DeSpec.TextGen.structure.ValueProviderFromTextGen" flags="ng" index="SA$w4">
@@ -191,7 +190,6 @@
         <reference id="9201156180028136377" name="valueProvider" index="2YLC_M" />
         <child id="9201156180028136163" name="valueSpecification" index="2YLCwC" />
       </concept>
-      <concept id="5260770003381287423" name="DeSpec.base.structure.WatchValuePresentationOperation" flags="ng" index="19$7Id" />
       <concept id="6400245134467658400" name="DeSpec.base.structure.LiftOverChildrenChildValues" flags="ig" index="1FzWYE" />
       <concept id="6400245134465907207" name="DeSpec.base.structure.ComplexValueFunction" flags="ng" index="1F$gsd">
         <child id="6400245134467656301" name="childValues" index="1FzXtB" />
@@ -202,7 +200,6 @@
       <concept id="4369017833403013719" name="DeSpec.base.structure.IWatchSpecification" flags="ng" index="1PX8j5">
         <child id="4369017833403225127" name="value" index="1PYkEP" />
       </concept>
-      <concept id="4369017833403013891" name="DeSpec.base.structure.ContextWatchSpecification" flags="ng" index="1PX8mh" />
       <concept id="4369017833403018280" name="DeSpec.base.structure.ComplexValueSpecification" flags="ng" index="1PXbaU">
         <child id="9201156180023221824" name="rootValue" index="2YBoMb" />
         <child id="4369017833403018311" name="childWatches" index="1PXbbl" />
@@ -2044,23 +2041,6 @@
         </node>
       </node>
     </node>
-    <node concept="1PX8mh" id="UFIAu4ABsV" role="1PXawn">
-      <node concept="1PXbyW" id="UFIAu4ABt0" role="1PYkEP">
-        <node concept="2Duv9G" id="7YL4GJ1b6fN" role="2Y_p0A">
-          <node concept="3clFbS" id="7YL4GJ1b6fO" role="2VODD2">
-            <node concept="3clFbF" id="1taDvhFB60W" role="3cqZAp">
-              <node concept="2OqwBi" id="1taDvhFB60X" role="3clFbG">
-                <node concept="2OqwBi" id="1taDvhFB60Y" role="2Oq$k0">
-                  <node concept="2DurlD" id="1taDvhFB60Z" role="2Oq$k0" />
-                  <node concept="2rWWSo" id="7yWdW8ONyTN" role="2OqNvi" />
-                </node>
-                <node concept="19$7Id" id="7yWdW8ONzbw" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2dkRnt" id="UFIAu4ABt2" role="2dkLTn" />
     <node concept="2XbbQH" id="7YL4GJ3dPEi" role="2XaxC6">
       <node concept="1PXbyW" id="7YL4GJ3dPM5" role="1PYkEP" />
@@ -2122,23 +2102,6 @@
             </node>
           </node>
         </node>
-      </node>
-    </node>
-    <node concept="1PX8mh" id="UFIAu4ABtg" role="1PXawn">
-      <node concept="1PXbaU" id="UFIAu4ABtC" role="1PYkEP">
-        <node concept="1F$mhy" id="7YL4GJ1dgjB" role="2YBoMb">
-          <node concept="3clFbS" id="7YL4GJ1dgjC" role="2VODD2">
-            <node concept="3clFbF" id="7YL4GJ1dgmk" role="3cqZAp">
-              <node concept="2OqwBi" id="7YL4GJ1dgmm" role="3clFbG">
-                <node concept="2Duq_I" id="7YL4GJ1dgmn" role="2Oq$k0" />
-                <node concept="3TrcHB" id="7YL4GJ1dgmo" role="2OqNvi">
-                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2dKz1q" id="1pKlcOH3o3K" role="1PXbbl" />
       </node>
     </node>
     <node concept="2dkRnt" id="UFIAu4ABtt" role="2dkLTn" />
