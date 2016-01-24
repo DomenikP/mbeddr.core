@@ -130,8 +130,8 @@
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
     </language>
     <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen">
-      <concept id="7901750452157038064" name="DeSpec.TextGen.structure.ValueFromTextLifter" flags="ng" index="2DcDnr">
-        <child id="1057143491307021360" name="debuggerBackend" index="2dkLTn" />
+      <concept id="7901750452157038064" name="DeSpec.TextGen.structure.TextValue2ModelValue" flags="ng" index="2DcDnr">
+        <child id="1057143491307021360" name="debuggerBackends" index="2dkLTn" />
         <child id="9201156180046953180" name="targetValueStructure" index="2X9Uwn" />
         <child id="9201156180047235277" name="sourceValueStructure" index="2XaxC6" />
       </concept>
@@ -1269,6 +1269,7 @@
     <property role="3GE5qa" value="types.cast" />
     <property role="TrG5h" value="charValue" />
     <ref role="1wnDu_" to="mj1l:1spqZOskJPs" resolve="CharType" />
+    <node concept="2dkRnt" id="4P41_IjRV5g" role="2dkLTn" />
     <node concept="2Duv9G" id="5zifgCOl6cH" role="1wnDuZ">
       <node concept="3clFbS" id="5zifgCOl6cI" role="2VODD2">
         <node concept="3cpWs8" id="5zifgCOl6j6" role="3cqZAp">
@@ -1345,7 +1346,6 @@
         </node>
       </node>
     </node>
-    <node concept="2dkRnt" id="UFIAu48bbZ" role="2dkLTn" />
     <node concept="2XId1z" id="7YL4GJ3dCFl" role="2X9Uwn">
       <node concept="2YLCzo" id="7YL4GJ3dCFm" role="2XId1A">
         <ref role="2YLC_M" to="mj1l:1spqZOskJPs" resolve="CharType" />

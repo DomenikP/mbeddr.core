@@ -154,8 +154,8 @@
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
     </language>
     <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen">
-      <concept id="7901750452157038064" name="DeSpec.TextGen.structure.ValueFromTextLifter" flags="ng" index="2DcDnr">
-        <child id="1057143491307021360" name="debuggerBackend" index="2dkLTn" />
+      <concept id="7901750452157038064" name="DeSpec.TextGen.structure.TextValue2ModelValue" flags="ng" index="2DcDnr">
+        <child id="1057143491307021360" name="debuggerBackends" index="2dkLTn" />
         <child id="9201156180046953180" name="targetValueStructure" index="2X9Uwn" />
         <child id="9201156180047235277" name="sourceValueStructure" index="2XaxC6" />
       </concept>
@@ -1933,7 +1933,6 @@
         </node>
       </node>
     </node>
-    <node concept="2dkRnt" id="UFIAu4AAPD" role="2dkLTn" />
     <node concept="2XbbQH" id="7YL4GJ3dFjj" role="2XaxC6">
       <node concept="1PXbyW" id="7YL4GJ3dFPy" role="1PYkEP">
         <node concept="1PX86_" id="7YL4GJ3dGi_" role="1PX80g" />
@@ -2150,6 +2149,7 @@
         </node>
       </node>
     </node>
+    <node concept="2dkRnt" id="4P41_IkanSW" role="2dkLTn" />
   </node>
 </model>
 
