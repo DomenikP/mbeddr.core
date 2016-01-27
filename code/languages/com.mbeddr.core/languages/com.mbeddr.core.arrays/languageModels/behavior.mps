@@ -284,6 +284,7 @@
       </concept>
     </language>
     <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec.base">
+      <concept id="3304628195161099688" name="DeSpec.base.structure.NameFunction" flags="ig" index="2qzixX" />
       <concept id="7778196424306621047" name="DeSpec.base.structure.WatchValueOperation" flags="ng" index="2rWWSo" />
       <concept id="7901750452157980955" name="DeSpec.base.structure.IValueLifterRoot" flags="ng" index="2D00$K">
         <reference id="6400245134554606255" name="concept" index="1wnDu_" />
@@ -304,16 +305,16 @@
       <concept id="5260770003381287423" name="DeSpec.base.structure.WatchValuePresentationOperation" flags="ng" index="19$7Id" />
       <concept id="4369017833399785970" name="DeSpec.base.structure.WatchValueIsNullOperation" flags="ng" index="1Pxstw" />
       <concept id="4369017833403014967" name="DeSpec.base.structure.ReferenceSemantics" flags="ng" index="1PX86_">
+        <child id="5503890955236971482" name="nullPresentation" index="3T0MLN" />
         <child id="5503890955236952675" name="isReferenceSet" index="3T0Zna" />
       </concept>
       <concept id="4369017833403014429" name="DeSpec.base.structure.IValueSpecification" flags="ng" index="1PX8ef">
         <child id="4369017833403014786" name="semantics" index="1PX80g" />
       </concept>
       <concept id="4369017833403013719" name="DeSpec.base.structure.IWatchSpecification" flags="ng" index="1PX8j5">
-        <property id="4369017833404868818" name="isMultple" index="1PO7p0" />
         <child id="4369017833403225127" name="value" index="1PYkEP" />
       </concept>
-      <concept id="4369017833403014067" name="DeSpec.base.structure.WatchSpecification" flags="ng" index="1PX8kx" />
+      <concept id="4369017833403014067" name="DeSpec.base.structure.SingleWatchSpecification" flags="ng" index="1PX8kx" />
       <concept id="4369017833403018280" name="DeSpec.base.structure.ComplexValueSpecification" flags="ng" index="1PXbaU">
         <child id="4369017833403018311" name="childWatches" index="1PXbbl" />
       </concept>
@@ -4961,15 +4962,24 @@
           <node concept="1PX86_" id="7YL4GJ2iGYx" role="1PX80g">
             <node concept="3T0ubz" id="7YL4GJ2iGY_" role="3T0Zna">
               <node concept="3clFbS" id="7YL4GJ2iGYA" role="2VODD2">
-                <node concept="3clFbF" id="7YL4GJ2okNg" role="3cqZAp">
-                  <node concept="3fqX7Q" id="7YL4GJ2_D44" role="3clFbG">
-                    <node concept="2OqwBi" id="7YL4GJ2x8$u" role="3fr31v">
-                      <node concept="2OqwBi" id="7YL4GJ2oEfg" role="2Oq$k0">
-                        <node concept="2DurlD" id="7YL4GJ2okNe" role="2Oq$k0" />
-                        <node concept="2rWWSo" id="7YL4GJ2oEq_" role="2OqNvi" />
+                <node concept="3clFbF" id="77Xe7_OkqNe" role="3cqZAp">
+                  <node concept="3fqX7Q" id="77Xe7_OksJ$" role="3clFbG">
+                    <node concept="2OqwBi" id="77Xe7_Okr8l" role="3fr31v">
+                      <node concept="2OqwBi" id="77Xe7_OkqQQ" role="2Oq$k0">
+                        <node concept="2DurlD" id="77Xe7_OkqNc" role="2Oq$k0" />
+                        <node concept="2rWWSo" id="77Xe7_OkqZy" role="2OqNvi" />
                       </node>
-                      <node concept="1Pxstw" id="7YL4GJ2xBom" role="2OqNvi" />
+                      <node concept="1Pxstw" id="77Xe7_OLcGj" role="2OqNvi" />
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2qzixX" id="77Xe7_OGAfk" role="3T0MLN">
+              <node concept="3clFbS" id="77Xe7_OGAfl" role="2VODD2">
+                <node concept="3clFbF" id="77Xe7_OGAqc" role="3cqZAp">
+                  <node concept="Xl_RD" id="77Xe7_OGAqb" role="3clFbG">
+                    <property role="Xl_RC" value="null" />
                   </node>
                 </node>
               </node>
@@ -5042,8 +5052,12 @@
                 <node concept="9aQIb" id="7YL4GJ2_BR4" role="9aQIa">
                   <node concept="3clFbS" id="7YL4GJ2_BR5" role="9aQI4">
                     <node concept="3cpWs6" id="7YL4GJ2_BR6" role="3cqZAp">
-                      <node concept="Xl_RD" id="7YL4GJ2_BR7" role="3cqZAk">
-                        <property role="Xl_RC" value="&lt;error in liftCharPointer2StringType&gt;" />
+                      <node concept="2OqwBi" id="77Xe7_OM0D0" role="3cqZAk">
+                        <node concept="2OqwBi" id="77Xe7_OM0D1" role="2Oq$k0">
+                          <node concept="2DurlD" id="77Xe7_OM0D2" role="2Oq$k0" />
+                          <node concept="2rWWSo" id="77Xe7_OM0D3" role="2OqNvi" />
+                        </node>
+                        <node concept="19$7Id" id="77Xe7_OM0D4" role="2OqNvi" />
                       </node>
                     </node>
                   </node>
@@ -5060,7 +5074,6 @@
         <node concept="1PXbaU" id="7YL4GJ2Ut0W" role="2YLCwC">
           <node concept="1PX86_" id="7YL4GJ2Ut0T" role="1PX80g" />
           <node concept="1PX8kx" id="7YL4GJ2Ut0V" role="1PXbbl">
-            <property role="1PO7p0" value="false" />
             <node concept="2YLCzo" id="7YL4GJ3qZwx" role="1PYkEP">
               <ref role="2YLC_M" to="mj1l:1spqZOskJPs" resolve="CharType" />
               <node concept="1PXbyW" id="7YL4GJ3qZwz" role="2YLCwC" />

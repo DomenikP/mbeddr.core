@@ -52,6 +52,7 @@
     <import index="ierg" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.textgen.trace(MPS.Core/jetbrains.mps.textgen.trace@java_stub)" />
     <import index="2cz0" ref="r:0f113ca1-2114-4026-bc9c-67c6eacebb6d(DeSpec.Model.structure)" />
     <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
+    <import index="m6gp" ref="r:2b2a1c1f-90fd-4dfa-9f9e-6ad6a1f07f0a(com.mbeddr.core.modules.gen.plugin)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -447,6 +448,9 @@
     <language id="f2600f3d-2083-4803-a693-cff3268f4af9" name="DeSpec.Model">
       <concept id="3906148130290742821" name="DeSpec.Model.structure.GeneratedDelegatedValueLifterFromModel" flags="ng" index="1kf5Gy">
         <reference id="3906148130290949809" name="delegatetoNodeSpec" index="1kejeQ" />
+      </concept>
+      <concept id="3906148130290742816" name="DeSpec.Model.structure.GeneratedValueLifterFromModel" flags="ng" index="1kf5GB">
+        <reference id="3906148130290944737" name="valueLifterSpec" index="1keivA" />
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
@@ -1697,6 +1701,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="1kf5GB" id="RvNPiV672Q" role="lGtFl">
+            <ref role="1keivA" to="m6gp:RvNPiV681J" resolve="CFunctionPointerTypedef2TypeDef" />
           </node>
         </node>
       </node>

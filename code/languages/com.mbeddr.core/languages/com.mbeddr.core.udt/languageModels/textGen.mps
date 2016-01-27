@@ -143,8 +143,8 @@
       </concept>
     </language>
     <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen">
-      <concept id="7901750452157038064" name="DeSpec.TextGen.structure.ValueFromTextLifter" flags="ng" index="2DcDnr">
-        <child id="1057143491307021360" name="debuggerBackend" index="2dkLTn" />
+      <concept id="7901750452157038064" name="DeSpec.TextGen.structure.TextValue2ModelValue" flags="ng" index="2DcDnr">
+        <child id="1057143491307021360" name="debuggerBackends" index="2dkLTn" />
         <child id="9201156180046953180" name="targetValueStructure" index="2X9Uwn" />
         <child id="9201156180047235277" name="sourceValueStructure" index="2XaxC6" />
       </concept>
@@ -153,7 +153,9 @@
         <child id="2635294119724849447" name="lifter" index="SsAGH" />
         <child id="6400245134476181865" name="valueLifter" index="1FczLz" />
       </concept>
-      <concept id="960223883318792076" name="DeSpec.TextGen.structure.ValueFromTextGen" flags="ng" index="33gQ$4" />
+      <concept id="960223883318792076" name="DeSpec.TextGen.structure.ValueFromTextGen" flags="ng" index="33gQ$4">
+        <property id="1636870493684272922" name="takeValueLifterFromTextGen" index="29UtCg" />
+      </concept>
       <concept id="71553305920962829" name="DeSpec.TextGen.structure.NameInTextGen" flags="ng" index="154Fhn" />
       <concept id="4779930313850906447" name="DeSpec.TextGen.structure.WatchFromTextGen" flags="ng" index="3qotS4">
         <property id="113139468452623849" name="category" index="12C0pm" />
@@ -1286,7 +1288,9 @@
                   <node concept="3TrEf2" id="3YdlD6jcUU" role="2OqNvi">
                     <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
                   </node>
-                  <node concept="33gQ$4" id="3YdlD6jcWW" role="lGtFl" />
+                  <node concept="33gQ$4" id="3YdlD6jcWW" role="lGtFl">
+                    <property role="29UtCg" value="true" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -2107,7 +2111,21 @@
     <node concept="2dkRnt" id="UFIAu4ABtt" role="2dkLTn" />
     <node concept="2XbbQH" id="7YL4GJ3dQqd" role="2XaxC6">
       <node concept="1PXbaU" id="7YL4GJ3dQzn" role="1PYkEP">
-        <node concept="2dKz1q" id="1pKlcOH3oar" role="1PXbbl" />
+        <node concept="2dKz1q" id="1pKlcOH3oar" role="1PXbbl">
+          <node concept="UbBOO" id="77Xe7_OOQTq" role="Vt249">
+            <node concept="3clFbS" id="77Xe7_OOQTr" role="2VODD2">
+              <node concept="3clFbF" id="77Xe7_OOQYT" role="3cqZAp">
+                <node concept="2OqwBi" id="77Xe7_OORhT" role="3clFbG">
+                  <node concept="2OqwBi" id="77Xe7_OOR1i" role="2Oq$k0">
+                    <node concept="2DurlD" id="77Xe7_OOQYS" role="2Oq$k0" />
+                    <node concept="2rWWSo" id="77Xe7_OORal" role="2OqNvi" />
+                  </node>
+                  <node concept="3PUeI1" id="77Xe7_OORr3" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2XId1z" id="7YL4GJ3eFZ3" role="2X9Uwn">

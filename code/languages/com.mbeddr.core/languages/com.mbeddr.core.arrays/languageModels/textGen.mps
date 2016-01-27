@@ -92,8 +92,8 @@
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
     </language>
     <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen">
-      <concept id="7901750452157038064" name="DeSpec.TextGen.structure.ValueFromTextLifter" flags="ng" index="2DcDnr">
-        <child id="1057143491307021360" name="debuggerBackend" index="2dkLTn" />
+      <concept id="7901750452157038064" name="DeSpec.TextGen.structure.TextValue2ModelValue" flags="ng" index="2DcDnr">
+        <child id="1057143491307021360" name="debuggerBackends" index="2dkLTn" />
         <child id="9201156180046953180" name="targetValueStructure" index="2X9Uwn" />
         <child id="9201156180047235277" name="sourceValueStructure" index="2XaxC6" />
       </concept>
@@ -105,6 +105,7 @@
       </concept>
     </language>
     <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec.base">
+      <concept id="3304628195161099688" name="DeSpec.base.structure.NameFunction" flags="ig" index="2qzixX" />
       <concept id="7778196424306621047" name="DeSpec.base.structure.WatchValueOperation" flags="ng" index="2rWWSo" />
       <concept id="7901750452157980955" name="DeSpec.base.structure.IValueLifterRoot" flags="ng" index="2D00$K">
         <reference id="6400245134554606255" name="concept" index="1wnDu_" />
@@ -144,6 +145,7 @@
       </concept>
       <concept id="2933779798677129903" name="DeSpec.base.structure.WatchValueSubvaluesOperation" flags="ng" index="3PUeI1" />
       <concept id="4369017833403014967" name="DeSpec.base.structure.ReferenceSemantics" flags="ng" index="1PX86_">
+        <child id="5503890955236971482" name="nullPresentation" index="3T0MLN" />
         <child id="5503890955236952675" name="isReferenceSet" index="3T0Zna" />
       </concept>
       <concept id="4369017833403014429" name="DeSpec.base.structure.IValueSpecification" flags="ng" index="1PX8ef">
@@ -573,6 +575,15 @@
                         </node>
                       </node>
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2qzixX" id="77Xe7_Pxs_e" role="3T0MLN">
+              <node concept="3clFbS" id="77Xe7_Pxs_f" role="2VODD2">
+                <node concept="3clFbF" id="77Xe7_PxsK6" role="3cqZAp">
+                  <node concept="Xl_RD" id="77Xe7_PxsK5" role="3clFbG">
+                    <property role="Xl_RC" value="123" />
                   </node>
                 </node>
               </node>

@@ -574,6 +574,12 @@
     <node concept="PrWs8" id="7Jr7T0w731$" role="PzmwI">
       <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
     </node>
+    <node concept="PrWs8" id="69N_VEHH5Ch" role="PzmwI">
+      <ref role="PrY4T" to="pjlr:4dLPB5yd2k3" resolve="CanContributeStackFrame" />
+    </node>
+    <node concept="PrWs8" id="69N_VEHVVxs" role="PzmwI">
+      <ref role="PrY4T" to="pjlr:PjpCzdQT6j" resolve="WatchProviderScope" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7apEgWbIQfE">
     <property role="3GE5qa" value="functionrefs.closure" />
@@ -585,6 +591,12 @@
     </node>
     <node concept="PrWs8" id="7Jr7T0w731A" role="PzmwI">
       <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
+    </node>
+    <node concept="PrWs8" id="69N_VEHUy2w" role="PzmwI">
+      <ref role="PrY4T" to="pjlr:1rHBIiJ9Pyb" resolve="WatchProvider" />
+    </node>
+    <node concept="PrWs8" id="69N_VEHWCEv" role="PzmwI">
+      <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
     </node>
   </node>
   <node concept="1TIwiD" id="7apEgWbIQfY">
