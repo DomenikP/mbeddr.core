@@ -3,6 +3,17 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="0" />
+    <use id="e840b8ae-64d9-4b5b-b3b4-eca3f222d4da" name="com.mbeddr.mpsutil.iconchar" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="0" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
   </languages>
   <imports>
     <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" />
@@ -12,6 +23,14 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="e840b8ae-64d9-4b5b-b3b4-eca3f222d4da" name="com.mbeddr.mpsutil.iconchar">
+      <concept id="8866176685648437750" name="com.mbeddr.mpsutil.iconchar.structure.IconChar" flags="ng" index="cTxPe">
+        <property id="8866176685648721500" name="borderColor" index="cYWF$" />
+        <property id="8866176685648721488" name="backgroundColor" index="cYWFC" />
+        <property id="8866176685648721493" name="textColor" index="cYWFH" />
+        <property id="8866176685648721485" name="char" index="cYWFP" />
+      </concept>
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -25,6 +44,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1160488491229" name="iconPath" index="MwhBj" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
@@ -41,6 +61,11 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
+      <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
+        <property id="1757699476691236117" name="propertyName" index="2qtEX9" />
+        <property id="1341860900487648621" name="propertyId" index="P4ACc" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -64,6 +89,7 @@
     <property role="3GE5qa" value="pointers" />
     <property role="34LRSv" value="*" />
     <property role="R4oN_" value="pointer type" />
+    <property role="MwhBj" value="${module}/icons/PointerTypeCharIcon.png" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     <node concept="PrWs8" id="3TE6JCmbIko" role="PzmwI">
       <ref role="PrY4T" to="mj1l:7FQByU3C_31" resolve="IComparable" />
@@ -82,6 +108,14 @@
     </node>
     <node concept="PrWs8" id="4JYoVJayS$K" role="PzmwI">
       <ref role="PrY4T" to="mj1l:4ZVDCZCa$xx" resolve="IOrdered" />
+    </node>
+    <node concept="cTxPe" id="2Kx5o1AvHcF" role="lGtFl">
+      <property role="P4ACc" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640/1160488491229" />
+      <property role="2qtEX9" value="iconPath" />
+      <property role="cYWFP" value="P" />
+      <property role="cYWFC" value="#59e785" />
+      <property role="cYWF$" value="#000000" />
+      <property role="cYWFH" value="#000000" />
     </node>
   </node>
   <node concept="1TIwiD" id="fwMInzpIaB">
@@ -109,6 +143,7 @@
     <property role="TrG5h" value="ArrayType" />
     <property role="3GE5qa" value="arrays" />
     <property role="R4oN_" value="array type" />
+    <property role="MwhBj" value="${module}/icons/ArrayTypeCharIcon.png" />
     <ref role="1TJDcQ" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     <node concept="1TJgyj" id="1gDNXlE1$cN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -133,6 +168,14 @@
     </node>
     <node concept="PrWs8" id="F16UoWCzHY" role="PzmwI">
       <ref role="PrY4T" to="c4fa:7FkLcyyQKy$" resolve="IInitAwareType" />
+    </node>
+    <node concept="cTxPe" id="2Kx5o1AvH8J" role="lGtFl">
+      <property role="P4ACc" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640/1160488491229" />
+      <property role="2qtEX9" value="iconPath" />
+      <property role="cYWFP" value="A" />
+      <property role="cYWFC" value="#4f7dfe" />
+      <property role="cYWF$" value="#000000" />
+      <property role="cYWFH" value="#000000" />
     </node>
   </node>
   <node concept="1TIwiD" id="5sJgLFR$y$1">

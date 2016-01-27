@@ -32,7 +32,7 @@
         <dependency reexport="true">c7a315e6-1d93-4186-85bc-2dfafd1ccc21(com.mbeddr.mpsutil.common)</dependency>
         <dependency reexport="true">62296a07-bc38-46d2-8034-198c24063588(com.mbeddr.core.modules.gen)</dependency>
         <dependency reexport="false" scope="design">53c31cc6-9e98-4153-905a-a7b5c490ea53(com.mbeddr.core.modules#1758019824472891829)</dependency>
-        <dependency reexport="false">11a0cd79-9f2e-4665-a280-57a3cc526924(DeSpec)</dependency>
+        <dependency reexport="false">11a0cd79-9f2e-4665-a280-57a3cc526924(DeSpec.base)</dependency>
         <dependency reexport="false">eba1dbb3-0bc4-4ce9-a184-05c9135353be(jetbrains.mps.lang.traceable.operations)</dependency>
         <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
         <dependency reexport="false">f2600f3d-2083-4803-a693-cff3268f4af9(DeSpec.Model)</dependency>
@@ -53,9 +53,9 @@
         <usedLanguage>9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)</usedLanguage>
         <usedLanguage>eba1dbb3-0bc4-4ce9-a184-05c9135353be(jetbrains.mps.lang.traceable.operations)</usedLanguage>
         <usedLanguage>7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)</usedLanguage>
-        <usedLanguage>11a0cd79-9f2e-4665-a280-57a3cc526924(DeSpec)</usedLanguage>
         <usedLanguage>558e8d91-d211-4de0-b141-9a8b8f04b79d(multiLevel.debugger)</usedLanguage>
         <usedLanguage>f2600f3d-2083-4803-a693-cff3268f4af9(DeSpec.Model)</usedLanguage>
+        <usedLanguage>11a0cd79-9f2e-4665-a280-57a3cc526924(DeSpec.base)</usedLanguage>
       </usedLanguages>
       <usedDevKits>
         <usedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</usedDevKit>
@@ -181,7 +181,7 @@
     <dependency reexport="false">bec9c00b-b5be-48af-9766-38765bcc974d(MUnit)</dependency>
     <dependency reexport="false">efda956e-491e-4f00-ba14-36af2f213ecf(com.mbeddr.core.udt)</dependency>
     <dependency reexport="false">cc7da2f6-419f-4133-a811-31fcd3295a85(jetbrains.mps.debugger.api.api)</dependency>
-    <dependency reexport="false">11a0cd79-9f2e-4665-a280-57a3cc526924(DeSpec)</dependency>
+    <dependency reexport="false">11a0cd79-9f2e-4665-a280-57a3cc526924(DeSpec.base)</dependency>
     <dependency reexport="false">b25694ab-2b70-4644-a06e-4d199f64d0c5(DeSpec.Text)</dependency>
     <dependency reexport="false">f2600f3d-2083-4803-a693-cff3268f4af9(DeSpec.Model)</dependency>
   </dependencies>
@@ -195,9 +195,7 @@
     <usedLanguage>f89904fb-9486-43a1-865e-5ad0375a8a88(de.itemis.mps.editor.bool)</usedLanguage>
     <usedLanguage>ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)</usedLanguage>
     <usedLanguage>9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)</usedLanguage>
-    <usedLanguage>11a0cd79-9f2e-4665-a280-57a3cc526924(DeSpec)</usedLanguage>
     <usedLanguage>558e8d91-d211-4de0-b141-9a8b8f04b79d(multiLevel.debugger)</usedLanguage>
-    <usedLanguage>ce1120c1-075f-4f11-a8fc-36ddbe2de15f(DeSpec.Text)</usedLanguage>
     <usedLanguage>f2600f3d-2083-4803-a693-cff3268f4af9(DeSpec.Model)</usedLanguage>
     <usedLanguage>28f9e497-3b42-4291-aeba-0a1039153ab1(jetbrains.mps.lang.plugin)</usedLanguage>
     <usedLanguage>ef7bf5ac-d06c-4342-b11d-e42104eb9343(jetbrains.mps.lang.plugin.standalone)</usedLanguage>
@@ -209,6 +207,8 @@
     <usedLanguage>b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)</usedLanguage>
     <usedLanguage>a482b416-d0c9-473f-8f67-725ed642b3f3(com.mbeddr.mpsutil.breadcrumb)</usedLanguage>
     <usedLanguage>479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</usedLanguage>
+    <usedLanguage>11a0cd79-9f2e-4665-a280-57a3cc526924(DeSpec.base)</usedLanguage>
+    <usedLanguage>ce1120c1-075f-4f11-a8fc-36ddbe2de15f(DeSpec.TextGen)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>

@@ -14,6 +14,10 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="e840b8ae-64d9-4b5b-b3b4-eca3f222d4da" name="com.mbeddr.mpsutil.iconchar" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="0" />
   </languages>
   <imports>
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" />
@@ -25,6 +29,14 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="e840b8ae-64d9-4b5b-b3b4-eca3f222d4da" name="com.mbeddr.mpsutil.iconchar">
+      <concept id="8866176685648437750" name="com.mbeddr.mpsutil.iconchar.structure.IconChar" flags="ng" index="cTxPe">
+        <property id="8866176685648721500" name="borderColor" index="cYWF$" />
+        <property id="8866176685648721488" name="backgroundColor" index="cYWFC" />
+        <property id="8866176685648721493" name="textColor" index="cYWFH" />
+        <property id="8866176685648721485" name="char" index="cYWFP" />
+      </concept>
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv" />
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
@@ -78,6 +90,10 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
+      <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
+        <property id="1757699476691236117" name="propertyName" index="2qtEX9" />
+        <property id="1341860900487648621" name="propertyId" index="P4ACc" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -158,7 +174,16 @@
     <property role="R4oN_" value="--" />
     <property role="34LRSv" value="##primitive type##" />
     <property role="R5$K7" value="true" />
+    <property role="MwhBj" value="${module}/icons/PrimitiveTypeCharIcon.png" />
     <ref role="1TJDcQ" node="7FQByU3CrCQ" resolve="Type" />
+    <node concept="cTxPe" id="2Kx5o1APGJs" role="lGtFl">
+      <property role="P4ACc" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640/1160488491229" />
+      <property role="2qtEX9" value="iconPath" />
+      <property role="cYWFP" value="P" />
+      <property role="cYWFC" value="#E32636" />
+      <property role="cYWF$" value="#000000" />
+      <property role="cYWFH" value="#000000" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7FQByU3CrCU">
     <property role="TrG5h" value="BooleanType" />

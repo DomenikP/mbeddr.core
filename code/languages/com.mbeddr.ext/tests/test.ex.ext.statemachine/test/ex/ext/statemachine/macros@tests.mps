@@ -25,6 +25,7 @@
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
       </concept>
+      <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
       <concept id="2093108837558113914" name="com.mbeddr.core.statements.structure.LocalVarRef" flags="ng" index="3ZVu4v">
         <reference id="2093108837558124071" name="var" index="3ZVs_2" />
       </concept>
@@ -141,6 +142,7 @@
       <concept id="1270667558200936379" name="com.mbeddr.ext.statemachines.structure.AbstractTransition" flags="ng" index="1zz5ri">
         <reference id="1270667558201034238" name="targetState" index="1zztin" />
         <child id="1270667558200943847" name="guard" index="1zz7me" />
+        <child id="1270667558200946447" name="actions" index="1zz7TA" />
       </concept>
       <concept id="4249345261280334498" name="com.mbeddr.ext.statemachines.structure.AbstractState" flags="ng" index="1Koyuy">
         <child id="4249345261280348989" name="contents" index="1KoBSX" />
@@ -293,6 +295,12 @@
           <node concept="3xArUH" id="4CnBdUF$y_i" role="1zz7me">
             <ref role="3xArUE" node="4CnBdUFzn2b" resolve="xGRy" />
           </node>
+          <node concept="3XIRFW" id="4nblNEs5ez4" role="1zz7TA">
+            <node concept="3XISUE" id="4nblNEs5ez5" role="3XIRFZ" />
+            <node concept="3XISUE" id="4nblNEs5eDP" role="3XIRFZ" />
+            <node concept="3XISUE" id="4nblNEs5eDS" role="3XIRFZ" />
+            <node concept="3XISUE" id="4nblNEs5eDW" role="3XIRFZ" />
+          </node>
         </node>
       </node>
       <node concept="1LFebX" id="4CnBdUFzy9I" role="1_Iowf">
@@ -304,6 +312,9 @@
           </node>
           <node concept="3xArUH" id="4CnBdUF$y_g" role="1zz7me">
             <ref role="3xArUE" node="4CnBdUFzxkQ" resolve="eArg" />
+          </node>
+          <node concept="3XIRFW" id="4nblNEs5eE3" role="1zz7TA">
+            <node concept="3XISUE" id="4nblNEs5fME" role="3XIRFZ" />
           </node>
         </node>
       </node>

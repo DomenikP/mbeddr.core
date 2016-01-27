@@ -3,6 +3,17 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="0" />
+    <use id="e840b8ae-64d9-4b5b-b3b4-eca3f222d4da" name="com.mbeddr.mpsutil.iconchar" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="0" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
   </languages>
   <imports>
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
@@ -16,6 +27,14 @@
     <import index="pjlr" ref="r:0a66b211-d40a-4a81-8cc2-746eb50a3781(multiLevel.debugger.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="e840b8ae-64d9-4b5b-b3b4-eca3f222d4da" name="com.mbeddr.mpsutil.iconchar">
+      <concept id="8866176685648437750" name="com.mbeddr.mpsutil.iconchar.structure.IconChar" flags="ng" index="cTxPe">
+        <property id="8866176685648721500" name="borderColor" index="cYWF$" />
+        <property id="8866176685648721488" name="backgroundColor" index="cYWFC" />
+        <property id="8866176685648721493" name="textColor" index="cYWFH" />
+        <property id="8866176685648721485" name="char" index="cYWFP" />
+      </concept>
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
         <property id="1225118933224" name="comment" index="YLQ7P" />
@@ -54,6 +73,10 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
+      <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
+        <property id="1757699476691236117" name="propertyName" index="2qtEX9" />
+        <property id="1341860900487648621" name="propertyId" index="P4ACc" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -62,15 +85,24 @@
   <node concept="1TIwiD" id="5yYXyc4Z0CJ">
     <property role="TrG5h" value="StructDeclaration" />
     <property role="3GE5qa" value="su.struct" />
-    <property role="MwhBj" value="${module}/icons/struct.png" />
+    <property role="MwhBj" value="${module}/icons/StructDeclarationCharIcon.png" />
     <property role="34LRSv" value="struct" />
     <property role="R4oN_" value="a struct declaration" />
     <ref role="1TJDcQ" node="2CEi94edfgd" resolve="ModuleContentSUDeclaration" />
+    <node concept="cTxPe" id="2Kx5o1AvIEb" role="lGtFl">
+      <property role="P4ACc" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640/1160488491229" />
+      <property role="2qtEX9" value="iconPath" />
+      <property role="cYWFP" value="S" />
+      <property role="cYWFC" value="#23a441" />
+      <property role="cYWF$" value="#000000" />
+      <property role="cYWFH" value="#000000" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5yYXyc4Z0CS">
     <property role="TrG5h" value="StructType" />
     <property role="3GE5qa" value="su.struct" />
     <property role="R4oN_" value="--" />
+    <property role="MwhBj" value="${module}/icons/StructTypeCharIcon.png" />
     <ref role="1TJDcQ" node="3bHYGwzt_Ut" resolve="SUType" />
     <node concept="1TJgyj" id="5yYXyc4Z0CT" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -84,11 +116,19 @@
     <node concept="PrWs8" id="F16UoWxmvv" role="PzmwI">
       <ref role="PrY4T" to="c4fa:7FkLcyyQKy$" resolve="IInitAwareType" />
     </node>
+    <node concept="cTxPe" id="2Kx5o1APGWj" role="lGtFl">
+      <property role="P4ACc" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640/1160488491229" />
+      <property role="2qtEX9" value="iconPath" />
+      <property role="cYWFP" value="S" />
+      <property role="cYWFC" value="#18f240" />
+      <property role="cYWF$" value="#000000" />
+      <property role="cYWFH" value="#000000" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5jyom5fO9Ch">
     <property role="TrG5h" value="TypeDef" />
     <property role="3GE5qa" value="typedef" />
-    <property role="MwhBj" value="${module}/icons/typedef.png" />
+    <property role="MwhBj" value="${module}/icons/TypeDefCharIcon.png" />
     <property role="R4oN_" value="define new types from existing ones" />
     <property role="34LRSv" value="typedef" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -113,11 +153,20 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="mj1l:7FQByU3CrCQ" resolve="Type" />
     </node>
+    <node concept="cTxPe" id="3xY667ZT4Vi" role="lGtFl">
+      <property role="P4ACc" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640/1160488491229" />
+      <property role="2qtEX9" value="iconPath" />
+      <property role="cYWFP" value="T" />
+      <property role="cYWFC" value="#71c79b" />
+      <property role="cYWF$" value="#000000" />
+      <property role="cYWFH" value="#000000" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5jyom5fO9Cn">
     <property role="TrG5h" value="TypeDefType" />
     <property role="3GE5qa" value="typedef" />
     <property role="R4oN_" value="--" />
+    <property role="MwhBj" value="${module}/icons/TypeDefTypeCharIcon.png" />
     <ref role="1TJDcQ" to="x27k:59zzgFRcVlI" resolve="TypeWithDeclaration" />
     <node concept="1TJgyj" id="5jyom5fO9Co" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -127,6 +176,14 @@
     </node>
     <node concept="PrWs8" id="6A4xWqfSdIw" role="PzmwI">
       <ref role="PrY4T" to="vs0r:7jSUHHvkAp9" resolve="IModuleContentRef" />
+    </node>
+    <node concept="cTxPe" id="3xY667ZTn_C" role="lGtFl">
+      <property role="P4ACc" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640/1160488491229" />
+      <property role="2qtEX9" value="iconPath" />
+      <property role="cYWFP" value="T" />
+      <property role="cYWFC" value="#36d6ae" />
+      <property role="cYWF$" value="#000000" />
+      <property role="cYWFH" value="#000000" />
     </node>
   </node>
   <node concept="1TIwiD" id="7D99css6O0r">
@@ -224,6 +281,7 @@
   <node concept="1TIwiD" id="56ytRgsLg$o">
     <property role="3GE5qa" value="su" />
     <property role="TrG5h" value="Member" />
+    <property role="MwhBj" value="${module}/icons/MemberCharIcon.png" />
     <ref role="1TJDcQ" node="7TdHRrCvnnh" resolve="SUContent" />
     <node concept="PrWs8" id="56ytRgsLg$r" role="PzmwI">
       <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
@@ -248,6 +306,14 @@
     </node>
     <node concept="PrWs8" id="1fTJB2Zrs8S" role="PzmwI">
       <ref role="PrY4T" to="pjlr:1rHBIiJ9Pyb" resolve="WatchProvider" />
+    </node>
+    <node concept="cTxPe" id="2Kx5o1A5NXM" role="lGtFl">
+      <property role="P4ACc" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640/1160488491229" />
+      <property role="2qtEX9" value="iconPath" />
+      <property role="cYWFP" value="M" />
+      <property role="cYWFC" value="#EEDFCC" />
+      <property role="cYWF$" value="#000000" />
+      <property role="cYWFH" value="#000000" />
     </node>
   </node>
   <node concept="1TIwiD" id="56ytRgsLodU">

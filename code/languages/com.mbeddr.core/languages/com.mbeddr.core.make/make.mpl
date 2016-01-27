@@ -83,7 +83,7 @@
     <dependency reexport="false">c1c2a88a-323c-4605-a37d-9ab77a2ccbd2(com.mbeddr.mpsutil.suppresswarning)</dependency>
     <dependency reexport="false">f3eac385-54e3-4a21-896a-eb362971f50b(DeSpec.runtime)</dependency>
     <dependency reexport="false">558e8d91-d211-4de0-b141-9a8b8f04b79d(multiLevel.debugger)</dependency>
-    <dependency reexport="false">11a0cd79-9f2e-4665-a280-57a3cc526924(DeSpec)</dependency>
+    <dependency reexport="false">11a0cd79-9f2e-4665-a280-57a3cc526924(DeSpec.base)</dependency>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
     <dependency reexport="false">2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)</dependency>
     <dependency reexport="false">9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)</dependency>
