@@ -34,7 +34,6 @@
     <language id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" name="DeSpec.Generator">
       <concept id="7872820068767882943" name="DeSpec.Generator.structure.ModelValue" flags="ng" index="2me3Us">
         <child id="4369017833403020933" name="valueSpecification" index="1PXawn" />
-        <child id="1678336280335602580" name="valueCopyFunc" index="1WhRpw" />
       </concept>
       <concept id="7872820068762968763" name="DeSpec.Generator.structure.WatchProviderSpec" flags="ng" index="2mrKao">
         <child id="7872820068765074097" name="valueProvider" index="2m3Iai" />
@@ -256,19 +255,6 @@
                 <node concept="19$7Id" id="7yWdW8OX7Nv" role="2OqNvi" />
               </node>
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Duv9G" id="65U9q1oPOob" role="1WhRpw">
-      <node concept="3clFbS" id="65U9q1oPOoc" role="2VODD2">
-        <node concept="3clFbF" id="65U9q1oPOX0" role="3cqZAp">
-          <node concept="2OqwBi" id="65U9q1oPPGs" role="3clFbG">
-            <node concept="2OqwBi" id="65U9q1oPOZO" role="2Oq$k0">
-              <node concept="2DurlD" id="65U9q1oPOWZ" role="2Oq$k0" />
-              <node concept="2rWWSo" id="65U9q1oPPzo" role="2OqNvi" />
-            </node>
-            <node concept="19$7Id" id="65U9q1oPPVn" role="2OqNvi" />
           </node>
         </node>
       </node>

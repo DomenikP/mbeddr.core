@@ -288,7 +288,6 @@
       <concept id="7778196424306621047" name="DeSpec.base.structure.WatchValueOperation" flags="ng" index="2rWWSo" />
       <concept id="7901750452157980955" name="DeSpec.base.structure.IValueLifterRoot" flags="ng" index="2D00$K">
         <reference id="6400245134554606255" name="concept" index="1wnDu_" />
-        <child id="6400245134554606261" name="valueLifterFunction" index="1wnDuZ" />
       </concept>
       <concept id="7901750452160634178" name="DeSpec.base.structure.WatchParameter" flags="ng" index="2DurlD" />
       <concept id="7901750452160649799" name="DeSpec.base.structure.PrimitiveValueFunction" flags="ig" index="2Duv9G" />
@@ -4879,82 +4878,6 @@
   <node concept="1keisF" id="2EVeRXbbopi">
     <property role="TrG5h" value="liftCharPointer2StringType" />
     <ref role="1wnDu_" to="yq40:fwMInzpHoK" resolve="PointerType" />
-    <node concept="2Duv9G" id="1FDMTVRb9Zw" role="1wnDuZ">
-      <node concept="3clFbS" id="1FDMTVRb9Zx" role="2VODD2">
-        <node concept="3cpWs8" id="1FDMTVRba9v" role="3cqZAp">
-          <node concept="3cpWsn" id="1FDMTVRba9w" role="3cpWs9">
-            <property role="TrG5h" value="pattern" />
-            <node concept="3uibUv" id="1FDMTVRba9x" role="1tU5fm">
-              <ref role="3uigEE" to="lgzw:~Pattern" resolve="Pattern" />
-            </node>
-            <node concept="2YIFZM" id="1FDMTVRba9y" role="33vP2m">
-              <ref role="1Pybhc" to="lgzw:~Pattern" resolve="Pattern" />
-              <ref role="37wK5l" to="lgzw:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
-              <node concept="Xl_RD" id="1FDMTVRba9z" role="37wK5m">
-                <property role="Xl_RC" value="\&quot;(.*?)\&quot;" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="1FDMTVRba9$" role="3cqZAp">
-          <node concept="3cpWsn" id="1FDMTVRba9_" role="3cpWs9">
-            <property role="TrG5h" value="matcher" />
-            <node concept="3uibUv" id="1FDMTVRba9A" role="1tU5fm">
-              <ref role="3uigEE" to="lgzw:~Matcher" resolve="Matcher" />
-            </node>
-            <node concept="2OqwBi" id="1FDMTVRba9B" role="33vP2m">
-              <node concept="37vLTw" id="1FDMTVRba9C" role="2Oq$k0">
-                <ref role="3cqZAo" node="1FDMTVRba9w" resolve="pattern" />
-              </node>
-              <node concept="liA8E" id="1FDMTVRba9D" role="2OqNvi">
-                <ref role="37wK5l" to="lgzw:~Pattern.matcher(java.lang.CharSequence):java.util.regex.Matcher" resolve="matcher" />
-                <node concept="2OqwBi" id="1FDMTVRba9E" role="37wK5m">
-                  <node concept="2OqwBi" id="1FDMTVRba9F" role="2Oq$k0">
-                    <node concept="2DurlD" id="1FDMTVRbai$" role="2Oq$k0" />
-                    <node concept="2rWWSo" id="7YL4GJ2_Ed9" role="2OqNvi" />
-                  </node>
-                  <node concept="19$7Id" id="7YL4GJ2_Ewj" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="1FDMTVRba9J" role="3cqZAp">
-          <node concept="3clFbS" id="1FDMTVRba9K" role="3clFbx">
-            <node concept="3cpWs6" id="1FDMTVRba9L" role="3cqZAp">
-              <node concept="2OqwBi" id="1FDMTVRba9M" role="3cqZAk">
-                <node concept="37vLTw" id="1FDMTVRba9N" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1FDMTVRba9_" resolve="matcher" />
-                </node>
-                <node concept="liA8E" id="1FDMTVRba9O" role="2OqNvi">
-                  <ref role="37wK5l" to="lgzw:~Matcher.group(int):java.lang.String" resolve="group" />
-                  <node concept="3cmrfG" id="1FDMTVRba9P" role="37wK5m">
-                    <property role="3cmrfH" value="0" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="1FDMTVRba9Q" role="3clFbw">
-            <node concept="37vLTw" id="1FDMTVRba9R" role="2Oq$k0">
-              <ref role="3cqZAo" node="1FDMTVRba9_" resolve="matcher" />
-            </node>
-            <node concept="liA8E" id="1FDMTVRba9S" role="2OqNvi">
-              <ref role="37wK5l" to="lgzw:~Matcher.find():boolean" resolve="find" />
-            </node>
-          </node>
-          <node concept="9aQIb" id="1FDMTVRba9T" role="9aQIa">
-            <node concept="3clFbS" id="1FDMTVRba9U" role="9aQI4">
-              <node concept="3cpWs6" id="1FDMTVRba9V" role="3cqZAp">
-                <node concept="Xl_RD" id="1FDMTVRba9W" role="3cqZAk">
-                  <property role="Xl_RC" value="null" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2XId1z" id="7YL4GJ2iGNB" role="2XCcQV">
       <node concept="2YLCzo" id="7YL4GJ2iGNC" role="2XId1A">
         <ref role="2YLC_M" to="yq40:5jmmCdxFBG4" resolve="StringType" />
