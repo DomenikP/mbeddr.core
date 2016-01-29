@@ -12,7 +12,7 @@
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="mbeddr.debugger.core" version="0" />
-    <use id="f2600f3d-2083-4803-a693-cff3268f4af9" name="DeSpec.Model" version="0" />
+    <use id="f2600f3d-2083-4803-a693-cff3268f4af9" name="mulder.model" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
@@ -445,11 +445,11 @@
         <child id="2603522263179374348" name="argument" index="1DwjUS" />
       </concept>
     </language>
-    <language id="f2600f3d-2083-4803-a693-cff3268f4af9" name="DeSpec.Model">
-      <concept id="3906148130290742821" name="DeSpec.Model.structure.GeneratedDelegatedValueLifterFromModel" flags="ng" index="1kf5Gy">
+    <language id="f2600f3d-2083-4803-a693-cff3268f4af9" name="mulder.model">
+      <concept id="3906148130290742821" name="mulder.model.structure.GeneratedDelegatedValueLifterFromModel" flags="ng" index="1kf5Gy">
         <reference id="3906148130290949809" name="delegatetoNodeSpec" index="1kejeQ" />
       </concept>
-      <concept id="3906148130290742816" name="DeSpec.Model.structure.GeneratedValueLifterFromModel" flags="ng" index="1kf5GB">
+      <concept id="3906148130290742816" name="mulder.model.structure.GeneratedValueLifterFromModel" flags="ng" index="1kf5GB">
         <reference id="3906148130290944737" name="valueLifterSpec" index="1keivA" />
       </concept>
     </language>
