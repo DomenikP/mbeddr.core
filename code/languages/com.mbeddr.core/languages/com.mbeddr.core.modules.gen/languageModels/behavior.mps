@@ -8,7 +8,7 @@
     <use id="f2600f3d-2083-4803-a693-cff3268f4af9" name="DeSpec.Model" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="mbeddr.debugger.core" version="0" />
-    <use id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec.base" version="0" />
+    <use id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="mulder.base" version="0" />
     <use id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" name="DeSpec.Generator" version="0" />
     <use id="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62" name="com.mbeddr.mpsutil.jung" version="0" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
@@ -218,53 +218,53 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
-    <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec.base">
-      <concept id="7778196424302042732" name="DeSpec.base.structure.WatchNameOperation" flags="ng" index="24jiC3" />
-      <concept id="1057143491297643069" name="DeSpec.base.structure.AbsentWatchSpecification" flags="ng" index="2dKz1q">
+    <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="mulder.base">
+      <concept id="7778196424302042732" name="mulder.base.structure.WatchNameOperation" flags="ng" index="24jiC3" />
+      <concept id="1057143491297643069" name="mulder.base.structure.AbsentWatchSpecification" flags="ng" index="2dKz1q">
         <child id="1616885506426303940" name="resolveWatches" index="Vt249" />
         <child id="9201156180024005197" name="absentWatchResolver" index="2Yyo26" />
       </concept>
-      <concept id="7778196424306621047" name="DeSpec.base.structure.WatchValueOperation" flags="ng" index="2rWWSo" />
-      <concept id="7901750452157980955" name="DeSpec.base.structure.IValueLifterRoot" flags="ng" index="2D00$K">
+      <concept id="7778196424306621047" name="mulder.base.structure.WatchValueOperation" flags="ng" index="2rWWSo" />
+      <concept id="7901750452157980955" name="mulder.base.structure.IValueLifterRoot" flags="ng" index="2D00$K">
         <reference id="6400245134554606255" name="concept" index="1wnDu_" />
       </concept>
-      <concept id="7901750452160627013" name="DeSpec.base.structure.CurrentNodeParameter" flags="ng" index="2Duq_I" />
-      <concept id="7901750452160634178" name="DeSpec.base.structure.WatchParameter" flags="ng" index="2DurlD" />
-      <concept id="7901750452160649799" name="DeSpec.base.structure.PrimitiveValueFunction" flags="ig" index="2Duv9G" />
-      <concept id="1616885506415405561" name="DeSpec.base.structure.ResolveWatchesFunction" flags="ig" index="UbBOO" />
-      <concept id="9201156180056181316" name="DeSpec.base.structure.ResolveDelegateToValueProviderFunction" flags="ig" index="2W$Dyf" />
-      <concept id="9201156180060933041" name="DeSpec.base.structure.AbenstValueProviderValueSpecificaiton" flags="ng" index="2WRh_U">
+      <concept id="7901750452160627013" name="mulder.base.structure.CurrentNodeParameter" flags="ng" index="2Duq_I" />
+      <concept id="7901750452160634178" name="mulder.base.structure.WatchParameter" flags="ng" index="2DurlD" />
+      <concept id="7901750452160649799" name="mulder.base.structure.PrimitiveValueFunction" flags="ig" index="2Duv9G" />
+      <concept id="1616885506415405561" name="mulder.base.structure.ResolveWatchesFunction" flags="ig" index="UbBOO" />
+      <concept id="9201156180056181316" name="mulder.base.structure.ResolveDelegateToValueProviderFunction" flags="ig" index="2W$Dyf" />
+      <concept id="9201156180060933041" name="mulder.base.structure.AbenstValueProviderValueSpecificaiton" flags="ng" index="2WRh_U">
         <child id="9201156180061519299" name="valueProvider" index="2WLuW8" />
       </concept>
-      <concept id="9201156180037714600" name="DeSpec.base.structure.TargetWatchSpecification" flags="ng" index="2XId1z">
+      <concept id="9201156180037714600" name="mulder.base.structure.TargetWatchSpecification" flags="ng" index="2XId1z">
         <child id="9201156180037714605" name="valueProvider" index="2XId1A" />
       </concept>
-      <concept id="9201156180023774569" name="DeSpec.base.structure.AbsentWatchesResolverFunction" flags="ig" index="2Yx1Yy" />
-      <concept id="9201156180021183581" name="DeSpec.base.structure.ResolverAbsentValueProviderFunction" flags="ig" index="2YJ9qm" />
-      <concept id="9201156180028135955" name="DeSpec.base.structure.ValueProviderValueSpecificaiton" flags="ng" index="2YLCzo">
+      <concept id="9201156180023774569" name="mulder.base.structure.AbsentWatchesResolverFunction" flags="ig" index="2Yx1Yy" />
+      <concept id="9201156180021183581" name="mulder.base.structure.ResolverAbsentValueProviderFunction" flags="ig" index="2YJ9qm" />
+      <concept id="9201156180028135955" name="mulder.base.structure.ValueProviderValueSpecificaiton" flags="ng" index="2YLCzo">
         <reference id="9201156180028136377" name="valueProvider" index="2YLC_M" />
         <child id="9201156180028136163" name="valueSpecification" index="2YLCwC" />
       </concept>
-      <concept id="9201156180025058967" name="DeSpec.base.structure.SourceWatchWithValueProviderSpecification" flags="ng" index="2YYrhs">
+      <concept id="9201156180025058967" name="mulder.base.structure.SourceWatchWithValueProviderSpecification" flags="ng" index="2YYrhs">
         <child id="9201156180025305247" name="valueProvider" index="2YZnDk" />
       </concept>
-      <concept id="5260770003381287423" name="DeSpec.base.structure.WatchValuePresentationOperation" flags="ng" index="19$7Id" />
-      <concept id="6400245134465915240" name="DeSpec.base.structure.RootValueFunction" flags="ig" index="1F$mhy" />
-      <concept id="2933779798677129903" name="DeSpec.base.structure.WatchValueSubvaluesOperation" flags="ng" index="3PUeI1" />
-      <concept id="4369017833403014429" name="DeSpec.base.structure.IValueSpecification" flags="ng" index="1PX8ef">
+      <concept id="5260770003381287423" name="mulder.base.structure.WatchValuePresentationOperation" flags="ng" index="19$7Id" />
+      <concept id="6400245134465915240" name="mulder.base.structure.RootValueFunction" flags="ig" index="1F$mhy" />
+      <concept id="2933779798677129903" name="mulder.base.structure.WatchValueSubvaluesOperation" flags="ng" index="3PUeI1" />
+      <concept id="4369017833403014429" name="mulder.base.structure.IValueSpecification" flags="ng" index="1PX8ef">
         <child id="4369017833403014786" name="semantics" index="1PX80g" />
       </concept>
-      <concept id="4369017833403019954" name="DeSpec.base.structure.AbsentValueSpecification" flags="ng" index="1PXaKw">
+      <concept id="4369017833403019954" name="mulder.base.structure.AbsentValueSpecification" flags="ng" index="1PXaKw">
         <child id="9201156180021251205" name="absentValueResolver" index="2YJTTe" />
       </concept>
-      <concept id="4369017833403018280" name="DeSpec.base.structure.ComplexValueSpecification" flags="ng" index="1PXbaU">
+      <concept id="4369017833403018280" name="mulder.base.structure.ComplexValueSpecification" flags="ng" index="1PXbaU">
         <child id="9201156180023221824" name="rootValue" index="2YBoMb" />
         <child id="4369017833403018311" name="childWatches" index="1PXbbl" />
       </concept>
-      <concept id="4369017833403016747" name="DeSpec.base.structure.DelegateSemantics" flags="ng" index="1PXbyT">
+      <concept id="4369017833403016747" name="mulder.base.structure.DelegateSemantics" flags="ng" index="1PXbyT">
         <child id="9201156180056180482" name="resolveDelegate" index="2W$Dn9" />
       </concept>
-      <concept id="4369017833403016750" name="DeSpec.base.structure.PrimitiveValueSpecification" flags="ng" index="1PXbyW">
+      <concept id="4369017833403016750" name="mulder.base.structure.PrimitiveValueSpecification" flags="ng" index="1PXbyW">
         <child id="9201156180022690541" name="valueFunction" index="2Y_p0A" />
       </concept>
     </language>
