@@ -43,6 +43,7 @@
     <import index="k6mm" ref="r:0115dd04-77e7-4bb3-82d3-a1ee26c68cd7(DeSpec.base.structure)" />
     <import index="2cz0" ref="r:0f113ca1-2114-4026-bc9c-67c6eacebb6d(DeSpec.Model.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
+    <import index="yh8" ref="r:cf8dc0a4-7e7f-4be5-9853-f747cd33208a(mulder.base.behavior)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -7844,6 +7845,24 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="41Rb5gVbYVl" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getSubValueProvider" />
+      <ref role="13i0hy" to="yh8:41Rb5gVbYVl" resolve="getSubValueProvider" />
+      <node concept="3Tm1VV" id="41Rb5gVbYVm" role="1B3o_S" />
+      <node concept="3clFbS" id="41Rb5gVbZLV" role="3clF47">
+        <node concept="3clFbF" id="41Rb5gVc0Ft" role="3cqZAp">
+          <node concept="2OqwBi" id="41Rb5gVc0H3" role="3clFbG">
+            <node concept="13iPFW" id="41Rb5gVc0Fs" role="2Oq$k0" />
+            <node concept="3TrEf2" id="41Rb5gVc0Qt" role="2OqNvi">
+              <ref role="3Tt5mk" to="c4fa:6IWRcVPT6tm" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="41Rb5gVbZ1j" role="3clF45" />
     </node>
     <node concept="13hLZK" id="4LXxPGc15JA" role="13h7CW">
       <node concept="3clFbS" id="4LXxPGc15JB" role="2VODD2" />
