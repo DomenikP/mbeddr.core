@@ -11,7 +11,7 @@
     <use id="59a09bf6-2b13-49ef-80d1-741985a7f0ed" name="mulder.tracing" version="0" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" name="DeSpec.Generator" version="0" />
+    <use id="77535ba7-24b5-4667-bf00-2e9c9074a90d" name="mulder.modelgen" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -45,12 +45,6 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
   </imports>
   <registry>
-    <language id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" name="DeSpec.Generator">
-      <concept id="7872820068762968763" name="DeSpec.Generator.structure.WatchProviderSpec" flags="ng" index="2mrKao">
-        <child id="7872820068765074097" name="valueProvider" index="2m3Iai" />
-        <child id="7872820068763449582" name="nameFunction" index="2mtXzd" />
-      </concept>
-    </language>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
       <concept id="6496299201655527393" name="jetbrains.mps.lang.behavior.structure.LocalBehaviorMethodCall" flags="nn" index="BsUDl" />
       <concept id="1225194240794" name="jetbrains.mps.lang.behavior.structure.ConceptBehavior" flags="ng" index="13h7C7">
@@ -469,6 +463,12 @@
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
       <concept id="1522217801069396578" name="jetbrains.mps.baseLanguage.collections.structure.FoldLeftOperation" flags="nn" index="1MD8d$">
         <child id="1522217801069421796" name="seed" index="1MDeny" />
+      </concept>
+    </language>
+    <language id="77535ba7-24b5-4667-bf00-2e9c9074a90d" name="mulder.modelgen">
+      <concept id="7872820068762968763" name="mulder.modelgen.structure.WatchProviderSpec" flags="ng" index="2mrKao">
+        <child id="7872820068765074097" name="valueProvider" index="2m3Iai" />
+        <child id="7872820068763449582" name="nameFunction" index="2mtXzd" />
       </concept>
     </language>
   </registry>
@@ -7932,18 +7932,6 @@
   <node concept="2mrKao" id="6P1S2fVj8Io">
     <property role="TrG5h" value="LocalVariableDeclaration_WatchProviderSpec" />
     <ref role="2qziyn" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
-    <node concept="2qzixX" id="6P1S2g0f_0y" role="2mtXzd">
-      <node concept="3clFbS" id="6P1S2g0f_0z" role="2VODD2">
-        <node concept="3clFbF" id="6P1S2g0fAiO" role="3cqZAp">
-          <node concept="2OqwBi" id="6P1S2g0fAx8" role="3clFbG">
-            <node concept="2Duq_I" id="6P1S2g0fAiN" role="2Oq$k0" />
-            <node concept="3TrcHB" id="6P1S2g0fBs7" role="2OqNvi">
-              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2m3jtJ" id="6P1S2g0f_5x" role="2m3Iai">
       <node concept="3clFbS" id="6P1S2g0f_5y" role="2VODD2">
         <node concept="3clFbF" id="6P1S2g0f_8L" role="3cqZAp">
@@ -7951,6 +7939,18 @@
             <node concept="2Duq_I" id="6P1S2g0f_8K" role="2Oq$k0" />
             <node concept="3TrEf2" id="6P1S2g0fAec" role="2OqNvi">
               <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2qzixX" id="6P1S2g0f_0y" role="2mtXzd">
+      <node concept="3clFbS" id="6P1S2g0f_0z" role="2VODD2">
+        <node concept="3clFbF" id="6P1S2g0fAiO" role="3cqZAp">
+          <node concept="2OqwBi" id="6P1S2g0fAx8" role="3clFbG">
+            <node concept="2Duq_I" id="6P1S2g0fAiN" role="2Oq$k0" />
+            <node concept="3TrcHB" id="6P1S2g0fBs7" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>
         </node>

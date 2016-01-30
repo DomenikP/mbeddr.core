@@ -10,10 +10,10 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="mulder.base" version="0" />
     <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="mbeddr.debugger.core" version="0" />
-    <use id="f2600f3d-2083-4803-a693-cff3268f4af9" name="DeSpec.Model" version="0" />
-    <use id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" name="DeSpec.Generator" version="0" />
-    <use id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen" version="0" />
-    <use id="b25694ab-2b70-4644-a06e-4d199f64d0c5" name="DeSpec.Text" version="0" />
+    <use id="f2600f3d-2083-4803-a693-cff3268f4af9" name="mulder.model" version="0" />
+    <use id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="mulder.textgen" version="0" />
+    <use id="b25694ab-2b70-4644-a06e-4d199f64d0c5" name="mulder.text" version="0" />
+    <use id="77535ba7-24b5-4667-bf00-2e9c9074a90d" name="mulder.modelgen" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -28,11 +28,6 @@
     <import index="pry4" ref="r:0a0d7eec-6e5a-412b-8e16-e3ee5ed7fb95(jetbrains.mps.debug.api.programState)" />
   </imports>
   <registry>
-    <language id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" name="DeSpec.Generator">
-      <concept id="7872820068767882943" name="DeSpec.Generator.structure.ModelValue" flags="ng" index="2me3Us">
-        <child id="4369017833403020933" name="valueSpecification" index="1PXawn" />
-      </concept>
-    </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
     </language>
@@ -70,6 +65,11 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="77535ba7-24b5-4667-bf00-2e9c9074a90d" name="mulder.modelgen">
+      <concept id="7872820068767882943" name="mulder.modelgen.structure.ModelValue" flags="ng" index="2me3Us">
+        <child id="4369017833403020933" name="valueSpecification" index="1PXawn" />
       </concept>
     </language>
   </registry>

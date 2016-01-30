@@ -18,11 +18,11 @@
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="0" />
     <use id="b4d28e19-7d2d-47e9-943e-3a41f97a0e52" name="com.mbeddr.mpsutil.plantuml.node" version="0" />
     <use id="a482b416-d0c9-473f-8f67-725ed642b3f3" name="com.mbeddr.mpsutil.breadcrumb" version="0" />
-    <use id="f2600f3d-2083-4803-a693-cff3268f4af9" name="DeSpec.Model" version="0" />
+    <use id="f2600f3d-2083-4803-a693-cff3268f4af9" name="mulder.model" version="0" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="mbeddr.debugger.core" version="0" />
-    <use id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" name="mulder.generator" version="0" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
+    <use id="77535ba7-24b5-4667-bf00-2e9c9074a90d" name="mulder.modelgen" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -257,13 +257,13 @@
         <reference id="2093108837558505659" name="arg" index="3ZUYvu" />
       </concept>
     </language>
-    <language id="f2600f3d-2083-4803-a693-cff3268f4af9" name="DeSpec.Model">
-      <concept id="6134458215760782264" name="DeSpec.Model.structure.RequiresInputNodeResolver" flags="ng" index="22L1E6">
+    <language id="f2600f3d-2083-4803-a693-cff3268f4af9" name="mulder.model">
+      <concept id="6134458215760782264" name="mulder.model.structure.RequiresInputNodeResolver" flags="ng" index="22L1E6">
         <child id="6134458215760784447" name="liftToInputNodeResolver" index="22L1k1" />
       </concept>
-      <concept id="1348472630505294351" name="DeSpec.Model.structure.LiftWatchFromModel" flags="ng" index="2gb7qT" />
-      <concept id="7879092975090976563" name="DeSpec.Model.structure.LiftFrame2FrameFromModel" flags="ng" index="2xMITz" />
-      <concept id="9087321911340228636" name="DeSpec.Model.structure.Resolve2InputNode" flags="ng" index="3b4$sX" />
+      <concept id="1348472630505294351" name="mulder.model.structure.LiftWatchFromModel" flags="ng" index="2gb7qT" />
+      <concept id="7879092975090976563" name="mulder.model.structure.LiftFrame2FrameFromModel" flags="ng" index="2xMITz" />
+      <concept id="9087321911340228636" name="mulder.model.structure.Resolve2InputNode" flags="ng" index="3b4$sX" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
@@ -358,6 +358,9 @@
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
+    </language>
+    <language id="77535ba7-24b5-4667-bf00-2e9c9074a90d" name="mulder.modelgen">
+      <concept id="7450251056332157791" name="mulder.modelgen.structure.LiftToNodeReference" flags="ng" index="2Njay4" />
     </language>
   </registry>
   <node concept="bUwia" id="1x_Jrt9Ni6Q">
@@ -628,13 +631,13 @@
             </node>
           </node>
           <node concept="2gb7qT" id="69N_VEHVrvz" role="lGtFl">
-            <node concept="2Njay3" id="69N_VEHV$Nn" role="22L1k1">
+            <node concept="2Njay4" id="69N_VEHV$Nn" role="22L1k1">
               <ref role="2NjayW" to="lkz5:69N_VEHVuWW" resolve="argument2ClosureParameter" />
             </node>
           </node>
         </node>
         <node concept="2xMITz" id="69N_VEHTr4S" role="lGtFl">
-          <node concept="3b4$sX" id="69N_VEHUaaK" role="22L1k1" />
+          <node concept="3b4$sX" id="7xduqXNliQm" role="22L1k1" />
         </node>
       </node>
     </node>

@@ -9,7 +9,7 @@
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="mbeddr.debugger.core" version="0" />
-    <use id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" name="DeSpec.Generator" version="0" />
+    <use id="77535ba7-24b5-4667-bf00-2e9c9074a90d" name="mulder.modelgen" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -25,11 +25,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
-    <language id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" name="DeSpec.Generator">
-      <concept id="7872820068767882943" name="DeSpec.Generator.structure.ModelValue" flags="ng" index="2me3Us">
-        <child id="4369017833403020933" name="valueSpecification" index="1PXawn" />
-      </concept>
-    </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
     </language>
@@ -44,6 +39,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -110,6 +106,11 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="77535ba7-24b5-4667-bf00-2e9c9074a90d" name="mulder.modelgen">
+      <concept id="7872820068767882943" name="mulder.modelgen.structure.ModelValue" flags="ng" index="2me3Us">
+        <child id="4369017833403020933" name="valueSpecification" index="1PXawn" />
+      </concept>
+    </language>
   </registry>
   <node concept="2DaZZR" id="5kxYjVnis_$" />
   <node concept="2me3Us" id="1taDvhFAUvx">
@@ -141,6 +142,7 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="7xduqXNk28Y" role="3cqZAp" />
           </node>
         </node>
       </node>

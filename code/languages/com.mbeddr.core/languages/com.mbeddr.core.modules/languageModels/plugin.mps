@@ -2,54 +2,21 @@
 <model ref="r:409e9269-8e01-4311-a25d-780598b0c00c(com.mbeddr.core.modules.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
-    <use id="47f075a6-558e-4640-a606-7ce0236c8023" name="com.mbeddr.mpsutil.interpreter" version="0" />
     <use id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="mulder.base" version="0" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="mbeddr.debugger.core" version="0" />
-    <use id="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62" name="com.mbeddr.mpsutil.jung" version="0" />
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
-    <use id="b4d28e19-7d2d-47e9-943e-3a41f97a0e52" name="com.mbeddr.mpsutil.plantuml.node" version="0" />
-    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="0" />
-    <use id="a482b416-d0c9-473f-8f67-725ed642b3f3" name="com.mbeddr.mpsutil.breadcrumb" version="0" />
-    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
-    <use id="f2600f3d-2083-4803-a693-cff3268f4af9" name="DeSpec.Model" version="0" />
-    <use id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" name="mulder.generator" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
     <use id="59a09bf6-2b13-49ef-80d1-741985a7f0ed" name="mulder.tracing" version="0" />
+    <use id="77535ba7-24b5-4667-bf00-2e9c9074a90d" name="mulder.modelgen" version="0" />
+    <use id="f2600f3d-2083-4803-a693-cff3268f4af9" name="mulder.model" version="-1" />
+    <use id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="mulder.textgen" version="-1" />
+    <use id="b25694ab-2b70-4644-a06e-4d199f64d0c5" name="mulder.text" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
-    <import index="pmum" ref="r:be293a79-c9de-44c7-848a-150147010751(com.mbeddr.core.statements.plugin)" />
-    <import index="rcia" ref="r:bae7addc-e10d-4f29-a8ac-0448d3c5daaf(com.mbeddr.core.expressions.plugin)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
-    <import index="pjlr" ref="r:0a66b211-d40a-4a81-8cc2-746eb50a3781(mbeddr.debugger.core.structure)" implicit="true" />
+    <import index="pjlr" ref="r:0a66b211-d40a-4a81-8cc2-746eb50a3781(mbeddr.debugger.core.structure)" />
   </imports>
   <registry>
-    <language id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" name="mulder.generator">
-      <concept id="7872820068767882943" name="mulder.generator.structure.ModelValue" flags="ng" index="2me3Us">
-        <child id="4369017833403020933" name="valueSpecification" index="1PXawn" />
-      </concept>
-      <concept id="7872820068762968763" name="mulder.generator.structure.WatchProviderSpec" flags="ng" index="2mrKao">
-        <child id="7872820068765074097" name="valueProvider" index="2m3Iai" />
-        <child id="7872820068763449582" name="nameFunction" index="2mtXzd" />
-      </concept>
-      <concept id="7450251056318683607" name="mulder.generator.structure.NodeResolver" flags="ng" index="2Ofw8b">
-        <reference id="6134458215752613597" name="targetConcept" index="22icvz" />
-        <reference id="7450251056318702782" name="sourceConcept" index="2OfBXy" />
-        <child id="7450251056318702784" name="function" index="2OfBWs" />
-      </concept>
-      <concept id="7450251056318684258" name="mulder.generator.structure.LiftToNodeFunction" flags="ig" index="2OfwuY" />
-      <concept id="3906148130290944556" name="mulder.generator.structure.ValueTransformer" flags="ng" index="1keisF">
-        <child id="9201156180038246256" name="targetValue" index="2XCcQV" />
-        <child id="9201156180025728476" name="sourceValue" index="2YSWWn" />
-      </concept>
-    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -69,6 +36,9 @@
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
     </language>
     <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="mulder.base">
@@ -144,6 +114,25 @@
     </language>
     <language id="59a09bf6-2b13-49ef-80d1-741985a7f0ed" name="mulder.tracing">
       <concept id="7450251056321812345" name="mulder.tracing.structure.InputNodeOperation" flags="ng" index="2OVGM_" />
+    </language>
+    <language id="77535ba7-24b5-4667-bf00-2e9c9074a90d" name="mulder.modelgen">
+      <concept id="7872820068767882943" name="mulder.modelgen.structure.ModelValue" flags="ng" index="2me3Us">
+        <child id="4369017833403020933" name="valueSpecification" index="1PXawn" />
+      </concept>
+      <concept id="7872820068762968763" name="mulder.modelgen.structure.WatchProviderSpec" flags="ng" index="2mrKao">
+        <child id="7872820068765074097" name="valueProvider" index="2m3Iai" />
+        <child id="7872820068763449582" name="nameFunction" index="2mtXzd" />
+      </concept>
+      <concept id="7450251056318683607" name="mulder.modelgen.structure.NodeResolver" flags="ng" index="2Ofw8b">
+        <reference id="6134458215752613597" name="targetConcept" index="22icvz" />
+        <reference id="7450251056318702782" name="sourceConcept" index="2OfBXy" />
+        <child id="7450251056318702784" name="function" index="2OfBWs" />
+      </concept>
+      <concept id="7450251056318684258" name="mulder.modelgen.structure.LiftToNodeFunction" flags="ig" index="2OfwuY" />
+      <concept id="3906148130290944556" name="mulder.modelgen.structure.ValueTransformer" flags="ng" index="1keisF">
+        <child id="9201156180038246256" name="targetValue" index="2XCcQV" />
+        <child id="9201156180025728476" name="sourceValue" index="2YSWWn" />
+      </concept>
     </language>
   </registry>
   <node concept="2m0Mmg" id="6P1S2fX1ZW7">
@@ -278,18 +267,6 @@
   <node concept="2mrKao" id="69N_VEHUSeK">
     <property role="TrG5h" value="ClosureParameter_WatchProviderSpec" />
     <ref role="2qziyn" to="x27k:7apEgWbIQfE" resolve="ClosureParameter" />
-    <node concept="2m3jtJ" id="69N_VEHUSeL" role="2m3Iai">
-      <node concept="3clFbS" id="69N_VEHUSeM" role="2VODD2">
-        <node concept="3clFbF" id="69N_VEHUTLp" role="3cqZAp">
-          <node concept="2OqwBi" id="69N_VEI1dtO" role="3clFbG">
-            <node concept="2Duq_I" id="69N_VEHUTLo" role="2Oq$k0" />
-            <node concept="3TrEf2" id="69N_VEI1egC" role="2OqNvi">
-              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2qzixX" id="69N_VEHUSeN" role="2mtXzd">
       <node concept="3clFbS" id="69N_VEHUSeO" role="2VODD2">
         <node concept="3clFbF" id="69N_VEHUSpO" role="3cqZAp">
@@ -302,15 +279,21 @@
         </node>
       </node>
     </node>
+    <node concept="2m3jtJ" id="69N_VEHUSeL" role="2m3Iai">
+      <node concept="3clFbS" id="69N_VEHUSeM" role="2VODD2">
+        <node concept="3clFbF" id="69N_VEHUTLp" role="3cqZAp">
+          <node concept="2OqwBi" id="69N_VEI1dtO" role="3clFbG">
+            <node concept="2Duq_I" id="69N_VEHUTLo" role="2Oq$k0" />
+            <node concept="3TrEf2" id="69N_VEI1egC" role="2OqNvi">
+              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1keisF" id="69N_VEHV_YY">
     <property role="TrG5h" value="primitive2ClosureValue" />
-    <node concept="2YYrhs" id="69N_VEHVA1s" role="2YSWWn">
-      <node concept="2YLCzo" id="69N_VEHVA1t" role="2YZnDk">
-        <ref role="2YLC_M" to="mj1l:7lNBHBNBzy8" resolve="Int32tType" />
-        <node concept="1PXbyW" id="69N_VEHVA1y" role="2YLCwC" />
-      </node>
-    </node>
     <node concept="2XId1z" id="69N_VEHVA1$" role="2XCcQV">
       <node concept="2YLCzo" id="69N_VEHVA1_" role="2XId1A">
         <ref role="2YLC_M" to="mj1l:7lNBHBNBzy8" resolve="Int32tType" />
@@ -329,6 +312,12 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="2YYrhs" id="69N_VEHVA1s" role="2YSWWn">
+      <node concept="2YLCzo" id="69N_VEHVA1t" role="2YZnDk">
+        <ref role="2YLC_M" to="mj1l:7lNBHBNBzy8" resolve="Int32tType" />
+        <node concept="1PXbyW" id="69N_VEHVA1y" role="2YLCwC" />
       </node>
     </node>
   </node>
@@ -357,8 +346,8 @@
       <node concept="1PXbyW" id="6SkmEu1NvTT" role="1PYkEP">
         <node concept="2Duv9G" id="6SkmEu1NvU9" role="2Y_p0A">
           <node concept="3clFbS" id="6SkmEu1NvUa" role="2VODD2">
-            <node concept="3clFbF" id="6SkmEu1NvWX" role="3cqZAp">
-              <node concept="2OqwBi" id="7yWdW8OX7Nr" role="3clFbG">
+            <node concept="3cpWs6" id="2D3lxRKb6p5" role="3cqZAp">
+              <node concept="2OqwBi" id="7yWdW8OX7Nr" role="3cqZAk">
                 <node concept="2OqwBi" id="7yWdW8OX7Ns" role="2Oq$k0">
                   <node concept="2DurlD" id="7yWdW8OX7Nt" role="2Oq$k0" />
                   <node concept="2rWWSo" id="7yWdW8OX7Nu" role="2OqNvi" />
@@ -371,8 +360,8 @@
         <node concept="1PX86_" id="6SkmEu1NAQi" role="1PX80g">
           <node concept="2qzixX" id="6SkmEu1NAVx" role="3T0MLN">
             <node concept="3clFbS" id="6SkmEu1NAVy" role="2VODD2">
-              <node concept="3clFbF" id="6SkmEu1NB3s" role="3cqZAp">
-                <node concept="Xl_RD" id="6SkmEu1NB3r" role="3clFbG">
+              <node concept="3cpWs6" id="2D3lxRKb6c3" role="3cqZAp">
+                <node concept="Xl_RD" id="6SkmEu1NB3r" role="3cqZAk">
                   <property role="Xl_RC" value="null" />
                 </node>
               </node>

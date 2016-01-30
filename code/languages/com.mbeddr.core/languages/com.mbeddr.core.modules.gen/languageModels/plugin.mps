@@ -4,8 +4,8 @@
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
-    <use id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec.base" version="-1" />
-    <use id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" name="DeSpec.Generator" version="0" />
+    <use id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="mulder.base" version="-1" />
+    <use id="77535ba7-24b5-4667-bf00-2e9c9074a90d" name="mulder.modelgen" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -14,18 +14,9 @@
     <import index="pry4" ref="r:0a0d7eec-6e5a-412b-8e16-e3ee5ed7fb95(jetbrains.mps.debug.api.programState)" />
     <import index="d0vh" ref="r:9488318d-ce46-4320-b4e7-2566a511c366(com.mbeddr.core.modules.gen.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
-    <import index="pjlr" ref="r:0a66b211-d40a-4a81-8cc2-746eb50a3781(mbeddr.debugger.core.structure)" implicit="true" />
+    <import index="pjlr" ref="r:0a66b211-d40a-4a81-8cc2-746eb50a3781(mbeddr.debugger.core.structure)" />
   </imports>
   <registry>
-    <language id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" name="DeSpec.Generator">
-      <concept id="7872820068767882943" name="DeSpec.Generator.structure.ModelValue" flags="ng" index="2me3Us">
-        <child id="4369017833403020933" name="valueSpecification" index="1PXawn" />
-      </concept>
-      <concept id="3906148130290944556" name="DeSpec.Generator.structure.ValueTransformer" flags="ng" index="1keisF">
-        <child id="9201156180038246256" name="targetValue" index="2XCcQV" />
-        <child id="9201156180025728476" name="sourceValue" index="2YSWWn" />
-      </concept>
-    </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
     </language>
@@ -47,40 +38,40 @@
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
     </language>
-    <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="DeSpec.base">
-      <concept id="7872820068764272051" name="DeSpec.base.structure.WatchScopeProviderSpec" flags="ng" index="2m0Mmg">
+    <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="mulder.base">
+      <concept id="7872820068764272051" name="mulder.base.structure.WatchScopeProviderSpec" flags="ng" index="2m0Mmg">
         <child id="7872820068764272169" name="delegateToSorroundingScopeProvider" index="2m0Moa" />
         <child id="7872820068764277106" name="collectWatchProvider" index="2m0N_h" />
       </concept>
-      <concept id="7872820068764276204" name="DeSpec.base.structure.CollectWatchProviderFunction" flags="ig" index="2m0Nnf" />
-      <concept id="7872820068763449586" name="DeSpec.base.structure.DebuggingSemanticsSpec" flags="ng" index="2mtXzh">
+      <concept id="7872820068764276204" name="mulder.base.structure.CollectWatchProviderFunction" flags="ig" index="2m0Nnf" />
+      <concept id="7872820068763449586" name="mulder.base.structure.DebuggingSemanticsSpec" flags="ng" index="2mtXzh">
         <reference id="3304628195161099586" name="applicableConcept" index="2qziyn" />
       </concept>
-      <concept id="3304628195161109397" name="DeSpec.base.structure.BooleanFunction" flags="ig" index="2qzhp0" />
-      <concept id="7901750452160627013" name="DeSpec.base.structure.CurrentNodeParameter" flags="ng" index="2Duq_I" />
-      <concept id="9201156180056181316" name="DeSpec.base.structure.ResolveDelegateToValueProviderFunction" flags="ig" index="2W$Dyf" />
-      <concept id="9201156180037714600" name="DeSpec.base.structure.TargetWatchSpecification" flags="ng" index="2XId1z">
+      <concept id="3304628195161109397" name="mulder.base.structure.BooleanFunction" flags="ig" index="2qzhp0" />
+      <concept id="7901750452160627013" name="mulder.base.structure.CurrentNodeParameter" flags="ng" index="2Duq_I" />
+      <concept id="9201156180056181316" name="mulder.base.structure.ResolveDelegateToValueProviderFunction" flags="ig" index="2W$Dyf" />
+      <concept id="9201156180037714600" name="mulder.base.structure.TargetWatchSpecification" flags="ng" index="2XId1z">
         <child id="9201156180037714605" name="valueProvider" index="2XId1A" />
       </concept>
-      <concept id="9201156180021183581" name="DeSpec.base.structure.ResolverAbsentValueProviderFunction" flags="ig" index="2YJ9qm" />
-      <concept id="9201156180028135955" name="DeSpec.base.structure.ValueProviderValueSpecificaiton" flags="ng" index="2YLCzo">
+      <concept id="9201156180021183581" name="mulder.base.structure.ResolverAbsentValueProviderFunction" flags="ig" index="2YJ9qm" />
+      <concept id="9201156180028135955" name="mulder.base.structure.ValueProviderValueSpecificaiton" flags="ng" index="2YLCzo">
         <reference id="9201156180028136377" name="valueProvider" index="2YLC_M" />
         <child id="9201156180028136163" name="valueSpecification" index="2YLCwC" />
       </concept>
-      <concept id="9201156180025058967" name="DeSpec.base.structure.SourceWatchWithValueProviderSpecification" flags="ng" index="2YYrhs">
+      <concept id="9201156180025058967" name="mulder.base.structure.SourceWatchWithValueProviderSpecification" flags="ng" index="2YYrhs">
         <child id="9201156180025305247" name="valueProvider" index="2YZnDk" />
       </concept>
-      <concept id="4369017833403014429" name="DeSpec.base.structure.IValueSpecification" flags="ng" index="1PX8ef">
+      <concept id="4369017833403014429" name="mulder.base.structure.IValueSpecification" flags="ng" index="1PX8ef">
         <child id="4369017833403014786" name="semantics" index="1PX80g" />
       </concept>
-      <concept id="4369017833403013719" name="DeSpec.base.structure.IWatchSpecification" flags="ng" index="1PX8j5">
+      <concept id="4369017833403013719" name="mulder.base.structure.IWatchSpecification" flags="ng" index="1PX8j5">
         <child id="4369017833403225127" name="value" index="1PYkEP" />
       </concept>
-      <concept id="4369017833403013891" name="DeSpec.base.structure.ContextWatchSpecification" flags="ng" index="1PX8mh" />
-      <concept id="4369017833403019954" name="DeSpec.base.structure.AbsentValueSpecification" flags="ng" index="1PXaKw">
+      <concept id="4369017833403013891" name="mulder.base.structure.ContextWatchSpecification" flags="ng" index="1PX8mh" />
+      <concept id="4369017833403019954" name="mulder.base.structure.AbsentValueSpecification" flags="ng" index="1PXaKw">
         <child id="9201156180021251205" name="absentValueResolver" index="2YJTTe" />
       </concept>
-      <concept id="4369017833403016747" name="DeSpec.base.structure.DelegateSemantics" flags="ng" index="1PXbyT">
+      <concept id="4369017833403016747" name="mulder.base.structure.DelegateSemantics" flags="ng" index="1PXbyT">
         <child id="9201156180056180482" name="resolveDelegate" index="2W$Dn9" />
       </concept>
     </language>
@@ -101,6 +92,15 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="77535ba7-24b5-4667-bf00-2e9c9074a90d" name="mulder.modelgen">
+      <concept id="7872820068767882943" name="mulder.modelgen.structure.ModelValue" flags="ng" index="2me3Us">
+        <child id="4369017833403020933" name="valueSpecification" index="1PXawn" />
+      </concept>
+      <concept id="3906148130290944556" name="mulder.modelgen.structure.ValueTransformer" flags="ng" index="1keisF">
+        <child id="9201156180038246256" name="targetValue" index="2XCcQV" />
+        <child id="9201156180025728476" name="sourceValue" index="2YSWWn" />
       </concept>
     </language>
   </registry>
@@ -137,42 +137,16 @@
       </node>
     </node>
   </node>
-  <node concept="2me3Us" id="1taDvhFBqw8">
-    <property role="TrG5h" value="CFunctionPointerTypedef_ValueProviderSpec" />
-    <ref role="2qziyn" to="d0vh:1TZvYzh_YZV" resolve="CFunctionPointerTypedef" />
-    <node concept="1PX8mh" id="36$DQmcH3yW" role="1PXawn">
-      <node concept="1PXaKw" id="69N_VEGggo7" role="1PYkEP">
-        <node concept="1PXbyT" id="69N_VEGggum" role="1PX80g">
-          <node concept="2W$Dyf" id="69N_VEGggz_" role="2W$Dn9">
-            <node concept="3clFbS" id="69N_VEGggzA" role="2VODD2">
-              <node concept="3clFbF" id="69N_VEGggIC" role="3cqZAp">
-                <node concept="2OqwBi" id="69N_VEGggRv" role="3clFbG">
-                  <node concept="2Duq_I" id="69N_VEGggIB" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="69N_VEGgiPG" role="2OqNvi">
-                    <ref role="3Tt5mk" to="clbe:5jyom5fO9Cm" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2YJ9qm" id="69N_VEGgiQW" role="2YJTTe">
-          <node concept="3clFbS" id="69N_VEGgiQX" role="2VODD2">
-            <node concept="3clFbF" id="69N_VEGgiUX" role="3cqZAp">
-              <node concept="2OqwBi" id="69N_VEGgiUZ" role="3clFbG">
-                <node concept="2Duq_I" id="69N_VEGgiV0" role="2Oq$k0" />
-                <node concept="3TrEf2" id="69N_VEGgiV1" role="2OqNvi">
-                  <ref role="3Tt5mk" to="clbe:5jyom5fO9Cm" />
-                </node>
-              </node>
-            </node>
-          </node>
+  <node concept="1keisF" id="RvNPiV681J">
+    <property role="TrG5h" value="CFunctionPointerTypedef2TypeDef" />
+    <node concept="2YYrhs" id="69N_VEGgj5j" role="2YSWWn">
+      <node concept="2YLCzo" id="69N_VEGgj5k" role="2YZnDk">
+        <ref role="2YLC_M" to="d0vh:1TZvYzh_YZV" resolve="CFunctionPointerTypedef" />
+        <node concept="1PXaKw" id="69N_VEGgj5o" role="2YLCwC">
+          <node concept="1PXbyT" id="69N_VEGgj5n" role="1PX80g" />
         </node>
       </node>
     </node>
-  </node>
-  <node concept="1keisF" id="RvNPiV681J">
-    <property role="TrG5h" value="CFunctionPointerTypedef2TypeDef" />
     <node concept="2XId1z" id="69N_VEGgj5b" role="2XCcQV">
       <node concept="2YLCzo" id="69N_VEGgj5c" role="2XId1A">
         <ref role="2YLC_M" to="clbe:5jyom5fO9Ch" resolve="TypeDef" />
@@ -206,11 +180,37 @@
         </node>
       </node>
     </node>
-    <node concept="2YYrhs" id="69N_VEGgj5j" role="2YSWWn">
-      <node concept="2YLCzo" id="69N_VEGgj5k" role="2YZnDk">
-        <ref role="2YLC_M" to="d0vh:1TZvYzh_YZV" resolve="CFunctionPointerTypedef" />
-        <node concept="1PXaKw" id="69N_VEGgj5o" role="2YLCwC">
-          <node concept="1PXbyT" id="69N_VEGgj5n" role="1PX80g" />
+  </node>
+  <node concept="2me3Us" id="7xduqXNk2u3">
+    <property role="TrG5h" value="CFunctionPointerTypedef_ModelValue" />
+    <ref role="2qziyn" to="d0vh:1TZvYzh_YZV" resolve="CFunctionPointerTypedef" />
+    <node concept="1PX8mh" id="36$DQmcH3yW" role="1PXawn">
+      <node concept="1PXaKw" id="69N_VEGggo7" role="1PYkEP">
+        <node concept="1PXbyT" id="69N_VEGggum" role="1PX80g">
+          <node concept="2W$Dyf" id="69N_VEGggz_" role="2W$Dn9">
+            <node concept="3clFbS" id="69N_VEGggzA" role="2VODD2">
+              <node concept="3clFbF" id="69N_VEGggIC" role="3cqZAp">
+                <node concept="2OqwBi" id="69N_VEGggRv" role="3clFbG">
+                  <node concept="2Duq_I" id="69N_VEGggIB" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="69N_VEGgiPG" role="2OqNvi">
+                    <ref role="3Tt5mk" to="clbe:5jyom5fO9Cm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2YJ9qm" id="69N_VEGgiQW" role="2YJTTe">
+          <node concept="3clFbS" id="69N_VEGgiQX" role="2VODD2">
+            <node concept="3clFbF" id="69N_VEGgiUX" role="3cqZAp">
+              <node concept="2OqwBi" id="69N_VEGgiUZ" role="3clFbG">
+                <node concept="2Duq_I" id="69N_VEGgiV0" role="2Oq$k0" />
+                <node concept="3TrEf2" id="69N_VEGgiV1" role="2OqNvi">
+                  <ref role="3Tt5mk" to="clbe:5jyom5fO9Cm" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

@@ -14,7 +14,13 @@
     <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="mbeddr.debugger.core" version="0" />
     <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="-1" />
     <use id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers" version="-1" />
-    <use id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" name="DeSpec.Generator" version="0" />
+    <use id="77535ba7-24b5-4667-bf00-2e9c9074a90d" name="mulder.modelgen" version="0" />
+    <use id="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62" name="com.mbeddr.mpsutil.jung" version="0" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+    <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="0" />
+    <use id="b4d28e19-7d2d-47e9-943e-3a41f97a0e52" name="com.mbeddr.mpsutil.plantuml.node" version="0" />
+    <use id="a482b416-d0c9-473f-8f67-725ed642b3f3" name="com.mbeddr.mpsutil.breadcrumb" version="0" />
+    <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -37,15 +43,9 @@
     <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <import index="bt5b" ref="r:10548ca1-8094-4342-a65a-87d986241875(com.mbeddr.core.pointers.utils)" />
     <import index="lgzw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util.regex(JDK/java.util.regex@java_stub)" />
-    <import index="j2z0" ref="r:e018fc1c-c261-4cd9-b91c-fe6714dcbd6e(multiLevel.debugger.debug)" />
+    <import index="j2z0" ref="r:e018fc1c-c261-4cd9-b91c-fe6714dcbd6e(mbeddr.debugger.core.debug)" />
   </imports>
   <registry>
-    <language id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" name="DeSpec.Generator">
-      <concept id="3906148130290944556" name="DeSpec.Generator.structure.ValueTransformer" flags="ng" index="1keisF">
-        <child id="9201156180038246256" name="targetValue" index="2XCcQV" />
-        <child id="9201156180025728476" name="sourceValue" index="2YSWWn" />
-      </concept>
-    </language>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
       <concept id="6496299201655527393" name="jetbrains.mps.lang.behavior.structure.LocalBehaviorMethodCall" flags="nn" index="BsUDl" />
       <concept id="1225194240794" name="jetbrains.mps.lang.behavior.structure.ConceptBehavior" flags="ng" index="13h7C7">
@@ -419,6 +419,12 @@
       <concept id="1175845471038" name="jetbrains.mps.baseLanguage.collections.structure.ReverseOperation" flags="nn" index="35Qw8J" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
+    </language>
+    <language id="77535ba7-24b5-4667-bf00-2e9c9074a90d" name="mulder.modelgen">
+      <concept id="3906148130290944556" name="mulder.modelgen.structure.ValueTransformer" flags="ng" index="1keisF">
+        <child id="9201156180038246256" name="targetValue" index="2XCcQV" />
+        <child id="9201156180025728476" name="sourceValue" index="2YSWWn" />
+      </concept>
     </language>
   </registry>
   <node concept="13h7C7" id="fwMInzpHXM">
@@ -4917,8 +4923,8 @@
                     <ref role="3uigEE" to="lgzw:~Pattern" resolve="Pattern" />
                   </node>
                   <node concept="2YIFZM" id="7YL4GJ2_BQH" role="33vP2m">
-                    <ref role="37wK5l" to="lgzw:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
                     <ref role="1Pybhc" to="lgzw:~Pattern" resolve="Pattern" />
+                    <ref role="37wK5l" to="lgzw:~Pattern.compile(java.lang.String):java.util.regex.Pattern" resolve="compile" />
                     <node concept="Xl_RD" id="7YL4GJ2_BQI" role="37wK5m">
                       <property role="Xl_RC" value="\&quot;(.*?)\&quot;" />
                     </node>

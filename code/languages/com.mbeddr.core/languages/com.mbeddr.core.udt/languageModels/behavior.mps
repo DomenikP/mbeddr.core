@@ -17,8 +17,8 @@
     <use id="a482b416-d0c9-473f-8f67-725ed642b3f3" name="com.mbeddr.mpsutil.breadcrumb" version="0" />
     <use id="f2600f3d-2083-4803-a693-cff3268f4af9" name="mulder.model" version="0" />
     <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="mbeddr.debugger.core" version="0" />
-    <use id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" name="DeSpec.Generator" version="0" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
+    <use id="77535ba7-24b5-4667-bf00-2e9c9074a90d" name="mulder.modelgen" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -54,12 +54,6 @@
     <import index="2cz0" ref="r:0f113ca1-2114-4026-bc9c-67c6eacebb6d(mulder.model.structure)" />
   </imports>
   <registry>
-    <language id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" name="DeSpec.Generator">
-      <concept id="7872820068762968763" name="DeSpec.Generator.structure.WatchProviderSpec" flags="ng" index="2mrKao">
-        <child id="7872820068765074097" name="valueProvider" index="2m3Iai" />
-        <child id="7872820068763449582" name="nameFunction" index="2mtXzd" />
-      </concept>
-    </language>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
       <concept id="6496299201655527393" name="jetbrains.mps.lang.behavior.structure.LocalBehaviorMethodCall" flags="nn" index="BsUDl" />
       <concept id="1225194240794" name="jetbrains.mps.lang.behavior.structure.ConceptBehavior" flags="ng" index="13h7C7">
@@ -448,6 +442,12 @@
         <child id="1197932525128" name="key" index="3ElVtu" />
       </concept>
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
+    </language>
+    <language id="77535ba7-24b5-4667-bf00-2e9c9074a90d" name="mulder.modelgen">
+      <concept id="7872820068762968763" name="mulder.modelgen.structure.WatchProviderSpec" flags="ng" index="2mrKao">
+        <child id="7872820068765074097" name="valueProvider" index="2m3Iai" />
+        <child id="7872820068763449582" name="nameFunction" index="2mtXzd" />
+      </concept>
     </language>
   </registry>
   <node concept="13h7C7" id="7D99css6UeR">
@@ -6889,18 +6889,6 @@
     <property role="3GE5qa" value="su" />
     <property role="TrG5h" value="Member_WatchProviderSpec" />
     <ref role="2qziyn" to="clbe:56ytRgsLg$o" resolve="Member" />
-    <node concept="2m3jtJ" id="6P1S2g0rlfw" role="2m3Iai">
-      <node concept="3clFbS" id="6P1S2g0rlfx" role="2VODD2">
-        <node concept="3clFbF" id="6P1S2g0rmf2" role="3cqZAp">
-          <node concept="2OqwBi" id="6P1S2g0rmmG" role="3clFbG">
-            <node concept="2Duq_I" id="6P1S2g0rmf1" role="2Oq$k0" />
-            <node concept="3TrEf2" id="6P1S2g0rntE" role="2OqNvi">
-              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2qzixX" id="6P1S2g0rlfy" role="2mtXzd">
       <node concept="3clFbS" id="6P1S2g0rlfz" role="2VODD2">
         <node concept="3clFbF" id="6P1S2g0rlo2" role="3cqZAp">
@@ -6908,6 +6896,18 @@
             <node concept="2Duq_I" id="6P1S2g0rlo1" role="2Oq$k0" />
             <node concept="3TrcHB" id="6P1S2g0rm7A" role="2OqNvi">
               <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2m3jtJ" id="6P1S2g0rlfw" role="2m3Iai">
+      <node concept="3clFbS" id="6P1S2g0rlfx" role="2VODD2">
+        <node concept="3clFbF" id="6P1S2g0rmf2" role="3cqZAp">
+          <node concept="2OqwBi" id="6P1S2g0rmmG" role="3clFbG">
+            <node concept="2Duq_I" id="6P1S2g0rmf1" role="2Oq$k0" />
+            <node concept="3TrEf2" id="6P1S2g0rntE" role="2OqNvi">
+              <ref role="3Tt5mk" to="mj1l:hEaDaGor64" />
             </node>
           </node>
         </node>

@@ -47,14 +47,13 @@
         <usedLanguage>479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</usedLanguage>
         <usedLanguage>11a0cd79-9f2e-4665-a280-57a3cc526924(mulder.base)</usedLanguage>
         <usedLanguage>558e8d91-d211-4de0-b141-9a8b8f04b79d(mbeddr.debugger.core)</usedLanguage>
-        <usedLanguage>d063e9e6-a068-4a98-b5b4-a42dc5a1cf00(mulder.generator)</usedLanguage>
+        <usedLanguage>77535ba7-24b5-4667-bf00-2e9c9074a90d(mulder.modelgen)</usedLanguage>
       </usedLanguages>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
         <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
       </usedDevKits>
       <languageVersions>
-        <language id="f2600f3d-2083-4803-a693-cff3268f4af9" fqName="DeSpec.Model" version="0" />
         <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" fqName="com.mbeddr.core.base" version="0" />
         <language id="223dd778-c44f-4ef3-9535-7aa7d12244a6" fqName="com.mbeddr.core.debug" version="0" />
         <language id="61c69711-ed61-4850-81d9-7714ff227fb0" fqName="com.mbeddr.core.expressions" version="0" />
@@ -102,7 +101,8 @@
         <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" fqName="jetbrains.mps.lang.typesystem" version="0" />
         <language id="558e8d91-d211-4de0-b141-9a8b8f04b79d" fqName="mbeddr.debugger.core" version="0" />
         <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" fqName="mulder.base" version="0" />
-        <language id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" fqName="mulder.generator" version="0" />
+        <language id="f2600f3d-2083-4803-a693-cff3268f4af9" fqName="mulder.model" version="0" />
+        <language id="77535ba7-24b5-4667-bf00-2e9c9074a90d" fqName="mulder.modelgen" version="0" />
       </languageVersions>
       <mapping-priorities>
         <mapping-priority-rule kind="strictly_before">
@@ -153,13 +153,13 @@
     <dependency reexport="false">c1c2a88a-323c-4605-a37d-9ab77a2ccbd2(com.mbeddr.mpsutil.suppresswarning)</dependency>
     <dependency reexport="false">2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)</dependency>
     <dependency reexport="false">b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)</dependency>
-    <dependency reexport="false">bec9c00b-b5be-48af-9766-38765bcc974d(MUnit)</dependency>
     <dependency reexport="false">558e8d91-d211-4de0-b141-9a8b8f04b79d(mbeddr.debugger.core)</dependency>
     <dependency reexport="false">f3eac385-54e3-4a21-896a-eb362971f50b(mulder.base.runtime)</dependency>
     <dependency reexport="false">11a0cd79-9f2e-4665-a280-57a3cc526924(mulder.base)</dependency>
     <dependency reexport="false">f2600f3d-2083-4803-a693-cff3268f4af9(DeSpec.Model)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
     <dependency reexport="false">b25694ab-2b70-4644-a06e-4d199f64d0c5(DeSpec.Text)</dependency>
+    <dependency reexport="false">cb5fd060-a6fb-423f-827a-02ea829501c8(com.mbeddt.core.expressions.pluginSolution)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</usedLanguage>
@@ -197,17 +197,15 @@
     <usedLanguage>558e8d91-d211-4de0-b141-9a8b8f04b79d(mbeddr.debugger.core)</usedLanguage>
     <usedLanguage>e11c169d-9fe2-4a19-8c43-ddd8ffefd883(mbeddr.debugger.specification)</usedLanguage>
     <usedLanguage>59a09bf6-2b13-49ef-80d1-741985a7f0ed(mulder.tracing)</usedLanguage>
-    <usedLanguage>d063e9e6-a068-4a98-b5b4-a42dc5a1cf00(mulder.generator)</usedLanguage>
     <usedLanguage>11a0cd79-9f2e-4665-a280-57a3cc526924(mulder.base)</usedLanguage>
+    <usedLanguage>77535ba7-24b5-4667-bf00-2e9c9074a90d(mulder.modelgen)</usedLanguage>
+    <usedLanguage>b25694ab-2b70-4644-a06e-4d199f64d0c5(mulder.text)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
   <languageVersions>
-    <language id="f2600f3d-2083-4803-a693-cff3268f4af9" fqName="DeSpec.Model" version="0" />
-    <language id="b25694ab-2b70-4644-a06e-4d199f64d0c5" fqName="DeSpec.Text" version="0" />
-    <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" fqName="DeSpec.TextGen" version="0" />
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" fqName="com.mbeddr.core.base" version="0" />
     <language id="223dd778-c44f-4ef3-9535-7aa7d12244a6" fqName="com.mbeddr.core.debug" version="0" />
     <language id="ebb5e132-d298-4649-b320-b3f4d7f3acff" fqName="com.mbeddr.core.debug.blext" version="0" />
@@ -267,7 +265,10 @@
     <language id="558e8d91-d211-4de0-b141-9a8b8f04b79d" fqName="mbeddr.debugger.core" version="0" />
     <language id="e11c169d-9fe2-4a19-8c43-ddd8ffefd883" fqName="mbeddr.debugger.specification" version="0" />
     <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" fqName="mulder.base" version="0" />
-    <language id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" fqName="mulder.generator" version="0" />
+    <language id="f2600f3d-2083-4803-a693-cff3268f4af9" fqName="mulder.model" version="0" />
+    <language id="77535ba7-24b5-4667-bf00-2e9c9074a90d" fqName="mulder.modelgen" version="0" />
+    <language id="b25694ab-2b70-4644-a06e-4d199f64d0c5" fqName="mulder.text" version="0" />
+    <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" fqName="mulder.textgen" version="0" />
     <language id="59a09bf6-2b13-49ef-80d1-741985a7f0ed" fqName="mulder.tracing" version="0" />
   </languageVersions>
   <extendedLanguages>
