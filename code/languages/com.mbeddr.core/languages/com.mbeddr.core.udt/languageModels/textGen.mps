@@ -8,8 +8,8 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="mbeddr.debugger.core" version="0" />
     <use id="e11c169d-9fe2-4a19-8c43-ddd8ffefd883" name="mbeddr.debugger.specification" version="0" />
-    <use id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen" version="0" />
-    <use id="b25694ab-2b70-4644-a06e-4d199f64d0c5" name="DeSpec.Text" version="0" />
+    <use id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="mulder.textgen" version="0" />
+    <use id="b25694ab-2b70-4644-a06e-4d199f64d0c5" name="mulder.text" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -142,29 +142,29 @@
         <child id="1236188238861" name="list" index="3izTki" />
       </concept>
     </language>
-    <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen">
-      <concept id="7901750452157038064" name="DeSpec.TextGen.structure.TextValue2ModelValue" flags="ng" index="2DcDnr">
+    <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="mulder.textgen">
+      <concept id="7901750452157038064" name="mulder.textgen.structure.TextValue2ModelValue" flags="ng" index="2DcDnr">
         <child id="1057143491307021360" name="debuggerBackends" index="2dkLTn" />
         <child id="9201156180046953180" name="targetValueStructure" index="2X9Uwn" />
         <child id="9201156180047235277" name="sourceValueStructure" index="2XaxC6" />
       </concept>
-      <concept id="2635294119724213458" name="DeSpec.TextGen.structure.DelegateToNodeWithValueLifter" flags="ig" index="Sh1ro" />
-      <concept id="2635294119710702094" name="DeSpec.TextGen.structure.ValueProviderFromTextGen" flags="ng" index="SA$w4">
+      <concept id="2635294119724213458" name="mulder.textgen.structure.DelegateToNodeWithValueLifter" flags="ig" index="Sh1ro" />
+      <concept id="2635294119710702094" name="mulder.textgen.structure.ValueProviderFromTextGen" flags="ng" index="SA$w4">
         <child id="2635294119724849447" name="lifter" index="SsAGH" />
         <child id="6400245134476181865" name="valueLifter" index="1FczLz" />
       </concept>
-      <concept id="960223883318792076" name="DeSpec.TextGen.structure.ValueFromTextGen" flags="ng" index="33gQ$4">
+      <concept id="960223883318792076" name="mulder.textgen.structure.ValueFromTextGen" flags="ng" index="33gQ$4">
         <property id="1636870493684272922" name="takeValueLifterFromTextGen" index="29UtCg" />
       </concept>
-      <concept id="71553305920962829" name="DeSpec.TextGen.structure.NameInTextGen" flags="ng" index="154Fhn" />
-      <concept id="4779930313850906447" name="DeSpec.TextGen.structure.WatchFromTextGen" flags="ng" index="3qotS4">
+      <concept id="71553305920962829" name="mulder.textgen.structure.NameInTextGen" flags="ng" index="154Fhn" />
+      <concept id="4779930313850906447" name="mulder.textgen.structure.WatchFromTextGen" flags="ng" index="3qotS4">
         <property id="113139468452623849" name="category" index="12C0pm" />
         <child id="1158790772916696870" name="kind" index="2kDYOR" />
       </concept>
-      <concept id="4721400539875162400" name="DeSpec.TextGen.structure.ValueLifterReference" flags="ng" index="3$7n7A">
+      <concept id="4721400539875162400" name="mulder.textgen.structure.ValueLifterReference" flags="ng" index="3$7n7A">
         <reference id="6400245134476108722" name="valueFromTextLifter" index="1F3dUS" />
       </concept>
-      <concept id="3324387609297873091" name="DeSpec.TextGen.structure.LiftConstantFromTextGen" flags="ng" index="3XMB0D" />
+      <concept id="3324387609297873091" name="mulder.textgen.structure.LiftConstantFromTextGen" flags="ng" index="3XMB0D" />
     </language>
     <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="mulder.base">
       <concept id="390482176650141561" name="mulder.base.structure.LiftConstantListExpression" flags="ng" index="23chC1">
@@ -699,7 +699,7 @@
         <node concept="3clFbS" id="7yWdW8OUlhq" role="2VODD2">
           <node concept="3clFbF" id="5zifgCOoYUx" role="3cqZAp">
             <node concept="1PxgMI" id="7yWdW8OUkMP" role="3clFbG">
-              <ref role="1PxNhF" to="pjlr:6P1S2fVlatx" resolve="ValueProvider" />
+              <ref role="1PxNhF" to="k6mm:6P1S2fVlatx" resolve="ValueProvider" />
               <node concept="2OqwBi" id="5zifgCOoZ0k" role="1PxMeX">
                 <node concept="117lpO" id="5zifgCOoYUw" role="2Oq$k0" />
                 <node concept="3TrEf2" id="5zifgCOoZvh" role="2OqNvi">
@@ -2092,7 +2092,7 @@
                     </node>
                     <node concept="v3k3i" id="7YL4GJ3eHuE" role="2OqNvi">
                       <node concept="chp4Y" id="7YL4GJ3eHuF" role="v3oSu">
-                        <ref role="cht4Q" to="pjlr:1rHBIiJ9Pyb" resolve="WatchProvider" />
+                        <ref role="cht4Q" to="k6mm:1rHBIiJ9Pyb" resolve="WatchProvider" />
                       </node>
                     </node>
                   </node>

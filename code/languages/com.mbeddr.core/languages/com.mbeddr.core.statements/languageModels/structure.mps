@@ -21,6 +21,7 @@
     <import index="2gv2" ref="r:055bac8c-a50b-42ec-a317-e20a256152b4(com.mbeddr.core.debug.structure)" />
     <import index="356a" ref="r:3b7ed80f-6cfd-45bc-b051-2f66c620dd27(jetbrains.mps.lang.traceable.structure)" />
     <import index="pjlr" ref="r:0a66b211-d40a-4a81-8cc2-746eb50a3781(multiLevel.debugger.structure)" />
+    <import index="k6mm" ref="r:0115dd04-77e7-4bb3-82d3-a1ee26c68cd7(mulder.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -104,7 +105,7 @@
       <ref role="PrY4T" to="pjlr:vymDPxT3Jf" resolve="ISteppable" />
     </node>
     <node concept="PrWs8" id="2Up4L46iHPp" role="PzmwI">
-      <ref role="PrY4T" to="pjlr:2Up4L46iz2A" resolve="ISupportsBreakpoints" />
+      <ref role="PrY4T" to="k6mm:2Up4L46iz2A" resolve="ISupportsBreakpoints" />
     </node>
   </node>
   <node concept="1TIwiD" id="3CmSUB7FprA">
@@ -148,7 +149,7 @@
       <ref role="PrY4T" node="4Ixybz5aK1O" resolve="IValueLike" />
     </node>
     <node concept="PrWs8" id="1rHBIiJ9Qgb" role="PzmwI">
-      <ref role="PrY4T" to="pjlr:1rHBIiJ9Pyb" resolve="WatchProvider" />
+      <ref role="PrY4T" to="k6mm:1rHBIiJ9Pyb" resolve="WatchProvider" />
     </node>
     <node concept="cTxPe" id="2Kx5o1A5Nvi" role="lGtFl">
       <property role="P4ACc" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640/1160488491229" />
@@ -187,7 +188,7 @@
       <ref role="PrY4T" to="pjlr:2R5TvtOlFs8" resolve="ISteppableComposite" />
     </node>
     <node concept="PrWs8" id="PjpCzdRsuH" role="PzmwI">
-      <ref role="PrY4T" to="pjlr:PjpCzdQT6j" resolve="WatchProviderScope" />
+      <ref role="PrY4T" to="k6mm:PjpCzdQT6j" resolve="WatchProviderScope" />
     </node>
   </node>
   <node concept="1TIwiD" id="1OcdQnyStpU">

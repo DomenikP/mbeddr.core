@@ -25,7 +25,7 @@
     <import index="570t" ref="r:f06c514c-4b4c-4bfc-ad27-ef90a5bd8ded(com.mbeddr.mpsutil.breadcrumb.structure)" />
     <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" />
     <import index="bdcd" ref="r:d5deda81-7a35-4c2b-bda1-1fdc1db99e3b(com.mbeddr.mpsutil.suppresswarning.structure)" />
-    <import index="pjlr" ref="r:0a66b211-d40a-4a81-8cc2-746eb50a3781(multiLevel.debugger.structure)" implicit="true" />
+    <import index="k6mm" ref="r:0115dd04-77e7-4bb3-82d3-a1ee26c68cd7(mulder.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -139,7 +139,7 @@
       <ref role="PrY4T" to="vs0r:1DVNPtFPJFZ" resolve="IOutlineRoot" />
     </node>
     <node concept="PrWs8" id="1vhuDACnVTt" role="PzmwI">
-      <ref role="PrY4T" to="pjlr:PjpCzdQT6j" resolve="WatchProviderScope" />
+      <ref role="PrY4T" to="k6mm:PjpCzdQT6j" resolve="WatchProviderScope" />
     </node>
   </node>
   <node concept="1TIwiD" id="5_l8w1EmTde">
@@ -242,7 +242,7 @@
       <ref role="PrY4T" to="vs0r:9MiAwFsXp0" resolve="ITreeViewRoot" />
     </node>
     <node concept="PrWs8" id="2Up4L46iHU$" role="PzmwI">
-      <ref role="PrY4T" to="pjlr:2Up4L46iz2A" resolve="ISupportsBreakpoints" />
+      <ref role="PrY4T" to="k6mm:2Up4L46iz2A" resolve="ISupportsBreakpoints" />
     </node>
   </node>
   <node concept="1TIwiD" id="5_l8w1EmTvw">
@@ -294,10 +294,10 @@
       <ref role="PrY4T" node="6V6S12clNH$" resolve="IDataFlowAnalyzerEntryPoint" />
     </node>
     <node concept="PrWs8" id="4dLPB5yjgff" role="PzmwI">
-      <ref role="PrY4T" to="pjlr:4dLPB5yd2k3" resolve="CanContributeStackFrame" />
+      <ref role="PrY4T" to="k6mm:4dLPB5yd2k3" resolve="CanContributeStackFrame" />
     </node>
     <node concept="PrWs8" id="PjpCzdSg_7" role="PzmwI">
-      <ref role="PrY4T" to="pjlr:PjpCzdQT6j" resolve="WatchProviderScope" />
+      <ref role="PrY4T" to="k6mm:PjpCzdQT6j" resolve="WatchProviderScope" />
     </node>
   </node>
   <node concept="1TIwiD" id="6Q7bJ$$my3n">
@@ -316,7 +316,7 @@
       <ref role="PrY4T" to="c4fa:52l0VUuN5O_" resolve="ICanBeStoredInRegister" />
     </node>
     <node concept="PrWs8" id="1vhuDACMrPi" role="PzmwI">
-      <ref role="PrY4T" to="pjlr:1rHBIiJ9Pyb" resolve="WatchProvider" />
+      <ref role="PrY4T" to="k6mm:1rHBIiJ9Pyb" resolve="WatchProvider" />
     </node>
     <node concept="cTxPe" id="2Kx5o1A5sBv" role="lGtFl">
       <property role="P4ACc" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640/1160488491229" />
@@ -478,7 +478,7 @@
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
     <node concept="PrWs8" id="1vhuDABxgP3" role="PzmwI">
-      <ref role="PrY4T" to="pjlr:1rHBIiJ9Pyb" resolve="WatchProvider" />
+      <ref role="PrY4T" to="k6mm:1rHBIiJ9Pyb" resolve="WatchProvider" />
     </node>
     <node concept="cTxPe" id="2Kx5o1A5N$W" role="lGtFl">
       <property role="P4ACc" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640/1160488491229" />
@@ -534,7 +534,7 @@
       <ref role="PrY4T" to="mj1l:6mfXVgRsmwb" resolve="IVoidTypeContainer" />
     </node>
     <node concept="PrWs8" id="65U9q1oPOij" role="PzmwI">
-      <ref role="PrY4T" to="pjlr:6P1S2fVlatx" resolve="ValueProvider" />
+      <ref role="PrY4T" to="k6mm:6P1S2fVlatx" resolve="ValueProvider" />
     </node>
     <node concept="1TJgyj" id="7qHzltJ03is" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -614,10 +614,10 @@
       <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
     </node>
     <node concept="PrWs8" id="69N_VEHH5Ch" role="PzmwI">
-      <ref role="PrY4T" to="pjlr:4dLPB5yd2k3" resolve="CanContributeStackFrame" />
+      <ref role="PrY4T" to="k6mm:4dLPB5yd2k3" resolve="CanContributeStackFrame" />
     </node>
     <node concept="PrWs8" id="69N_VEHVVxs" role="PzmwI">
-      <ref role="PrY4T" to="pjlr:PjpCzdQT6j" resolve="WatchProviderScope" />
+      <ref role="PrY4T" to="k6mm:PjpCzdQT6j" resolve="WatchProviderScope" />
     </node>
   </node>
   <node concept="1TIwiD" id="7apEgWbIQfE">
@@ -633,7 +633,7 @@
       <ref role="PrY4T" to="2gv2:7QLGLLtiESZ" resolve="IWatchablesProvider" />
     </node>
     <node concept="PrWs8" id="69N_VEHUy2w" role="PzmwI">
-      <ref role="PrY4T" to="pjlr:1rHBIiJ9Pyb" resolve="WatchProvider" />
+      <ref role="PrY4T" to="k6mm:1rHBIiJ9Pyb" resolve="WatchProvider" />
     </node>
     <node concept="PrWs8" id="69N_VEHWCEv" role="PzmwI">
       <ref role="PrY4T" to="mj1l:hEaDaGor63" resolve="ITyped" />
@@ -785,7 +785,7 @@
       <ref role="PrY4T" to="mj1l:1LDGRqyYkTP" resolve="IVariableDeclaration" />
     </node>
     <node concept="PrWs8" id="PjpCzdS_J5" role="PrDN$">
-      <ref role="PrY4T" to="pjlr:1rHBIiJ9Pyb" resolve="WatchProvider" />
+      <ref role="PrY4T" to="k6mm:1rHBIiJ9Pyb" resolve="WatchProvider" />
     </node>
   </node>
   <node concept="PlHQZ" id="3hgxKzbiKKM">
@@ -1329,7 +1329,7 @@
       <ref role="PrY4T" node="5_l8w1EmTdf" resolve="IModuleContent" />
     </node>
     <node concept="PrWs8" id="1taDvhFITjS" role="PrDN$">
-      <ref role="PrY4T" to="pjlr:6P1S2fVlatx" resolve="ValueProvider" />
+      <ref role="PrY4T" to="k6mm:6P1S2fVlatx" resolve="ValueProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="7x9scHw5pU_">

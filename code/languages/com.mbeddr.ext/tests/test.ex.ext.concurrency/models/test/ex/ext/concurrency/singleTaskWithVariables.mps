@@ -6,7 +6,7 @@
     <devkit ref="aa72fbcf-7e79-465b-a4d9-4517ef4624ee(com.mbeddr.concurrency)" />
   </languages>
   <imports>
-    <import index="bf6u" ref="r:9054466d-f8f4-4815-89d0-ec603639c8be(test.ex.ext.concurrency.singleTask)" implicit="true" />
+    <import index="bf6u" ref="r:9054466d-f8f4-4815-89d0-ec603639c8be(test.ex.ext.concurrency.singleTask)" />
   </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">

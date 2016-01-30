@@ -280,6 +280,7 @@
     <extendedLanguage>9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)</extendedLanguage>
     <extendedLanguage>223dd778-c44f-4ef3-9535-7aa7d12244a6(com.mbeddr.core.debug)</extendedLanguage>
     <extendedLanguage>c1c2a88a-323c-4605-a37d-9ab77a2ccbd2(com.mbeddr.mpsutil.suppresswarning)</extendedLanguage>
+    <extendedLanguage>11a0cd79-9f2e-4665-a280-57a3cc526924(mulder.base)</extendedLanguage>
   </extendedLanguages>
 </language>
 

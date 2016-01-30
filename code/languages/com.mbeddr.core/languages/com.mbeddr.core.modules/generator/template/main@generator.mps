@@ -40,8 +40,8 @@
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
-    <language id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" name="mulder.generator">
-      <concept id="7450251056332157791" name="mulder.generator.structure.LiftToNodeReference" flags="ng" index="2Njay3">
+    <language id="d063e9e6-a068-4a98-b5b4-a42dc5a1cf00" name="DeSpec.Generator">
+      <concept id="7450251056332157791" name="DeSpec.Generator.structure.LiftToNodeReference" flags="ng" index="2Njay3">
         <reference id="7450251056332157792" name="liftToNode" index="2NjayW" />
       </concept>
     </language>
