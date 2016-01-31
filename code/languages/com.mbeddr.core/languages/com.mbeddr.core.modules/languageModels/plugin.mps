@@ -62,7 +62,11 @@
       <concept id="7901750452160627013" name="mulder.base.structure.CurrentNodeParameter" flags="ng" index="2Duq_I" />
       <concept id="7901750452160634178" name="mulder.base.structure.WatchParameter" flags="ng" index="2DurlD" />
       <concept id="7901750452160649799" name="mulder.base.structure.PrimitiveValueFunction" flags="ig" index="2Duv9G" />
-      <concept id="7450251056318683607" name="" flags="ng" index="2Ofw8b" />
+      <concept id="7450251056318683607" name="mulder.base.structure.NodeResolver" flags="ng" index="2Ofw8b">
+        <reference id="6134458215752613597" name="targetConcept" index="22icvz" />
+        <reference id="7450251056318702782" name="sourceConcept" index="2OfBXy" />
+        <child id="7450251056318702784" name="function" index="2OfBWs" />
+      </concept>
       <concept id="9201156180037714600" name="mulder.base.structure.TargetWatchSpecification" flags="ng" index="2XId1z">
         <child id="9201156180037714605" name="valueProvider" index="2XId1A" />
       </concept>
@@ -124,11 +128,6 @@
       <concept id="7872820068762968763" name="mulder.modelgen.structure.WatchProviderSpec" flags="ng" index="2mrKao">
         <child id="7872820068765074097" name="valueProvider" index="2m3Iai" />
         <child id="7872820068763449582" name="nameFunction" index="2mtXzd" />
-      </concept>
-      <concept id="7450251056318683607" name="mulder.modelgen.structure.NodeResolver" flags="ng" index="2Ofw8c">
-        <reference id="6134458215752613597" name="targetConcept" index="22icvz" />
-        <reference id="7450251056318702782" name="sourceConcept" index="2OfBXy" />
-        <child id="7450251056318702784" name="function" index="2OfBWs" />
       </concept>
       <concept id="7450251056318684258" name="mulder.modelgen.structure.LiftToNodeFunction" flags="ig" index="2OfwuY" />
       <concept id="3906148130290944556" name="mulder.modelgen.structure.ValueTransformer" flags="ng" index="1keisF">
@@ -325,8 +324,8 @@
   </node>
   <node concept="2Ofw8b" id="69N_VEHVuWW">
     <property role="TrG5h" value="argument2ClosureParameter" />
-    <ref role="2OfBXy" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
     <ref role="22icvz" to="x27k:7apEgWbIQfE" resolve="ClosureParameter" />
+    <ref role="2OfBXy" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
     <node concept="2OfwuY" id="69N_VEHVuWX" role="2OfBWs">
       <node concept="3clFbS" id="69N_VEHVuWY" role="2VODD2">
         <node concept="3clFbF" id="69N_VEHVv4W" role="3cqZAp">
