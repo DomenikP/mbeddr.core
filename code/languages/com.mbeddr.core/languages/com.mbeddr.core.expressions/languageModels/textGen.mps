@@ -6,7 +6,6 @@
     <use id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="mulder.base" version="0" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="mbeddr.debugger.core" version="0" />
     <use id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="mulder.textgen" version="0" />
     <use id="b25694ab-2b70-4644-a06e-4d199f64d0c5" name="mulder.text" version="0" />
     <use id="f2600f3d-2083-4803-a693-cff3268f4af9" name="mulder.model" version="0" />

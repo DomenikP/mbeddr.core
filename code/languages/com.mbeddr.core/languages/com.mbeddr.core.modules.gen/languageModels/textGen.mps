@@ -6,8 +6,7 @@
     <use id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="mulder.base" version="0" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="mbeddr.debugger.core" version="0" />
-    <use id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen" version="0" />
+    <use id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="mulder.textgen" version="0" />
     <use id="b25694ab-2b70-4644-a06e-4d199f64d0c5" name="mulder.text" version="0" />
     <use id="e11c169d-9fe2-4a19-8c43-ddd8ffefd883" name="mbeddr.debugger.specification" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -122,12 +121,12 @@
       <concept id="1233748055915" name="jetbrains.mps.lang.textGen.structure.NodeParameter" flags="nn" index="117lpO" />
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
     </language>
-    <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen">
-      <concept id="2635294119724213458" name="DeSpec.TextGen.structure.DelegateToNodeWithValueLifter" flags="ig" index="Sh1ro" />
-      <concept id="2635294119710702094" name="DeSpec.TextGen.structure.ValueProviderFromTextGen" flags="ng" index="SA$w4">
+    <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="mulder.textgen">
+      <concept id="2635294119724213458" name="mulder.textgen.structure.DelegateToNodeWithValueLifter" flags="ig" index="Sh1ro" />
+      <concept id="2635294119710702094" name="mulder.textgen.structure.ValueProviderFromTextGen" flags="ng" index="SA$w4">
         <child id="6400245134476181865" name="valueLifter" index="1FczLz" />
       </concept>
-      <concept id="960223883318792076" name="DeSpec.TextGen.structure.ValueFromTextGen" flags="ng" index="33gQ$4">
+      <concept id="960223883318792076" name="mulder.textgen.structure.ValueFromTextGen" flags="ng" index="33gQ$4">
         <property id="1636870493684272922" name="takeValueLifterFromTextGen" index="29UtCg" />
       </concept>
     </language>

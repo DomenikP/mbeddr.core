@@ -6,8 +6,7 @@
     <use id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="mulder.base" version="0" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="558e8d91-d211-4de0-b141-9a8b8f04b79d" name="mbeddr.debugger.core" version="0" />
-    <use id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen" version="0" />
+    <use id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="mulder.textgen" version="0" />
     <use id="e11c169d-9fe2-4a19-8c43-ddd8ffefd883" name="mbeddr.debugger.specification" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -172,25 +171,25 @@
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
       <concept id="1233920501193" name="jetbrains.mps.lang.textGen.structure.IndentBufferOperation" flags="nn" index="1bpajm" />
     </language>
-    <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="DeSpec.TextGen">
-      <concept id="7901750452157038064" name="DeSpec.TextGen.structure.TextValue2ModelValue" flags="ng" index="2DcDnr">
+    <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="mulder.textgen">
+      <concept id="7901750452157038064" name="mulder.textgen.structure.TextValue2ModelValue" flags="ng" index="2DcDnr">
         <child id="1057143491307021360" name="debuggerBackends" index="2dkLTn" />
         <child id="9201156180046953180" name="targetValueStructure" index="2X9Uwn" />
         <child id="9201156180047235277" name="sourceValueStructure" index="2XaxC6" />
       </concept>
-      <concept id="915776213451033839" name="DeSpec.TextGen.structure.StackFrameFromTextGen" flags="ng" index="Odj5M" />
-      <concept id="2635294119710702094" name="DeSpec.TextGen.structure.ValueProviderFromTextGen" flags="ng" index="SA$w4">
+      <concept id="915776213451033839" name="mulder.textgen.structure.StackFrameFromTextGen" flags="ng" index="Odj5M" />
+      <concept id="2635294119710702094" name="mulder.textgen.structure.ValueProviderFromTextGen" flags="ng" index="SA$w4">
         <child id="6400245134476181865" name="valueLifter" index="1FczLz" />
       </concept>
-      <concept id="960223883318792076" name="DeSpec.TextGen.structure.ValueFromTextGen" flags="ng" index="33gQ$4">
+      <concept id="960223883318792076" name="mulder.textgen.structure.ValueFromTextGen" flags="ng" index="33gQ$4">
         <property id="1636870493684272922" name="takeValueLifterFromTextGen" index="29UtCg" />
       </concept>
-      <concept id="71553305920962829" name="DeSpec.TextGen.structure.NameInTextGen" flags="ng" index="154Fhn" />
-      <concept id="4779930313850906447" name="DeSpec.TextGen.structure.WatchFromTextGen" flags="ng" index="3qotS4">
+      <concept id="71553305920962829" name="mulder.textgen.structure.NameInTextGen" flags="ng" index="154Fhn" />
+      <concept id="4779930313850906447" name="mulder.textgen.structure.WatchFromTextGen" flags="ng" index="3qotS4">
         <property id="113139468452623849" name="category" index="12C0pm" />
         <child id="1158790772916696870" name="kind" index="2kDYOR" />
       </concept>
-      <concept id="4721400539875162400" name="DeSpec.TextGen.structure.ValueLifterReference" flags="ng" index="3$7n7A">
+      <concept id="4721400539875162400" name="mulder.textgen.structure.ValueLifterReference" flags="ng" index="3$7n7A">
         <reference id="6400245134476108722" name="valueFromTextLifter" index="1F3dUS" />
       </concept>
     </language>
