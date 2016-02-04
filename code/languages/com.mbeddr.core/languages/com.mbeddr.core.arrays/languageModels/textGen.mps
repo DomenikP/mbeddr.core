@@ -129,7 +129,6 @@
       <concept id="1616885506415405561" name="mulder.base.structure.ResolveWatchesFunction" flags="ig" index="UbBOO" />
       <concept id="9201156180071237207" name="mulder.base.structure.ResolveWatchFunction" flags="ig" index="2VI5is" />
       <concept id="9201156180069949556" name="mulder.base.structure.AttachToSingleNodeFunction" flags="ig" index="2WhbaZ" />
-      <concept id="9201156180056181316" name="mulder.base.structure.ResolveDelegateToValueProviderFunction" flags="ig" index="2W$Dyf" />
       <concept id="9201156180047408998" name="mulder.base.structure.UnknownSourceWatchSpecification" flags="ng" index="2XbbQH" />
       <concept id="1616885506408138172" name="mulder.base.structure.MultipleWatchesSpecification" flags="ng" index="XBL5L">
         <child id="1616885506408138191" name="watchName" index="XBL42" />
@@ -171,9 +170,6 @@
       <concept id="4369017833403018280" name="mulder.base.structure.ComplexValueSpecification" flags="ng" index="1PXbaU">
         <child id="9201156180023221824" name="rootValue" index="2YBoMb" />
         <child id="4369017833403018311" name="childWatches" index="1PXbbl" />
-      </concept>
-      <concept id="4369017833403016747" name="mulder.base.structure.DelegateSemantics" flags="ng" index="1PXbyT">
-        <child id="9201156180056180482" name="resolveDelegate" index="2W$Dn9" />
       </concept>
       <concept id="4369017833403016750" name="mulder.base.structure.PrimitiveValueSpecification" flags="ng" index="1PXbyW">
         <child id="9201156180022690541" name="valueFunction" index="2Y_p0A" />
@@ -695,9 +691,7 @@
     <node concept="2XbbQH" id="1pKlcOGzFEO" role="2XaxC6">
       <node concept="1PXbaU" id="1pKlcOGzGUR" role="1PYkEP">
         <node concept="XBL5L" id="1pKlcOGzHae" role="1PXbbl">
-          <node concept="1PXaKw" id="1pKlcOGzHpT" role="1PYkEP">
-            <node concept="1PXbyT" id="1e5sJglHDjq" role="1PX80g" />
-          </node>
+          <node concept="1PXaKw" id="8pd8fRUZCC" role="1PYkEP" />
         </node>
       </node>
     </node>
@@ -706,33 +700,16 @@
         <ref role="2YLC_M" to="yq40:4VhroexOKM1" resolve="ArrayType" />
         <node concept="1PXbaU" id="1pKlcOGneLZ" role="2YLCwC">
           <node concept="XBL5L" id="1pKlcOGneLY" role="1PXbbl">
-            <node concept="1PXaKw" id="1pKlcOGneLX" role="1PYkEP">
-              <node concept="2YJ9qm" id="1pKlcOGzOYq" role="2YJTTe">
-                <node concept="3clFbS" id="1pKlcOGzOYr" role="2VODD2">
-                  <node concept="3clFbF" id="1pKlcOGzOZg" role="3cqZAp">
+            <node concept="1PXaKw" id="8pd8fRV06V" role="1PYkEP">
+              <node concept="2YJ9qm" id="8pd8fRV0ea" role="2YJTTe">
+                <node concept="3clFbS" id="8pd8fRV0eb" role="2VODD2">
+                  <node concept="3clFbF" id="8pd8fRV0eN" role="3cqZAp">
                     <node concept="1PxgMI" id="1pKlcOGzQ5o" role="3clFbG">
                       <ref role="1PxNhF" to="k6mm:6P1S2fVlatx" resolve="ValueProvider" />
                       <node concept="2OqwBi" id="1pKlcOGzP63" role="1PxMeX">
                         <node concept="2Duq_I" id="1pKlcOGzOZf" role="2Oq$k0" />
                         <node concept="3TrEf2" id="1pKlcOGzPzY" role="2OqNvi">
                           <ref role="3Tt5mk" to="c4fa:6IWRcVPT6tm" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="1PXbyT" id="1e5sJglHDjz" role="1PX80g">
-                <node concept="2W$Dyf" id="1e5sJglHDm$" role="2W$Dn9">
-                  <node concept="3clFbS" id="1e5sJglHDm_" role="2VODD2">
-                    <node concept="3clFbF" id="1e5sJglHDnd" role="3cqZAp">
-                      <node concept="1PxgMI" id="1e5sJglHDnf" role="3clFbG">
-                        <ref role="1PxNhF" to="k6mm:6P1S2fVlatx" resolve="ValueProvider" />
-                        <node concept="2OqwBi" id="1e5sJglHDng" role="1PxMeX">
-                          <node concept="2Duq_I" id="1e5sJglHDnh" role="2Oq$k0" />
-                          <node concept="3TrEf2" id="1e5sJglHDni" role="2OqNvi">
-                            <ref role="3Tt5mk" to="c4fa:6IWRcVPT6tm" />
-                          </node>
                         </node>
                       </node>
                     </node>

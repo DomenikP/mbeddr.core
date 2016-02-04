@@ -223,7 +223,6 @@
       <concept id="7901750452160634178" name="mulder.base.structure.WatchParameter" flags="ng" index="2DurlD" />
       <concept id="7901750452160649799" name="mulder.base.structure.PrimitiveValueFunction" flags="ig" index="2Duv9G" />
       <concept id="1616885506415405561" name="mulder.base.structure.ResolveWatchesFunction" flags="ig" index="UbBOO" />
-      <concept id="9201156180056181316" name="mulder.base.structure.ResolveDelegateToValueProviderFunction" flags="ig" index="2W$Dyf" />
       <concept id="9201156180060933041" name="mulder.base.structure.AbenstValueProviderValueSpecificaiton" flags="ng" index="2WRh_U">
         <child id="9201156180061519299" name="valueProvider" index="2WLuW8" />
       </concept>
@@ -242,18 +241,12 @@
       <concept id="5260770003381287423" name="mulder.base.structure.WatchValuePresentationOperation" flags="ng" index="19$7Id" />
       <concept id="6400245134465915240" name="mulder.base.structure.RootValueFunction" flags="ig" index="1F$mhy" />
       <concept id="2933779798677129903" name="mulder.base.structure.WatchValueSubvaluesOperation" flags="ng" index="3PUeI1" />
-      <concept id="4369017833403014429" name="mulder.base.structure.IValueSpecification" flags="ng" index="1PX8ef">
-        <child id="4369017833403014786" name="semantics" index="1PX80g" />
-      </concept>
       <concept id="4369017833403019954" name="mulder.base.structure.AbsentValueSpecification" flags="ng" index="1PXaKw">
         <child id="9201156180021251205" name="absentValueResolver" index="2YJTTe" />
       </concept>
       <concept id="4369017833403018280" name="mulder.base.structure.ComplexValueSpecification" flags="ng" index="1PXbaU">
         <child id="9201156180023221824" name="rootValue" index="2YBoMb" />
         <child id="4369017833403018311" name="childWatches" index="1PXbbl" />
-      </concept>
-      <concept id="4369017833403016747" name="mulder.base.structure.DelegateSemantics" flags="ng" index="1PXbyT">
-        <child id="9201156180056180482" name="resolveDelegate" index="2W$Dn9" />
       </concept>
       <concept id="4369017833403016750" name="mulder.base.structure.PrimitiveValueSpecification" flags="ng" index="1PXbyW">
         <child id="9201156180022690541" name="valueFunction" index="2Y_p0A" />
@@ -2919,7 +2912,6 @@
       <node concept="2YLCzo" id="7YL4GJ3kKyt" role="2YZnDk">
         <ref role="2YLC_M" to="clbe:5jyom5fO9Ch" resolve="TypeDef" />
         <node concept="2WRh_U" id="7YL4GJ3wM_A" role="2YLCwC">
-          <node concept="1PXbyT" id="7YL4GJ3kKJE" role="1PX80g" />
           <node concept="2YLCzo" id="7YL4GJ3wMFL" role="2WLuW8">
             <ref role="2YLC_M" to="clbe:7D99css6O0r" resolve="EnumDeclaration" />
             <node concept="1PXbyW" id="7YL4GJ3wMFM" role="2YLCwC" />
@@ -2935,7 +2927,6 @@
       <node concept="2YLCzo" id="7YL4GJ3dAK$" role="2YZnDk">
         <ref role="2YLC_M" to="clbe:5jyom5fO9Ch" resolve="TypeDef" />
         <node concept="2WRh_U" id="7YL4GJ3yZbd" role="2YLCwC">
-          <node concept="1PXbyT" id="7YL4GJ3dAN$" role="1PX80g" />
           <node concept="2YLCzo" id="7YL4GJ3yZnk" role="2WLuW8">
             <ref role="2YLC_M" to="clbe:5yYXyc4Z0CJ" resolve="StructDeclaration" />
             <node concept="1PXbaU" id="7YL4GJ3yZnm" role="2YLCwC">
@@ -2960,7 +2951,7 @@
                           <ref role="1PxNhF" to="clbe:5yYXyc4Z0CS" resolve="StructType" />
                           <node concept="2OqwBi" id="7YL4GJ3kv5I" role="1PxMeX">
                             <node concept="2Duq_I" id="7YL4GJ3kunr" role="2Oq$k0" />
-                            <node concept="3TrEf2" id="7YL4GJ3kvGZ" role="2OqNvi">
+                            <node concept="3TrEf2" id="8pd8fS0fRO" role="2OqNvi">
                               <ref role="3Tt5mk" to="clbe:5jyom5fO9Cm" />
                             </node>
                           </node>
@@ -3017,12 +3008,9 @@
       <node concept="2YLCzo" id="7YL4GJ3dAlV" role="2YZnDk">
         <ref role="2YLC_M" to="clbe:5jyom5fO9Cn" resolve="TypeDefType" />
         <node concept="2WRh_U" id="7YL4GJ3yZwT" role="2YLCwC">
-          <node concept="1PXbyT" id="7YL4GJ3dAt0" role="1PX80g" />
           <node concept="2YLCzo" id="7YL4GJ3z169" role="2WLuW8">
             <ref role="2YLC_M" to="clbe:5jyom5fO9Ch" resolve="TypeDef" />
-            <node concept="1PXaKw" id="7YL4GJ3z16b" role="2YLCwC">
-              <node concept="1PXbyT" id="7YL4GJ3z16a" role="1PX80g" />
-            </node>
+            <node concept="1PXaKw" id="8pd8fRVYL7" role="2YLCwC" />
           </node>
         </node>
       </node>
@@ -3030,27 +3018,13 @@
     <node concept="2XId1z" id="7YL4GJ3dAt4" role="2XCcQV">
       <node concept="2YLCzo" id="7YL4GJ3dAt5" role="2XId1A">
         <ref role="2YLC_M" to="clbe:5yYXyc4Z0CS" resolve="StructType" />
-        <node concept="1PXaKw" id="7YL4GJ3dA$e" role="2YLCwC">
-          <node concept="1PXbyT" id="7YL4GJ3dA$d" role="1PX80g">
-            <node concept="2W$Dyf" id="7YL4GJ3dA$p" role="2W$Dn9">
-              <node concept="3clFbS" id="7YL4GJ3dA$q" role="2VODD2">
-                <node concept="3clFbF" id="77Xe7_OVV$Y" role="3cqZAp">
-                  <node concept="2OqwBi" id="77Xe7_OVVFG" role="3clFbG">
-                    <node concept="2Duq_I" id="77Xe7_OVV$W" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="77Xe7_OVWwO" role="2OqNvi">
-                      <ref role="3Tt5mk" to="clbe:5jyom5fO9Co" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2YJ9qm" id="77Xe7_OPJL_" role="2YJTTe">
-            <node concept="3clFbS" id="77Xe7_OPJLA" role="2VODD2">
-              <node concept="3clFbF" id="77Xe7_OPJTv" role="3cqZAp">
+        <node concept="1PXaKw" id="8pd8fRVYLh" role="2YLCwC">
+          <node concept="2YJ9qm" id="8pd8fRVYLx" role="2YJTTe">
+            <node concept="3clFbS" id="8pd8fRVYLy" role="2VODD2">
+              <node concept="3clFbF" id="8pd8fRVYM7" role="3cqZAp">
                 <node concept="2OqwBi" id="77Xe7_OPJYG" role="3clFbG">
                   <node concept="2Duq_I" id="77Xe7_OPJTu" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="77Xe7_OPLuK" role="2OqNvi">
+                  <node concept="3TrEf2" id="8pd8fRYBN_" role="2OqNvi">
                     <ref role="3Tt5mk" to="clbe:5jyom5fO9Co" />
                   </node>
                 </node>

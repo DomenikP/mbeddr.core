@@ -49,7 +49,6 @@
       </concept>
       <concept id="3304628195161109397" name="mulder.base.structure.BooleanFunction" flags="ig" index="2qzhp0" />
       <concept id="7901750452160627013" name="mulder.base.structure.CurrentNodeParameter" flags="ng" index="2Duq_I" />
-      <concept id="9201156180056181316" name="mulder.base.structure.ResolveDelegateToValueProviderFunction" flags="ig" index="2W$Dyf" />
       <concept id="9201156180037714600" name="mulder.base.structure.TargetWatchSpecification" flags="ng" index="2XId1z">
         <child id="9201156180037714605" name="valueProvider" index="2XId1A" />
       </concept>
@@ -61,18 +60,12 @@
       <concept id="9201156180025058967" name="mulder.base.structure.SourceWatchWithValueProviderSpecification" flags="ng" index="2YYrhs">
         <child id="9201156180025305247" name="valueProvider" index="2YZnDk" />
       </concept>
-      <concept id="4369017833403014429" name="mulder.base.structure.IValueSpecification" flags="ng" index="1PX8ef">
-        <child id="4369017833403014786" name="semantics" index="1PX80g" />
-      </concept>
       <concept id="4369017833403013719" name="mulder.base.structure.IWatchSpecification" flags="ng" index="1PX8j5">
         <child id="4369017833403225127" name="value" index="1PYkEP" />
       </concept>
       <concept id="4369017833403013891" name="mulder.base.structure.ContextWatchSpecification" flags="ng" index="1PX8mh" />
       <concept id="4369017833403019954" name="mulder.base.structure.AbsentValueSpecification" flags="ng" index="1PXaKw">
         <child id="9201156180021251205" name="absentValueResolver" index="2YJTTe" />
-      </concept>
-      <concept id="4369017833403016747" name="mulder.base.structure.DelegateSemantics" flags="ng" index="1PXbyT">
-        <child id="9201156180056180482" name="resolveDelegate" index="2W$Dn9" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -142,35 +135,19 @@
     <node concept="2YYrhs" id="69N_VEGgj5j" role="2YSWWn">
       <node concept="2YLCzo" id="69N_VEGgj5k" role="2YZnDk">
         <ref role="2YLC_M" to="d0vh:1TZvYzh_YZV" resolve="CFunctionPointerTypedef" />
-        <node concept="1PXaKw" id="69N_VEGgj5o" role="2YLCwC">
-          <node concept="1PXbyT" id="69N_VEGgj5n" role="1PX80g" />
-        </node>
+        <node concept="1PXaKw" id="8pd8fRV0ug" role="2YLCwC" />
       </node>
     </node>
     <node concept="2XId1z" id="69N_VEGgj5b" role="2XCcQV">
       <node concept="2YLCzo" id="69N_VEGgj5c" role="2XId1A">
         <ref role="2YLC_M" to="clbe:5jyom5fO9Ch" resolve="TypeDef" />
-        <node concept="1PXaKw" id="69N_VEGgj5g" role="2YLCwC">
-          <node concept="1PXbyT" id="69N_VEGgj5f" role="1PX80g">
-            <node concept="2W$Dyf" id="69N_VEGgj5r" role="2W$Dn9">
-              <node concept="3clFbS" id="69N_VEGgj5s" role="2VODD2">
-                <node concept="3clFbF" id="69N_VEGgj8O" role="3cqZAp">
-                  <node concept="2OqwBi" id="69N_VEGgjhF" role="3clFbG">
-                    <node concept="2Duq_I" id="69N_VEGgj8N" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="69N_VEGgkPh" role="2OqNvi">
-                      <ref role="3Tt5mk" to="clbe:5jyom5fO9Cm" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2YJ9qm" id="69N_VEGgkQE" role="2YJTTe">
-            <node concept="3clFbS" id="69N_VEGgkQF" role="2VODD2">
-              <node concept="3clFbF" id="69N_VEGgkRV" role="3cqZAp">
+        <node concept="1PXaKw" id="8pd8fRV0lo" role="2YLCwC">
+          <node concept="2YJ9qm" id="8pd8fRV0ms" role="2YJTTe">
+            <node concept="3clFbS" id="8pd8fRV0mt" role="2VODD2">
+              <node concept="3clFbF" id="8pd8fRV0n2" role="3cqZAp">
                 <node concept="2OqwBi" id="69N_VEGgkRX" role="3clFbG">
                   <node concept="2Duq_I" id="69N_VEGgkRY" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="69N_VEGgkRZ" role="2OqNvi">
+                  <node concept="3TrEf2" id="8pd8fS0hpR" role="2OqNvi">
                     <ref role="3Tt5mk" to="clbe:5jyom5fO9Cm" />
                   </node>
                 </node>
@@ -185,27 +162,13 @@
     <property role="TrG5h" value="CFunctionPointerTypedef_ModelValue" />
     <ref role="2qziyn" to="d0vh:1TZvYzh_YZV" resolve="CFunctionPointerTypedef" />
     <node concept="1PX8mh" id="36$DQmcH3yW" role="1PXawn">
-      <node concept="1PXaKw" id="69N_VEGggo7" role="1PYkEP">
-        <node concept="1PXbyT" id="69N_VEGggum" role="1PX80g">
-          <node concept="2W$Dyf" id="69N_VEGggz_" role="2W$Dn9">
-            <node concept="3clFbS" id="69N_VEGggzA" role="2VODD2">
-              <node concept="3clFbF" id="69N_VEGggIC" role="3cqZAp">
-                <node concept="2OqwBi" id="69N_VEGggRv" role="3clFbG">
-                  <node concept="2Duq_I" id="69N_VEGggIB" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="69N_VEGgiPG" role="2OqNvi">
-                    <ref role="3Tt5mk" to="clbe:5jyom5fO9Cm" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2YJ9qm" id="69N_VEGgiQW" role="2YJTTe">
-          <node concept="3clFbS" id="69N_VEGgiQX" role="2VODD2">
-            <node concept="3clFbF" id="69N_VEGgiUX" role="3cqZAp">
-              <node concept="2OqwBi" id="69N_VEGgiUZ" role="3clFbG">
-                <node concept="2Duq_I" id="69N_VEGgiV0" role="2Oq$k0" />
-                <node concept="3TrEf2" id="69N_VEGgiV1" role="2OqNvi">
+      <node concept="1PXaKw" id="8pd8fRV0uH" role="1PYkEP">
+        <node concept="2YJ9qm" id="8pd8fRV0uX" role="2YJTTe">
+          <node concept="3clFbS" id="8pd8fRV0uY" role="2VODD2">
+            <node concept="3clFbF" id="8pd8fRV0Rp" role="3cqZAp">
+              <node concept="2OqwBi" id="69N_VEGggRv" role="3clFbG">
+                <node concept="2Duq_I" id="69N_VEGggIB" role="2Oq$k0" />
+                <node concept="3TrEf2" id="69N_VEGgiPG" role="2OqNvi">
                   <ref role="3Tt5mk" to="clbe:5jyom5fO9Cm" />
                 </node>
               </node>
