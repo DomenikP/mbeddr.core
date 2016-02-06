@@ -100,6 +100,9 @@
     <node concept="PrWs8" id="2Up4L46iHPp" role="PzmwI">
       <ref role="PrY4T" to="k6mm:2Up4L46iz2A" resolve="ISupportsBreakpoints" />
     </node>
+    <node concept="PrWs8" id="4VYXLgqcBp2" role="PzmwI">
+      <ref role="PrY4T" to="k6mm:4VYXLgqcAv1" resolve="Steppable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3CmSUB7FprA">
     <property role="TrG5h" value="LocalVariableDeclaration" />

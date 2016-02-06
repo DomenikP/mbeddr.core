@@ -37,6 +37,7 @@
     <import index="cu2c" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
     <import index="2omo" ref="r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)" />
     <import index="yh8" ref="r:cf8dc0a4-7e7f-4be5-9853-f747cd33208a(mulder.base.behavior)" />
+    <import index="k6mm" ref="r:0115dd04-77e7-4bb3-82d3-a1ee26c68cd7(mulder.base.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -5246,6 +5247,21 @@
         </node>
       </node>
       <node concept="10P_77" id="58TcxRGJ3gV" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="6jIVkP_0tda" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="hasSteppableSemantics" />
+      <ref role="13i0hy" to="yh8:6jIVkP_0tda" resolve="hasSteppableSemantics" />
+      <node concept="3Tm1VV" id="6jIVkP_0tdb" role="1B3o_S" />
+      <node concept="3clFbS" id="6jIVkP_3Ujm" role="3clF47">
+        <node concept="3clFbF" id="6jIVkP_3V7C" role="3cqZAp">
+          <node concept="3clFbT" id="6jIVkP_3V7B" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="6jIVkP_0$iz" role="3clF45" />
     </node>
     <node concept="13hLZK" id="35DQ$PNIBWv" role="13h7CW">
       <node concept="3clFbS" id="35DQ$PNIBWw" role="2VODD2" />
