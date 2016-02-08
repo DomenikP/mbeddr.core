@@ -64,6 +64,7 @@
     <import index="3dui" ref="r:8f1039d4-1829-4754-95ac-8a801334ecda(DeSpec.runtime.plugin)" />
     <import index="k6mm" ref="r:0115dd04-77e7-4bb3-82d3-a1ee26c68cd7(DeSpec.base.structure)" />
     <import index="2cz0" ref="r:0f113ca1-2114-4026-bc9c-67c6eacebb6d(DeSpec.Model.structure)" />
+    <import index="yh8" ref="r:cf8dc0a4-7e7f-4be5-9853-f747cd33208a(mulder.base.behavior)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -6423,6 +6424,29 @@
       </node>
       <node concept="3Tqbb2" id="74lwjTQj3sm" role="3clF45">
         <ref role="ehGHo" to="x27k:71UKpntnl7M" resolve="IFunctionLike" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="4VYXLgr04uy" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getTarget" />
+      <ref role="13i0hy" to="yh8:4VYXLgr04uy" resolve="getTarget" />
+      <node concept="3Tm1VV" id="4VYXLgr04uz" role="1B3o_S" />
+      <node concept="3clFbS" id="4nwiEYdS$Tq" role="3clF47">
+        <node concept="3clFbF" id="4nwiEYdSAI5" role="3cqZAp">
+          <node concept="1PxgMI" id="4nwiEYdSJPv" role="3clFbG">
+            <ref role="1PxNhF" to="k6mm:4VYXLgrcIvN" resolve="SteppableContext" />
+            <node concept="2OqwBi" id="4nwiEYdSBbh" role="1PxMeX">
+              <node concept="13iPFW" id="4nwiEYdSAI4" role="2Oq$k0" />
+              <node concept="3TrEf2" id="4nwiEYdSB$p" role="2OqNvi">
+                <ref role="3Tt5mk" to="x27k:5ak6HMA0red" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="4VYXLgr056F" role="3clF45">
+        <ref role="ehGHo" to="k6mm:4VYXLgrcIvN" resolve="SteppableContext" />
       </node>
     </node>
     <node concept="13hLZK" id="35NyAcPBUm" role="13h7CW">

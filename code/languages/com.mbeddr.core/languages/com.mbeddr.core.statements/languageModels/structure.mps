@@ -101,7 +101,7 @@
       <ref role="PrY4T" to="k6mm:2Up4L46iz2A" resolve="ISupportsBreakpoints" />
     </node>
     <node concept="PrWs8" id="4VYXLgqcBp2" role="PzmwI">
-      <ref role="PrY4T" to="k6mm:4VYXLgqcAv1" resolve="Steppable" />
+      <ref role="PrY4T" to="k6mm:4VYXLgqcAv1" resolve="CanBeSteppable" />
     </node>
   </node>
   <node concept="1TIwiD" id="3CmSUB7FprA">
@@ -256,6 +256,9 @@
     </node>
     <node concept="PrWs8" id="7HkFchP0Cf5" role="PzmwI">
       <ref role="PrY4T" node="7HkFchP0Cf3" resolve="ILoopStatement" />
+    </node>
+    <node concept="PrWs8" id="4nwiEYf9XUb" role="PzmwI">
+      <ref role="PrY4T" to="k6mm:PjpCzdQT6j" resolve="WatchProviderScope" />
     </node>
   </node>
   <node concept="1TIwiD" id="6iIoqg1xKSz">
