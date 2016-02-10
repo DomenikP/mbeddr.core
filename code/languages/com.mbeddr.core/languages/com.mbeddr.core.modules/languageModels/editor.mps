@@ -2582,7 +2582,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="7apEgWbIQfV" role="3EZMnx">
-        <ref role="1NtTu8" to="x27k:7apEgWbIQfG" />
+        <ref role="1NtTu8" to="x27k:6WUNGeDt3Wd" />
       </node>
       <node concept="3F0ifn" id="7apEgWbIQfO" role="3EZMnx">
         <property role="3F0ifm" value="]" />
@@ -4841,6 +4841,13 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6WUNGeD$FOD">
+    <property role="3GE5qa" value="functionrefs.closure" />
+    <ref role="1XX52x" to="x27k:6WUNGeDt3W6" resolve="ClosureBody" />
+    <node concept="3F1sOY" id="6WUNGeD$FOU" role="2wV5jI">
+      <ref role="1NtTu8" to="x27k:7apEgWbIQfG" />
     </node>
   </node>
 </model>

@@ -576,6 +576,9 @@
     <node concept="PrWs8" id="5ibmMvPgMx0" role="PzmwI">
       <ref role="PrY4T" to="2gv2:2R5TvtOl$CY" resolve="IStepIntoable" />
     </node>
+    <node concept="PrWs8" id="6WUNGe_T2f3" role="PzmwI">
+      <ref role="PrY4T" to="k6mm:4VYXLgqZLMw" resolve="StepIntoable" />
+    </node>
     <node concept="1TJgyj" id="7qHzltJ0ucy" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expr" />
@@ -601,11 +604,10 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="7apEgWbIQfE" resolve="ClosureParameter" />
     </node>
-    <node concept="1TJgyj" id="7apEgWbIQfG" role="1TKVEi">
+    <node concept="1TJgyj" id="6WUNGeDt3Wd" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7hIwPwVQD7C" resolve="ClosureStatementList" />
+      <ref role="20lvS9" node="6WUNGeDt3W6" resolve="ClosureBody" />
     </node>
     <node concept="PrWs8" id="4usdeMNUmVy" role="PzmwI">
       <ref role="PrY4T" to="mj1l:4usdeMNUjj3" resolve="IRequiresTypeToBeInferred" />
@@ -1486,6 +1488,20 @@
       <property role="20kJfa" value="function" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5_l8w1EmTvx" resolve="Function" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6WUNGeDt3W6">
+    <property role="3GE5qa" value="functionrefs.closure" />
+    <property role="TrG5h" value="ClosureBody" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7apEgWbIQfG" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7hIwPwVQD7C" resolve="ClosureStatementList" />
+    </node>
+    <node concept="PrWs8" id="6WUNGeDJW02" role="PzmwI">
+      <ref role="PrY4T" to="k6mm:4VYXLgrcIvN" resolve="SteppableContext" />
     </node>
   </node>
 </model>
