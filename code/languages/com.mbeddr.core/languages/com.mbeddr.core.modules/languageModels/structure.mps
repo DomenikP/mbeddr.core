@@ -302,6 +302,9 @@
     <node concept="PrWs8" id="6jIVkP$N4dF" role="PzmwI">
       <ref role="PrY4T" to="k6mm:4VYXLgrcIvN" resolve="SteppableContext" />
     </node>
+    <node concept="PrWs8" id="5hQOM0T0cRI" role="PzmwI">
+      <ref role="PrY4T" to="k6mm:4VYXLgqcAv1" resolve="CanBeSteppable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6Q7bJ$$my3n">
     <property role="3GE5qa" value="functions" />

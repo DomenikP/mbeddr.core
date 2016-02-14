@@ -449,11 +449,6 @@
       <node concept="3F1sOY" id="4VEDcE28xXU" role="3EZMnx">
         <ref role="1NtTu8" to="k146:4VEDcE28so5" />
       </node>
-      <node concept="Veino" id="4VhroexO7B5" role="3F10Kt">
-        <node concept="1iSF2X" id="4VhroexO7B6" role="VblUZ">
-          <property role="1iTho6" value="EEEEEE" />
-        </node>
-      </node>
     </node>
     <node concept="3EZMnI" id="4VhroexO305" role="6VMZX">
       <node concept="2iRkQZ" id="4VhroexO306" role="2iSdaV" />

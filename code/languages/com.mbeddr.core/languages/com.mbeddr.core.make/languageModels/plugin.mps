@@ -60,6 +60,7 @@
     <import index="tdvr" ref="r:584f710e-f1e3-453b-bb3f-bc2f387d9f9d(mulder.text.structure)" />
     <import index="2cz0" ref="r:0f113ca1-2114-4026-bc9c-67c6eacebb6d(mulder.model.structure)" />
     <import index="d034" ref="r:a470acf5-63c8-4328-a411-2691e6b13cfc(mulder.model.runtime.plugin)" />
+    <import index="z8de" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.util(MPS.OpenAPI/org.jetbrains.mps.openapi.util@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -364,6 +365,7 @@
       <concept id="2360002718792622184" name="jetbrains.mps.make.script.structure.OutputResources" flags="nn" index="ElOAg">
         <child id="2360002718792622193" name="resource" index="ElOA9" />
       </concept>
+      <concept id="4671800353872995469" name="jetbrains.mps.make.script.structure.ConceptFunctionParameter_progressMonitor" flags="nn" index="EWnkA" />
       <concept id="3668957831723333672" name="jetbrains.mps.make.script.structure.ReportFeedbackStatement" flags="nn" index="1daRAt">
         <property id="3668957831723333678" name="feedback" index="1daRAr" />
         <child id="3668957831723336680" name="message" index="1daK9t" />
@@ -3384,7 +3386,7 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="45oG17Gplsd" role="3cqZAp" />
+            <node concept="3clFbH" id="jwnp0b1Yf3" role="3cqZAp" />
             <node concept="3clFbJ" id="PjpCzeabt5" role="3cqZAp">
               <node concept="3clFbS" id="PjpCzeabt7" role="3clFbx">
                 <node concept="1u1O0F" id="74jo7PV$FNn" role="3cqZAp">
@@ -3495,35 +3497,17 @@
                     <node concept="2es0OD" id="74jo7PVsPri" role="2OqNvi">
                       <node concept="1bVj0M" id="74jo7PVsPrk" role="23t8la">
                         <node concept="3clFbS" id="74jo7PVsPrl" role="1bW5cS">
-                          <node concept="1u1O0H" id="74jo7PV$FNp" role="3cqZAp">
-                            <ref role="h6aeV" node="74jo7PV$FNn" />
-                            <node concept="3cmrfG" id="74jo7PV$FNq" role="1u1xPX">
-                              <property role="3cmrfH" value="1" />
-                            </node>
-                            <node concept="3cpWs3" id="74jo7PV$FNr" role="1VXZjo">
-                              <node concept="Xl_RD" id="74jo7PV$FNs" role="3uHU7B">
-                                <property role="Xl_RC" value="running make for " />
-                              </node>
-                              <node concept="2OqwBi" id="74jo7PVsWBm" role="3uHU7w">
-                                <node concept="37vLTw" id="74jo7PVsWBn" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="74jo7PVsPrm" resolve="inputModel" />
-                                </node>
-                                <node concept="liA8E" id="74jo7PVsWBo" role="2OqNvi">
-                                  <ref role="37wK5l" to="ec5l:~SModel.getModelName():java.lang.String" resolve="getModelName" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
                           <node concept="3clFbF" id="192S7Gdygzj" role="3cqZAp">
-                            <node concept="2YIFZM" id="192S7GdygPC" role="3clFbG">
-                              <ref role="1Pybhc" to="d034:192S7Gdy4Wt" resolve="AnnotationAttacher" />
-                              <ref role="37wK5l" to="d034:192S7GdybyQ" resolve="attachAnnotations" />
+                            <node concept="2YIFZM" id="2JdfBFbGJCL" role="3clFbG">
+                              <ref role="37wK5l" to="d034:6CqXZAgYdQO" resolve="attachAnnotationsMultiThreaded" />
+                              <ref role="1Pybhc" to="d034:192S7Gdy4Wt" resolve="ProgramAnnotationAttacher" />
                               <node concept="37vLTw" id="192S7GdyqkZ" role="37wK5m">
                                 <ref role="3cqZAo" node="74jo7PVsPrm" resolve="inputModel" />
                               </node>
                               <node concept="35c_gC" id="192S7GdzcAR" role="37wK5m">
                                 <ref role="35c_gD" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
                               </node>
+                              <node concept="EWnkA" id="jwnp0b1Zbk" role="37wK5m" />
                             </node>
                           </node>
                         </node>
@@ -3543,13 +3527,23 @@
                 <node concept="3clFbH" id="PjpCzea9tL" role="3cqZAp" />
               </node>
               <node concept="1Wc70l" id="PjpCzeahfb" role="3clFbw">
-                <node concept="2OqwBi" id="PjpCzeag6D" role="3uHU7B">
-                  <node concept="2YIFZM" id="PjpCzeafl1" role="2Oq$k0">
-                    <ref role="37wK5l" to="ierg:~TracingSettings.getInstance():jetbrains.mps.textgen.trace.IModifiableTraceSettings" resolve="getInstance" />
-                    <ref role="1Pybhc" to="ierg:~TracingSettings" resolve="TracingSettings" />
+                <node concept="1Wc70l" id="jwnp0b1YW8" role="3uHU7B">
+                  <node concept="2OqwBi" id="PjpCzeag6D" role="3uHU7w">
+                    <node concept="2YIFZM" id="PjpCzeafl1" role="2Oq$k0">
+                      <ref role="37wK5l" to="ierg:~TracingSettings.getInstance():jetbrains.mps.textgen.trace.IModifiableTraceSettings" resolve="getInstance" />
+                      <ref role="1Pybhc" to="ierg:~TracingSettings" resolve="TracingSettings" />
+                    </node>
+                    <node concept="liA8E" id="PjpCzeah7C" role="2OqNvi">
+                      <ref role="37wK5l" to="ierg:~IModifiableTraceSettings.isWriteGeneratorFile():boolean" resolve="isWriteGeneratorFile" />
+                    </node>
                   </node>
-                  <node concept="liA8E" id="PjpCzeah7C" role="2OqNvi">
-                    <ref role="37wK5l" to="ierg:~IModifiableTraceSettings.isWriteGeneratorFile():boolean" resolve="isWriteGeneratorFile" />
+                  <node concept="3fqX7Q" id="jwnp0b1YXI" role="3uHU7B">
+                    <node concept="2OqwBi" id="jwnp0b1YXJ" role="3fr31v">
+                      <node concept="EWnkA" id="jwnp0b1YXK" role="2Oq$k0" />
+                      <node concept="liA8E" id="jwnp0b1YXL" role="2OqNvi">
+                        <ref role="37wK5l" to="z8de:~ProgressMonitor.isCanceled():boolean" resolve="isCanceled" />
+                      </node>
+                    </node>
                   </node>
                 </node>
                 <node concept="2OqwBi" id="PjpCzeai1h" role="3uHU7w">
