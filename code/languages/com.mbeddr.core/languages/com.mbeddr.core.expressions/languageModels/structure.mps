@@ -110,6 +110,9 @@
     <node concept="PrWs8" id="$bJ0jgXxo3" role="PzmwI">
       <ref role="PrY4T" to="vs0r:$bJ0jgPete" resolve="IValueDebuggable" />
     </node>
+    <node concept="PrWs8" id="9tjUHEK_qq" role="PzmwI">
+      <ref role="PrY4T" to="k6mm:4VYXLgqcAv1" resolve="CanBeSteppable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7FQByU3CrCO">
     <property role="TrG5h" value="BinaryExpression" />

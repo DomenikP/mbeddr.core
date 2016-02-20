@@ -13,6 +13,7 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="k6mm" ref="r:0115dd04-77e7-4bb3-82d3-a1ee26c68cd7(mulder.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -238,6 +239,9 @@
     </node>
     <node concept="PrWs8" id="6Exsrk_$_NQ" role="PzmwI">
       <ref role="PrY4T" to="2gv2:1d7Vth$qHPp" resolve="ISuspendableNode" />
+    </node>
+    <node concept="PrWs8" id="9tjUHEqb5K" role="PzmwI">
+      <ref role="PrY4T" to="k6mm:WsW$R6dIy7" resolve="SteppableContext" />
     </node>
   </node>
   <node concept="1TIwiD" id="2lgwE2U2X_H">

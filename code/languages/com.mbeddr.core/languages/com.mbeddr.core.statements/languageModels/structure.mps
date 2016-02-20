@@ -183,6 +183,9 @@
     <node concept="PrWs8" id="PjpCzdRsuH" role="PzmwI">
       <ref role="PrY4T" to="k6mm:PjpCzdQT6j" resolve="WatchProviderScope" />
     </node>
+    <node concept="PrWs8" id="WsW$R6dLXp" role="PzmwI">
+      <ref role="PrY4T" to="k6mm:WsW$R6dIy7" resolve="SteppableContext" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1OcdQnyStpU">
     <property role="TrG5h" value="LocalVarRef" />

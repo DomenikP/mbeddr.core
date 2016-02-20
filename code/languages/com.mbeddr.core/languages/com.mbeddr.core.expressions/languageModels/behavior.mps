@@ -32,8 +32,10 @@
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" />
     <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(java.util@java_stub)" />
     <import index="pry4" ref="r:0a0d7eec-6e5a-412b-8e16-e3ee5ed7fb95(jetbrains.mps.debug.api.programState)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="yh8" ref="r:cf8dc0a4-7e7f-4be5-9853-f747cd33208a(mulder.base.behavior)" />
+    <import index="k6mm" ref="r:0115dd04-77e7-4bb3-82d3-a1ee26c68cd7(mulder.base.structure)" />
     <import index="fxg7" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -1563,6 +1565,21 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="13i0hz" id="9tjUHFDdRY" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="requiresSteppableContext" />
+      <ref role="13i0hy" to="yh8:9tjUHFDdRY" resolve="requiresSteppableContext" />
+      <node concept="3Tm1VV" id="9tjUHFDdRZ" role="1B3o_S" />
+      <node concept="3clFbS" id="9tjUHFDfcn" role="3clF47">
+        <node concept="3clFbF" id="9tjUHFSzkv" role="3cqZAp">
+          <node concept="3clFbT" id="9tjUHFSzku" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="9tjUHFDdV7" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="1NXj1mjQciq">

@@ -37,6 +37,8 @@
     <import index="n7pc" ref="r:1f4b6c73-0d50-4599-bc8a-9f6948adf243(com.mbeddr.core.expressions.typesystem)" />
     <import index="epq1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.math(JDK/java.math@java_stub)" />
     <import index="dd55" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.cache(MPS.Core/jetbrains.mps.generator.cache@java_stub)" />
+    <import index="yh8" ref="r:cf8dc0a4-7e7f-4be5-9853-f747cd33208a(mulder.base.behavior)" />
+    <import index="k6mm" ref="r:0115dd04-77e7-4bb3-82d3-a1ee26c68cd7(mulder.base.structure)" />
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" implicit="true" />
   </imports>
   <registry>
@@ -2122,6 +2124,98 @@
       <node concept="37vLTG" id="6VI$CV8O1nM" role="3clF46">
         <property role="TrG5h" value="idx" />
         <node concept="10Oyi0" id="6VI$CV8O1za" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="WsW$R6dJcx" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getContainedSteppables" />
+      <ref role="13i0hy" to="yh8:WsW$R6dJcx" resolve="getContainedSteppables" />
+      <node concept="3Tm1VV" id="WsW$R6dJcy" role="1B3o_S" />
+      <node concept="3clFbS" id="9tjUHEKoJb" role="3clF47">
+        <node concept="3cpWs8" id="9tjUHEKqqB" role="3cqZAp">
+          <node concept="3cpWsn" id="9tjUHEKqqE" role="3cpWs9">
+            <property role="TrG5h" value="steppables" />
+            <node concept="2I9FWS" id="9tjUHEKqqA" role="1tU5fm">
+              <ref role="2I9WkF" to="k6mm:4VYXLgqcAv1" resolve="CanBeSteppable" />
+            </node>
+            <node concept="2ShNRf" id="9tjUHEKqJ8" role="33vP2m">
+              <node concept="2T8Vx0" id="9tjUHEKryV" role="2ShVmc">
+                <node concept="2I9FWS" id="9tjUHEKryX" role="2T96Bj">
+                  <ref role="2I9WkF" to="k6mm:4VYXLgqcAv1" resolve="CanBeSteppable" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="9tjUHEKrEn" role="3cqZAp">
+          <node concept="2OqwBi" id="9tjUHEKs2h" role="3clFbG">
+            <node concept="37vLTw" id="9tjUHEKrEl" role="2Oq$k0">
+              <ref role="3cqZAo" node="9tjUHEKqqE" resolve="steppables" />
+            </node>
+            <node concept="X8dFx" id="9tjUHEKuQ7" role="2OqNvi">
+              <node concept="2OqwBi" id="9tjUHEKwf_" role="25WWJ7">
+                <node concept="13iPFW" id="9tjUHEKvQ4" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="9tjUHEKxc9" role="2OqNvi">
+                  <ref role="3TtcxE" to="k146:5oGU$loBXvw" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="9tjUHEKxyu" role="3cqZAp">
+          <node concept="2OqwBi" id="9tjUHEKxyv" role="3clFbG">
+            <node concept="37vLTw" id="9tjUHEKxyw" role="2Oq$k0">
+              <ref role="3cqZAo" node="9tjUHEKqqE" resolve="steppables" />
+            </node>
+            <node concept="X8dFx" id="9tjUHEKxyx" role="2OqNvi">
+              <node concept="2OqwBi" id="9tjUHEKxyy" role="25WWJ7">
+                <node concept="13iPFW" id="9tjUHEKxyz" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="9tjUHEK$vB" role="2OqNvi">
+                  <ref role="3TtcxE" to="k146:5oGU$loBXvu" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="9tjUHEKyBK" role="3cqZAp">
+          <node concept="2OqwBi" id="9tjUHEKyBL" role="3clFbG">
+            <node concept="37vLTw" id="9tjUHEKyBM" role="2Oq$k0">
+              <ref role="3cqZAo" node="9tjUHEKqqE" resolve="steppables" />
+            </node>
+            <node concept="X8dFx" id="9tjUHEKyBN" role="2OqNvi">
+              <node concept="2OqwBi" id="9tjUHEKyBO" role="25WWJ7">
+                <node concept="13iPFW" id="9tjUHEKyBP" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="9tjUHEK_4a" role="2OqNvi">
+                  <ref role="3TtcxE" to="k146:5oGU$loBXvv" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="9tjUHF8ADR" role="3cqZAp">
+          <node concept="2OqwBi" id="9tjUHF8C$e" role="3clFbG">
+            <node concept="37vLTw" id="9tjUHF8ADP" role="2Oq$k0">
+              <ref role="3cqZAo" node="9tjUHEKqqE" resolve="steppables" />
+            </node>
+            <node concept="TSZUe" id="9tjUHF8Fpy" role="2OqNvi">
+              <node concept="2OqwBi" id="9tjUHF8FAW" role="25WWJ7">
+                <node concept="13iPFW" id="9tjUHF8Ftf" role="2Oq$k0" />
+                <node concept="3TrEf2" id="9tjUHF8G72" role="2OqNvi">
+                  <ref role="3Tt5mk" to="k146:3_Z2SJX4_gm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="9tjUHEKrDy" role="3cqZAp">
+          <node concept="37vLTw" id="9tjUHEKrE2" role="3cqZAk">
+            <ref role="3cqZAo" node="9tjUHEKqqE" resolve="steppables" />
+          </node>
+        </node>
+      </node>
+      <node concept="2I9FWS" id="WsW$R6dKFp" role="3clF45">
+        <ref role="2I9WkF" to="k6mm:4VYXLgqcAv1" resolve="CanBeSteppable" />
       </node>
     </node>
   </node>

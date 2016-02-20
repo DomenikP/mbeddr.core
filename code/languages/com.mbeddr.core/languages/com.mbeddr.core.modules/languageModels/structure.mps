@@ -170,6 +170,9 @@
     <node concept="PrWs8" id="IviauXcnd" role="PzmwI">
       <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
     </node>
+    <node concept="PrWs8" id="9tjUHDLltL" role="PzmwI">
+      <ref role="PrY4T" to="k6mm:WsW$R6dIy7" resolve="SteppableContext" />
+    </node>
   </node>
   <node concept="PlHQZ" id="5_l8w1EmTdf">
     <property role="TrG5h" value="IModuleContent" />
@@ -300,10 +303,13 @@
       <ref role="PrY4T" to="k6mm:PjpCzdQT6j" resolve="WatchProviderScope" />
     </node>
     <node concept="PrWs8" id="6jIVkP$N4dF" role="PzmwI">
-      <ref role="PrY4T" to="k6mm:4VYXLgrcIvN" resolve="SteppableContext" />
+      <ref role="PrY4T" to="k6mm:4VYXLgrcIvN" resolve="ControlFlowProvider" />
     </node>
     <node concept="PrWs8" id="5hQOM0T0cRI" role="PzmwI">
       <ref role="PrY4T" to="k6mm:4VYXLgqcAv1" resolve="CanBeSteppable" />
+    </node>
+    <node concept="PrWs8" id="9tjUHEa06F" role="PzmwI">
+      <ref role="PrY4T" to="k6mm:WsW$R6dIy7" resolve="SteppableContext" />
     </node>
   </node>
   <node concept="1TIwiD" id="6Q7bJ$$my3n">
@@ -1504,7 +1510,7 @@
       <ref role="20lvS9" node="7hIwPwVQD7C" resolve="ClosureStatementList" />
     </node>
     <node concept="PrWs8" id="6WUNGeDJW02" role="PzmwI">
-      <ref role="PrY4T" to="k6mm:4VYXLgrcIvN" resolve="SteppableContext" />
+      <ref role="PrY4T" to="k6mm:4VYXLgrcIvN" resolve="ControlFlowProvider" />
     </node>
   </node>
 </model>

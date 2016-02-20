@@ -352,9 +352,6 @@
         <property id="3785936898437424562" name="value" index="3hSBKY" />
         <child id="1221064706952" name="query" index="1d8cEk" />
       </concept>
-      <concept id="3785936898438628050" name="de.slisson.mps.tables.structure.BorderBottomColorItem" flags="lg" index="3hWdHu" />
-      <concept id="3785936898438628815" name="de.slisson.mps.tables.structure.BorderRightColorItem" flags="lg" index="3hWdL3" />
-      <concept id="3785936898438629036" name="de.slisson.mps.tables.structure.ShadeColor" flags="lg" index="3hWdWw" />
       <concept id="3785936898438263806" name="de.slisson.mps.tables.structure.ColorTableStyleItem" flags="lg" index="3hZEDM">
         <property id="1186403713874" name="color" index="Vb097" />
       </concept>
@@ -850,14 +847,8 @@
             </node>
           </node>
           <node concept="1g0IQG" id="6VI$CVnK8Qj" role="1geGt4">
-            <node concept="3hWdHu" id="6VI$CVnKkv3" role="3hTmz4">
-              <property role="Vb097" value="darkGray" />
-            </node>
             <node concept="3hShVS" id="6VI$CVnKFL2" role="3hTmz4">
               <property role="3hSBKY" value="3" />
-            </node>
-            <node concept="3hWdWw" id="6VI$CVnL2M9" role="3hTmz4">
-              <property role="Vb097" value="lightGray" />
             </node>
           </node>
         </node>
@@ -1021,14 +1012,8 @@
             </node>
           </node>
           <node concept="1g0IQG" id="6VI$CVnLerj" role="1geGt4">
-            <node concept="3hWdL3" id="6VI$CVnLRzU" role="3hTmz4">
-              <property role="Vb097" value="darkGray" />
-            </node>
             <node concept="3hShXA" id="6VI$CVnM279" role="3hTmz4">
               <property role="3hSBKY" value="3" />
-            </node>
-            <node concept="3hWdWw" id="6VI$CVnLosM" role="3hTmz4">
-              <property role="Vb097" value="lightGray" />
             </node>
           </node>
         </node>
