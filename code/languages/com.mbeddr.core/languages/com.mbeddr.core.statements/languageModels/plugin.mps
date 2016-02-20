@@ -13,6 +13,7 @@
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -73,6 +74,13 @@
       </concept>
       <concept id="3304628195161109397" name="mulder.base.structure.BooleanFunction" flags="ig" index="2qzhp0" />
       <concept id="7901750452160627013" name="mulder.base.structure.CurrentNodeParameter" flags="ng" index="2Duq_I" />
+      <concept id="3296584876128698397" name="mulder.base.structure.CanBeSteppableSpec" flags="ng" index="2Wb59B">
+        <child id="3296584876128709544" name="hasSteppableSemantics" index="2Wb7Bi" />
+      </concept>
+      <concept id="3296584876146902083" name="mulder.base.structure.ContainedSteppablesFunction" flags="ig" index="2Z5DoT" />
+      <concept id="3296584876146876688" name="mulder.base.structure.SteppableContextSpec" flags="ng" index="2Z5NdE">
+        <child id="3296584876146876970" name="containedSteppables" index="2Z5N1g" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -86,6 +94,10 @@
       </concept>
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
+      </concept>
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
@@ -207,6 +219,58 @@
         <node concept="3clFbF" id="4nwiEYfaQbm" role="3cqZAp">
           <node concept="3clFbT" id="4nwiEYfaQbl" role="3clFbG">
             <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2Wb59B" id="2QZOBEhCVnA">
+    <property role="TrG5h" value="Statement_CanBeSteppableSpec" />
+    <ref role="2qziyn" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+  </node>
+  <node concept="2Wb59B" id="2QZOBEhSkiI">
+    <property role="TrG5h" value="BreakStatement_CanBeSteppableSpec" />
+    <ref role="2qziyn" to="c4fa:7k_CvRMnl1Q" resolve="BreakStatement" />
+    <node concept="2qzhp0" id="2QZOBEhSkiJ" role="2Wb7Bi">
+      <node concept="3clFbS" id="2QZOBEhSkiK" role="2VODD2">
+        <node concept="3clFbF" id="2QZOBEhSkod" role="3cqZAp">
+          <node concept="3clFbT" id="2QZOBEhSkoc" role="3clFbG">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2Wb59B" id="2QZOBEhSkqW">
+    <property role="TrG5h" value="LocalVariableDeclaration_CanBeSteppableSpec" />
+    <ref role="2qziyn" to="c4fa:3CmSUB7FprA" resolve="LocalVariableDeclaration" />
+    <node concept="2qzhp0" id="2QZOBEhSkqX" role="2Wb7Bi">
+      <node concept="3clFbS" id="2QZOBEhSkqY" role="2VODD2">
+        <node concept="3clFbF" id="2QZOBEhSk_J" role="3cqZAp">
+          <node concept="2OqwBi" id="2QZOBEhSnr$" role="3clFbG">
+            <node concept="2OqwBi" id="2QZOBEhSkFK" role="2Oq$k0">
+              <node concept="2Duq_I" id="2QZOBEhSk_I" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2QZOBEhSmlE" role="2OqNvi">
+                <ref role="3Tt5mk" to="c4fa:3CmSUB7Fw7R" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="2QZOBEhSo1I" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2Z5NdE" id="2QZOBEiF_hq">
+    <property role="TrG5h" value="StatementList_SteppableContextSpec" />
+    <ref role="2qziyn" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    <node concept="2Z5DoT" id="2QZOBEiF_hr" role="2Z5N1g">
+      <node concept="3clFbS" id="2QZOBEiF_hs" role="2VODD2">
+        <node concept="3clFbF" id="WsW$R6e4Sm" role="3cqZAp">
+          <node concept="2OqwBi" id="WsW$R6e50b" role="3clFbG">
+            <node concept="2Duq_I" id="2QZOBEiF_Zg" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="WsW$R6e69s" role="2OqNvi">
+              <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" />
+            </node>
           </node>
         </node>
       </node>

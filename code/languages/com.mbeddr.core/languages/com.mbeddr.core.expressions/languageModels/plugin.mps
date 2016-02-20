@@ -43,14 +43,21 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
     </language>
     <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="mulder.base">
       <concept id="7872820068763449586" name="mulder.base.structure.DebuggingSemanticsSpec" flags="ng" index="2mtXzh">
         <reference id="3304628195161099586" name="applicableConcept" index="2qziyn" />
       </concept>
+      <concept id="3304628195161109397" name="mulder.base.structure.BooleanFunction" flags="ig" index="2qzhp0" />
       <concept id="7778196424306621047" name="mulder.base.structure.WatchValueOperation" flags="ng" index="2rWWSo" />
       <concept id="7901750452160634178" name="mulder.base.structure.WatchParameter" flags="ng" index="2DurlD" />
       <concept id="7901750452160649799" name="mulder.base.structure.PrimitiveValueFunction" flags="ig" index="2Duv9G" />
+      <concept id="3296584876128698397" name="mulder.base.structure.CanBeSteppableSpec" flags="ng" index="2Wb59B">
+        <child id="3296584876128709546" name="requiresSteppableContext" index="2Wb7Bg" />
+      </concept>
       <concept id="5260770003381287423" name="mulder.base.structure.WatchValuePresentationOperation" flags="ng" index="19$7Id" />
       <concept id="4369017833403013719" name="mulder.base.structure.IWatchSpecification" flags="ng" index="1PX8j5">
         <child id="4369017833403225127" name="value" index="1PYkEP" />
@@ -109,6 +116,19 @@
                 <node concept="19$7Id" id="7YL4GJ1b0_x" role="2OqNvi" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2Wb59B" id="2QZOBEhI84A">
+    <property role="TrG5h" value="Expression_CanBeSteppableSpec" />
+    <ref role="2qziyn" to="mj1l:7FQByU3CrCM" resolve="Expression" />
+    <node concept="2qzhp0" id="2QZOBEhIbvG" role="2Wb7Bg">
+      <node concept="3clFbS" id="2QZOBEhIbvH" role="2VODD2">
+        <node concept="3clFbF" id="2QZOBEhIbBz" role="3cqZAp">
+          <node concept="3clFbT" id="2QZOBEhIbBy" role="3clFbG">
+            <property role="3clFbU" value="false" />
           </node>
         </node>
       </node>

@@ -236,6 +236,7 @@
     <usedLanguage>9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)</usedLanguage>
     <usedLanguage>b92f861d-0184-446d-b88b-6dcf0e070241(com.mbeddr.mpsutil.intentions)</usedLanguage>
     <usedLanguage>47f075a6-558e-4640-a606-7ce0236c8023(com.mbeddr.mpsutil.interpreter)</usedLanguage>
+    <usedLanguage>11a0cd79-9f2e-4665-a280-57a3cc526924(mulder.base)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
