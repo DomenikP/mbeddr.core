@@ -68,7 +68,8 @@ tasks.create("copy_scripts", Copy) {
   from projectDir.absolutePath + "/code/plugins"
   include "*/*.xml"
   into "scripts/"
-  dependsOn build_all_scripts
+  dependsOn retrieveMPS
+  //dependsOn build_all_scripts
 }
 tasks.create("build_sl_all", Exec) {
   workingDir projectDir
@@ -130,6 +131,10 @@ tasks.create("test_tutorial", Exec) {
 //
 //task assemble_slAll(dependsOn: [load_slAllScript, 'slAll_compileJava' ]) { }
 //
+task retrieveMPS(type: Copy) {
+  from zipTree(file("./MPS/MPS-mbeddr/mps-3.3.4.zip"))
+  into file("./MPS")
+}
 task doTestRetrieve(type: Copy) {
   from configurations.mps
   into "myDependencies"
