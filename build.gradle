@@ -56,7 +56,10 @@ def script_targets = ['clean', 'generate', 'assemble']
 def test_targets = ['clean', 'generate', 'assemble', 'check']
 def languages_targets = ['clean', 'generate', 'assemble']
 
-
+task retrieveMPS(type: Copy) {
+  from zipTree(file("./MPS/MPS-mbeddr/mps-3.3.4.zip"))
+  into file("./MPS")
+}
 tasks.create("build_all_scripts", Exec) {
   workingDir projectDir
   def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', all_scripts_script]
@@ -131,10 +134,7 @@ tasks.create("test_tutorial", Exec) {
 //
 //task assemble_slAll(dependsOn: [load_slAllScript, 'slAll_compileJava' ]) { }
 //
-task retrieveMPS(type: Copy) {
-  from zipTree(file("./MPS/MPS-mbeddr/mps-3.3.4.zip"))
-  into file("./MPS")
-}
+
 task doTestRetrieve(type: Copy) {
   from configurations.mps
   into "myDependencies"
