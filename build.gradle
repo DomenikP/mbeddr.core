@@ -57,13 +57,18 @@ def test_targets = ['clean', 'generate', 'assemble', 'check']
 def languages_targets = ['clean', 'generate', 'assemble']
 
 task retrieveMPS(type: Copy) {
-  from zipTree(file("./MPS/MPS-mbeddr/mps-3.3.4.zip"))
-  into file("./MPS")
+  from configurations.mps
+  into "myDependencies"
+  eachFile {
+    from zipTree(it.getFile())
+    into file("./MPS")
+  }
 }
 tasks.create("build_all_scripts", Exec) {
   workingDir projectDir
   def args = [mps_home, mbeddr_home, build_dir, slall_home, artifacts_root, '-f', all_scripts_script]
   commandLine('ant', *args, *languages_targets)
+  dependsOn retrieveMPS
 }
 tasks.create("copy_scripts", Copy) {
   from projectDir.absolutePath + "/build"
@@ -72,7 +77,6 @@ tasks.create("copy_scripts", Copy) {
   include "*/*.xml"
   into "scripts/"
   dependsOn retrieveMPS
-  //dependsOn build_all_scripts
 }
 tasks.create("build_sl_all", Exec) {
   workingDir projectDir
