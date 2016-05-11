@@ -57,12 +57,21 @@ def test_targets = ['clean', 'generate', 'assemble', 'check']
 def languages_targets = ['clean', 'generate', 'assemble']
 
 task retrieveMPS(type: Copy) {
-  from configurations.mps
-  into "myDependencies"
-  eachFile {
-    from zipTree(it.getFile())
-    into file("./MPS")
-  }
+  from { 
+      configurations.mps.collect {
+       // into "myDependencies"
+        zipTree(it) 
+      } 
+  } 
+  into file("./MPS/" + mbeddrMpsDir+ "/") 
+        
+//  from configurations.mps
+//  into "myDependencies"
+//  eachFile {
+//    println '### MPS ###: ' + outputDir + ', ' + it.getFile()
+//    from zipTree(it.getFile())
+//  }
+//  into outputDir
 }
 tasks.create("build_all_scripts", Exec) {
   workingDir projectDir
@@ -147,6 +156,7 @@ task doTestRetrieve(type: Copy) {
     into file("./MPS")
   }
 }
+
 repositories {
   ivy {
     // change to point to your repo, e.g. http://my.org/repo
