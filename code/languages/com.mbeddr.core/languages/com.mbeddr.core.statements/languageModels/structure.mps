@@ -98,10 +98,10 @@
       <ref role="PrY4T" to="vs0r:6brBMefRfNW" resolve="ILOCCountProvider" />
     </node>
     <node concept="PrWs8" id="2Up4L46iHPp" role="PzmwI">
-      <ref role="PrY4T" to="k6mm:2Up4L46iz2A" resolve="ISupportsBreakpoints" />
+      <ref role="PrY4T" to="k6mm:2Up4L46iz2A" resolve="Breakable" />
     </node>
     <node concept="PrWs8" id="4VYXLgqcBp2" role="PzmwI">
-      <ref role="PrY4T" to="k6mm:4VYXLgqcAv1" resolve="CanBeSteppable" />
+      <ref role="PrY4T" to="k6mm:4VYXLgqcAv1" resolve="Steppable" />
     </node>
   </node>
   <node concept="1TIwiD" id="3CmSUB7FprA">
@@ -181,10 +181,10 @@
       <ref role="PrY4T" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
     </node>
     <node concept="PrWs8" id="PjpCzdRsuH" role="PzmwI">
-      <ref role="PrY4T" to="k6mm:PjpCzdQT6j" resolve="WatchProviderScope" />
+      <ref role="PrY4T" to="k6mm:PjpCzdQT6j" resolve="ProviderScope" />
     </node>
     <node concept="PrWs8" id="WsW$R6dLXp" role="PzmwI">
-      <ref role="PrY4T" to="k6mm:WsW$R6dIy7" resolve="SteppableContext" />
+      <ref role="PrY4T" to="k6mm:WsW$R6dIy7" resolve="SteppableComposite" />
     </node>
   </node>
   <node concept="1TIwiD" id="1OcdQnyStpU">
@@ -261,7 +261,7 @@
       <ref role="PrY4T" node="7HkFchP0Cf3" resolve="ILoopStatement" />
     </node>
     <node concept="PrWs8" id="4nwiEYf9XUb" role="PzmwI">
-      <ref role="PrY4T" to="k6mm:PjpCzdQT6j" resolve="WatchProviderScope" />
+      <ref role="PrY4T" to="k6mm:PjpCzdQT6j" resolve="ProviderScope" />
     </node>
   </node>
   <node concept="1TIwiD" id="6iIoqg1xKSz">
@@ -331,6 +331,9 @@
     </node>
     <node concept="PrWs8" id="1PWMZrg2YDY" role="PzmwI">
       <ref role="PrY4T" to="2gv2:2R5TvtOlFs8" resolve="ISteppableContext" />
+    </node>
+    <node concept="PrWs8" id="gs6SuV6Ou4" role="PzmwI">
+      <ref role="PrY4T" to="k6mm:WsW$R6dIy7" resolve="SteppableComposite" />
     </node>
   </node>
   <node concept="1TIwiD" id="3kEjc_WJ2qA">
@@ -463,6 +466,9 @@
     </node>
     <node concept="PrWs8" id="cwSfPzAupX" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
+    </node>
+    <node concept="PrWs8" id="gs6SuV6OsP" role="PzmwI">
+      <ref role="PrY4T" to="k6mm:4VYXLgqcAv1" resolve="Steppable" />
     </node>
     <node concept="1TJgyj" id="2I09F8VKBaJ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -844,6 +850,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="cwSfPze2PZ" role="PzmwI">
       <ref role="PrY4T" to="vs0r:65XyadYMMYC" resolve="ICommentable" />
+    </node>
+    <node concept="PrWs8" id="gs6SuV7H62" role="PzmwI">
+      <ref role="PrY4T" to="k6mm:4VYXLgqcAv1" resolve="Steppable" />
     </node>
     <node concept="1TJgyj" id="1iWV611dFCL" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

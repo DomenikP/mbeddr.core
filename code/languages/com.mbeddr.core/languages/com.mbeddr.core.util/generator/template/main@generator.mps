@@ -512,6 +512,11 @@
       </concept>
     </language>
     <language id="f2600f3d-2083-4803-a693-cff3268f4af9" name="mulder.model">
+      <concept id="6134458215760782264" name="mulder.model.structure.RequiresInputNodeResolver" flags="ng" index="22L1E6">
+        <child id="6134458215760784447" name="liftToInputNodeResolver" index="22L1k1" />
+      </concept>
+      <concept id="5354543571940080098" name="mulder.model.structure.DelegateBreakpoint" flags="ng" index="pAt3w" />
+      <concept id="9087321911340228636" name="mulder.model.structure.Resolve2InputNode" flags="ng" index="3b4$sX" />
       <concept id="1069485541162136304" name="mulder.model.structure.InlineFrameAnnotation" flags="ng" index="3zHi6u" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -805,6 +810,9 @@
                 </node>
               </node>
               <node concept="raruj" id="38jJsRUn5Cs" role="lGtFl" />
+              <node concept="pAt3w" id="YzlSG9gxQS" role="lGtFl">
+                <node concept="3b4$sX" id="YzlSG9g$7i" role="22L1k1" />
+              </node>
             </node>
           </node>
           <node concept="3TlMh2" id="4WTYg$PQmMm" role="2C2TGm" />
@@ -15137,6 +15145,9 @@
                   </node>
                 </node>
                 <node concept="raruj" id="5usoWIJ2LLy" role="lGtFl" />
+                <node concept="pAt3w" id="YzlSGagitP" role="lGtFl">
+                  <node concept="3b4$sX" id="YzlSGagiRz" role="22L1k1" />
+                </node>
               </node>
             </node>
             <node concept="19Rifw" id="5usoWIJ2LLz" role="2C2TGm" />

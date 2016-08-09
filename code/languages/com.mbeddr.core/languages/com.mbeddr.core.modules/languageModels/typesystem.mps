@@ -404,6 +404,7 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
+      <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
@@ -7988,7 +7989,21 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="1d05Htbcbfy" role="3cqZAp" />
+          <node concept="3clFbF" id="4vcrI0JdAt1" role="3cqZAp">
+            <node concept="2OqwBi" id="4vcrI0JdCj2" role="3clFbG">
+              <node concept="1YBJjd" id="4vcrI0JdAsZ" role="2Oq$k0">
+                <ref role="1YBMHb" node="7x9scHwki23" resolve="f" />
+              </node>
+              <node concept="z$bX8" id="4vcrI0JdYNr" role="2OqNvi">
+                <node concept="1xMEDy" id="4vcrI0Je0XQ" role="1xVPHs">
+                  <node concept="chp4Y" id="4vcrI0Je0Zu" role="ri$Ld">
+                    <ref role="cht4Q" to="x27k:2VsHNE70LB4" resolve="AbstractDefineLike" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="4vcrI0Je12X" role="1xVPHs" />
+              </node>
+            </node>
+          </node>
           <node concept="3clFbJ" id="7x9scHwky$A" role="3cqZAp">
             <node concept="3clFbS" id="7x9scHwky$C" role="3clFbx">
               <node concept="2MkqsV" id="7x9scHwl3mE" role="3cqZAp">

@@ -58,13 +58,19 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
     </language>
     <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" name="mulder.base">
-      <concept id="7872820068764272051" name="mulder.base.structure.WatchScopeProviderSpec" flags="ng" index="2m0Mmg">
+      <concept id="7872820068764272051" name="mulder.base.structure.ScopeProviderSpec" flags="ng" index="2m0Mmg">
         <child id="7872820068764272169" name="delegateToSorroundingScopeProvider" index="2m0Moa" />
         <child id="7872820068764277106" name="collectWatchProvider" index="2m0N_h" />
       </concept>
@@ -74,7 +80,7 @@
       </concept>
       <concept id="3304628195161109397" name="mulder.base.structure.BooleanFunction" flags="ig" index="2qzhp0" />
       <concept id="7901750452160627013" name="mulder.base.structure.CurrentNodeParameter" flags="ng" index="2Duq_I" />
-      <concept id="3296584876128698397" name="mulder.base.structure.CanBeSteppableSpec" flags="ng" index="2Wb59B">
+      <concept id="3296584876128698397" name="mulder.base.structure.SteppableSpec" flags="ng" index="2Wb59B">
         <child id="3296584876128709544" name="hasSteppableSemantics" index="2Wb7Bi" />
       </concept>
       <concept id="3296584876146902083" name="mulder.base.structure.ContainedSteppablesFunction" flags="ig" index="2Z5DoT" />
@@ -89,6 +95,7 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -96,6 +103,9 @@
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
+        <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
+      </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -121,6 +131,7 @@
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
     </language>
   </registry>
   <node concept="2m0Mmg" id="6P1S2fX1CzW">
@@ -227,6 +238,25 @@
   <node concept="2Wb59B" id="2QZOBEhCVnA">
     <property role="TrG5h" value="Statement_CanBeSteppableSpec" />
     <ref role="2qziyn" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="2qzhp0" id="YzlSGa8$pm" role="2Wb7Bi">
+      <node concept="3clFbS" id="YzlSGa8$pn" role="2VODD2">
+        <node concept="3clFbF" id="YzlSGa8$xd" role="3cqZAp">
+          <node concept="3fqX7Q" id="YzlSGa8EnK" role="3clFbG">
+            <node concept="2OqwBi" id="YzlSGa8AtZ" role="3fr31v">
+              <node concept="2OqwBi" id="YzlSGa8$Dp" role="2Oq$k0">
+                <node concept="2Duq_I" id="YzlSGa8$xc" role="2Oq$k0" />
+                <node concept="2yIwOk" id="YzlSGa8_NV" role="2OqNvi" />
+              </node>
+              <node concept="3O6GUB" id="YzlSGa8E1K" role="2OqNvi">
+                <node concept="chp4Y" id="YzlSGa8E8z" role="3QVz_e">
+                  <ref role="cht4Q" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="2Wb59B" id="2QZOBEhSkiI">
     <property role="TrG5h" value="BreakStatement_CanBeSteppableSpec" />
@@ -271,6 +301,89 @@
             <node concept="3Tsc0h" id="WsW$R6e69s" role="2OqNvi">
               <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2Wb59B" id="4zL7dLfASnw">
+    <property role="TrG5h" value="DoWhileStatement_SteppableSpec" />
+    <ref role="2qziyn" to="c4fa:7k_CvRMnubc" resolve="DoWhileStatement" />
+  </node>
+  <node concept="2Z5NdE" id="gs6SuV70In">
+    <property role="TrG5h" value="IfStatement_SteppableContextSpec" />
+    <ref role="2qziyn" to="c4fa:5so5TTr6Vvn" resolve="IfStatement" />
+    <node concept="2Z5DoT" id="gs6SuV70Io" role="2Z5N1g">
+      <node concept="3clFbS" id="gs6SuV70Ip" role="2VODD2">
+        <node concept="3cpWs8" id="gs6SuV75Gx" role="3cqZAp">
+          <node concept="3cpWsn" id="gs6SuV75G$" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="2I9FWS" id="gs6SuV75Gv" role="1tU5fm">
+              <ref role="2I9WkF" to="k6mm:4VYXLgqcAv1" resolve="Steppable" />
+            </node>
+            <node concept="2ShNRf" id="gs6SuV76u$" role="33vP2m">
+              <node concept="2T8Vx0" id="gs6SuV77rZ" role="2ShVmc">
+                <node concept="2I9FWS" id="gs6SuV77s1" role="2T96Bj">
+                  <ref role="2I9WkF" to="k6mm:4VYXLgqcAv1" resolve="Steppable" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="gs6SuV78xe" role="3cqZAp">
+          <node concept="2OqwBi" id="gs6SuV797m" role="3clFbG">
+            <node concept="37vLTw" id="gs6SuV78xc" role="2Oq$k0">
+              <ref role="3cqZAo" node="gs6SuV75G$" resolve="res" />
+            </node>
+            <node concept="X8dFx" id="gs6SuV7eO8" role="2OqNvi">
+              <node concept="2OqwBi" id="gs6SuV71wZ" role="25WWJ7">
+                <node concept="2Duq_I" id="gs6SuV71g6" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="gs6SuV72yZ" role="2OqNvi">
+                  <ref role="3TtcxE" to="c4fa:2I09F8VKBez" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="gs6SuV7hTf" role="3cqZAp">
+          <node concept="2OqwBi" id="gs6SuV7j6b" role="3clFbG">
+            <node concept="37vLTw" id="gs6SuV7hTd" role="2Oq$k0">
+              <ref role="3cqZAo" node="gs6SuV75G$" resolve="res" />
+            </node>
+            <node concept="TSZUe" id="gs6SuV7ptA" role="2OqNvi">
+              <node concept="2OqwBi" id="gs6SuV73l7" role="25WWJ7">
+                <node concept="2Duq_I" id="gs6SuV7348" role="2Oq$k0" />
+                <node concept="3TrEf2" id="gs6SuV758O" role="2OqNvi">
+                  <ref role="3Tt5mk" to="c4fa:2I09F8VK$gF" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="gs6SuV7rbj" role="3cqZAp">
+          <node concept="37vLTw" id="gs6SuV7tb_" role="3cqZAk">
+            <ref role="3cqZAo" node="gs6SuV75G$" resolve="res" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2Wb59B" id="gs6SuV7Tn_">
+    <property role="TrG5h" value="ElsePart_SteppableSpec" />
+    <ref role="2qziyn" to="c4fa:1iWV611dFzA" resolve="ElsePart" />
+  </node>
+  <node concept="2Wb59B" id="gs6SuV7Tp8">
+    <property role="TrG5h" value="ElseIfPart_SteppableSpec" />
+    <ref role="2qziyn" to="c4fa:2I09F8VKBaA" resolve="ElseIfPart" />
+  </node>
+  <node concept="2Wb59B" id="YzlSGakP48">
+    <property role="TrG5h" value="StatementList_SteppableSpec" />
+    <ref role="2qziyn" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+    <node concept="2qzhp0" id="YzlSGakP49" role="2Wb7Bi">
+      <node concept="3clFbS" id="YzlSGakP4a" role="2VODD2">
+        <node concept="3clFbF" id="YzlSGakP9B" role="3cqZAp">
+          <node concept="3clFbT" id="YzlSGakP9A" role="3clFbG">
+            <property role="3clFbU" value="false" />
           </node>
         </node>
       </node>

@@ -105,19 +105,19 @@
     <usedLanguage>fe9d76d7-5809-45c9-ae28-a40915b4d6ff(jetbrains.mps.lang.checkedName)</usedLanguage>
     <usedLanguage>ef7bf5ac-d06c-4342-b11d-e42104eb9343(jetbrains.mps.lang.plugin.standalone)</usedLanguage>
     <usedLanguage>c0080a47-7e37-4558-bee9-9ae18e690549(jetbrains.mps.lang.extension)</usedLanguage>
-    <usedLanguage>f2600f3d-2083-4803-a693-cff3268f4af9(DeSpec.Model)</usedLanguage>
-    <usedLanguage>b25694ab-2b70-4644-a06e-4d199f64d0c5(DeSpec.Text)</usedLanguage>
     <usedLanguage>d09a16fb-1d68-4a92-a5a4-20b4b2f86a62(com.mbeddr.mpsutil.jung)</usedLanguage>
     <usedLanguage>92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</usedLanguage>
     <usedLanguage>b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)</usedLanguage>
     <usedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</usedLanguage>
     <usedLanguage>a482b416-d0c9-473f-8f67-725ed642b3f3(com.mbeddr.mpsutil.breadcrumb)</usedLanguage>
     <usedLanguage>479c7a8c-02f9-43b5-9139-d910cb22f298(jetbrains.mps.core.xml)</usedLanguage>
-    <usedLanguage>ce1120c1-075f-4f11-a8fc-36ddbe2de15f(DeSpec.TextGen)</usedLanguage>
     <usedLanguage>e840b8ae-64d9-4b5b-b3b4-eca3f222d4da(com.mbeddr.mpsutil.iconchar)</usedLanguage>
     <usedLanguage>e11c169d-9fe2-4a19-8c43-ddd8ffefd883(mbeddr.debugger.specification)</usedLanguage>
     <usedLanguage>11a0cd79-9f2e-4665-a280-57a3cc526924(mulder.base)</usedLanguage>
     <usedLanguage>77535ba7-24b5-4667-bf00-2e9c9074a90d(mulder.modelgen)</usedLanguage>
+    <usedLanguage>f2600f3d-2083-4803-a693-cff3268f4af9(mulder.model)</usedLanguage>
+    <usedLanguage>b25694ab-2b70-4644-a06e-4d199f64d0c5(mulder.text)</usedLanguage>
+    <usedLanguage>ce1120c1-075f-4f11-a8fc-36ddbe2de15f(mulder.textgen)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>

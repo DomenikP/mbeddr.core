@@ -10,6 +10,7 @@
     <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
     <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
+    <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -420,6 +421,20 @@
     <ref role="3_znuS" to="k146:4VEDcE28so4" resolve="BlockExpression" />
     <node concept="3__wT9" id="7HkFchP2X0U" role="3_A6iZ">
       <node concept="3clFbS" id="7HkFchP2X0V" role="2VODD2">
+        <node concept="3_J$rt" id="YzlSGa6ETR" role="3cqZAp">
+          <node concept="3_IKw2" id="YzlSGa6EW6" role="3_JbIs">
+            <node concept="2OqwBi" id="YzlSGa6L0I" role="3_I9Fq">
+              <node concept="3__QtB" id="YzlSGa6EWp" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="YzlSGa6MwE" role="2OqNvi">
+                <node concept="1xMEDy" id="YzlSGa6MwG" role="1xVPHs">
+                  <node concept="chp4Y" id="YzlSGa6Mxl" role="ri$Ld">
+                    <ref role="cht4Q" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3AgYrR" id="7HkFchP2X0W" role="3cqZAp">
           <node concept="2OqwBi" id="7HkFchP2X1j" role="3Ah4Yx">
             <node concept="3__QtB" id="7HkFchP2X0Y" role="2Oq$k0" />
@@ -536,6 +551,20 @@
     <ref role="3_znuS" to="k146:5oGU$loBXvt" resolve="DecTab" />
     <node concept="3__wT9" id="4muUMBDp$LF" role="3_A6iZ">
       <node concept="3clFbS" id="4muUMBDp$LG" role="2VODD2">
+        <node concept="3_J$rt" id="YzlSGbeedR" role="3cqZAp">
+          <node concept="3_IKw2" id="YzlSGbeedS" role="3_JbIs">
+            <node concept="2OqwBi" id="YzlSGbeedT" role="3_I9Fq">
+              <node concept="3__QtB" id="YzlSGbeedU" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="YzlSGbeedV" role="2OqNvi">
+                <node concept="1xMEDy" id="YzlSGbeedW" role="1xVPHs">
+                  <node concept="chp4Y" id="YzlSGbeedX" role="ri$Ld">
+                    <ref role="cht4Q" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="1LDGRqyZv0q" role="3cqZAp" />
         <node concept="3cpWs8" id="4muUMBDp$M_" role="3cqZAp">
           <node concept="3cpWsn" id="4muUMBDp$MA" role="3cpWs9">
@@ -1188,6 +1217,15 @@
           </node>
         </node>
         <node concept="3clFbH" id="2YT86TS2Vyn" role="3cqZAp" />
+      </node>
+    </node>
+  </node>
+  <node concept="3_zdsH" id="YzlSGaii1p">
+    <property role="3GE5qa" value="reporting" />
+    <ref role="3_znuS" to="k146:2lgwE2U3cEl" resolve="ReportStatement" />
+    <node concept="3__wT9" id="YzlSGaii1q" role="3_A6iZ">
+      <node concept="3clFbS" id="YzlSGaii1r" role="2VODD2">
+        <node concept="3_DlnG" id="YzlSGaii1G" role="3cqZAp" />
       </node>
     </node>
   </node>

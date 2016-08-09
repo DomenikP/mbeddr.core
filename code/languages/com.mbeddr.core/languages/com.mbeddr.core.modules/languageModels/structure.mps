@@ -139,7 +139,7 @@
       <ref role="PrY4T" to="vs0r:1DVNPtFPJFZ" resolve="IOutlineRoot" />
     </node>
     <node concept="PrWs8" id="1vhuDACnVTt" role="PzmwI">
-      <ref role="PrY4T" to="k6mm:PjpCzdQT6j" resolve="WatchProviderScope" />
+      <ref role="PrY4T" to="k6mm:PjpCzdQT6j" resolve="ProviderScope" />
     </node>
   </node>
   <node concept="1TIwiD" id="5_l8w1EmTde">
@@ -170,8 +170,8 @@
     <node concept="PrWs8" id="IviauXcnd" role="PzmwI">
       <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
     </node>
-    <node concept="PrWs8" id="9tjUHDLltL" role="PzmwI">
-      <ref role="PrY4T" to="k6mm:WsW$R6dIy7" resolve="SteppableContext" />
+    <node concept="PrWs8" id="1kvAObQ7xng" role="PzmwI">
+      <ref role="PrY4T" to="k6mm:WsW$R6dIy7" resolve="SteppableComposite" />
     </node>
   </node>
   <node concept="PlHQZ" id="5_l8w1EmTdf">
@@ -245,7 +245,7 @@
       <ref role="PrY4T" to="vs0r:9MiAwFsXp0" resolve="ITreeViewRoot" />
     </node>
     <node concept="PrWs8" id="2Up4L46iHU$" role="PzmwI">
-      <ref role="PrY4T" to="k6mm:2Up4L46iz2A" resolve="ISupportsBreakpoints" />
+      <ref role="PrY4T" to="k6mm:2Up4L46iz2A" resolve="Breakable" />
     </node>
   </node>
   <node concept="1TIwiD" id="5_l8w1EmTvw">
@@ -297,19 +297,16 @@
       <ref role="PrY4T" node="6V6S12clNH$" resolve="IDataFlowAnalyzerEntryPoint" />
     </node>
     <node concept="PrWs8" id="4dLPB5yjgff" role="PzmwI">
-      <ref role="PrY4T" to="k6mm:4dLPB5yd2k3" resolve="CanContributeStackFrame" />
+      <ref role="PrY4T" to="k6mm:4dLPB5yd2k3" resolve="Callable" />
     </node>
     <node concept="PrWs8" id="PjpCzdSg_7" role="PzmwI">
-      <ref role="PrY4T" to="k6mm:PjpCzdQT6j" resolve="WatchProviderScope" />
+      <ref role="PrY4T" to="k6mm:PjpCzdQT6j" resolve="ProviderScope" />
     </node>
     <node concept="PrWs8" id="6jIVkP$N4dF" role="PzmwI">
       <ref role="PrY4T" to="k6mm:4VYXLgrcIvN" resolve="ControlFlowProvider" />
     </node>
-    <node concept="PrWs8" id="5hQOM0T0cRI" role="PzmwI">
-      <ref role="PrY4T" to="k6mm:4VYXLgqcAv1" resolve="CanBeSteppable" />
-    </node>
-    <node concept="PrWs8" id="9tjUHEa06F" role="PzmwI">
-      <ref role="PrY4T" to="k6mm:WsW$R6dIy7" resolve="SteppableContext" />
+    <node concept="PrWs8" id="1kvAObQ6AGC" role="PzmwI">
+      <ref role="PrY4T" to="k6mm:4VYXLgqcAv1" resolve="Steppable" />
     </node>
   </node>
   <node concept="1TIwiD" id="6Q7bJ$$my3n">
@@ -628,10 +625,10 @@
       <ref role="PrY4T" to="2gv2:3SnnFeub0mq" resolve="IWatchablesProviderContext" />
     </node>
     <node concept="PrWs8" id="69N_VEHH5Ch" role="PzmwI">
-      <ref role="PrY4T" to="k6mm:4dLPB5yd2k3" resolve="CanContributeStackFrame" />
+      <ref role="PrY4T" to="k6mm:4dLPB5yd2k3" resolve="Callable" />
     </node>
     <node concept="PrWs8" id="69N_VEHVVxs" role="PzmwI">
-      <ref role="PrY4T" to="k6mm:PjpCzdQT6j" resolve="WatchProviderScope" />
+      <ref role="PrY4T" to="k6mm:PjpCzdQT6j" resolve="ProviderScope" />
     </node>
   </node>
   <node concept="1TIwiD" id="7apEgWbIQfE">
