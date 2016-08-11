@@ -1516,11 +1516,5 @@
     <property role="34LRSv" value="bla" />
     <ref role="1TJDcQ" node="7FQByU3CrCS" resolve="PrimitiveType" />
   </node>
-  <node concept="1TIwiD" id="PjpCze$BCn">
-    <property role="3GE5qa" value="literals" />
-    <property role="TrG5h" value="BlaLiteral" />
-    <property role="34LRSv" value="bla" />
-    <ref role="1TJDcQ" node="7FQByU3CrDq" resolve="Literal" />
-  </node>
 </model>
 

@@ -4173,12 +4173,5 @@
       <node concept="2iRfu4" id="3xqp6yfmncg" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="PjpCzeEkbU">
-    <property role="3GE5qa" value="literals" />
-    <ref role="1XX52x" to="mj1l:PjpCze$BCn" resolve="BlaLiteral" />
-    <node concept="PMmxH" id="PjpCzeEkzr" role="2wV5jI">
-      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-    </node>
-  </node>
 </model>
 
