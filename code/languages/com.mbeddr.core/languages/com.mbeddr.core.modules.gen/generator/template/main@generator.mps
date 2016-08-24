@@ -455,12 +455,12 @@
       <concept id="6134458215760782264" name="mulder.model.structure.RequiresInputNodeResolver" flags="ng" index="22L1E6">
         <child id="6134458215760784447" name="liftToInputNodeResolver" index="22L1k1" />
       </concept>
-      <concept id="1348472630505294351" name="mulder.model.structure.LiftWatchFromModel" flags="ng" index="2gb7qT" />
+      <concept id="1348472630505294351" name="mulder.model.structure.M2MWatch2Watch" flags="ng" index="2gb7qT" />
       <concept id="9087321911340228636" name="mulder.model.structure.Resolve2InputNode" flags="ng" index="3b4$sX" />
-      <concept id="3906148130290742821" name="mulder.model.structure.GeneratedDelegatedValueLifterFromModel" flags="ng" index="1kf5Gy">
+      <concept id="3906148130290742821" name="mulder.model.structure.M2MGeneratedDelegateToValueProvider" flags="ng" index="1kf5Gy">
         <reference id="3906148130290949809" name="delegatetoNodeSpec" index="1kejeQ" />
       </concept>
-      <concept id="3906148130290742816" name="mulder.model.structure.GeneratedValueLifterFromModel" flags="ng" index="1kf5GB">
+      <concept id="3906148130290742816" name="mulder.model.structure.M2MGeneratedValueLifter" flags="ng" index="1kf5GB">
         <reference id="3906148130290944737" name="valueLifterSpec" index="1keivA" />
       </concept>
     </language>
