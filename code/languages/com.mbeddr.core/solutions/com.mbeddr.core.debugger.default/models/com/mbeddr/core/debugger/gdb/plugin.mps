@@ -372,7 +372,7 @@
       <node concept="3Tm1VV" id="7B__YhMUq3E" role="1B3o_S" />
       <node concept="3clFbS" id="7B__YhMUq3F" role="3clF47">
         <node concept="XkiVB" id="7B__YhMUq3G" role="3cqZAp">
-          <ref role="37wK5l" to="x30c:5t7wq7v4vsS" resolve="AbstractDebuggerSettings" />
+          <ref role="37wK5l" to="e2lb:~Object.&lt;init&gt;()" resolve="Object" />
           <node concept="37vLTw" id="7B__YhMUq3H" role="37wK5m">
             <ref role="3cqZAo" node="7B__YhMUq3P" resolve="project" />
           </node>

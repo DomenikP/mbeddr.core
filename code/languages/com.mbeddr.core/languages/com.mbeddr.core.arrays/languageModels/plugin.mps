@@ -25,6 +25,7 @@
     <import index="pry4" ref="r:0a0d7eec-6e5a-412b-8e16-e3ee5ed7fb95(jetbrains.mps.debug.api.programState)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="oc1c" ref="r:0f9d093d-6e11-42a1-883b-2bf43165aa98(mulder.tracing.runtime.main)" />
   </imports>
   <registry>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
@@ -63,24 +64,24 @@
       <concept id="7872820068763449586" name="mulder.base.structure.DebuggingSemanticsSpec" flags="ng" index="2mtXzh">
         <reference id="3304628195161099586" name="applicableConcept" index="2qziyn" />
       </concept>
-      <concept id="3304628195161099688" name="mulder.base.structure.NameFunction" flags="ig" index="2qzixX" />
+      <concept id="3304628195161099688" name="mulder.base.structure.NameFunction" flags="ng" index="2qzixX" />
       <concept id="7778196424306621047" name="mulder.base.structure.WatchValueOperation" flags="ng" index="2rWWSo" />
       <concept id="7901750452160627013" name="mulder.base.structure.CurrentNodeParameter" flags="ng" index="2Duq_I" />
       <concept id="7901750452160634178" name="mulder.base.structure.WatchParameter" flags="ng" index="2DurlD" />
-      <concept id="7901750452160649799" name="mulder.base.structure.PrimitiveValueFunction" flags="ig" index="2Duv9G" />
-      <concept id="1616885506415405561" name="mulder.base.structure.ResolveWatchesFunction" flags="ig" index="UbBOO" />
-      <concept id="9201156180071237207" name="mulder.base.structure.ResolveWatchFunction" flags="ig" index="2VI5is" />
-      <concept id="9201156180069949556" name="mulder.base.structure.AttachToSingleNodeFunction" flags="ig" index="2WhbaZ" />
+      <concept id="7901750452160649799" name="mulder.base.structure.PrimitiveValueFunction" flags="ng" index="2Duv9G" />
+      <concept id="1616885506415405561" name="mulder.base.structure.ResolveWatchesFunction" flags="ng" index="UbBOO" />
+      <concept id="9201156180071237207" name="mulder.base.structure.ResolveWatchFunction" flags="ng" index="2VI5is" />
+      <concept id="9201156180069949556" name="mulder.base.structure.AttachToSingleNodeFunction" flags="ng" index="2WhbaZ" />
       <concept id="1616885506408138172" name="mulder.base.structure.MultipleWatchesSpecification" flags="ng" index="XBL5L">
         <child id="1616885506408138191" name="watchName" index="XBL42" />
         <child id="1616885506408138193" name="resolveWatches" index="XBL4s" />
         <child id="1616885506408138192" name="attachToNodes" index="XBL4t" />
       </concept>
-      <concept id="9201156180021183581" name="mulder.base.structure.ResolverAbsentValueProviderFunction" flags="ig" index="2YJ9qm" />
+      <concept id="9201156180021183581" name="mulder.base.structure.ResolverAbsentValueProviderFunction" flags="ng" index="2YJ9qm" />
       <concept id="5260770003381287423" name="mulder.base.structure.WatchValuePresentationOperation" flags="ng" index="19$7Id" />
       <concept id="2933779798740639839" name="mulder.base.structure.IndexParameter" flags="ng" index="39$s5L" />
-      <concept id="5395032908000395224" name="mulder.base.structure.ChildNameFunction" flags="ig" index="3aefS0" />
-      <concept id="6400245134465915240" name="mulder.base.structure.RootValueFunction" flags="ig" index="1F$mhy" />
+      <concept id="5395032908000395224" name="mulder.base.structure.ChildNameFunction" flags="ng" index="3aefS0" />
+      <concept id="6400245134465915240" name="mulder.base.structure.RootValueFunction" flags="ng" index="1F$mhy" />
       <concept id="2933779798677129903" name="mulder.base.structure.WatchValueSubvaluesOperation" flags="ng" index="3PUeI1" />
       <concept id="4369017833403014967" name="mulder.base.structure.ReferenceSemantics" flags="ng" index="1PX86_">
         <child id="5503890955236971482" name="nullPresentation" index="3T0MLN" />

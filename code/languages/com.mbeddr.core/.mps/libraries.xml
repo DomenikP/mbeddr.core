@@ -7,7 +7,15 @@
           <value>
             <Library>
               <option name="name" value="mbeddr" />
-              <option name="path" value="$PROJECT_DIR$/.." />
+              <option name="path" value="${mbeddr.home}/code/languages" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="mulder">
+          <value>
+            <Library>
+              <option name="name" value="mulder" />
+              <option name="path" value="$PROJECT_DIR$/../../../../languages.phd/code/languages/multilevel" />
             </Library>
           </value>
         </entry>
@@ -15,7 +23,7 @@
           <value>
             <Library>
               <option name="name" value="sl-all" />
-              <option name="path" value="$PROJECT_DIR$/../../plugins/sl-all" />
+              <option name="path" value="${mbeddr.home}/code/plugins/sl-all" />
             </Library>
           </value>
         </entry>

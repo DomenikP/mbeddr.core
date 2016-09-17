@@ -3063,33 +3063,6 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbJ" id="6uhyUqWSwRe" role="3cqZAp">
-            <node concept="3clFbS" id="6uhyUqWSwRh" role="3clFbx">
-              <node concept="2MkqsV" id="6uhyUqWS9xf" role="3cqZAp">
-                <node concept="Xl_RD" id="6uhyUqWS9xg" role="2MkJ7o">
-                  <property role="Xl_RC" value="the main function signature must be (int32 argc, string[] argv)" />
-                </node>
-                <node concept="1YBJjd" id="6uhyUqWS9xh" role="2OEOjV">
-                  <ref role="1YBMHb" node="3BLvzpMMG0y" resolve="f" />
-                </node>
-                <node concept="2ODE4t" id="6uhyUqX2sSw" role="2OEWyd">
-                  <ref role="2ODJFN" to="tpck:h0TrG11" resolve="name" />
-                </node>
-                <node concept="3Cnw8n" id="x1qBmbj5r" role="2OEOjU">
-                  <ref role="QpYPw" node="x1qBm93ri" resolve="fixMainFunction" />
-                  <node concept="3CnSsL" id="x1qBmbji9" role="3Coj4f">
-                    <ref role="QkamJ" node="x1qBm94pP" resolve="main" />
-                    <node concept="1YBJjd" id="x1qBmbjix" role="3CoRuB">
-                      <ref role="1YBMHb" node="3BLvzpMMG0y" resolve="f" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="37vLTw" id="6uhyUqWSwWz" role="3clFbw">
-              <ref role="3cqZAo" node="6uhyUqWSvao" resolve="wrongSig" />
-            </node>
-          </node>
         </node>
         <node concept="1Wc70l" id="381SXfCa4di" role="3clFbw">
           <node concept="3y3z36" id="381SXfCa4e5" role="3uHU7B">
