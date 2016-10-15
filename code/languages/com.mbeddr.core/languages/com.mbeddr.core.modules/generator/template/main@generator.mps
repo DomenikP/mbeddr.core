@@ -280,8 +280,9 @@
       <concept id="6134458215760782264" name="mulder.model.structure.RequiresInputNodeResolver" flags="ng" index="22L1E6">
         <child id="6134458215760784447" name="liftToInputNodeResolver" index="22L1k1" />
       </concept>
-      <concept id="1348472630505294351" name="mulder.model.structure.LiftWatchFromModel" flags="ng" index="2gb7qT" />
-      <concept id="7879092975090976563" name="mulder.model.structure.LiftFrame2FrameFromModel" flags="ng" index="2xMITz" />
+      <concept id="1348472630505294351" name="mulder.model.structure.M2MWatch2Watch" flags="ng" index="2gb7qT" />
+      <concept id="5354543571940080098" name="mulder.model.structure.M2MDelegateBreakpoint" flags="ng" index="pAt3w" />
+      <concept id="7879092975090976563" name="mulder.model.structure.M2MFrame2Frame" flags="ng" index="2xMITz" />
       <concept id="9087321911340228636" name="mulder.model.structure.Resolve2InputNode" flags="ng" index="3b4$sX" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -621,6 +622,9 @@
                   </node>
                 </node>
                 <node concept="raruj" id="7Tm6uYI7XQp" role="lGtFl" />
+                <node concept="pAt3w" id="6yCBv2xHWjJ" role="lGtFl">
+                  <node concept="3b4$sX" id="6yCBv2xHWsm" role="22L1k1" />
+                </node>
               </node>
               <node concept="3XISUE" id="7Tm6uYI7X90" role="3XIRFZ" />
             </node>
