@@ -21,6 +21,7 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
   </imports>
   <registry>
@@ -117,26 +118,26 @@
       <concept id="3296584876128698397" name="mulder.base.structure.SteppableSpec" flags="ng" index="2Wb59B">
         <child id="3296584876128709544" name="hasSteppableSemantics" index="2Wb7Bi" />
       </concept>
-      <concept id="3296584876134733840" name="mulder.base.structure.IsTargetForStepIntoableFunction" flags="ig" index="2Wk4DE" />
-      <concept id="3296584876134730313" name="mulder.base.structure.StepIntoableNode" flags="ng" index="2Wk5wN" />
+      <concept id="3296584876134733840" name="mulder.base.structure.IsTargetForCallableCallFunction" flags="ig" index="2Wk4DE" />
+      <concept id="3296584876134730313" name="mulder.base.structure.CallableCallNode" flags="ng" index="2Wk5wN" />
       <concept id="3296584876134470900" name="mulder.base.structure.ControlFlowProviderSpec" flags="ng" index="2Wl4qe">
         <child id="3296584876134471111" name="isTargetForStepIntoable" index="2Wl4uX" />
       </concept>
-      <concept id="9201156180037714600" name="mulder.base.structure.TargetWatchSpecification" flags="ng" index="2XId1z">
+      <concept id="9201156180037714600" name="mulder.base.structure.TargetWatch" flags="ng" index="2XId1z">
         <child id="9201156180037714605" name="valueProvider" index="2XId1A" />
       </concept>
-      <concept id="9201156180028135955" name="mulder.base.structure.ValueProviderValueSpecificaiton" flags="ng" index="2YLCzo">
+      <concept id="9201156180028135955" name="mulder.base.structure.ValueProviderValue" flags="ng" index="2YLCzo">
         <reference id="9201156180028136377" name="valueProvider" index="2YLC_M" />
         <child id="9201156180028136163" name="valueSpecification" index="2YLCwC" />
       </concept>
-      <concept id="9201156180025058967" name="mulder.base.structure.SourceWatchWithValueProviderSpecification" flags="ng" index="2YYrhs">
+      <concept id="9201156180025058967" name="mulder.base.structure.SourceWatch" flags="ng" index="2YYrhs">
         <child id="9201156180025305247" name="valueProvider" index="2YZnDk" />
       </concept>
       <concept id="3296584876146902083" name="mulder.base.structure.ContainedSteppablesFunction" flags="ig" index="2Z5DoT" />
       <concept id="3296584876146876688" name="mulder.base.structure.SteppableCompositeSpec" flags="ng" index="2Z5NdE">
         <child id="3296584876146876970" name="containedSteppables" index="2Z5N1g" />
       </concept>
-      <concept id="3296584876145452849" name="mulder.base.structure.StepIntoableSpec" flags="ng" index="2Zbflb">
+      <concept id="3296584876145452849" name="mulder.base.structure.CallableCallSpec" flags="ng" index="2Zbflb">
         <child id="3296584876145461971" name="possibleTargets" index="2Zb9yD" />
       </concept>
       <concept id="3296584876145454860" name="mulder.base.structure.PossibleTargetsFunction" flags="ig" index="2ZbfPQ" />
@@ -150,8 +151,8 @@
       <concept id="4369017833403013719" name="mulder.base.structure.IWatchSpecification" flags="ng" index="1PX8j5">
         <child id="4369017833403225127" name="value" index="1PYkEP" />
       </concept>
-      <concept id="4369017833403013891" name="mulder.base.structure.ContextWatchSpecification" flags="ng" index="1PX8mh" />
-      <concept id="4369017833403016750" name="mulder.base.structure.PrimitiveValueSpecification" flags="ng" index="1PXbyW">
+      <concept id="4369017833403013891" name="mulder.base.structure.ContextWatch" flags="ng" index="1PX8mh" />
+      <concept id="4369017833403016750" name="mulder.base.structure.PrimitiveValue" flags="ng" index="1PXbyW">
         <child id="9201156180022690541" name="valueFunction" index="2Y_p0A" />
       </concept>
     </language>
@@ -166,6 +167,7 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
@@ -175,6 +177,12 @@
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptTypeSConcept" flags="in" index="3bZ5Sz">
+        <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
+      </concept>
       <concept id="1182511038748" name="jetbrains.mps.lang.smodel.structure.Model_NodesIncludingImportedOperation" flags="nn" index="1j9C0f">
         <reference id="1182511038750" name="concept" index="1j9C0d" />
       </concept>
@@ -238,7 +246,7 @@
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
     </language>
     <language id="77535ba7-24b5-4667-bf00-2e9c9074a90d" name="mulder.modelgen">
-      <concept id="7872820068767882943" name="mulder.modelgen.structure.ModelValue" flags="ng" index="2me3Us">
+      <concept id="7872820068767882943" name="mulder.modelgen.structure.ValueContract" flags="ng" index="2me3Us">
         <child id="4369017833403020933" name="valueSpecification" index="1PXawn" />
       </concept>
       <concept id="7872820068762968763" name="mulder.modelgen.structure.WatchProviderSpec" flags="ng" index="2mrKao">
@@ -257,30 +265,33 @@
     <ref role="2qziyn" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
     <node concept="2m0Nnf" id="6P1S2fX1ZW8" role="2m0N_h">
       <node concept="3clFbS" id="6P1S2fX1ZW9" role="2VODD2">
-        <node concept="3cpWs8" id="6ovk0Z5dW9K" role="3cqZAp">
-          <node concept="3cpWsn" id="6ovk0Z5dW9L" role="3cpWs9">
+        <node concept="3cpWs8" id="3_2J_k6Vpdh" role="3cqZAp">
+          <node concept="3cpWsn" id="3_2J_k6Vpdi" role="3cpWs9">
             <property role="TrG5h" value="wp" />
-            <node concept="3THzug" id="6ovk0Z5dW9I" role="1tU5fm">
-              <ref role="3qa414" to="k6mm:1rHBIiJ9Pyb" resolve="WatchProvider" />
+            <node concept="3bZ5Sz" id="3_2J_k6VqsL" role="1tU5fm">
+              <ref role="3bZ5Sy" to="k6mm:1rHBIiJ9Pyb" resolve="WatchProvider" />
             </node>
-            <node concept="3TUQnm" id="6ovk0Z5dW9N" role="33vP2m">
-              <ref role="3TV0OU" to="k6mm:1rHBIiJ9Pyb" resolve="WatchProvider" />
+            <node concept="35c_gC" id="3_2J_k6Vrgx" role="33vP2m">
+              <ref role="35c_gD" to="k6mm:1rHBIiJ9Pyb" resolve="WatchProvider" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6ovk0Z5ag9O" role="3cqZAp">
-          <node concept="2OqwBi" id="6ovk0Z5agsV" role="3clFbG">
-            <node concept="2OqwBi" id="6ovk0Z5a6ki" role="2Oq$k0">
-              <node concept="2Duq_I" id="6ovk0Z5a5dQ" role="2Oq$k0" />
-              <node concept="2qgKlT" id="6ovk0Z5aaqs" role="2OqNvi">
+        <node concept="3clFbF" id="3_2J_k6Vu5$" role="3cqZAp">
+          <node concept="2OqwBi" id="3_2J_k6Vu5_" role="3clFbG">
+            <node concept="2OqwBi" id="3_2J_k6Vu5A" role="2Oq$k0">
+              <node concept="2Duq_I" id="3_2J_k6Vu5B" role="2Oq$k0" />
+              <node concept="2qgKlT" id="3_2J_k6Vu5C" role="2OqNvi">
                 <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
-                <node concept="37vLTw" id="6ovk0Z5dW9O" role="37wK5m">
-                  <ref role="3cqZAo" node="6ovk0Z5dW9L" resolve="wp" />
+                <node concept="2OqwBi" id="3_2J_k6Vv4K" role="37wK5m">
+                  <node concept="37vLTw" id="3_2J_k6VuE5" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3_2J_k6Vpdi" resolve="wp" />
+                  </node>
+                  <node concept="FGMqu" id="3_2J_k6Vvpa" role="2OqNvi" />
                 </node>
               </node>
             </node>
-            <node concept="v3k3i" id="6ovk0Z5ahc0" role="2OqNvi">
-              <node concept="chp4Y" id="6ovk0Z5ahnn" role="v3oSu">
+            <node concept="v3k3i" id="3_2J_k6Vu5E" role="2OqNvi">
+              <node concept="chp4Y" id="3_2J_k6Vu5F" role="v3oSu">
                 <ref role="cht4Q" to="k6mm:1rHBIiJ9Pyb" resolve="WatchProvider" />
               </node>
             </node>

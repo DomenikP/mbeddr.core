@@ -4,12 +4,12 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot path="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger/tests/test.debugger.core/libs/easymock-3.1.jar" type="java_classes" />
-    <modelRoot path="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger/tests/test.debugger.core/libs/mockito-all-1.9.0.jar" type="java_classes" />
+    <modelRoot path="${mbeddr.home}/code/languages/com.mbeddr.debugger/tests/test.debugger.core/libs/easymock-3.1.jar" type="java_classes" />
+    <modelRoot path="${mbeddr.home}/code/languages/com.mbeddr.debugger/tests/test.debugger.core/libs/mockito-all-1.9.0.jar" type="java_classes" />
   </models>
   <stubModelEntries>
-    <stubModelEntry path="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger/tests/test.debugger.core/libs/easymock-3.1.jar" />
-    <stubModelEntry path="${mbeddr.github.core.home}/code/languages/com.mbeddr.debugger/tests/test.debugger.core/libs/mockito-all-1.9.0.jar" />
+    <stubModelEntry path="${mbeddr.home}/code/languages/com.mbeddr.debugger/tests/test.debugger.core/libs/easymock-3.1.jar" />
+    <stubModelEntry path="${mbeddr.home}/code/languages/com.mbeddr.debugger/tests/test.debugger.core/libs/mockito-all-1.9.0.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
@@ -20,7 +20,7 @@
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
     <dependency reexport="false">223dd778-c44f-4ef3-9535-7aa7d12244a6(com.mbeddr.core.debug)</dependency>
-    <dependency reexport="false">2b4de22e-008f-41fb-899f-2547969091c0(mulder.testing.runtime)</dependency>
+    <dependency reexport="false">2b4de22e-008f-41fb-899f-2547969091c0(com.mbeddr.core.debug.test.runtime)</dependency>
     <dependency reexport="false">cc7da2f6-419f-4133-a811-31fcd3295a85(jetbrains.mps.debugger.api.api)</dependency>
   </dependencies>
   <usedLanguages>

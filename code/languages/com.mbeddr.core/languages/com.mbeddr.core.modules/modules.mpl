@@ -157,6 +157,7 @@
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
     <dependency reexport="false">b25694ab-2b70-4644-a06e-4d199f64d0c5(mulder.text)</dependency>
     <dependency reexport="false">cb5fd060-a6fb-423f-827a-02ea829501c8(com.mbeddt.core.expressions.pluginSolution)</dependency>
+    <dependency reexport="false">c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</usedLanguage>

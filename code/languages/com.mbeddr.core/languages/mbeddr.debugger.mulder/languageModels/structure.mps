@@ -45,8 +45,8 @@
     </node>
   </node>
   <node concept="1TIwiD" id="10kQx65p_bv">
-    <property role="TrG5h" value="Argument" />
-    <property role="34LRSv" value="argument" />
+    <property role="TrG5h" value="Parameter" />
+    <property role="34LRSv" value="parameter" />
     <ref role="1TJDcQ" node="10kQx64H7HL" resolve="mbeddrVariableKind" />
   </node>
   <node concept="1TIwiD" id="10kQx65p_bN">

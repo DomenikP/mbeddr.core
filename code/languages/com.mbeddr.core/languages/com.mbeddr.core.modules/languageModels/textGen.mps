@@ -171,24 +171,24 @@
       <concept id="1233920501193" name="jetbrains.mps.lang.textGen.structure.IndentBufferOperation" flags="nn" index="1bpajm" />
     </language>
     <language id="ce1120c1-075f-4f11-a8fc-36ddbe2de15f" name="mulder.textgen">
-      <concept id="7901750452157038064" name="mulder.textgen.structure.TextValue2ModelValue" flags="ng" index="2DcDnr">
+      <concept id="7901750452157038064" name="mulder.textgen.structure.T2MValueTransformation" flags="ng" index="2DcDnr">
         <child id="1057143491307021360" name="debuggerBackends" index="2dkLTn" />
         <child id="9201156180046953180" name="targetValueStructure" index="2X9Uwn" />
         <child id="9201156180047235277" name="sourceValueStructure" index="2XaxC6" />
       </concept>
-      <concept id="915776213451033839" name="mulder.textgen.structure.StackFrameFromTextGen" flags="ng" index="Odj5M" />
-      <concept id="2635294119710702094" name="mulder.textgen.structure.ValueProviderFromTextGen" flags="ng" index="SA$w4">
+      <concept id="915776213451033839" name="mulder.textgen.structure.M2TCallable" flags="ng" index="Odj5M" />
+      <concept id="2635294119710702094" name="mulder.textgen.structure.M2TValueProvider" flags="ng" index="SA$w4">
         <child id="6400245134476181865" name="valueLifter" index="1FczLz" />
       </concept>
-      <concept id="960223883318792076" name="mulder.textgen.structure.ValueFromTextGen" flags="ng" index="33gQ$4">
+      <concept id="960223883318792076" name="mulder.textgen.structure.M2TValue" flags="ng" index="33gQ$4">
         <property id="1636870493684272922" name="takeValueLifterFromTextGen" index="29UtCg" />
       </concept>
-      <concept id="71553305920962829" name="mulder.textgen.structure.NameInTextGen" flags="ng" index="154Fhn" />
-      <concept id="4779930313850906447" name="mulder.textgen.structure.WatchFromTextGen" flags="ng" index="3qotS4">
+      <concept id="71553305920962829" name="mulder.textgen.structure.M2TIdentifier" flags="ng" index="154Fhn" />
+      <concept id="4779930313850906447" name="mulder.textgen.structure.M2TWatchProvider" flags="ng" index="3qotS4">
         <property id="113139468452623849" name="category" index="12C0pm" />
         <child id="1158790772916696870" name="kind" index="2kDYOR" />
       </concept>
-      <concept id="4721400539875162400" name="mulder.textgen.structure.ValueLifterReference" flags="ng" index="3$7n7A">
+      <concept id="4721400539875162400" name="mulder.textgen.structure.M2TValueLifterReference" flags="ng" index="3$7n7A">
         <reference id="6400245134476108722" name="valueFromTextLifter" index="1F3dUS" />
       </concept>
     </language>
@@ -198,11 +198,11 @@
       <concept id="7901750452160627013" name="mulder.base.structure.CurrentNodeParameter" flags="ng" index="2Duq_I" />
       <concept id="7901750452160634178" name="mulder.base.structure.WatchParameter" flags="ng" index="2DurlD" />
       <concept id="7901750452160649799" name="mulder.base.structure.PrimitiveValueFunction" flags="ig" index="2Duv9G" />
-      <concept id="9201156180047408998" name="mulder.base.structure.UnknownSourceWatchSpecification" flags="ng" index="2XbbQH" />
-      <concept id="9201156180037714600" name="mulder.base.structure.TargetWatchSpecification" flags="ng" index="2XId1z">
+      <concept id="9201156180047408998" name="mulder.base.structure.UnknownSourceWatch" flags="ng" index="2XbbQH" />
+      <concept id="9201156180037714600" name="mulder.base.structure.TargetWatch" flags="ng" index="2XId1z">
         <child id="9201156180037714605" name="valueProvider" index="2XId1A" />
       </concept>
-      <concept id="9201156180028135955" name="mulder.base.structure.ValueProviderValueSpecificaiton" flags="ng" index="2YLCzo">
+      <concept id="9201156180028135955" name="mulder.base.structure.ValueProviderValue" flags="ng" index="2YLCzo">
         <reference id="9201156180028136377" name="valueProvider" index="2YLC_M" />
         <child id="9201156180028136163" name="valueSpecification" index="2YLCwC" />
       </concept>
@@ -217,7 +217,7 @@
       <concept id="4369017833403013719" name="mulder.base.structure.IWatchSpecification" flags="ng" index="1PX8j5">
         <child id="4369017833403225127" name="value" index="1PYkEP" />
       </concept>
-      <concept id="4369017833403016750" name="mulder.base.structure.PrimitiveValueSpecification" flags="ng" index="1PXbyW">
+      <concept id="4369017833403016750" name="mulder.base.structure.PrimitiveValue" flags="ng" index="1PXbyW">
         <child id="9201156180022690541" name="valueFunction" index="2Y_p0A" />
       </concept>
       <concept id="5503890955236826442" name="mulder.base.structure.NullReferencePresentationFunction" flags="ig" index="3T0ubz" />
@@ -918,7 +918,7 @@
   </node>
   <node concept="WtQ9Q" id="1OcdQnyTYoT">
     <property role="3GE5qa" value="functions" />
-    <ref role="WuzLi" to="x27k:1OcdQnyTX2U" resolve="ArgumentRef" />
+    <ref role="WuzLi" to="x27k:1OcdQnyTX2U" resolve="ParameterRef" />
     <node concept="11bSqf" id="1OcdQnyTYoU" role="11c4hB">
       <node concept="3clFbS" id="1OcdQnyTYoV" role="2VODD2">
         <node concept="lc7rE" id="1OcdQnyTYoW" role="3cqZAp">
@@ -1829,7 +1829,7 @@
   </node>
   <node concept="WtQ9Q" id="3YdlD6aNbI">
     <property role="3GE5qa" value="functions" />
-    <ref role="WuzLi" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
+    <ref role="WuzLi" to="x27k:6Q7bJ$$my3n" resolve="Parameter" />
     <node concept="11bSqf" id="3YdlD6aNbJ" role="11c4hB">
       <node concept="3clFbS" id="3YdlD6aNbK" role="2VODD2">
         <node concept="3clFbJ" id="3YdlD6aNs$" role="3cqZAp">
@@ -2028,7 +2028,7 @@
       </node>
     </node>
     <node concept="3qotS4" id="3YdlD6aYLU" role="lGtFl">
-      <property role="12C0pm" value="argument" />
+      <property role="12C0pm" value="parameter" />
       <node concept="2lsCze" id="3YdlD6aYX7" role="2kDYOR" />
     </node>
   </node>
@@ -2564,7 +2564,7 @@
                                       </node>
                                       <node concept="3CFZ6_" id="7YL4GJ3dJtK" role="2OqNvi">
                                         <node concept="3CFYIy" id="7YL4GJ3dJtL" role="3CFYIz">
-                                          <ref role="3CFYIx" to="tdvr:6Poal3coI9c" resolve="LiftFrame2FrameFromText" />
+                                          <ref role="3CFYIx" to="tdvr:6Poal3coI9c" resolve="T2MFrame2Frame" />
                                         </node>
                                       </node>
                                     </node>

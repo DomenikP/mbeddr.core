@@ -413,7 +413,7 @@
         <child id="3376775282622233992" name="value" index="2DQcEM" />
       </concept>
       <concept id="8105003328814797298" name="com.mbeddr.core.modules.structure.IFunctionLike" flags="ng" index="2H9T1B">
-        <child id="5708867820623310661" name="arguments" index="1UOdpc" />
+        <child id="5708867820623310661" name="parameters" index="1UOdpc" />
       </concept>
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
@@ -430,7 +430,7 @@
       <concept id="6437088627575724001" name="com.mbeddr.core.modules.structure.Function" flags="ng" index="N3Fnx">
         <child id="4185783222026475860" name="body" index="3XIRFX" />
       </concept>
-      <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
+      <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Parameter" flags="ng" index="19RgSI" />
       <concept id="6708182213627045678" name="com.mbeddr.core.modules.structure.IExternable" flags="ng" index="3mNis0">
         <property id="6708182213627045681" name="extern" index="3mNisv" />
       </concept>
@@ -1222,7 +1222,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="1qFzXhg_UxE" role="3acgRq">
-      <ref role="30HIoZ" to="x27k:6Q7bJ$$my3n" resolve="Argument" />
+      <ref role="30HIoZ" to="x27k:6Q7bJ$$my3n" resolve="Parameter" />
       <node concept="gft3U" id="1qFzXhgA2qP" role="1lVwrX">
         <node concept="16f2uS" id="1qFzXhgA2qR" role="gfFT$">
           <property role="TrG5h" value="x" />

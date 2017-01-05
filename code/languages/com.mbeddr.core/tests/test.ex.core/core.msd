@@ -8,16 +8,28 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">~_PreferencesModule#com.mbeddr.core.__spreferences.PlatformTemplates(com.mbeddr.core.__spreferences.PlatformTemplates)</dependency>
+    <dependency reexport="false">61c69711-ed61-4850-81d9-7714ff227fb0(com.mbeddr.core.expressions)</dependency>
+    <dependency reexport="false">3bf5377a-e904-4ded-9754-5a516023bfaa(com.mbeddr.core.pointers)</dependency>
+    <dependency reexport="false">e11c169d-9fe2-4a19-8c43-ddd8ffefd883(mbeddr.debugger.specification)</dependency>
+    <dependency reexport="false">11a0cd79-9f2e-4665-a280-57a3cc526924(mulder.base)</dependency>
+    <dependency reexport="false">f2600f3d-2083-4803-a693-cff3268f4af9(mulder.model)</dependency>
+    <dependency reexport="false">ce1120c1-075f-4f11-a8fc-36ddbe2de15f(mulder.textgen)</dependency>
+    <dependency reexport="false">b25694ab-2b70-4644-a06e-4d199f64d0c5(mulder.text)</dependency>
+    <dependency reexport="false">77535ba7-24b5-4667-bf00-2e9c9074a90d(mulder.modelgen)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</usedLanguage>
     <usedLanguage>f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)</usedLanguage>
     <usedLanguage>2693fc71-9b0e-4b05-ab13-f57227d675f2(com.mbeddr.core.util)</usedLanguage>
+    <usedLanguage>bec9c00b-b5be-48af-9766-38765bcc974d(MUnit)</usedLanguage>
+    <usedLanguage>7ce26145-e88e-4147-80f6-84aca3a7cb16(MUnit.gen.def)</usedLanguage>
   </usedLanguages>
   <usedDevKits>
     <usedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</usedDevKit>
   </usedDevKits>
   <languageVersions>
+    <language id="bec9c00b-b5be-48af-9766-38765bcc974d" fqName="MUnit" version="0" />
+    <language id="7ce26145-e88e-4147-80f6-84aca3a7cb16" fqName="MUnit.gen.def" version="0" />
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" fqName="com.mbeddr.core.base" version="0" />
     <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" fqName="com.mbeddr.core.buildconfig" version="0" />
     <language id="b2da2e1a-b542-47f5-9be0-4dc21efe74a4" fqName="com.mbeddr.core.checks" version="0" />
@@ -56,6 +68,7 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" fqName="jetbrains.mps.lang.smodel" version="0" />
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" fqName="jetbrains.mps.lang.structure" version="0" />
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
+    <language id="11a0cd79-9f2e-4665-a280-57a3cc526924" fqName="mulder.base" version="0" />
   </languageVersions>
 </solution>
 
